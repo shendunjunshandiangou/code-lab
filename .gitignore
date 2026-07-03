@@ -1,0 +1,8 @@
+# Claude Code
+.claude/plans/
+.claude/sessions/
+.claude/worktrees/
+
+# OS
+.DS_Store
+Thumbs.db
