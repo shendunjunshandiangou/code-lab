@@ -6,8 +6,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "📷 胶片相机选购指南",
-    pageTitleSuffix: "",
+    pageTitle: "胶片相机指南",
+    pageTitleSuffix: "｜从零基础到第一台相机",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
@@ -32,6 +32,8 @@ const config: QuartzConfig = {
       "00_raw/**",
       "01_articles",
       "01_articles/**",
+      "03_outline",
+      "03_outline/**",
       "_pipeline_tasks.md",
       // 非知识库的教程文章（根目录）
       "胶片摄影零基础入门*.md",
@@ -42,33 +44,33 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        // 西文用 Inter（干净现代），中文自动回退系统字体
-        header: "Inter",
+        // 西文标题保留杂志感，中文回退到系统宋体；正文优先使用清晰的无衬线字体
+        header: "Source Serif 4",
         body: "Inter",
         code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f5",
-          lightgray: "#e8e4e0",
-          gray: "#b0a89e",
-          darkgray: "#5c5550",
-          dark: "#2b2520",
-          secondary: "#8b4513",
-          tertiary: "#5a7d5a",
-          highlight: "rgba(139, 69, 19, 0.1)",
-          textHighlight: "#f5e6d388",
+          light: "#f7f3eb",
+          lightgray: "#e5ddd1",
+          gray: "#9c9184",
+          darkgray: "#554d44",
+          dark: "#211c18",
+          secondary: "#964322",
+          tertiary: "#3f6b59",
+          highlight: "rgba(150, 67, 34, 0.10)",
+          textHighlight: "#e7c9a788",
         },
         darkMode: {
-          light: "#1a1816",
-          lightgray: "#2d2a26",
-          gray: "#6b645c",
-          darkgray: "#c4bcb2",
-          dark: "#e8e4e0",
-          secondary: "#c9956b",
-          tertiary: "#7a9d7a",
-          highlight: "rgba(201, 149, 107, 0.15)",
-          textHighlight: "#8b691488",
+          light: "#191714",
+          lightgray: "#2c2823",
+          gray: "#81776c",
+          darkgray: "#cec5b9",
+          dark: "#f1eae0",
+          secondary: "#e29a72",
+          tertiary: "#87b49f",
+          highlight: "rgba(226, 154, 114, 0.14)",
+          textHighlight: "#81543388",
         },
       },
     },
@@ -102,12 +104,12 @@ const config: QuartzConfig = {
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,
-        enableRSS: false,
+        enableRSS: true,
       }),
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.NotFoundPage(),
-      // CustomOgImages 在 CI 中可能很慢，暂时禁用
+      // CustomOgImages 在 CI 中构建较慢，暂不启用
       // Plugin.CustomOgImages(),
     ],
   },

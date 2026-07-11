@@ -1,7 +1,13 @@
-name: 部署 Quartz to GitHub Pages
+name: 构建并部署 Quartz
 
 on:
   push:
+    branches:
+      - master
+    paths:
+      - '胶片相机选购指南/**'
+      - '.github/workflows/deploy-quartz.yml'
+  pull_request:
     branches:
       - master
     paths:
@@ -15,12 +21,13 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: "${{ github.workflow }}-${{ github.ref }}"
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
@@ -36,19 +43,28 @@ jobs:
 
       - name: 安装依赖
         working-directory: ./胶片相机选购指南/quartz
-        run: npm ci
+        run: npm ci --no-audit
 
       - name: 构建网站
         working-directory: ./胶片相机选购指南/quartz
-        run: |
-          node quartz/bootstrap-cli.mjs build --directory ..
+        run: node quartz/bootstrap-cli.mjs build --directory ..
+
+      - name: 保存预览产物
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: quartz-preview
+          path: ./胶片相机选购指南/quartz/public
+          retention-days: 3
 
       - name: 上传构建产物
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./胶片相机选购指南/quartz/public
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     environment:
       name: github-pages
