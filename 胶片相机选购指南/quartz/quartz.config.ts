@@ -14,13 +14,20 @@ const config: QuartzConfig = {
     locale: "zh-CN",
     baseUrl: "shendunjunshandiangou.github.io/code-lab",
     ignorePatterns: [
-      // 不发布的目录和文件
-      "private",
-      "templates",
+      // Quartz 引擎自身（避免把自己当内容构建）
+      "quartz",
+      "quartz/**",
+      // 项目脚本和资源
+      "scripts",
+      "scripts/**",
+      "assets",
+      "assets/**",
+      // 不发布的 Obsidian 元数据
       ".obsidian",
       ".obsidian/**",
       ".claude",
       ".claude/**",
+      // 不发布的内容层
       "00_raw",
       "00_raw/**",
       "01_articles",

@@ -41,7 +41,7 @@ jobs:
       - name: 构建网站
         working-directory: ./胶片相机选购指南/quartz
         run: |
-          node quartz/bootstrap-cli.mjs build --directory ../..
+          node quartz/bootstrap-cli.mjs build --directory ..
 
       - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
