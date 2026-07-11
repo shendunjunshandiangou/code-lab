@@ -38,12 +38,10 @@ jobs:
         working-directory: ./胶片相机选购指南/quartz
         run: npm ci
 
-      - name: 构建网站（直接指向根目录）
+      - name: 构建网站
         working-directory: ./胶片相机选购指南/quartz
         run: |
-          npx quartz build --directory ../..
-        env:
-          QUARTZ_BUILD_FLAGS: ""
+          node quartz/bootstrap-cli.mjs build --directory ../..
 
       - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
