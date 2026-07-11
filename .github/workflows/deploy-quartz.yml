@@ -38,17 +38,12 @@ jobs:
         working-directory: ./胶片相机选购指南/quartz
         run: npm ci
 
-      - name: 复制发布内容到 content/
-        run: |
-          rm -rf 胶片相机选购指南/quartz/content/*
-          cp 胶片相机选购指南/index.md 胶片相机选购指南/quartz/content/
-          cp -r 胶片相机选购指南/02_atoms 胶片相机选购指南/quartz/content/
-          cp -r 胶片相机选购指南/03_outline 胶片相机选购指南/quartz/content/
-          cp -r 胶片相机选购指南/04_knowledge 胶片相机选购指南/quartz/content/
-
-      - name: 构建网站
+      - name: 构建网站（直接指向根目录）
         working-directory: ./胶片相机选购指南/quartz
-        run: npx quartz build
+        run: |
+          npx quartz build --directory ../..
+        env:
+          QUARTZ_BUILD_FLAGS: ""
 
       - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
