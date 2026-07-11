@@ -49,6 +49,14 @@ jobs:
         working-directory: ./胶片相机选购指南/quartz
         run: node quartz/bootstrap-cli.mjs build --directory ..
 
+      - name: 保存预览产物
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: quartz-preview
+          path: ./胶片相机选购指南/quartz/public
+          retention-days: 3
+
       - name: 上传构建产物
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
