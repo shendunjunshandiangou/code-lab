@@ -1,0 +1,67 @@
+name: 部署 Quartz to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '胶片相机选购指南/**'
+      - '.github/workflows/deploy-quartz.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: 胶片相机选购指南/quartz/package-lock.json
+
+      - name: 安装依赖
+        working-directory: ./胶片相机选购指南/quartz
+        run: npm ci
+
+      - name: 复制发布内容到 content/
+        run: |
+          rm -rf 胶片相机选购指南/quartz/content/*
+          cp 胶片相机选购指南/index.md 胶片相机选购指南/quartz/content/
+          cp -r 胶片相机选购指南/02_atoms 胶片相机选购指南/quartz/content/
+          cp -r 胶片相机选购指南/03_outline 胶片相机选购指南/quartz/content/
+          cp -r 胶片相机选购指南/04_knowledge 胶片相机选购指南/quartz/content/
+
+      - name: 构建网站
+        working-directory: ./胶片相机选购指南/quartz
+        run: npx quartz build
+
+      - name: 上传构建产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./胶片相机选购指南/quartz/public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

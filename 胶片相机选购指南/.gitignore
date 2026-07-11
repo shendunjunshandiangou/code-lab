@@ -1,0 +1,13 @@
+# Obsidian 配置
+.obsidian/
+
+# Claude Code 配置
+.claude/
+
+# Quartz 构建产物
+quartz/public/
+quartz/node_modules/
+
+# 系统文件
+.DS_Store
+Thumbs.db
