@@ -1,0 +1,40 @@
+name: 检查 Quartz PR
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - '胶片相机选购指南/**'
+      - '.github/workflows/check-quartz-pr.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: 胶片相机选购指南/quartz/package-lock.json
+
+      - name: 安装依赖
+        working-directory: ./胶片相机选购指南/quartz
+        run: npm ci
+
+      - name: 类型和格式检查
+        working-directory: ./胶片相机选购指南/quartz
+        run: npm run check
+
+      - name: 构建网站
+        working-directory: ./胶片相机选购指南/quartz
+        run: node quartz/bootstrap-cli.mjs build --directory ..
