@@ -24,6 +24,10 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import HomePage from "./HomePage"
+import SiteHeader from "./SiteHeader"
+import PageHero from "./PageHero"
+import SourceVideos from "./SourceVideos"
+import SiteFooter from "./SiteFooter"
 
 export {
   ArticleTitle,
@@ -52,4 +56,8 @@ export {
   Flex,
   ConditionalRender,
   HomePage,
+  SiteHeader,
+  PageHero,
+  SourceVideos,
+  SiteFooter,
 }
