@@ -156,26 +156,16 @@ function cameraFromPage(page: QuartzPluginData): BuyingCamera | null {
 function camerasForGroup(cameras: BuyingCamera[], group: PriceGroup) {
   return cameras
     .filter((camera) => camera.priceReference >= group.min && camera.priceReference < group.max)
-    .sort((a, b) => {
-      const imagePriority = Number(Boolean(b.image)) - Number(Boolean(a.image))
-      return a.rank - b.rank || imagePriority || a.priceReference - b.priceReference || a.title.localeCompare(b.title, "zh-CN")
-    })
+    .filter((camera) => Boolean(camera.image))
+    .sort((a, b) => a.rank - b.rank || a.priceReference - b.priceReference || a.title.localeCompare(b.title, "zh-CN"))
     .slice(0, 4)
 }
 
 function ProductCard({ camera, currentSlug }: { camera: BuyingCamera; currentSlug: NonNullable<QuartzComponentProps["fileData"]["slug"]> }) {
   return (
     <a class="buying-product-card" href={resolveRelative(currentSlug, camera.page.slug!)}>
-      <div class={`buying-product-media ${camera.image ? "has-image" : "is-placeholder"}`}>
-        {camera.image ? (
-          <img src={camera.image} alt={camera.title} loading="lazy" decoding="async" />
-        ) : (
-          <div>
-            <span>{camera.brand}</span>
-            <strong>{camera.title}</strong>
-            <small>图片待完成授权核验</small>
-          </div>
-        )}
+      <div class="buying-product-media has-image">
+        <img src={camera.image} alt={camera.title} loading="lazy" decoding="async" />
         <em>{camera.beginner}</em>
       </div>
       <div class="buying-product-body">
@@ -243,7 +233,7 @@ const BuyingGuidePage: QuartzComponent = ({ allFiles, fileData }: QuartzComponen
               <div class="buying-product-grid">
                 {recommendations.map((camera) => <ProductCard camera={camera} currentSlug={currentSlug} />)}
               </div>
-              <a class="buying-view-all" href={`./cameras#camera-list`}>查看完整机型库和更多筛选条件 →</a>
+              <a class="buying-view-all" href="./cameras#camera-list">查看完整机型库和更多筛选条件 →</a>
             </section>
           )
         })}
