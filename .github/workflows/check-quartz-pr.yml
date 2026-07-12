@@ -88,6 +88,46 @@ jobs:
         shell: bash
         run: node 胶片相机选购指南/scripts/validate-built-site.mjs 胶片相机选购指南/quartz/public
 
+      - name: 真实浏览器视觉与交互验收
+        working-directory: ./胶片相机选购指南/quartz
+        shell: bash
+        run: |
+          CHROME_BIN="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROME_BIN" ]; then
+            echo '::error::GitHub Actions 运行器没有可用的 Chrome/Chromium。'
+            exit 1
+          fi
+
+          rm -rf visual-site visual-report
+          mkdir -p visual-site/code-lab
+          cp -a public/. visual-site/code-lab/
+          python3 -m http.server 4173 --directory visual-site > /tmp/quartz-visual-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/code-lab/index.html > /dev/null; then
+              break
+            fi
+            if [ "$attempt" = '30' ]; then
+              cat /tmp/quartz-visual-http.log || true
+              echo '::error::本地视觉验收服务器没有启动。'
+              exit 1
+            fi
+            sleep 1
+          done
+
+          CHROME_BIN="$CHROME_BIN" node scripts/visual-site-check.mjs http://127.0.0.1:4173/code-lab
+
+      - name: 上传视觉验收截图
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quartz-visual-${{ github.run_id }}
+          path: 胶片相机选购指南/quartz/visual-report
+          retention-days: 7
+          if-no-files-found: warn
+
       - name: 发布并验证在线预览
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
