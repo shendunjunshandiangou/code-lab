@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：17
-- 图片署名、来源和许可完整：17
-- 已有资料来源：18
+- 已有主图：18
+- 图片署名、来源和许可完整：18
+- 已有资料来源：19
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -34,7 +34,7 @@
 
 ## 全量缺口
 
-### 缺少主图（66）
+### 缺少主图（65）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 OM-2
@@ -75,7 +75,6 @@
 - 柯尼卡 T3N
 - 柯尼卡 T4
 - 徕卡 CM
-- 徕卡 M6
 - 徕卡 Minilux
 - 徕卡 R6 / R6.2
 - 理光 GR1s
@@ -107,7 +106,7 @@
 
 - 无
 
-### 缺少资料来源（65）
+### 缺少资料来源（64）
 
 - 奥林巴斯 OM-2
 - 奥林巴斯 OM-2n
@@ -147,7 +146,6 @@
 - 柯尼卡 T3N
 - 柯尼卡 T4
 - 徕卡 CM
-- 徕卡 M6
 - 徕卡 Minilux
 - 徕卡 R6 / R6.2
 - 理光 GR1s
@@ -223,7 +221,7 @@
 - 柯尼卡 T3N：metering、weight_g、reliability
 - 柯尼卡 T4：metering、weight_g、reliability
 - 徕卡 CM：metering、weight_g、reliability
-- 徕卡 M6：metering、weight_g、reliability
+- 徕卡 M6：reliability
 - 徕卡 Minilux：metering、weight_g、reliability
 - 徕卡 R6 / R6.2：metering、weight_g、reliability
 - 理光 GR1s：metering、weight_g、reliability
