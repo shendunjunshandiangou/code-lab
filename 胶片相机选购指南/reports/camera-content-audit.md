@@ -7,11 +7,11 @@
 - 机型总数：83
 - 已有主图：24
 - 图片署名、来源和许可完整：24
-- 已有资料来源：25
+- 已有资料来源：26
 - 含待核验关键字段：76
 - 高风险字段冲突：0
-- 可从正文回填结构化字段：10
-- 正文仍含“待补充”：16
+- 可从正文回填结构化字段：9
+- 正文仍含“待补充”：15
 
 ## 当前价格选机页推荐
 
@@ -43,11 +43,10 @@
 
 - 无
 
-### 可从正文回填 Frontmatter（10）
+### 可从正文回填 Frontmatter（9）
 
 - 富士 Klasse W：正文重量“约 270g”可回填 weight_g
 - 哈苏 500 系列：正文重量“约 1,500g（机身 + 80mm 镜头 + 后背）”可回填 weight_g
-- 康泰时 T2：正文重量“约 300g”可回填 weight_g
 - 康泰时 T3：正文重量“约 230g”可回填 weight_g
 - 柯尼卡 Hexar AF：正文重量“约 510g”可回填 weight_g
 - 徕卡 CM：正文重量“约 260g”可回填 weight_g
@@ -56,7 +55,7 @@
 - 尼康 28Ti：正文重量“约 310g”可回填 weight_g
 - 尼康 F2：正文重量“约 730g（DE-1 眼平顶）；Photomic 组合可达到约 840g”可回填 weight_g
 
-### 正文仍含待补充（16）
+### 正文仍含待补充（15）
 
 - 奥林巴斯 Pen D3：1 处
 - 奥林巴斯 Pen EE-2：1 处
@@ -65,7 +64,6 @@
 - 海鸥 4A：4 处
 - 佳能 EOS 3：4 处
 - 康泰时 S2：4 处
-- 康泰时 T2：1 处
 - 康泰时 TVS：1 处
 - 理光 GR21：1 处
 - 禄来 3.5F：4 处
@@ -143,7 +141,7 @@
 
 - 无
 
-### 缺少资料来源（58）
+### 缺少资料来源（57）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
@@ -171,7 +169,6 @@
 - 康泰时 G2
 - 康泰时 RTS 系列
 - 康泰时 S2
-- 康泰时 T2
 - 康泰时 T3
 - 康泰时 TVS
 - 柯尼卡 Hexar AF
@@ -245,7 +242,7 @@
 - 康泰时 G2：metering、weight_g、reliability
 - 康泰时 RTS 系列：metering、weight_g、reliability
 - 康泰时 S2：metering、weight_g、reliability
-- 康泰时 T2：metering、weight_g、reliability
+- 康泰时 T2：reliability
 - 康泰时 T3：metering、weight_g、reliability
 - 康泰时 TVS：metering、weight_g、reliability
 - 柯尼卡 Hexar AF：metering、weight_g、reliability
