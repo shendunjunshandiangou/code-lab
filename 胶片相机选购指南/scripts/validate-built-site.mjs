@@ -77,6 +77,9 @@ const keyCameraPages = [
   "cameras/canon-ae-1.html",
   "cameras/olympus-om-10.html",
   "cameras/pentax-me.html",
+  "cameras/olympus-om-2.html",
+  "cameras/olympus-om-2n.html",
+  "cameras/olympus-xa.html",
 ]
 
 for (const page of keyCameraPages) {
@@ -84,9 +87,11 @@ for (const page of keyCameraPages) {
   if (!html) continue
   requireText(html, /camera-detail-guide/, `${page} 未启用详情页 v2`)
   requireText(html, /<link rel="canonical" href="[^"]*\/cameras\//, `${page} canonical 未指向干净路由`)
+  requireText(html, /"@type":"Product"/, `${page} 缺少 Product 结构化数据`)
+  requireText(html, /"@type":"BreadcrumbList"/, `${page} 缺少 BreadcrumbList 结构化数据`)
   if (/src="https:\/\/commons\.wikimedia\.org/.test(html)) fail(`${page} 仍直接加载 Wikimedia 图片`)
 }
-pass(`代表机型详情检查：${keyCameraPages.length} 个`)
+pass(`代表机型详情、canonical 与结构化数据检查：${keyCameraPages.length} 个`)
 
 const oldFm2 = read("02_atoms/models/尼康-FM2.html")
 if (oldFm2 && !oldFm2.includes("cameras/nikon-fm2")) fail("尼康 FM2 旧地址没有跳转到新路由")
