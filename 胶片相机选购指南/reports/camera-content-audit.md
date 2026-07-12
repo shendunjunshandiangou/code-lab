@@ -7,7 +7,7 @@
 - 机型总数：83
 - 已有主图：27
 - 图片署名、来源和许可完整：27
-- 已有资料来源：37
+- 已有资料来源：38
 - 含待核验关键字段：75
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：1
@@ -117,9 +117,8 @@
 
 - 无
 
-### 缺少资料来源（46）
+### 缺少资料来源（45）
 
-- 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
 - 奥林巴斯 Pen EE-2
 - 宾得 Espio Mini
@@ -174,7 +173,7 @@
 - 奥林巴斯 OM-10：reliability
 - 奥林巴斯 OM-2：reliability
 - 奥林巴斯 OM-2n：reliability
-- 奥林巴斯 OM-4：metering、weight_g、reliability
+- 奥林巴斯 OM-4：reliability
 - 奥林巴斯 Pen D3：metering、weight_g、reliability、battery
 - 奥林巴斯 Pen EE-2：metering、weight_g、reliability
 - 奥林巴斯 Pen F 系列：weight_g、reliability

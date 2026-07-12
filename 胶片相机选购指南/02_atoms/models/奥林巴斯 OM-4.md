@@ -43,7 +43,7 @@ aliases:
   - "奥林巴斯 OM4"
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_OM-4"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "把最多 8 点测光、亮部／暗部控制和长时间自动曝光装进小巧 OM 机身。"
 permalink: "cameras/olympus-om-4"
