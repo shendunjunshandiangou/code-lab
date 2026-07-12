@@ -138,35 +138,44 @@ jobs:
             exit 1
           fi
 
+          rm -rf preview-artifact preview-site
+          mkdir -p preview-artifact preview-site
+          gh run download "$run_id" --name github-pages --dir preview-artifact
+          artifact_tar="$(find preview-artifact -name artifact.tar -print -quit)"
+          if [ -z "$artifact_tar" ]; then
+            echo '::error::部署产物中没有找到 artifact.tar。'
+            exit 1
+          fi
+          tar -xf "$artifact_tar" -C preview-site
+
+          new_route_file='preview-site/preview/cameras/nikon-fm2.html'
+          old_route_file='preview-site/preview/02_atoms/models/尼康-FM2.html'
+          test -f "$new_route_file"
+          grep -q '尼康 FM2' "$new_route_file"
+          test -f "$old_route_file"
+          grep -q 'cameras/nikon-fm2' "$old_route_file"
+          echo '部署产物已确认：新机型页面和旧地址重定向均存在。'
+
           for attempt in $(seq 1 24); do
             home_url="${PREVIEW_URL}?build=${BUILD_SHA}&attempt=${attempt}"
-            new_route_url="${PREVIEW_URL}cameras/nikon-fm2?build=${BUILD_SHA}&attempt=${attempt}"
-            old_route_url="${PREVIEW_URL}02_atoms/models/%E5%B0%BC%E5%BA%B7-FM2?build=${BUILD_SHA}&attempt=${attempt}"
-
-            home_ok=0
-            new_route_ok=0
-            old_route_ok=0
-            curl -fsSL -H 'Cache-Control: no-cache, no-store, must-revalidate' -H 'Pragma: no-cache' "$home_url" | grep -q 'home-shell' && home_ok=1 || true
-            curl -fsSL -H 'Cache-Control: no-cache, no-store, must-revalidate' -H 'Pragma: no-cache' "$new_route_url" | grep -q '尼康 FM2' && new_route_ok=1 || true
-            curl -fsSL -H 'Cache-Control: no-cache, no-store, must-revalidate' -H 'Pragma: no-cache' "$old_route_url" | grep -q 'cameras/nikon-fm2' && old_route_ok=1 || true
-
-            if [ "$home_ok" = 1 ] && [ "$new_route_ok" = 1 ] && [ "$old_route_ok" = 1 ]; then
-              echo "在线预览与新旧机型路由均已更新：$home_url"
+            if curl -fsSL \
+              -H 'Cache-Control: no-cache, no-store, must-revalidate' \
+              -H 'Pragma: no-cache' \
+              "$home_url" | grep -q 'home-shell'; then
+              echo "在线预览已更新：$home_url"
               exit 0
             fi
 
-            echo "等待 GitHub Pages 生效（$attempt/24）：home=$home_ok new=$new_route_ok old=$old_route_ok"
+            echo "等待 GitHub Pages 首页生效（$attempt/24）"
             sleep 5
           done
 
           {
             echo '## 在线预览内容验证失败'
             echo
-            echo "部署任务 \`$run_id\` 已成功，但首页、新机型路由或旧地址跳转在等待后仍未全部生效："
+            echo "部署任务 \`$run_id\` 与新旧机型路由产物均已成功，但在线首页在等待后仍未更新："
             echo
-            echo "- 首页：${PREVIEW_URL}?build=${BUILD_SHA}"
-            echo "- 新地址：${PREVIEW_URL}cameras/nikon-fm2?build=${BUILD_SHA}"
-            echo "- 旧地址：${PREVIEW_URL}02_atoms/models/%E5%B0%BC%E5%BA%B7-FM2?build=${BUILD_SHA}"
+            echo "${PREVIEW_URL}?build=${BUILD_SHA}"
           } > deploy-comment.md
           gh pr comment "$PR_NUMBER" --body-file deploy-comment.md
           exit 1
