@@ -1,9 +1,10 @@
-name: 部署 Quartz to GitHub Pages
+name: 部署 Quartz 正式站与预览站
 
 on:
   push:
     branches:
       - master
+      - agent/camera-editorial-redesign
     paths:
       - '胶片相机选购指南/**'
       - '.github/workflows/deploy-quartz.yml'
@@ -15,38 +16,96 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 检出代码
+      - name: 检出当前分支
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          path: current
+
+      - name: 检出正式站 master
+        if: github.ref_name != 'master'
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+          path: production
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: 胶片相机选购指南/quartz/package-lock.json
+          cache-dependency-path: current/胶片相机选购指南/quartz/package-lock.json
 
-      - name: 安装依赖
-        working-directory: ./胶片相机选购指南/quartz
+      - name: 安装当前分支依赖
+        working-directory: ./current/胶片相机选购指南/quartz
         run: npm ci
 
-      - name: 构建网站
-        working-directory: ./胶片相机选购指南/quartz
+      - name: 配置预览站路径
+        if: github.ref_name != 'master'
+        working-directory: ./current/胶片相机选购指南/quartz
+        shell: bash
         run: |
-          node quartz/bootstrap-cli.mjs build --directory ..
+          python - <<'PY'
+          from pathlib import Path
 
-      - name: 上传构建产物
+          path = Path('quartz.config.ts')
+          content = path.read_text(encoding='utf-8')
+          old = 'baseUrl: "shendunjunshandiangou.github.io/code-lab"'
+          new = 'baseUrl: "shendunjunshandiangou.github.io/code-lab/preview"'
+
+          if old not in content:
+              raise SystemExit('没有找到 Quartz baseUrl，无法配置预览路径')
+
+          path.write_text(content.replace(old, new, 1), encoding='utf-8')
+          PY
+
+      - name: 构建当前分支
+        working-directory: ./current/胶片相机选购指南/quartz
+        run: node quartz/bootstrap-cli.mjs build --directory ..
+
+      - name: 安装正式站依赖
+        if: github.ref_name != 'master'
+        working-directory: ./production/胶片相机选购指南/quartz
+        run: npm ci
+
+      - name: 构建正式站
+        if: github.ref_name != 'master'
+        working-directory: ./production/胶片相机选购指南/quartz
+        run: node quartz/bootstrap-cli.mjs build --directory ..
+
+      - name: 组合正式站与预览站
+        shell: bash
+        run: |
+          rm -rf site
+          mkdir -p site
+
+          if [ "${GITHUB_REF_NAME}" = "master" ]; then
+            cp -a current/胶片相机选购指南/quartz/public/. site/
+          else
+            cp -a production/胶片相机选购指南/quartz/public/. site/
+            mkdir -p site/preview
+            cp -a current/胶片相机选购指南/quartz/public/. site/preview/
+          fi
+
+          test -f site/index.html
+
+          if [ "${GITHUB_REF_NAME}" != "master" ]; then
+            test -f site/preview/index.html
+            grep -q 'home-shell' site/preview/index.html
+          fi
+
+      - name: 上传 GitHub Pages 构建产物
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./胶片相机选购指南/quartz/public
+          path: ./site
 
   deploy:
     needs: build
