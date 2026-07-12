@@ -55,11 +55,10 @@ jobs:
         working-directory: ./胶片相机选购指南/quartz
         run: node quartz/bootstrap-cli.mjs build --directory ..
 
-      - name: 检查首页构建产物
+      - name: 验证首页内容
         working-directory: ./胶片相机选购指南/quartz
         run: |
           test -f public/index.html
-          echo "index.html bytes: $(wc -c < public/index.html)"
-          grep -o 'article class="[^"]*"' public/index.html | head -n 5 || true
-          grep -o 'home-shell' public/index.html | head -n 5 || true
-          grep -o '从第一卷胶片' public/index.html | head -n 5 || true
+          grep -q 'home-shell' public/index.html
+          grep -q '从第一卷胶片' public/index.html
+          grep -q 'article class="popover-hint home-page"' public/index.html
