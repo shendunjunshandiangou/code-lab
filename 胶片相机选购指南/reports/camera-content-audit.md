@@ -7,11 +7,11 @@
 - 机型总数：83
 - 已有主图：24
 - 图片署名、来源和许可完整：24
-- 已有资料来源：29
+- 已有资料来源：30
 - 含待核验关键字段：75
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：1
-- 正文仍含“待补充”：5
+- 正文仍含“待补充”：4
 
 ## 当前价格选机页推荐
 
@@ -47,9 +47,8 @@
 
 - 哈苏 500 系列：正文重量“约 1,500g（机身 + 80mm 镜头 + 后背）”可回填 weight_g
 
-### 正文仍含待补充（5）
+### 正文仍含待补充（4）
 
-- 海鸥 4A：2 处
 - 康泰时 S2：2 处
 - 禄来 3.5F：2 处
 - 禄来 35：2 处
@@ -123,7 +122,7 @@
 
 - 无
 
-### 缺少资料来源（54）
+### 缺少资料来源（53）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
@@ -142,7 +141,6 @@
 - 富士 ST-801 / ST-901
 - 富士 Wide 300
 - 哈苏 500 系列
-- 海鸥 4A
 - 佳能 FTb-N
 - 康泰时 Aria
 - 康泰时 G1
@@ -209,7 +207,7 @@
 - 富士 ST-801 / ST-901：metering、weight_g、reliability
 - 富士 Wide 300：metering、weight_g、reliability、mount、focus
 - 哈苏 500 系列：metering、weight_g、reliability
-- 海鸥 4A：metering、weight_g、reliability
+- 海鸥 4A：weight_g、reliability
 - 佳能 A-1：reliability
 - 佳能 AE-1 Program：reliability
 - 佳能 AE-1：reliability
