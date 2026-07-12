@@ -8,9 +8,9 @@
 - 已有主图：24
 - 图片署名、来源和许可完整：24
 - 已有资料来源：27
-- 含待核验关键字段：76
+- 含待核验关键字段：75
 - 高风险字段冲突：0
-- 可从正文回填结构化字段：2
+- 可从正文回填结构化字段：1
 - 正文仍含“待补充”：14
 
 ## 当前价格选机页推荐
@@ -31,7 +31,7 @@
 | 2000 元以上 | 奥林巴斯 mju-2 | 推荐 | 有 | 有 | reliability |
 | 2000 元以上 | 佳能 F-1 | 进阶 | 有 | 有 | reliability |
 | 2000 元以上 | 尼康 FM2 | 有一定门槛 | 有 | 有 | 无 |
-| 2000 元以上 | 尼康 F2 | 有一定门槛 | 有 | 有 | weight_g |
+| 2000 元以上 | 尼康 F2 | 有一定门槛 | 有 | 有 | 无 |
 
 ## 最高优先级：推荐卡片缺图
 
@@ -43,10 +43,9 @@
 
 - 无
 
-### 可从正文回填 Frontmatter（2）
+### 可从正文回填 Frontmatter（1）
 
 - 哈苏 500 系列：正文重量“约 1,500g（机身 + 80mm 镜头 + 后背）”可回填 weight_g
-- 尼康 F2：正文重量“约 730g（DE-1 眼平顶）；Photomic 组合可达到约 840g”可回填 weight_g
 
 ### 正文仍含待补充（14）
 
@@ -192,7 +191,7 @@
 - Praktica Super TL1000
 - Zenit E
 
-### 含待核验关键字段（76）
+### 含待核验关键字段（75）
 
 - 奥林巴斯 mju-1：weight_g
 - 奥林巴斯 mju-2：reliability
@@ -259,7 +258,6 @@
 - 美能达 X-700：reliability
 - 美能达 α-7：metering、weight_g、reliability
 - 尼康 28Ti：metering、reliability
-- 尼康 F2：weight_g
 - 尼康 F3：weight_g
 - 尼康马特：metering、weight_g、reliability
 - 雅西卡 35 GX：metering、weight_g、reliability
