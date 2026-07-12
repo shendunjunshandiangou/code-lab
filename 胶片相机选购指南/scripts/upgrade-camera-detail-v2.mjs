@@ -10,9 +10,14 @@ function escapeRegExp(value) {
 
 function unquote(value) {
   const text = String(value ?? "").trim()
-  if ((text.startsWith('"') && text.endsWith('"')) || (text.startsWith("'") && text.endsWith("'"))) {
-    return text.slice(1, -1)
+  if (text.startsWith('"') && text.endsWith('"')) {
+    try {
+      return JSON.parse(text)
+    } catch {
+      return text.slice(1, -1)
+    }
   }
+  if (text.startsWith("'") && text.endsWith("'")) return text.slice(1, -1).replace(/''/g, "'")
   return text
 }
 
@@ -45,6 +50,11 @@ function extractTagline(body) {
   return collected.join(" ").trim()
 }
 
+function cleanTagline(value) {
+  // 清理旧脚本多次运行后堆叠在引号和星号前的反斜杠。
+  return String(value ?? "").trim().replace(/\\+(?=["*])/g, "")
+}
+
 function upgradeFile(file) {
   const fullPath = path.join(modelsDir, file)
   const original = fs.readFileSync(fullPath, "utf8")
@@ -56,7 +66,7 @@ function upgradeFile(file) {
 
   const existingTagline = yamlScalar(frontmatter, "tagline")
   const description = yamlScalar(frontmatter, "description")
-  const tagline = extractTagline(body) || existingTagline || description
+  const tagline = cleanTagline(extractTagline(body) || existingTagline || description)
 
   frontmatter = upsertYamlScalar(frontmatter, "detail_version", 2)
   if (tagline) frontmatter = upsertYamlScalar(frontmatter, "tagline", tagline)
