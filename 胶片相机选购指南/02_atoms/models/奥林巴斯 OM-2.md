@@ -29,7 +29,7 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Olympus%20OM-2%20with%20Zuiko%2050mm%20f1.8.jpg?width=1400"
+hero_image: "./static/images/library/olympus-om-2-with-zuiko-50mm-f1-8-e6466c91.jpg"
 image_alt: "搭配 Zuiko 50mm f/1.8 镜头的奥林巴斯 OM-2 胶片单反"
 image_credit: "Lex Tollenaar"
 image_source: "https://commons.wikimedia.org/wiki/File:Olympus_OM-2_with_Zuiko_50mm_f1.8.jpg"
@@ -53,8 +53,8 @@ permalink: "cameras/olympus-om-2"
 ## 快速判断
 
 <div class="camera-verdict-grid">
-  <div><strong>适合</strong><span>喜欢小巧手动单反，同时希望用光圈优先降低曝光操作负担的人</span></div>
-  <div><strong>不适合</strong><span>要求相机没电仍能完整拍摄，或完全不接受老电子元件风险的人</span></div>
+  <div><strong>适合</strong><span>想学习手动对焦，但不想每张照片都手动匹配快门的人。；喜欢 OM 系统体积、造型和 Zuiko 镜头的人。；希望在机械手感与自动曝光之间取得平衡的人。</span></div>
+  <div><strong>不适合</strong><span>必须完全不依赖电池的人。；更需要自动对焦、自动过片和快速抓拍的人。</span></div>
   <div><strong>参考价格</strong><span>约 ¥800～1500，价格核对于 2026 年 7 月</span></div>
 </div>
 
@@ -97,12 +97,12 @@ permalink: "cameras/olympus-om-2"
 
 ## 购买检查
 
-1. 装入新电池，确认机身能够正常唤醒、测光和释放快门。
-2. 分别测试 A 档和 M 档，检查明暗变化时测光指针与实际快门是否连续响应。
-3. 测试 1 秒附近慢门和高速快门，观察快门帘是否粘滞、停顿或运行不完整。
-4. 检查过片、计数器、回卷、自拍和景深预览是否正常。
-5. 检查电池仓漏液、取景器腐蚀、反光镜缓冲棉和后盖密封海绵老化情况。
-6. 优先选择能够提供实拍样片、测光对比或维修记录的机身。
+1. 装入新电池，确认测光、液晶或指针显示、快门和各曝光模式均能启动。
+2. 逐档测试电子快门，重点检查慢门、高速快门及机械备份速度。
+3. 测试光圈联动、景深预览、曝光补偿、自拍和闪光同步等现有功能。
+4. 检查过片、上弦、计数器和回卷机构，确认没有卡顿或异常声响。
+5. 检查电池仓是否漏液，取景器、反光镜、对焦屏和镜头是否有霉雾。
+6. 优先选择能够提供实拍样片、维修记录或退换保障的卖家。
 
 ## 同价位替代
 
@@ -114,5 +114,5 @@ permalink: "cameras/olympus-om-2"
 ## 图片与资料来源
 
 - 图片：Lex Tollenaar，Wikimedia Commons，Public domain。
-- 主要规格参考 Olympus OM-2 公开资料；OTF 测光、重量和版本差异已在 2026-07-12 复核。
-- 可靠性和二手价格仍会随版本、地区、成色与维修历史变化，当前区间不是成交保证。
+- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
+- 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
