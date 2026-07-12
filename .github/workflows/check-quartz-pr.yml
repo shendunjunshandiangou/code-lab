@@ -1,0 +1,147 @@
+name: 检查 Quartz PR
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - '胶片相机选购指南/**'
+      - '.github/workflows/check-quartz-pr.yml'
+      - '.github/workflows/deploy-quartz.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: quartz-pr-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  actions: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 全量收口剩余机型页面
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+        shell: bash
+        run: |
+          git checkout -B "$HEAD_REF" "origin/$HEAD_REF"
+          node 胶片相机选购指南/scripts/normalize-camera-pages.mjs
+
+          if git diff --quiet -- 胶片相机选购指南/02_atoms/models; then
+            echo '全部机型页面已经符合当前规范。'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add 胶片相机选购指南/02_atoms/models
+            git commit -m '统一剩余机型详情页'
+            git push origin "HEAD:$HEAD_REF"
+          fi
+
+      - name: 检查内容源路径
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          changed_files="$(git diff --name-only '${{ github.event.pull_request.base.sha }}'...HEAD)"
+          wrong_source="$(printf '%s\n' "$changed_files" | grep '^胶片相机选购指南/quartz/content/' || true)"
+
+          if [ -n "$wrong_source" ]; then
+            echo '::error::检测到修改了未参与当前构建的 quartz/content 副本。请改为编辑胶片相机选购指南根目录中的 index.md、02_atoms 或 04_knowledge。'
+            printf '%s\n' "$wrong_source"
+            exit 1
+          fi
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: 胶片相机选购指南/quartz/package-lock.json
+
+      - name: 安装依赖
+        working-directory: ./胶片相机选购指南/quartz
+        run: npm ci
+
+      - name: TypeScript 类型检查
+        working-directory: ./胶片相机选购指南/quartz
+        run: npx tsc --noEmit
+
+      - name: 构建网站
+        working-directory: ./胶片相机选购指南/quartz
+        run: node quartz/bootstrap-cli.mjs build --directory ..
+
+      - name: 发布并验证在线预览
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PREVIEW_URL: https://shendunjunshandiangou.github.io/code-lab/preview/
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BUILD_SHA: ${{ github.event.pull_request.head.sha }}
+        shell: bash
+        run: |
+          gh workflow run deploy-quartz.yml \
+            --ref master \
+            --field preview_ref='${{ github.head_ref }}'
+
+          sleep 5
+          run_id="$(gh run list \
+            --workflow deploy-quartz.yml \
+            --branch master \
+            --event workflow_dispatch \
+            --limit 1 \
+            --json databaseId \
+            --jq '.[0].databaseId')"
+
+          if [ -z "$run_id" ]; then
+            echo '::error::没有找到在线预览部署任务。'
+            exit 1
+          fi
+
+          echo "等待部署任务 $run_id 完成"
+          if ! gh run watch "$run_id" --exit-status; then
+            gh run view "$run_id" --log-failed > deploy-failure.log 2>&1 || true
+            {
+              echo '## 在线预览部署失败'
+              echo
+              echo "部署任务：\`$run_id\`"
+              echo
+              echo '```text'
+              tail -n 120 deploy-failure.log
+              echo '```'
+            } > deploy-comment.md
+            gh pr comment "$PR_NUMBER" --body-file deploy-comment.md
+            exit 1
+          fi
+
+          for attempt in $(seq 1 18); do
+            request_url="${PREVIEW_URL}?build=${BUILD_SHA}&attempt=${attempt}"
+            if curl -fsSL \
+              -H 'Cache-Control: no-cache, no-store, must-revalidate' \
+              -H 'Pragma: no-cache' \
+              "$request_url" | grep -q 'home-shell'; then
+              echo "在线预览已更新：$request_url"
+              exit 0
+            fi
+
+            echo "等待 GitHub Pages 生效（$attempt/18）"
+            sleep 5
+          done
+
+          {
+            echo '## 在线预览内容验证失败'
+            echo
+            echo "部署任务 \`$run_id\` 已成功，但带缓存刷新参数的在线地址在等待 90 秒后仍未包含 \`home-shell\`："
+            echo
+            echo "${PREVIEW_URL}?build=${BUILD_SHA}"
+          } > deploy-comment.md
+          gh pr comment "$PR_NUMBER" --body-file deploy-comment.md
+          exit 1
