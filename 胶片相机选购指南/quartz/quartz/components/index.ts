@@ -25,6 +25,7 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import HomePage from "./HomePage"
 import LearnPage from "./LearnPage"
+import PortalPages from "./PortalPages"
 import SiteHeader from "./SiteHeader"
 import PageHero from "./PageHero"
 import SourceVideos from "./SourceVideos"
@@ -60,6 +61,7 @@ export {
   ConditionalRender,
   HomePage,
   LearnPage,
+  PortalPages,
   SiteHeader,
   PageHero,
   SourceVideos,
