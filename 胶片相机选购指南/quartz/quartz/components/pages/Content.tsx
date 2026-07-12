@@ -13,7 +13,7 @@ const LearnPage = LearnPageConstructor()
 const BuyingGuidePage = BuyingGuidePageConstructor()
 const PortalPages = PortalPagesConstructor()
 const CameraAtlasPage = CameraAtlasPageConstructor()
-const customPages = [HomePage, LearnPage, BuyingGuidePage, PortalPages, CameraAtlasPage]
+const customPages: QuartzComponent[] = [HomePage, LearnPage, BuyingGuidePage, PortalPages, CameraAtlasPage]
 const customPortalSlugs = new Set(["film", "videos", "about"])
 
 const Content: QuartzComponent = (props: QuartzComponentProps) => {
