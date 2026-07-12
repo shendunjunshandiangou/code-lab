@@ -154,13 +154,15 @@ function cameraFromPage(page: QuartzPluginData): BuyingCamera | null {
 }
 
 function camerasForGroup(cameras: BuyingCamera[], group: PriceGroup) {
-  return cameras
+  const candidates = cameras
     .filter((camera) => camera.priceReference >= group.min && camera.priceReference < group.max)
     .sort((a, b) => {
       const imagePriority = Number(Boolean(b.image)) - Number(Boolean(a.image))
       return imagePriority || a.rank - b.rank || a.priceReference - b.priceReference || a.title.localeCompare(b.title, "zh-CN")
     })
-    .slice(0, 4)
+
+  const withImages = candidates.filter((camera) => Boolean(camera.image))
+  return (withImages.length >= 2 ? withImages : candidates).slice(0, 4)
 }
 
 function ProductCard({ camera, currentSlug }: { camera: BuyingCamera; currentSlug: NonNullable<QuartzComponentProps["fileData"]["slug"]> }) {
@@ -245,7 +247,7 @@ const BuyingGuidePage: QuartzComponent = ({ allFiles, fileData }: QuartzComponen
               </div>
               <a class="buying-view-all" href={`./cameras#camera-list`}>查看完整机型库和更多筛选条件 →</a>
             </section>
-          )
+          )}
         })}
       </div>
 
