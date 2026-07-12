@@ -25,6 +25,19 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: 检查内容源路径
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          changed_files="$(git diff --name-only '${{ github.event.pull_request.base.sha }}'...HEAD)"
+          wrong_source="$(printf '%s\n' "$changed_files" | grep '^胶片相机选购指南/quartz/content/' || true)"
+
+          if [ -n "$wrong_source" ]; then
+            echo '::error::检测到修改了未参与当前构建的 quartz/content 副本。请改为编辑胶片相机选购指南根目录中的 index.md、02_atoms 或 04_knowledge。'
+            printf '%s\n' "$wrong_source"
+            exit 1
+          fi
+
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
