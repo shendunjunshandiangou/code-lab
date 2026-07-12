@@ -2,15 +2,17 @@ import { ComponentChildren } from "preact"
 import { htmlToJsx } from "../../util/jsx"
 import HomePageConstructor from "../HomePage"
 import LearnPageConstructor from "../LearnPage"
+import BuyingGuidePageConstructor from "../BuyingGuidePage"
 import PortalPagesConstructor from "../PortalPages"
 import CameraAtlasPageConstructor from "../CameraAtlasPage"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
 const HomePage = HomePageConstructor()
 const LearnPage = LearnPageConstructor()
+const BuyingGuidePage = BuyingGuidePageConstructor()
 const PortalPages = PortalPagesConstructor()
 const CameraAtlasPage = CameraAtlasPageConstructor()
-const customPortalSlugs = new Set(["buying", "film", "videos", "about"])
+const customPortalSlugs = new Set(["film", "videos", "about"])
 
 const Content: QuartzComponent = (props: QuartzComponentProps) => {
   const { fileData, tree } = props
@@ -26,6 +28,10 @@ const Content: QuartzComponent = (props: QuartzComponentProps) => {
 
   if (slug === "learn") {
     return <LearnPage {...props} />
+  }
+
+  if (slug === "buying") {
+    return <BuyingGuidePage {...props} />
   }
 
   if (slug === "cameras") {
