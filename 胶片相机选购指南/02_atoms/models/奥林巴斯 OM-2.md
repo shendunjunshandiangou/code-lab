@@ -44,7 +44,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_OM-2"
   - "https://commons.wikimedia.org/wiki/File:Olympus_OM-2_with_Zuiko_50mm_f1.8.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "保留 OM-1 的小巧机身，再加入光圈优先与 OTF 实时测光。"
 permalink: "cameras/olympus-om-2"
