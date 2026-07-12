@@ -67,7 +67,7 @@ const cameraCards = [
     price: "约 ¥500～800",
     label: "推荐入门",
     copy: "保留手动对焦和过片，同时用 A 档降低曝光门槛，适合想认真学习但不想从全机械开始的人。",
-    href: "./02_atoms/models/尼康-FE",
+    href: "./cameras/nikon-fe",
     image: "./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg",
   },
   {
@@ -76,7 +76,7 @@ const cameraCards = [
     price: "约 ¥200～600",
     label: "性价比",
     copy: "操作方式接近现代相机，自动对焦和多种曝光模式能显著降低第一次使用胶片单反的压力。",
-    href: "./02_atoms/models/尼康-F-601",
+    href: "./cameras/nikon-f-601",
     image: "./static/images/library/nikon-f601-n6006-cropped-jpg-533c0aca.jpg",
   },
   {
@@ -85,7 +85,7 @@ const cameraCards = [
     price: "约 ¥800～1500",
     label: "学习摄影",
     copy: "结构简单、操作直接。适合愿意主动学习测光、光圈和快门关系的读者。",
-    href: "./02_atoms/models/宾得-K1000",
+    href: "./cameras/pentax-k1000",
     image: "./static/images/library/pentax-k1000-d0157f0d.jpg",
   },
   {
@@ -94,7 +94,7 @@ const cameraCards = [
     price: "价格偏高",
     label: "经典机型",
     copy: "可靠、耐用、机械感强，但市场热度和价格都较高，不必把它当作新手的唯一答案。",
-    href: "./02_atoms/models/尼康-FM2",
+    href: "./cameras/nikon-fm2",
     image: "./static/images/library/nikon-fm2-et-nikkor-50mm-f1-8-a9fafbbf.jpg",
   },
   {
@@ -103,7 +103,7 @@ const cameraCards = [
     price: "约 ¥400～900",
     label: "随身记录",
     copy: "体积小、操作直接，适合旅行和生活记录。购买时应重点检查闪光灯、镜头伸缩和排线状态。",
-    href: "./02_atoms/models/奥林巴斯-mju-1",
+    href: "./cameras/olympus-mju-1",
     image: "",
   },
   {
@@ -112,7 +112,7 @@ const cameraCards = [
     price: "约 ¥800～1500",
     label: "经典系统",
     copy: "传统单反外形、FD 镜头体系和自动曝光结合，适合喜欢手动操作但不想完全依赖手动测光的人。",
-    href: "./02_atoms/models/佳能-AE-1",
+    href: "./cameras/canon-ae-1",
     image: "",
   },
 ]
