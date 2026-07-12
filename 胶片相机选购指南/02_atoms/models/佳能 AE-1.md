@@ -29,7 +29,7 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Canon_AE-1_with_50mm_f1.8_S.C._II.jpg"
+hero_image: "./static/images/library/canon-ae-1-with-50mm-f1-8-s-c-ii-cb3614c9.jpg"
 image_alt: "佳能 AE-1 搭配 FD 50mm f/1.8 镜头"
 image_credit: "Charles Lanteigne"
 image_source: "https://commons.wikimedia.org/wiki/File:Canon_AE-1_with_50mm_f1.8_S.C._II.jpg"
@@ -116,5 +116,5 @@ permalink: "cameras/canon-ae-1"
 ## 图片与资料来源
 
 - 图片：Charles Lanteigne，Wikimedia Commons，CC BY-SA 3.0。
-- 参数来源：Canon Camera Museum 与 Wikimedia Commons 文件页。
-- 可靠性与二手价格仍受机况、维修历史、地区和镜头搭配影响，当前区间不是成交保证。
+- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
+- 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

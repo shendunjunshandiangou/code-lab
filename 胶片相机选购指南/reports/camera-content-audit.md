@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：9
-- 图片署名、来源和许可完整：9
-- 已有资料来源：10
+- 已有主图：10
+- 图片署名、来源和许可完整：10
+- 已有资料来源：11
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -22,9 +22,9 @@
 | 500～1000 元 | 尼康 FE | 推荐 | 有 | 有 | 无 |
 | 500～1000 元 | 富士 Wide 300 | 推荐 | 缺 | 缺 | metering、weight_g、reliability、mount、focus |
 | 500～1000 元 | 宾得 ME | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
+| 1000～2000 元 | 佳能 AE-1 | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 尼康 FE2 | 推荐 | 有 | 有 | 无 |
 | 1000～2000 元 | 雅西卡 T3 Super | 推荐 | 缺 | 缺 | metering、weight_g、reliability、battery |
-| 1000～2000 元 | 佳能 AE-1 | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
 | 1000～2000 元 | 宾得 Espio Mini | 推荐 | 缺 | 缺 | metering、weight_g、reliability、battery |
 | 2000 元以上 | 康泰时 TVS | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
 | 2000 元以上 | 奥林巴斯 mju-2 | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
@@ -39,7 +39,6 @@
 - 富士 Wide 300
 - 宾得 ME
 - 雅西卡 T3 Super
-- 佳能 AE-1
 - 宾得 Espio Mini
 - 康泰时 TVS
 - 奥林巴斯 mju-2
@@ -48,7 +47,7 @@
 
 ## 全量缺口
 
-### 缺少主图（74）
+### 缺少主图（73）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 mju-2
@@ -80,7 +79,6 @@
 - 海鸥 4A
 - 佳能 A-1
 - 佳能 AE-1 Program
-- 佳能 AE-1
 - 佳能 EOS 3
 - 佳能 F-1
 - 佳能 FTb-N
@@ -129,7 +127,7 @@
 
 - 无
 
-### 缺少资料来源（73）
+### 缺少资料来源（72）
 
 - 奥林巴斯 mju-2
 - 奥林巴斯 OM-1
@@ -160,7 +158,6 @@
 - 海鸥 4A
 - 佳能 A-1
 - 佳能 AE-1 Program
-- 佳能 AE-1
 - 佳能 EOS 3
 - 佳能 F-1
 - 佳能 FTb-N
@@ -237,7 +234,7 @@
 - 海鸥 4A：metering、weight_g、reliability
 - 佳能 A-1：metering、weight_g、reliability
 - 佳能 AE-1 Program：metering、weight_g、reliability
-- 佳能 AE-1：metering、weight_g、reliability
+- 佳能 AE-1：reliability
 - 佳能 EOS 3：metering、weight_g、reliability
 - 佳能 F-1：metering、weight_g、reliability
 - 佳能 FTb-N：metering、weight_g、reliability
