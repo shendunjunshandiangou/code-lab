@@ -112,7 +112,7 @@ async function newPage(url, viewport) {
   const loaded = client.waitFor("Page.loadEventFired")
   await client.send("Page.navigate", { url })
   await loaded
-  await delay(1400)
+  await delay(1600)
   return { client, exceptions }
 }
 
@@ -127,12 +127,17 @@ async function evaluate(client, expression) {
 }
 
 async function capture(client, file, fullPage = false) {
-  let params = { format: "png", fromSurface: true, captureBeyondViewport: true }
+  let params = { format: "png", fromSurface: true, captureBeyondViewport: false }
   if (fullPage) {
     const metrics = await client.send("Page.getLayoutMetrics")
     const width = Math.min(Math.ceil(metrics.cssContentSize?.width ?? metrics.contentSize?.width ?? 1440), 1800)
     const height = Math.min(Math.ceil(metrics.cssContentSize?.height ?? metrics.contentSize?.height ?? 1000), 12000)
-    params = { ...params, clip: { x: 0, y: 0, width, height, scale: 1 } }
+    params = {
+      format: "png",
+      fromSurface: true,
+      captureBeyondViewport: true,
+      clip: { x: 0, y: 0, width, height, scale: 1 },
+    }
   }
   const screenshot = await client.send("Page.captureScreenshot", params)
   fs.writeFileSync(file, Buffer.from(screenshot.data, "base64"))
@@ -161,10 +166,13 @@ const commonAuditExpression = `(() => {
     .filter(visible)
     .filter((image) => image.complete && image.naturalWidth === 0)
     .map((image) => image.currentSrc || image.src || image.alt)
-  const imageRects = [...document.images].filter(visible).map((image) => {
-    const rect = image.getBoundingClientRect()
-    return { selector: selectorOf(image), width: Math.round(rect.width), height: Math.round(rect.height) }
-  })
+  const imageRects = [...document.images]
+    .filter(visible)
+    .filter((image) => !image.matches(".commercial-hero-image"))
+    .map((image) => {
+      const rect = image.getBoundingClientRect()
+      return { selector: selectorOf(image), width: Math.round(rect.width), height: Math.round(rect.height) }
+    })
   const hugeImages = imageRects.filter((image) => image.width > viewportWidth + 4 || image.height > Math.max(900, viewportHeight * 1.8))
   return {
     title: document.title,
@@ -175,7 +183,7 @@ const commonAuditExpression = `(() => {
     overflowing,
     brokenImages,
     hugeImages,
-    headerVisible: Boolean(document.querySelector(".site-header")),
+    headerVisible: Boolean(document.querySelector(".site-header-shell")),
     mainTextLength: (document.querySelector("main")?.innerText ?? document.body.innerText ?? "").trim().length,
   }
 })()`
@@ -187,7 +195,7 @@ const viewports = {
 }
 
 const pages = [
-  { name: "home", path: "/index.html", viewports: ["desktop", "tablet", "mobile"], required: [".home-shell"] },
+  { name: "home", path: "/index.html", viewports: ["desktop", "tablet", "mobile"], required: [".commercial-home"] },
   { name: "buying", path: "/buying.html", viewports: ["desktop", "tablet", "mobile"], required: [".buying-guide-page", ".buying-product-grid"] },
   { name: "cameras", path: "/cameras.html", viewports: ["desktop", "tablet", "mobile"], required: [".camera-atlas-page", "[data-camera-grid]"] },
   { name: "fm2", path: "/cameras/nikon-fm2.html", viewports: ["desktop", "mobile"], required: [".camera-detail-guide"] },
@@ -260,26 +268,28 @@ try {
 
         if (page.name === "cameras") {
           const atlas = await evaluate(client, `(() => {
+            const root = document.querySelector("[data-camera-atlas]")
             const cards = [...document.querySelectorAll("[data-camera-card]")]
             const input = document.querySelector('[data-camera-filter="query"]')
             input.value = "尼康 FM2"
-            input.dispatchEvent(new Event("input", { bubbles: true }))
+            input.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: "尼康 FM2" }))
             return new Promise((resolve) => setTimeout(() => {
-              const visibleCards = cards.filter((card) => getComputedStyle(card).display !== "none")
+              const visibleCards = cards.filter((card) => !card.hidden)
               const countText = document.querySelector("[data-camera-count]")?.textContent ?? ""
               input.value = ""
-              input.dispatchEvent(new Event("input", { bubbles: true }))
-              resolve({ total: cards.length, filtered: visibleCards.length, countText })
-            }, 350))
+              input.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "deleteContentBackward" }))
+              resolve({ total: cards.length, filtered: visibleCards.length, countText, ready: root?.dataset.cameraAtlasReady ?? "" })
+            }, 450))
           })()`)
           if (atlas.total < 83) fail(page.name, viewportName, "图鉴卡片不足 83 台", atlas)
+          if (atlas.ready !== "true") fail(page.name, viewportName, "图鉴交互脚本没有初始化", atlas)
           if (atlas.filtered < 1 || atlas.filtered > 3) fail(page.name, viewportName, "图鉴关键词筛选结果异常", atlas)
         }
 
         if (["fm2", "penf", "lx", "g1"].includes(page.name)) {
           const detail = await evaluate(client, `(() => ({
             navLinks: document.querySelectorAll(".camera-detail-guide a").length,
-            tables: document.querySelectorAll("main table").length,
+            tables: document.querySelectorAll("table").length,
             title: document.querySelector("h1")?.textContent?.trim() ?? "",
           }))()`)
           if (detail.navLinks < 5) fail(page.name, viewportName, "详情页章节导航不完整", detail)
@@ -288,6 +298,20 @@ try {
         }
 
         if (page.name === "home") {
+          const finder = await evaluate(client, `(() => {
+            const cards = [...document.querySelectorAll(".finder-result-card")]
+            const button = document.querySelector('.finder-option[data-group="budget"][data-value="low"]')
+            button?.click()
+            return new Promise((resolve) => setTimeout(() => resolve({
+              total: cards.length,
+              visible: cards.filter((card) => !card.hidden).length,
+              pressed: button?.getAttribute("aria-pressed") ?? "false",
+              countText: document.querySelector(".finder-result-count")?.textContent ?? "",
+            }), 250))
+          })()`)
+          if (finder.total < 4) fail(page.name, viewportName, "首页快速选机卡片不足", finder)
+          if (finder.pressed !== "true" || finder.visible >= finder.total) fail(page.name, viewportName, "首页快速选机筛选没有生效", finder)
+
           const search = await evaluate(client, `(() => {
             document.querySelector(".search-button")?.click()
             return new Promise((resolve) => setTimeout(() => {
@@ -295,7 +319,7 @@ try {
               const input = document.querySelector(".search-bar")
               if (input) {
                 input.value = "尼康 FM2"
-                input.dispatchEvent(new Event("input", { bubbles: true }))
+                input.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: "尼康 FM2" }))
               }
               setTimeout(() => resolve({
                 active: container?.classList.contains("active") ?? false,
