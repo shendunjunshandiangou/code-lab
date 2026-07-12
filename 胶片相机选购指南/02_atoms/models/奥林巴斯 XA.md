@@ -28,7 +28,7 @@ recommended_scenes:
   - "旅行随拍"
   - "日常记录"
   - "街拍"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Olympus%20XA%207889.jpg?width=1400"
+hero_image: "./static/images/library/olympus-xa-7889-833cbd1c.jpg"
 image_alt: "黑色奥林巴斯 XA 口袋旁轴相机"
 image_credit: "Ashley Pomeroy"
 image_source: "https://commons.wikimedia.org/wiki/File:Olympus_XA_7889.jpg"
@@ -52,8 +52,8 @@ permalink: "cameras/olympus-xa"
 ## 快速判断
 
 <div class="camera-verdict-grid">
-  <div><strong>适合</strong><span>想要真正口袋尺寸，又愿意使用黄斑手动对焦的人</span></div>
-  <div><strong>不适合</strong><span>希望自动对焦、自动过片，或不愿花时间确认黄斑重合的人</span></div>
+  <div><strong>适合</strong><span>喜欢旁轴取景与黄斑对焦，又不想携带大机身的人。；主要拍旅行、街头和日常记录的人。；接受手动对焦，但希望曝光操作尽量简单的人。</span></div>
+  <div><strong>不适合</strong><span>需要自动对焦和自动过片的人。；经常拍摄快速移动主体、长焦或近距离特写的人。；无法接受老电子口袋机维修资源有限的人。</span></div>
   <div><strong>参考价格</strong><span>约 ¥1000～2500，价格核对于 2026 年 7 月</span></div>
 </div>
 
@@ -99,12 +99,12 @@ permalink: "cameras/olympus-xa"
 
 ## 购买检查
 
-1. 打开和关闭滑盖多次，确认电源、镜头保护和快门锁止状态正常。
-2. 对准远近目标检查黄斑是否能准确重合，确认水平和垂直没有明显偏移。
-3. 在明暗环境中测试光圈优先快门变化、测光指针和背光补偿杆。
-4. 测试触摸式快门释放、电池检查、自拍和蜂鸣提示。
-5. 检查镜头、取景器、黄斑窗、电池仓和后盖是否有霉雾、腐蚀或松动。
-6. 随附闪光灯需要单独测试充电、释放和连接触点；优先选择有实拍样片的机身。
+1. 对准远近不同目标测试黄斑重合，确认垂直和水平没有明显偏移。
+2. 逐档测试快门和 B 门，检查叶片或快门帘是否粘滞、漏光或速度异常。
+3. 检查镜头调焦、光圈叶片、测光和曝光联动是否顺畅。
+4. 检查取景器亮度、黄斑清晰度，以及镜头是否有霉、雾、划痕。
+5. 测试过片、计数器、回卷和后盖锁扣，检查密封材料是否老化。
+6. 优先选择完成黄斑校准和实拍测试的机身。
 
 ## 同价位替代
 
@@ -116,6 +116,5 @@ permalink: "cameras/olympus-xa"
 ## 图片与资料来源
 
 - 图片：Ashley Pomeroy，Wikimedia Commons，CC BY-SA 4.0。
-- 原始 XA 的黄斑对焦、35mm f/2.8、光圈优先、重量与电池规格已于 2026-07-12 复核。
-- XA1、XA2、XA3、XA4 的对焦和镜头结构不同，不能把后续型号参数套用到原始 XA。
-- 二手价格与可靠性取决于电子状态、黄斑校准、闪光附件和维修历史。
+- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
+- 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
