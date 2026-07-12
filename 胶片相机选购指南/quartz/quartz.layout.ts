@@ -15,7 +15,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.SiteFooter(),
 }
 
-// 文章、机型与栏目入口统一使用内容型布局
+// 普通文章沿用紧凑页头；detail_version: 2 的机型会在正文前增加购买摘要和章节导航。
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [Component.PageHero(), Component.CameraDetailGuide()],
   left: [],
