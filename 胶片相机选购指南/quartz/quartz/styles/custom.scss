@@ -676,3 +676,107 @@ article.home-page > h1 {
     padding-bottom: 4rem;
   }
 }
+
+
+/* 标准机型详情页 */
+article.camera-detail {
+  --camera-panel: color-mix(in srgb, var(--paper-soft) 88%, white);
+}
+
+article.camera-detail > blockquote:first-of-type {
+  margin: 0 0 2rem;
+  padding: 1.1rem 1.25rem;
+  border-left: 3px solid var(--leather);
+  border-radius: 0 16px 16px 0;
+  background: color-mix(in srgb, var(--paper-deep) 72%, transparent);
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.camera-hero {
+  margin: 0 0 2.5rem;
+}
+
+.camera-hero img {
+  width: 100%;
+  max-height: 560px;
+  display: block;
+  object-fit: cover;
+  border-radius: 22px;
+  background: var(--paper-deep);
+  box-shadow: var(--shadow-soft);
+}
+
+.camera-hero figcaption {
+  margin-top: 0.7rem;
+  color: var(--muted-ink);
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+.camera-hero figcaption a {
+  color: var(--leather);
+}
+
+.camera-verdict-grid {
+  margin: 1rem 0 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.camera-verdict-grid > div {
+  min-height: 132px;
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--camera-panel);
+}
+
+.camera-verdict-grid strong {
+  color: var(--leather);
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+}
+
+.camera-verdict-grid span {
+  margin-top: auto;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+article.camera-detail table {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--camera-panel);
+}
+
+article.camera-detail th {
+  background: var(--paper-deep);
+}
+
+article.camera-detail h2 {
+  margin-top: 3rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 800px) {
+  .camera-verdict-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .camera-verdict-grid > div {
+    min-height: 112px;
+  }
+
+  .camera-hero img {
+    max-height: 420px;
+    border-radius: 16px;
+  }
+}
