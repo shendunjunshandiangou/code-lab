@@ -38,6 +38,7 @@ jobs:
           node 胶片相机选购指南/scripts/upgrade-camera-detail-v2.mjs
           # normalize-camera-pages.mjs 仅用于首次批量收口，不在 CI 中反复执行，避免覆盖人工精修内容。
           node 胶片相机选购指南/scripts/backfill-simple-camera-weight.mjs
+          node 胶片相机选购指南/scripts/fill-camera-audience-placeholders.mjs
           node 胶片相机选购指南/scripts/localize-images.mjs
           node 胶片相机选购指南/scripts/audit-camera-content.mjs
 
