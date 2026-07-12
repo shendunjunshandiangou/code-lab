@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：24
-- 图片署名、来源和许可完整：24
-- 已有资料来源：34
+- 已有主图：25
+- 图片署名、来源和许可完整：25
+- 已有资料来源：35
 - 含待核验关键字段：75
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：1
@@ -31,7 +31,7 @@
 | 2000 元以上 | 奥林巴斯 mju-2 | 推荐 | 有 | 有 | reliability |
 | 2000 元以上 | 佳能 F-1 | 进阶 | 有 | 有 | reliability |
 | 2000 元以上 | 尼康 FM2 | 有一定门槛 | 有 | 有 | 无 |
-| 2000 元以上 | 尼康 F2 | 有一定门槛 | 有 | 有 | 无 |
+| 2000 元以上 | 奥林巴斯 Pen F 系列 | 有一定门槛 | 有 | 有 | weight_g、reliability |
 
 ## 最高优先级：推荐卡片缺图
 
@@ -53,13 +53,12 @@
 
 ## 全量缺口
 
-### 缺少主图（59）
+### 缺少主图（58）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
 - 奥林巴斯 Pen EE-2
-- 奥林巴斯 Pen F 系列
 - 宾得 6×7
 - 宾得 Espio Mini
 - 宾得 K2
@@ -119,12 +118,11 @@
 
 - 无
 
-### 缺少资料来源（49）
+### 缺少资料来源（48）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
 - 奥林巴斯 Pen EE-2
-- 奥林巴斯 Pen F 系列
 - 宾得 Espio Mini
 - 宾得 K2
 - 宾得 KM / KX
@@ -182,7 +180,7 @@
 - 奥林巴斯 OM-4：metering、weight_g、reliability
 - 奥林巴斯 Pen D3：metering、weight_g、reliability、battery
 - 奥林巴斯 Pen EE-2：metering、weight_g、reliability
-- 奥林巴斯 Pen F 系列：metering、weight_g、reliability
+- 奥林巴斯 Pen F 系列：weight_g、reliability
 - 奥林巴斯 XA：reliability
 - 宾得 6×7：weight_g、reliability
 - 宾得 Espio Mini：metering、weight_g、reliability、battery

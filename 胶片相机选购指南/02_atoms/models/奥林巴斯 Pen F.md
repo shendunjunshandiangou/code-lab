@@ -28,7 +28,7 @@ recommended_scenes:
   - "半格记录"
   - "旅行街拍"
   - "机械摄影体验"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Olympus%20Pen%20F.jpg?width=1400"
+hero_image: "./static/images/library/olympus-pen-f-7211800a.jpg"
 image_alt: "搭配 40mm f/1.4 镜头的奥林巴斯 Pen F 半格机械单反"
 image_credit: "Ashley Pomeroy"
 image_source: "https://commons.wikimedia.org/wiki/File:Olympus_Pen_F.jpg"
@@ -45,7 +45,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_Pen_F"
   - "https://commons.wikimedia.org/wiki/File:Olympus_Pen_F.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "把可换镜头单反缩进半格机身：一卷拍约 72 张，但三个版本不能混着买。"
 permalink: "cameras/olympus-pen-f"
