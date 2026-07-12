@@ -24,6 +24,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import HomePage from "./HomePage"
+import LearnPage from "./LearnPage"
 import SiteHeader from "./SiteHeader"
 import PageHero from "./PageHero"
 import SourceVideos from "./SourceVideos"
@@ -57,6 +58,7 @@ export {
   Flex,
   ConditionalRender,
   HomePage,
+  LearnPage,
   SiteHeader,
   PageHero,
   SourceVideos,
