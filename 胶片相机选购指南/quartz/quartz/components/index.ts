@@ -30,6 +30,7 @@ import PageHero from "./PageHero"
 import SourceVideos from "./SourceVideos"
 import SiteFooter from "./SiteFooter"
 import Readability from "./Readability"
+import ContentLayout from "./ContentLayout"
 
 export {
   ArticleTitle,
@@ -64,4 +65,5 @@ export {
   SourceVideos,
   SiteFooter,
   Readability,
+  ContentLayout,
 }
