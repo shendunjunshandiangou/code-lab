@@ -28,7 +28,7 @@ recommended_scenes:
   - "旅行随拍"
   - "日常记录"
   - "聚会"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Olympus_Stylus_Epic_1118.jpg?width=1600"
+hero_image: "./static/images/library/olympus-stylus-epic-1118-572027fa.jpg"
 image_alt: "奥林巴斯 mju-2（Stylus Epic）便携胶片相机"
 image_credit: "Ashley Pomeroy"
 image_source: "https://commons.wikimedia.org/wiki/File:Olympus_Stylus_Epic_1118.jpg"
@@ -112,6 +112,5 @@ permalink: "cameras/olympus-mju-2"
 ## 图片与资料来源
 
 - 图片：Ashley Pomeroy，Wikimedia Commons，CC BY-SA 4.0。
-- 镜头、快门、对焦、电池和重量参考 Olympus Stylus Epic / mju-2 的公开规格；不同地区版本的重量记录可能有小幅差异。
-- 本页其余购买建议沿用原有整理内容；未完成核验的可靠性判断继续明确标记。
+- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
