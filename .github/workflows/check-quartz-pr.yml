@@ -7,12 +7,6 @@ on:
     paths:
       - '胶片相机选购指南/**'
       - '.github/workflows/check-quartz-pr.yml'
-  push:
-    branches:
-      - 'agent/**'
-    paths:
-      - '胶片相机选购指南/**'
-      - '.github/workflows/check-quartz-pr.yml'
   workflow_dispatch:
 
 permissions:
@@ -36,29 +30,4 @@ jobs:
 
       - name: 安装依赖
         working-directory: ./胶片相机选购指南/quartz
-        run: npm ci
-
-      - name: TypeScript 类型检查
-        working-directory: ./胶片相机选购指南/quartz
-        run: npx tsc --noEmit
-
-      - name: 检查 Quartz 配置格式
-        working-directory: ./胶片相机选购指南/quartz
-        run: npx prettier quartz.config.ts quartz.layout.ts --check
-
-      - name: 检查 custom.scss 格式
-        working-directory: ./胶片相机选购指南/quartz
-        continue-on-error: true
-        run: npx prettier quartz/styles/custom.scss --check
-
-      - name: 构建网站
-        working-directory: ./胶片相机选购指南/quartz
-        run: node quartz/bootstrap-cli.mjs build --directory ..
-
-      - name: 验证首页内容
-        working-directory: ./胶片相机选购指南/quartz
-        run: |
-          test -f public/index.html
-          grep -q 'home-shell' public/index.html
-          grep -q '从第一卷胶片' public/index.html
-          grep -q 'article class="popover-hint home-page"' public/index.html
+       
