@@ -100,7 +100,7 @@ const recommendedMissingImages = []
 for (const group of priceGroups) {
   const selected = cameras
     .filter((camera) => camera.priceReference >= group.min && camera.priceReference < group.max)
-    .sort((a, b) => beginnerRank(a.beginner) - beginnerRank(b.beginner) || Number(Boolean(b.heroImage)) - Number(Boolean(a.heroImage)) || a.priceReference - b.priceReference || a.title.localeCompare(b.title, "zh-CN"))
+    .sort((a, b) => Number(Boolean(b.heroImage)) - Number(Boolean(a.heroImage)) || beginnerRank(a.beginner) - beginnerRank(b.beginner) || a.priceReference - b.priceReference || a.title.localeCompare(b.title, "zh-CN"))
     .slice(0, 4)
 
   for (const camera of selected) {
