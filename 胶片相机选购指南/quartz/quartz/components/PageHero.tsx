@@ -22,9 +22,11 @@ function descriptionFor(category: string, frontmatter: FrontmatterRecord) {
   return "面向普通读者的胶片摄影知识与选购指南。"
 }
 
+const customPortalSlugs = new Set(["index", "learn", "buying", "cameras", "film", "videos", "about"])
+
 const PageHero: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const slug = String(fileData.slug ?? "")
-  if (slug === "index" || slug === "learn") return null
+  if (customPortalSlugs.has(slug)) return null
 
   const frontmatter = (fileData.frontmatter ?? {}) as FrontmatterRecord
   const title = frontmatter.title ?? slug.split("/").pop()?.replaceAll("-", " ") ?? "胶片相机指南"
