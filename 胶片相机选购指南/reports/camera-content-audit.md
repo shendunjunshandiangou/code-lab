@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：18
-- 图片署名、来源和许可完整：18
-- 已有资料来源：19
+- 已有主图：19
+- 图片署名、来源和许可完整：19
+- 已有资料来源：20
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -24,9 +24,9 @@
 | 1000～2000 元 | 佳能 AE-1 Program | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 奥林巴斯 OM-1 | 有一定门槛 | 有 | 有 | reliability |
 | 2000 元以上 | 奥林巴斯 mju-2 | 推荐 | 有 | 有 | reliability |
+| 2000 元以上 | 佳能 F-1 | 进阶 | 有 | 有 | reliability |
 | 2000 元以上 | 尼康 FM2 | 有一定门槛 | 有 | 有 | 无 |
 | 2000 元以上 | 尼康 F2 | 有一定门槛 | 有 | 有 | weight_g |
-| 2000 元以上 | 尼康 F3 | 有一定门槛 | 有 | 有 | weight_g |
 
 ## 最高优先级：推荐卡片缺图
 
@@ -34,7 +34,7 @@
 
 ## 全量缺口
 
-### 缺少主图（65）
+### 缺少主图（64）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 OM-2
@@ -61,7 +61,6 @@
 - 哈苏 500 系列
 - 海鸥 4A
 - 佳能 EOS 3
-- 佳能 F-1
 - 佳能 FTb-N
 - 康泰时 Aria
 - 康泰时 G1
@@ -106,7 +105,7 @@
 
 - 无
 
-### 缺少资料来源（64）
+### 缺少资料来源（63）
 
 - 奥林巴斯 OM-2
 - 奥林巴斯 OM-2n
@@ -132,7 +131,6 @@
 - 哈苏 500 系列
 - 海鸥 4A
 - 佳能 EOS 3
-- 佳能 F-1
 - 佳能 FTb-N
 - 康泰时 Aria
 - 康泰时 G1
@@ -207,7 +205,7 @@
 - 佳能 AE-1 Program：reliability
 - 佳能 AE-1：reliability
 - 佳能 EOS 3：metering、weight_g、reliability
-- 佳能 F-1：metering、weight_g、reliability
+- 佳能 F-1：reliability
 - 佳能 FTb-N：metering、weight_g、reliability
 - 康泰时 Aria：metering、weight_g、reliability
 - 康泰时 G1：metering、weight_g、reliability、mount
