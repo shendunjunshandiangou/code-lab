@@ -7,6 +7,13 @@ on:
     paths:
       - '胶片相机选购指南/**'
       - '.github/workflows/check-quartz-pr.yml'
+  push:
+    branches:
+      - 'agent/**'
+    paths:
+      - '胶片相机选购指南/**'
+      - '.github/workflows/check-quartz-pr.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
