@@ -32,6 +32,7 @@ import SourceVideos from "./SourceVideos"
 import SiteFooter from "./SiteFooter"
 import Readability from "./Readability"
 import ContentLayout from "./ContentLayout"
+import IconTuning from "./IconTuning"
 
 export {
   ArticleTitle,
@@ -68,4 +69,5 @@ export {
   SiteFooter,
   Readability,
   ContentLayout,
+  IconTuning,
 }
