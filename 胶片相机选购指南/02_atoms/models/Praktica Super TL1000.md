@@ -41,7 +41,7 @@ aliases:
   - "Praktica Super TL1000"
   - "百佳 Super TL1000"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "宾得 K1000 的地板价替代——功能一样，便宜很多。"
 permalink: "cameras/praktica-super-tl1000"

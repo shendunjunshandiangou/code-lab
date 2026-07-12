@@ -45,7 +45,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Pentax_Spotmatic"
   - "https://commons.wikimedia.org/wiki/File:Pentax_Spotmatic.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "全机械快门、M42 镜头生态和收缩光圈 TTL 测光的经典入门机。"
 permalink: "cameras/pentax-spotmatic-sp"

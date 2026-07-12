@@ -42,7 +42,7 @@ aliases:
   - "Ricoh XR-2"
   - "理光 XR2"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "宾得 K 卡口的理光进阶版，KR-5 的升级选择。"
 permalink: "cameras/ricoh-xr-2"

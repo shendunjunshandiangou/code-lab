@@ -42,7 +42,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Pentax_ME"
   - "https://commons.wikimedia.org/wiki/File:Pentax_ME_M50mm.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "ME Super 的前代，纯 A 档入门机，颜值能打。"
 permalink: "cameras/pentax-me"

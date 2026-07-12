@@ -42,7 +42,7 @@ aliases:
   - "美能达 TC-1"
   - "The Camera One"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "为极致小巧放弃太多——画质一般、噪音大、修不了。"
 permalink: "cameras/minolta-tc-1"

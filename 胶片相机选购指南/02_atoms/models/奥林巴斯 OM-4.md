@@ -42,7 +42,7 @@ aliases:
   - "Olympus OM-4"
   - "奥林巴斯 OM4"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "OM 系列旗舰，多点测光 + A 档，OM 卡口的终点。"
 permalink: "cameras/olympus-om-4"

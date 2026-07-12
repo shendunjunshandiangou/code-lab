@@ -42,7 +42,7 @@ aliases:
   - "Pentax LX"
   - "宾得 LX"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "宾得 K 卡口手动时代的终点——专业级旗舰。"
 permalink: "cameras/pentax-lx"

@@ -42,7 +42,7 @@ aliases:
   - "Contax Aria"
   - "康泰时 Aria"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "CY 卡口最轻便漂亮的机身，蔡司镜头的日常搭档。"
 permalink: "cameras/contax-aria"

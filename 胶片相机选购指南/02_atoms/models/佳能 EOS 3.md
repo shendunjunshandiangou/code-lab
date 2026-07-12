@@ -43,7 +43,7 @@ tags:
 aliases:
   - "Canon EOS 3"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "胶片机里的现代单反——和数码 EOS 一模一样"
 permalink: "cameras/canon-eos-3"

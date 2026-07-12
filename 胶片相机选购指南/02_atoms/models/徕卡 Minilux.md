@@ -42,7 +42,7 @@ aliases:
   - "徕卡 mini lux"
   - "Minilux"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "钛合金颜值担当——萌大统领说\"实际拍得少\"。"
 permalink: "cameras/leica-minilux"

@@ -41,7 +41,7 @@ aliases:
   - "Leica CM"
   - "徕卡 CM"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "买镜头送机身——镜头媲美徕卡 M 口六枚玉，机身设计一塌糊涂。"
 permalink: "cameras/leica-cm"

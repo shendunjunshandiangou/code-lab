@@ -42,7 +42,7 @@ aliases:
   - "Pen FT"
   - "Pen FV"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "有史以来最小的可换镜头单反系统，半格 + 全机械。"
 permalink: "cameras/olympus-pen-f"

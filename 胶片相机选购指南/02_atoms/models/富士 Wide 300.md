@@ -40,7 +40,7 @@ tags:
 aliases:
   - "Fuji Wide 300"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "宽幅拍立得，旅行时拍一张送人最合适。"
 permalink: "cameras/fujifilm-wide-300"

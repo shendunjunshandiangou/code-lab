@@ -42,7 +42,7 @@ aliases:
   - "Yashica FR 系列"
   - "雅西卡 FR"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "雅西卡 CY 卡口的电子进阶，比 FX-3 多了自动功能。"
 permalink: "cameras/yashica-fr"

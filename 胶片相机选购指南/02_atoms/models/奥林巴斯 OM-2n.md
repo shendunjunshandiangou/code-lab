@@ -45,7 +45,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_OM-2"
   - "https://commons.wikimedia.org/wiki/File:Olympus_OM-2N_SLR_35mm_film_camera.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "OM-2 的后期改进版，闪光提示与操作细节更完善。"
 permalink: "cameras/olympus-om-2n"

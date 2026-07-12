@@ -41,7 +41,7 @@ aliases:
   - "Konica T3N"
   - "柯尼卡 T3N"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "T 系列巅峰，全金属机身，小众但镜头素质被高度认可。"
 permalink: "cameras/konica-t3n"

@@ -46,7 +46,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_Stylus_Epic"
   - "https://commons.wikimedia.org/wiki/File:Olympus_Stylus_Epic_1118.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "销量最高的 PS 机之一，滑盖设计经典，但已被严重炒高。"
 permalink: "cameras/olympus-mju-2"

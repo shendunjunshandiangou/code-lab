@@ -44,7 +44,7 @@ aliases:
 sources:
   - "https://global.canon/en/c-museum/product/film93.html"
   - "https://commons.wikimedia.org/wiki/File:Canon_AE-1_with_50mm_f1.8_S.C._II.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "有 S 档的经典电子单反——Teo Crawford 的更多功能之选。"
 permalink: "cameras/canon-ae-1"

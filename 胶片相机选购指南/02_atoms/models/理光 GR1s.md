@@ -41,7 +41,7 @@ aliases:
   - "Ricoh GR1s"
   - "GR1s"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "口袋胶片机设计的天花板，握持手感无敌，但随时可能坏。"
 permalink: "cameras/ricoh-gr1s"
