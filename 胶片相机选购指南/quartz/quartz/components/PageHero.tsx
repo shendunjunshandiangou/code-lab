@@ -22,6 +22,14 @@ function descriptionFor(category: string, frontmatter: FrontmatterRecord) {
   return "面向普通读者的胶片摄影知识与选购指南。"
 }
 
+function resolveHeroImage(current: FullSlug, value: unknown) {
+  const image = String(value ?? "").trim()
+  if (!image) return ""
+  if (image.startsWith("./static/")) return resolveRelative(current, image.slice(2) as FullSlug)
+  if (image.startsWith("static/")) return resolveRelative(current, image as FullSlug)
+  return image
+}
+
 const customPortalSlugs = new Set(["index", "learn", "buying", "cameras", "film", "videos", "about"])
 
 const PageHero: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
@@ -32,8 +40,8 @@ const PageHero: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const title = frontmatter.title ?? slug.split("/").pop()?.replaceAll("-", " ") ?? "胶片相机指南"
   const category = categoryFor(slug, frontmatter)
   const isCamera = frontmatter.entity === "camera" || frontmatter.cssclasses?.includes?.("camera-detail")
-  const heroImage = frontmatter.hero_image as string | undefined
   const current = fileData.slug ?? ("index" as FullSlug)
+  const heroImage = resolveHeroImage(current, frontmatter.hero_image)
   const homeHref = resolveRelative(current, "index" as FullSlug)
   const categoryHref = resolveRelative(
     current,
