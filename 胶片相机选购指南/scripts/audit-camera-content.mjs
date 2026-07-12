@@ -70,8 +70,8 @@ function focusKind(value) {
 function exposureKind(value) {
   const kinds = []
   if (/全自动|程序|\bP\b/.test(value)) kinds.push("P")
-  if (/光圈优先|\bA\b/.test(value)) kinds.push("A")
-  if (/快门优先|\bS\b/.test(value)) kinds.push("S")
+  if (/光圈优先|\bA\b|\bAv\b/i.test(value)) kinds.push("A")
+  if (/快门优先|\bS\b|\bTv\b/i.test(value)) kinds.push("S")
   if (/手动|\bM\b/.test(value)) kinds.push("M")
   return [...new Set(kinds)].sort().join("")
 }
