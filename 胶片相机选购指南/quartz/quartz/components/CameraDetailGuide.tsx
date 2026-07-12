@@ -307,9 +307,9 @@ const CameraDetailGuide: QuartzComponent = ({ fileData }: QuartzComponentProps) 
       <section class="camera-detail-guide" aria-label={`${title}详情导航`}>
         <div class="camera-detail-guide-top">
           <div>
-            <span>已核验机型详情</span>
+            <span>机型购买指南</span>
             <h2>先看结论，再核对参数和二手状态。</h2>
-            <p>本页按照实际购买决策重新组织：先判断是否适合，再查看参数、优缺点、验机步骤和替代型号。</p>
+            <p>本页按照实际购买决策重新组织。未完成核验的参数会继续显示“待核验”，二手价格只作为筛选范围。</p>
           </div>
           <nav aria-label="本页目录">
             <a href="#快速判断">快速判断</a>
