@@ -3,12 +3,14 @@ import { htmlToJsx } from "../../util/jsx"
 import HomePageConstructor from "../HomePage"
 import LearnPageConstructor from "../LearnPage"
 import PortalPagesConstructor from "../PortalPages"
+import CameraAtlasPageConstructor from "../CameraAtlasPage"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
 const HomePage = HomePageConstructor()
 const LearnPage = LearnPageConstructor()
 const PortalPages = PortalPagesConstructor()
-const customPortalSlugs = new Set(["buying", "cameras", "film", "videos", "about"])
+const CameraAtlasPage = CameraAtlasPageConstructor()
+const customPortalSlugs = new Set(["buying", "film", "videos", "about"])
 
 const Content: QuartzComponent = (props: QuartzComponentProps) => {
   const { fileData, tree } = props
@@ -24,6 +26,10 @@ const Content: QuartzComponent = (props: QuartzComponentProps) => {
 
   if (slug === "learn") {
     return <LearnPage {...props} />
+  }
+
+  if (slug === "cameras") {
+    return <CameraAtlasPage {...props} />
   }
 
   if (customPortalSlugs.has(slug)) {
