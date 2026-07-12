@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：10
-- 图片署名、来源和许可完整：10
-- 已有资料来源：11
+- 已有主图：11
+- 图片署名、来源和许可完整：11
+- 已有资料来源：12
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -15,9 +15,9 @@
 | 价位 | 机型 | 新手定位 | 图片 | 来源 | 待核验字段 |
 |---|---|---|---|---|---|
 | 500 元以内 | 尼康 F-601 | 推荐 | 有 | 有 | 无 |
+| 500 元以内 | 奥林巴斯 OM-10 | 推荐 | 有 | 有 | reliability |
 | 500 元以内 | 一次性相机 | 推荐 | 缺 | 缺 | metering、weight_g、reliability、focus |
 | 500 元以内 | 美能达 807Si | 推荐 | 缺 | 缺 | metering、weight_g、reliability、battery |
-| 500 元以内 | 奥林巴斯 OM-10 | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
 | 500～1000 元 | 尼康 FG | 推荐 | 有 | 有 | 无 |
 | 500～1000 元 | 尼康 FE | 推荐 | 有 | 有 | 无 |
 | 500～1000 元 | 富士 Wide 300 | 推荐 | 缺 | 缺 | metering、weight_g、reliability、mount、focus |
@@ -35,7 +35,6 @@
 
 - 一次性相机
 - 美能达 807Si
-- 奥林巴斯 OM-10
 - 富士 Wide 300
 - 宾得 ME
 - 雅西卡 T3 Super
@@ -47,12 +46,11 @@
 
 ## 全量缺口
 
-### 缺少主图（73）
+### 缺少主图（72）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 mju-2
 - 奥林巴斯 OM-1
-- 奥林巴斯 OM-10
 - 奥林巴斯 OM-2
 - 奥林巴斯 OM-2n
 - 奥林巴斯 OM-4
@@ -127,11 +125,10 @@
 
 - 无
 
-### 缺少资料来源（72）
+### 缺少资料来源（71）
 
 - 奥林巴斯 mju-2
 - 奥林巴斯 OM-1
-- 奥林巴斯 OM-10
 - 奥林巴斯 OM-2
 - 奥林巴斯 OM-2n
 - 奥林巴斯 OM-4
@@ -207,7 +204,7 @@
 - 奥林巴斯 mju-1：weight_g
 - 奥林巴斯 mju-2：metering、weight_g、reliability
 - 奥林巴斯 OM-1：metering、weight_g、reliability
-- 奥林巴斯 OM-10：metering、weight_g、reliability
+- 奥林巴斯 OM-10：reliability
 - 奥林巴斯 OM-2：metering、weight_g、reliability
 - 奥林巴斯 OM-2n：metering、weight_g、reliability
 - 奥林巴斯 OM-4：metering、weight_g、reliability
