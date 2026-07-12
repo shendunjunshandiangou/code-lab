@@ -48,7 +48,7 @@ pass(`核心入口页面检查：${corePages.length} 个`)
 const buying = read("buying.html")
 if (buying) {
   requireText(buying, /class="buying-guide-page"/, "价格选机页没有使用新版组件")
-  requireText(buying, /id="buying-guide-inline"/, "价格选机页缺少随 HTML 输出的关键布局样式")
+  requireText(buying, /id="buying-guide-inline-styles"/, "价格选机页缺少随 HTML 输出的关键布局样式")
   requireText(buying, /grid-template-columns:\s*repeat\(4/, "价格选机页缺少桌面四列网格规则")
   requireText(buying, /@media\s*\(max-width:\s*760px\)/, "价格选机页缺少手机端响应式规则")
   requireText(buying, /class="buying-product-grid"/, "价格选机页没有商品网格")
