@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：21
-- 图片署名、来源和许可完整：21
-- 已有资料来源：22
+- 已有主图：22
+- 图片署名、来源和许可完整：22
+- 已有资料来源：23
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -35,10 +35,9 @@
 
 ## 全量缺口
 
-### 缺少主图（62）
+### 缺少主图（61）
 
 - 奥林巴斯 mju-1
-- 奥林巴斯 OM-2n
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
 - 奥林巴斯 Pen EE-2
@@ -104,9 +103,8 @@
 
 - 无
 
-### 缺少资料来源（61）
+### 缺少资料来源（60）
 
-- 奥林巴斯 OM-2n
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
 - 奥林巴斯 Pen EE-2
@@ -175,7 +173,7 @@
 - 奥林巴斯 OM-1：reliability
 - 奥林巴斯 OM-10：reliability
 - 奥林巴斯 OM-2：reliability
-- 奥林巴斯 OM-2n：metering、weight_g、reliability
+- 奥林巴斯 OM-2n：reliability
 - 奥林巴斯 OM-4：metering、weight_g、reliability
 - 奥林巴斯 Pen D3：metering、weight_g、reliability、battery
 - 奥林巴斯 Pen EE-2：metering、weight_g、reliability
