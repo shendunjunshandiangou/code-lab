@@ -4,7 +4,7 @@ import * as Component from "./quartz/components"
 // 全站共享组件：保留 Quartz 的内容与搜索能力，替换默认知识库外壳
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [Component.SiteHeader(), Component.Search({ enablePreview: true })],
+  header: [Component.Readability(), Component.SiteHeader(), Component.Search({ enablePreview: true })],
   afterBody: [Component.SourceVideos()],
   footer: Component.SiteFooter(),
 }
