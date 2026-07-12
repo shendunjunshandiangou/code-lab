@@ -17,7 +17,7 @@ export const sharedPageComponents: SharedLayout = {
 
 // 文章、机型与栏目入口统一使用内容型布局
 export const defaultContentPageLayout: PageLayout = {
-  beforeBody: [Component.PageHero()],
+  beforeBody: [Component.PageHero(), Component.CameraDetailGuide()],
   left: [],
   right: [],
 }
