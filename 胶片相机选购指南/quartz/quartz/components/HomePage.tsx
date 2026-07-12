@@ -47,8 +47,7 @@ const cameras = [
     price: "¥800～1500",
     reason: "结构简单、操作直接，适合真正想理解光圈、快门和测光关系的人。",
     href: "./02_atoms/models/宾得-K1000",
-    image:
-      "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pentax_K1000.jpg?width=1200",
+    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pentax_K1000.jpg?width=1200",
     budget: "mid",
     autonomy: "manual",
     scene: "street,learn,collection",
@@ -83,35 +82,35 @@ const cameras = [
 const learningPath = [
   {
     number: "01",
-    title: "先了解胶片相机是什么",
-    copy: "弄清它与数码相机的区别，以及这种拍摄方式是否适合你。",
+    title: "胶片相机是什么",
+    copy: "先理解胶片如何记录光线，以及它和数码相机最根本的区别。",
     time: "约 5 分钟",
     href: "./04_knowledge/科普入门/01-胶片相机到底是什么",
   },
   {
     number: "02",
-    title: "了解胶卷、冲洗和长期成本",
-    copy: "知道按下快门之后还要经历什么，以及每拍一卷大概要花多少钱。",
+    title: "胶卷、冲洗和扫描",
+    copy: "了解按下快门之后还会发生什么，以及照片为什么不能马上看到。",
     time: "约 8 分钟",
     href: "./film",
   },
   {
     number: "03",
-    title: "分清相机类型和操作方式",
-    copy: "比较自动便携相机、自动对焦单反和全机械单反分别适合谁。",
+    title: "相机类型与操作方式",
+    copy: "分清自动便携相机、自动对焦单反和全机械单反分别适合谁。",
     time: "约 8 分钟",
     href: "./04_knowledge/知识百科/01-相机类型详解",
   },
   {
     number: "04",
-    title: "根据预算和场景选择机型",
-    copy: "把预算、携带需求、对焦方式和拍摄场景放在一起判断。",
+    title: "预算、场景与机型选择",
+    copy: "结合完整预算、携带需求、对焦方式和拍摄场景缩小范围。",
     time: "开始选购",
     href: "#quick-finder",
   },
   {
     number: "05",
-    title: "买前检查，并顺利拍完第一卷",
+    title: "验机与第一卷拍摄",
     copy: "检查二手相机状态，再完成装卷、拍摄、回卷和送洗。",
     time: "购买与使用",
     href: "./04_knowledge/知识百科/05-从装卷到出片",
@@ -120,8 +119,8 @@ const learningPath = [
 
 const videoTopics = [
   ["01", "零基础", "胶片相机到底是什么？"],
-  ["02", "购买决策", "第一台胶片相机应该怎样选？"],
-  ["03", "二手检查", "拿到相机后，应该检查哪些地方？"],
+  ["02", "选购入门", "第一台胶片相机应该怎样选？"],
+  ["03", "二手验机", "拿到相机后，应该检查哪些地方？"],
 ]
 
 function HomePage({ fileData }: QuartzComponentProps) {
@@ -130,72 +129,61 @@ function HomePage({ fileData }: QuartzComponentProps) {
   return (
     <div class="commercial-home">
       <section class="commercial-hero">
-        <video
-          class="commercial-hero-video"
-          autoplay
-          muted
-          loop
-          playsinline
-          poster="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_et_Nikkor_50mm_f1.8.jpg?width=1800"
-          aria-hidden="true"
-        >
-          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
-        </video>
+        <img
+          class="commercial-hero-image"
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_et_Nikkor_50mm_f1.8.jpg?width=2200"
+          alt="木桌上的尼康 FM2 胶片相机"
+          loading="eager"
+          decoding="async"
+        />
         <div class="commercial-hero-overlay"></div>
         <div class="commercial-hero-content">
-          <p class="commercial-eyebrow">胶片相机入门与选购指南</p>
-          <h1>
-            从了解胶片相机开始，
-            <br />
-            找到适合你的第一台相机。
-          </h1>
+          <p class="commercial-eyebrow">从零开始认识胶片摄影</p>
+          <h1>胶片相机入门与选购指南</h1>
           <p>
-            先弄清胶片、相机类型和使用成本，再根据预算、操作习惯和拍摄场景缩小选择，顺利开始你的第一卷胶片。
+            从胶片、相机类型和使用成本开始，帮助你一步步理解这种拍摄方式，并选到适合自己的第一台胶片相机。
           </p>
           <div class="commercial-hero-actions">
             <a class="commercial-button is-primary" href="./learn">
-              从零开始了解
+              开始学习
             </a>
             <a class="commercial-button is-ghost" href="./buying">
-              直接开始选购
+              查看选购指南
             </a>
           </div>
-        </div>
-        <div class="commercial-hero-stats" aria-label="网站核心内容">
-          <span>
-            <strong>5</strong> 步入门路径
-          </span>
-          <span>
-            <strong>83</strong> 台机型资料
-          </span>
-          <span>
-            <strong>1</strong> 套完整选购流程
-          </span>
+          <div class="hero-topic-links" aria-label="网站主要内容">
+            <a href="./learn">入门知识</a>
+            <a href="./buying">选购流程</a>
+            <a href="./cameras">相机图鉴</a>
+            <a href="./film">胶卷与冲扫</a>
+          </div>
         </div>
         <p class="commercial-hero-credit">
-          首屏视频为基础版本临时视觉素材；静态相机图片来自 Wikimedia Commons，后续将替换为完成授权核验的胶片摄影素材。
+          Nikon FM2 · 摄影：Patrick Dehais · Wikimedia Commons。首屏图片用于基础版本视觉展示。
         </p>
       </section>
 
-      <section class="home-commercial-section reading-path">
-        <div class="commercial-section-heading is-split">
-          <div>
-            <p>新手建议阅读顺序</p>
-            <h2>先把基本问题弄清楚，再开始选相机。</h2>
+      <section class="tutorial-section">
+        <div class="tutorial-section-inner">
+          <div class="tutorial-heading">
+            <p>新手学习路径</p>
+            <h2>第一次接触胶片相机，建议按这个顺序开始。</h2>
+            <span>
+              不需要先记参数。先理解胶片摄影的完整流程，再判断自己需要什么类型的相机，最后进入具体机型选择。
+            </span>
           </div>
-          <span>第一次接触胶片相机，建议从第 1 步开始；已经了解胶片流程和使用成本，可以直接跳到第 4 步。</span>
-        </div>
-        <div class="reading-path-list">
-          {learningPath.map(({ number, title, copy, time, href }) => (
-            <a href={href}>
-              <span>{number}</span>
-              <div>
-                <h3>{title}</h3>
-                <p>{copy}</p>
-              </div>
-              <small>{time} · 进入内容 ↗</small>
-            </a>
-          ))}
+          <div class="tutorial-step-grid">
+            {learningPath.map(({ number, title, copy, time, href }) => (
+              <a href={href}>
+                <span class="tutorial-step-number">{number}</span>
+                <div>
+                  <h3>{title}</h3>
+                  <p>{copy}</p>
+                </div>
+                <strong>{time} →</strong>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -203,9 +191,9 @@ function HomePage({ fileData }: QuartzComponentProps) {
         <div class="commercial-section-heading is-split">
           <div>
             <p>快速选机</p>
-            <h2>根据预算和使用方式，查看适合的入门机型。</h2>
+            <h2>已经了解基础知识，可以从这里缩小机型范围。</h2>
           </div>
-          <span>先筛选一个大致方向，再进入详情页查看优缺点、购买检查和同价位替代方案。</span>
+          <span>根据预算、操作方式、主要场景和画幅筛选，再进入详情页查看优缺点、验机重点和同价位替代。</span>
         </div>
 
         <div class="finder-layout">
@@ -322,21 +310,30 @@ function HomePage({ fileData }: QuartzComponentProps) {
         </div>
       </section>
 
-      <section class="home-commercial-section editorial-feature">
-        <div class="editorial-feature-image">
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1600"
-            alt="尼康 FE 胶片相机"
-            loading="lazy"
-          />
-        </div>
-        <div class="editorial-feature-copy">
-          <p>选购前需要确认</p>
-          <h2>第一台胶片相机，不需要追求最贵或最热门。</h2>
-          <span>
-            是否愿意手动对焦、能否接受胶卷与冲扫的持续成本、相机会不会真正随身携带，通常比品牌和参数更重要。
-          </span>
-          <a href="./buying">查看完整选购方法 →</a>
+      <section class="buying-guide-section">
+        <div class="buying-guide-inner">
+          <div class="buying-guide-heading">
+            <p>选购基础</p>
+            <h2>看具体机型之前，先回答三个问题。</h2>
+          </div>
+          <div class="buying-guide-grid">
+            <article>
+              <span>01</span>
+              <h3>完整预算是多少？</h3>
+              <p>除了机身，还要考虑镜头、胶卷、冲洗、扫描、电池和可能发生的维修费用。</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>想要多自动？</h3>
+              <p>全自动适合直接记录生活，自动曝光适合温和入门，全机械更适合认真学习摄影操作。</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>主要拍什么？</h3>
+              <p>旅行、日常、人像和街拍对体积、对焦、镜头和可靠性的要求并不相同。</p>
+            </article>
+          </div>
+          <a class="buying-guide-link" href="./buying">进入完整选购流程 →</a>
         </div>
       </section>
 
@@ -355,7 +352,7 @@ function HomePage({ fileData }: QuartzComponentProps) {
               <div>
                 <p>{category}</p>
                 <h3>{title}</h3>
-                <small>视频来源映射中 · 查看整理规则</small>
+                <small>视频来源正在逐条整理，页面会保留原作者和原视频链接。</small>
               </div>
             </a>
           ))}
