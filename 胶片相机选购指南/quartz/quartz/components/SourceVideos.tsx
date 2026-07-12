@@ -13,8 +13,10 @@ type SourceVideo = {
   role?: string
 }
 
+const portalSlugs = new Set(["index", "learn", "buying", "cameras", "film", "videos", "about"])
+
 const SourceVideos: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
-  if (fileData.slug === "index") return null
+  if (portalSlugs.has(String(fileData.slug ?? ""))) return null
 
   const frontmatter = (fileData.frontmatter ?? {}) as Record<string, any>
   const videos = Array.isArray(frontmatter.source_videos)
@@ -22,7 +24,7 @@ const SourceVideos: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     : []
   const sourceNote = frontmatter.source_note as string | undefined
 
-  // 栏目入口和尚未补充来源字段的页面不显示大块空状态，避免打断阅读。
+  // 尚未补充来源字段的文章不显示大块空状态，避免打断阅读。
   if (videos.length === 0 && !sourceNote) return null
 
   return (
