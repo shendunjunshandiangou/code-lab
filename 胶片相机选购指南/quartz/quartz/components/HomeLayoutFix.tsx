@@ -36,10 +36,6 @@ const homeLayoutCss = `
     padding: 0 !important;
     margin: 0 !important;
   }
-
-  body[data-slug=index] article.home-page {
-    display: none !important;
-  }
 `
 
 function HomeLayoutFix({ fileData }: QuartzComponentProps) {
