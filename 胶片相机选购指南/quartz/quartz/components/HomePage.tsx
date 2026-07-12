@@ -167,7 +167,7 @@ function HomePage({ fileData }: QuartzComponentProps) {
         </div>
 
         <div class="camera-grid">
-          <a class="camera-card" href="./02_atoms/models/尼康 FE">
+          <a class="camera-card" href="./02_atoms/models/尼康-FE">
             <div class="camera-card-visual visual-aperture">
               <span>01</span>
             </div>
@@ -182,7 +182,7 @@ function HomePage({ fileData }: QuartzComponentProps) {
             </div>
           </a>
 
-          <a class="camera-card" href="./02_atoms/models/奥林巴斯 mju-1">
+          <a class="camera-card" href="./02_atoms/models/奥林巴斯-mju-1">
             <div class="camera-card-visual visual-flash">
               <span>02</span>
             </div>
@@ -197,7 +197,7 @@ function HomePage({ fileData }: QuartzComponentProps) {
             </div>
           </a>
 
-          <a class="camera-card" href="./02_atoms/models/尼康 F-601">
+          <a class="camera-card" href="./02_atoms/models/尼康-F-601">
             <div class="camera-card-visual visual-grid">
               <span>03</span>
             </div>
@@ -212,7 +212,7 @@ function HomePage({ fileData }: QuartzComponentProps) {
             </div>
           </a>
 
-          <a class="camera-card" href="./02_atoms/models/宾得 K1000">
+          <a class="camera-card" href="./02_atoms/models/宾得-K1000">
             <div class="camera-card-visual visual-sprocket">
               <span>04</span>
             </div>
