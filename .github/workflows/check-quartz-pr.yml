@@ -17,6 +17,7 @@ concurrency:
 permissions:
   contents: read
   actions: write
+  pull-requests: write
 
 jobs:
   build:
@@ -64,6 +65,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           PREVIEW_URL: https://shendunjunshandiangou.github.io/code-lab/preview/
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         shell: bash
         run: |
           gh workflow run deploy-quartz.yml \
@@ -85,17 +87,37 @@ jobs:
           fi
 
           echo "等待部署任务 $run_id 完成"
-          gh run watch "$run_id" --exit-status
+          if ! gh run watch "$run_id" --exit-status; then
+            gh run view "$run_id" --log-failed > deploy-failure.log 2>&1 || true
+            {
+              echo '## 在线预览部署失败'
+              echo
+              echo "部署任务：\`$run_id\`"
+              echo
+              echo '```text'
+              tail -n 120 deploy-failure.log
+              echo '```'
+            } > deploy-comment.md
+            gh pr comment "$PR_NUMBER" --body-file deploy-comment.md
+            exit 1
+          fi
 
-          for attempt in $(seq 1 12); do
+          for attempt in $(seq 1 18); do
             if curl -fsSL "$PREVIEW_URL" | grep -q 'home-shell'; then
               echo "在线预览已更新：$PREVIEW_URL"
               exit 0
             fi
 
-            echo "等待 GitHub Pages 生效（$attempt/12）"
+            echo "等待 GitHub Pages 生效（$attempt/18）"
             sleep 5
           done
 
-          echo '::error::部署任务已完成，但在线预览页面尚未出现预期首页内容。'
+          {
+            echo '## 在线预览内容验证失败'
+            echo
+            echo "部署任务 \`$run_id\` 已成功，但在线地址在等待 90 秒后仍未包含 \`home-shell\`："
+            echo
+            echo "$PREVIEW_URL"
+          } > deploy-comment.md
+          gh pr comment "$PR_NUMBER" --body-file deploy-comment.md
           exit 1
