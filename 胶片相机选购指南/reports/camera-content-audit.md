@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：14
-- 图片署名、来源和许可完整：14
-- 已有资料来源：15
+- 已有主图：15
+- 图片署名、来源和许可完整：15
+- 已有资料来源：16
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -33,7 +33,7 @@
 
 ## 全量缺口
 
-### 缺少主图（69）
+### 缺少主图（68）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 mju-2
@@ -92,7 +92,6 @@
 - 美能达 SRT-101
 - 美能达 TC-1
 - 美能达 X-1（XK/XM）
-- 美能达 X-700
 - 美能达 α-7
 - 尼康 28Ti
 - 尼康马特
@@ -109,7 +108,7 @@
 
 - 无
 
-### 缺少资料来源（68）
+### 缺少资料来源（67）
 
 - 奥林巴斯 mju-2
 - 奥林巴斯 OM-2
@@ -167,7 +166,6 @@
 - 美能达 SRT-101
 - 美能达 TC-1
 - 美能达 X-1（XK/XM）
-- 美能达 X-700
 - 美能达 α-7
 - 尼康 28Ti
 - 尼康马特
@@ -244,7 +242,7 @@
 - 美能达 SRT-101：metering、weight_g、reliability
 - 美能达 TC-1：metering、weight_g、reliability
 - 美能达 X-1（XK/XM）：metering、weight_g、reliability
-- 美能达 X-700：metering、weight_g、reliability
+- 美能达 X-700：reliability
 - 美能达 α-7：metering、weight_g、reliability
 - 尼康 28Ti：metering、weight_g、reliability
 - 尼康 F2：weight_g
