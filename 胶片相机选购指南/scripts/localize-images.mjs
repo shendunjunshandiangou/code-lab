@@ -44,7 +44,7 @@ async function walk(directory) {
 }
 
 function localAssetPath(filename) {
-  return `static/images/library/${filename}`
+  return `./static/images/library/${filename}`
 }
 
 function relativeAssetPath(file, filename) {
