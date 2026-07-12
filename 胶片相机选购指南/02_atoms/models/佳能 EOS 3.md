@@ -46,7 +46,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Canon_EOS-3"
   - "https://zh.wikipedia.org/wiki/佳能_EOS-3"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "45 点眼控对焦、1/8000s 和 EF 卡口：操作逻辑接近现代佳能单反的高性能胶片机。"
 permalink: "cameras/canon-eos-3"
