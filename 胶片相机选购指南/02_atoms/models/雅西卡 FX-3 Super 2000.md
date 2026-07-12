@@ -41,15 +41,11 @@ aliases:
   - "Yashica FX-3 Super 2000"
   - "雅西卡 FX-3"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "老王每天用的最便宜相机——几百块上车胶片。"
+permalink: "cameras/yashica-fx-3-super-2000"
 ---
-
-> 老王每天用的最便宜相机——几百块上车胶片。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="雅西卡 FX-3 Super 2000图片待补充">
-  <strong>雅西卡 FX-3 Super 2000</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 

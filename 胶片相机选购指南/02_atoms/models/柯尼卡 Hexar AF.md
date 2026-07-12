@@ -17,7 +17,7 @@ shutter: "电子"
 metering: "待核验"
 battery: "需要"
 release_year: 1993
-weight_g: null
+weight_g: 510
 price_min: 2000
 price_max: 4000
 price_currency: CNY
@@ -44,15 +44,11 @@ aliases:
   - "Hexar AF"
   - "穷人徕卡"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "\"穷人徕卡\"——35mm f/2 大光圈自动旁轴，暗光街头利器，预算友好的高素质随身机。"
+permalink: "cameras/konica-hexar-af"
 ---
-
-> "穷人徕卡"——35mm f/2 大光圈自动旁轴，暗光街头利器，预算友好的高素质随身机。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="柯尼卡 Hexar AF图片待补充">
-  <strong>柯尼卡 Hexar AF</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 

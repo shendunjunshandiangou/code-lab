@@ -16,7 +16,7 @@ shutter: "电子"
 metering: "待核验"
 battery: "需要"
 release_year: 1998
-weight_g: null
+weight_g: 178
 price_min: 3000
 price_max: 5000
 price_currency: CNY
@@ -41,15 +41,11 @@ aliases:
   - "Ricoh GR1s"
   - "GR1s"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "口袋胶片机设计的天花板，握持手感无敌，但随时可能坏。"
+permalink: "cameras/ricoh-gr1s"
 ---
-
-> 口袋胶片机设计的天花板，握持手感无敌，但随时可能坏。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="理光 GR1s图片待补充">
-  <strong>理光 GR1s</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 

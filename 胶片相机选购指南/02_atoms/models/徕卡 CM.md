@@ -16,7 +16,7 @@ shutter: "电子"
 metering: "待核验"
 battery: "需要"
 release_year: 2003
-weight_g: null
+weight_g: 260
 price_min: 8000
 price_max: 12000
 price_currency: CNY
@@ -41,15 +41,11 @@ aliases:
   - "Leica CM"
   - "徕卡 CM"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "买镜头送机身——镜头媲美徕卡 M 口六枚玉，机身设计一塌糊涂。"
+permalink: "cameras/leica-cm"
 ---
-
-> 买镜头送机身——镜头媲美徕卡 M 口六枚玉，机身设计一塌糊涂。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="徕卡 CM图片待补充">
-  <strong>徕卡 CM</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 

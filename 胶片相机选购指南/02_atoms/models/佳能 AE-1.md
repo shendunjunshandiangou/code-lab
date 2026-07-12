@@ -14,10 +14,10 @@ exposure_modes:
   - "M"
 mount: "佳能 FD 卡口"
 shutter: "电子快门"
-metering: "待核验"
+metering: "TTL 中央重点测光"
 battery: "需要"
 release_year: 1976
-weight_g: null
+weight_g: 590
 price_min: 800
 price_max: 1500
 price_currency: CNY
@@ -29,11 +29,11 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: ""
-image_alt: "佳能 AE-1胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/canon-ae-1-with-50mm-f1-8-s-c-ii-cb3614c9.jpg"
+image_alt: "佳能 AE-1 搭配 FD 50mm f/1.8 镜头"
+image_credit: "Charles Lanteigne"
+image_source: "https://commons.wikimedia.org/wiki/File:Canon_AE-1_with_50mm_f1.8_S.C._II.jpg"
+image_license: "CC BY-SA 3.0"
 tags:
   - "电子单反"
   - "手动对焦"
@@ -41,16 +41,14 @@ tags:
 aliases:
   - "Canon AE-1"
   - "佳能 AE1"
-sources: []
-last_updated: 2026-07-12
+sources:
+  - "https://global.canon/en/c-museum/product/film93.html"
+  - "https://commons.wikimedia.org/wiki/File:Canon_AE-1_with_50mm_f1.8_S.C._II.jpg"
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "有 S 档的经典电子单反——Teo Crawford 的更多功能之选。"
+permalink: "cameras/canon-ae-1"
 ---
-
-> 有 S 档的经典电子单反——Teo Crawford 的更多功能之选。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="佳能 AE-1图片待补充">
-  <strong>佳能 AE-1</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 
@@ -67,8 +65,10 @@ last_updated: 2026-07-12
 | 发布时间 | 1976 |
 | 快门类型 | 电子快门 |
 | 曝光模式 | S + M（快门优先 + 手动） |
+| 测光 | TTL 中央重点测光 |
 | 卡口 | 佳能 FD 卡口 |
 | 对焦方式 | 手动（裂像对焦） |
+| 重量 | 约 590g |
 | 电池 | 需要 |
 | 特殊 | 世界首台内置 CPU 的相机 |
 
@@ -115,6 +115,6 @@ last_updated: 2026-07-12
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Charles Lanteigne，Wikimedia Commons，CC BY-SA 3.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

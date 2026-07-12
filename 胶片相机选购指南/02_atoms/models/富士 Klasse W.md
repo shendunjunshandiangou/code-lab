@@ -16,7 +16,7 @@ shutter: "电子"
 metering: "待核验"
 battery: "需要"
 release_year: 2007
-weight_g: null
+weight_g: 270
 price_min: 3000
 price_max: 5000
 price_currency: CNY
@@ -41,15 +41,11 @@ aliases:
   - "Fuji Klasse W"
   - "Fujifilm Klasse"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "最无聊但最省心——没有优点也没有缺点的均衡选手。"
+permalink: "cameras/fujifilm-klasse-w"
 ---
-
-> 最无聊但最省心——没有优点也没有缺点的均衡选手。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="富士 Klasse W图片待补充">
-  <strong>富士 Klasse W</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 
@@ -90,7 +86,7 @@ last_updated: 2026-07-12
 
 ## 不适合谁
 
-- 待补充。
+- 需要完整手动控制，或不能接受老电子便携机维修困难的人。
 
 ## 购买检查
 

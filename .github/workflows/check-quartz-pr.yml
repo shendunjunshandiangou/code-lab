@@ -28,22 +28,27 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 全量收口剩余机型页面
+      - name: 检查详情版本、本地化图片并生成审计
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
           HEAD_REF: ${{ github.head_ref }}
         shell: bash
         run: |
           git checkout -B "$HEAD_REF" "origin/$HEAD_REF"
-          node 胶片相机选购指南/scripts/normalize-camera-pages.mjs
+          node 胶片相机选购指南/scripts/upgrade-camera-detail-v2.mjs
+          # normalize-camera-pages.mjs 仅用于首次批量收口，不在 CI 中反复执行，避免覆盖人工精修内容。
+          node 胶片相机选购指南/scripts/backfill-simple-camera-weight.mjs
+          node 胶片相机选购指南/scripts/fill-camera-audience-placeholders.mjs
+          node 胶片相机选购指南/scripts/localize-images.mjs
+          node 胶片相机选购指南/scripts/audit-camera-content.mjs
 
-          if git diff --quiet -- 胶片相机选购指南/02_atoms/models; then
-            echo '全部机型页面已经符合当前规范。'
+          if [ -z "$(git status --porcelain -- 胶片相机选购指南)" ]; then
+            echo '详情版本、本地图片和内容审计已经符合当前规范。'
           else
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add 胶片相机选购指南/02_atoms/models
-            git commit -m '统一剩余机型详情页'
+            git add -- 胶片相机选购指南
+            git commit -m '更新机型图片、页面与内容审计'
             git push origin "HEAD:$HEAD_REF"
           fi
 
@@ -79,15 +84,59 @@ jobs:
         working-directory: ./胶片相机选购指南/quartz
         run: node quartz/bootstrap-cli.mjs build --directory ..
 
+      - name: 验收构建产物
+        shell: bash
+        run: node 胶片相机选购指南/scripts/validate-built-site.mjs 胶片相机选购指南/quartz/public
+
+      - name: 真实浏览器视觉与交互验收
+        working-directory: ./胶片相机选购指南/quartz
+        shell: bash
+        run: |
+          CHROME_BIN="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROME_BIN" ]; then
+            echo '::error::GitHub Actions 运行器没有可用的 Chrome/Chromium。'
+            exit 1
+          fi
+
+          rm -rf visual-site visual-report
+          mkdir -p visual-site/code-lab
+          cp -a public/. visual-site/code-lab/
+          python3 -m http.server 4173 --directory visual-site > /tmp/quartz-visual-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4173/code-lab/index.html > /dev/null; then
+              break
+            fi
+            if [ "$attempt" = '30' ]; then
+              cat /tmp/quartz-visual-http.log || true
+              echo '::error::本地视觉验收服务器没有启动。'
+              exit 1
+            fi
+            sleep 1
+          done
+
+          CHROME_BIN="$CHROME_BIN" node scripts/visual-site-check.mjs http://127.0.0.1:4173/code-lab
+
+      - name: 上传视觉验收截图
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quartz-visual-${{ github.run_id }}
+          path: 胶片相机选购指南/quartz/visual-report
+          retention-days: 7
+          if-no-files-found: warn
+
       - name: 发布并验证在线预览
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
           GH_TOKEN: ${{ github.token }}
           PREVIEW_URL: https://shendunjunshandiangou.github.io/code-lab/preview/
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          BUILD_SHA: ${{ github.event.pull_request.head.sha }}
         shell: bash
         run: |
+          BUILD_SHA="$(git rev-parse HEAD)"
           gh workflow run deploy-quartz.yml \
             --ref master \
             --field preview_ref='${{ github.head_ref }}'
@@ -107,12 +156,26 @@ jobs:
           fi
 
           echo "等待部署任务 $run_id 完成"
-          if ! gh run watch "$run_id" --exit-status; then
+          deploy_conclusion=''
+          for attempt in $(seq 1 180); do
+            state="$(gh run view "$run_id" --json status,conclusion --jq '.status + "|" + (.conclusion // "")')"
+            status="${state%%|*}"
+            conclusion="${state#*|}"
+            echo "部署状态（$attempt/180）：$status ${conclusion}"
+
+            if [ "$status" = 'completed' ]; then
+              deploy_conclusion="$conclusion"
+              break
+            fi
+            sleep 5
+          done
+
+          if [ "$deploy_conclusion" != 'success' ]; then
             gh run view "$run_id" --log-failed > deploy-failure.log 2>&1 || true
             {
               echo '## 在线预览部署失败'
               echo
-              echo "部署任务：\`$run_id\`"
+              echo "部署任务：\`$run_id\`，结论：\`${deploy_conclusion:-timeout}\`"
               echo
               echo '```text'
               tail -n 120 deploy-failure.log
@@ -122,24 +185,42 @@ jobs:
             exit 1
           fi
 
-          for attempt in $(seq 1 18); do
-            request_url="${PREVIEW_URL}?build=${BUILD_SHA}&attempt=${attempt}"
+          rm -rf preview-artifact preview-site
+          mkdir -p preview-artifact preview-site
+          gh run download "$run_id" --name github-pages --dir preview-artifact
+          artifact_tar="$(find preview-artifact -name artifact.tar -print -quit)"
+          if [ -z "$artifact_tar" ]; then
+            echo '::error::部署产物中没有找到 artifact.tar。'
+            exit 1
+          fi
+          tar -xf "$artifact_tar" -C preview-site
+
+          new_route_file='preview-site/preview/cameras/nikon-fm2.html'
+          old_route_file='preview-site/preview/02_atoms/models/尼康-FM2.html'
+          test -f "$new_route_file"
+          grep -q '尼康 FM2' "$new_route_file"
+          test -f "$old_route_file"
+          grep -q 'cameras/nikon-fm2' "$old_route_file"
+          echo '部署产物已确认：新机型页面和旧地址重定向均存在。'
+
+          for attempt in $(seq 1 24); do
+            home_url="${PREVIEW_URL}?build=${BUILD_SHA}&attempt=${attempt}"
             if curl -fsSL \
               -H 'Cache-Control: no-cache, no-store, must-revalidate' \
               -H 'Pragma: no-cache' \
-              "$request_url" | grep -q 'home-shell'; then
-              echo "在线预览已更新：$request_url"
+              "$home_url" | grep -q 'home-shell'; then
+              echo "在线预览已更新：$home_url"
               exit 0
             fi
 
-            echo "等待 GitHub Pages 生效（$attempt/18）"
+            echo "等待 GitHub Pages 首页生效（$attempt/24）"
             sleep 5
           done
 
           {
             echo '## 在线预览内容验证失败'
             echo
-            echo "部署任务 \`$run_id\` 已成功，但带缓存刷新参数的在线地址在等待 90 秒后仍未包含 \`home-shell\`："
+            echo "部署任务 \`$run_id\` 与新旧机型路由产物均已成功，但在线首页在等待后仍未更新："
             echo
             echo "${PREVIEW_URL}?build=${BUILD_SHA}"
           } > deploy-comment.md

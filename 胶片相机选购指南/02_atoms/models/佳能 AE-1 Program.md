@@ -15,10 +15,10 @@ exposure_modes:
   - "M"
 mount: "佳能 FD 卡口"
 shutter: "电子快门"
-metering: "待核验"
-battery: "需要"
+metering: "TTL 测光（EV1～18，ISO 100）"
+battery: "1 节 4LR44"
 release_year: 1981
-weight_g: null
+weight_g: 575
 price_min: 1000
 price_max: 1800
 price_currency: CNY
@@ -30,11 +30,11 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: ""
-image_alt: "佳能 AE-1 Program胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/canon-ae-1-program-8158d387.jpg"
+image_alt: "佳能 AE-1 Program 胶片单反搭配 FD 标准镜头"
+image_credit: "KurtClark"
+image_source: "https://commons.wikimedia.org/wiki/File:Canon_AE-1_Program.jpg"
+image_license: "CC BY 2.0"
 tags:
   - "电子单反"
   - "手动对焦"
@@ -42,16 +42,15 @@ tags:
 aliases:
   - "Canon AE-1 Program"
   - "佳能 AE1P"
-sources: []
-last_updated: 2026-07-12
+sources:
+  - "https://en.wikipedia.org/wiki/Canon_AE-1_Program"
+  - "https://global.canon/en/c-museum/product/film103.html"
+  - "https://commons.wikimedia.org/wiki/File:Canon_AE-1_Program.jpg"
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "AE-1 的升级版，多了 P 档更方便。"
+permalink: "cameras/canon-ae-1-program"
 ---
-
-> AE-1 的升级版，多了 P 档更方便。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="佳能 AE-1 Program图片待补充">
-  <strong>佳能 AE-1 Program</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 
@@ -66,11 +65,13 @@ last_updated: 2026-07-12
 | 参数 | 信息 |
 |------|-----|
 | 发布时间 | 1981 |
-| 快门类型 | 电子快门 |
+| 快门类型 | 电子快门，约 2s～1/1000s |
 | 曝光模式 | P + S + M |
 | 卡口 | 佳能 FD 卡口 |
 | 对焦方式 | 手动 |
-| 电池 | 需要 |
+| 测光 | TTL 测光，EV1～18（ISO 100） |
+| 电池 | 1 节 4LR44 |
+| 重量 | 约 575g（机身） |
 
 ## 为什么值得买
 
@@ -107,6 +108,6 @@ last_updated: 2026-07-12
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：KurtClark，Wikimedia Commons，CC BY 2.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

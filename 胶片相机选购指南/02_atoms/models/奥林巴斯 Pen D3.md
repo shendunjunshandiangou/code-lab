@@ -40,15 +40,11 @@ tags:
 aliases:
   - "Pen D3"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "操作极简的半格机，除了 ISO 什么都不用调。"
+permalink: "cameras/olympus-pen-d3"
 ---
-
-> 操作极简的半格机，除了 ISO 什么都不用调。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 Pen D3图片待补充">
-  <strong>奥林巴斯 Pen D3</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 
@@ -89,7 +85,7 @@ last_updated: 2026-07-12
 
 ## 不适合谁
 
-- 待补充。
+- 追求大幅放大、极致细节或高感画质的人。
 
 ## 购买检查
 

@@ -1,298 +1,391 @@
+// @ts-ignore
+import homeScript from "./scripts/commercialHome.inline"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
+
+const cameras = [
+  {
+    name: "尼康 FE",
+    meta: "电子单反 · 光圈优先",
+    price: "¥500～800",
+    reason: "保留手动操作，又用 A 档降低曝光门槛，是温和而完整的入门方式。",
+    href: "./cameras/nikon-fe",
+    image:
+      "./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg",
+    budget: "low,mid",
+    autonomy: "auto-exposure,manual",
+    scene: "daily,street,learn",
+    format: "135",
+  },
+  {
+    name: "奥林巴斯 mju-1",
+    meta: "自动便携相机 · 随身记录",
+    price: "¥400～900",
+    reason: "体积小、操作直接，适合旅行和生活记录，不必承担热门机型的高溢价。",
+    href: "./cameras/olympus-mju-1",
+    image: "",
+    budget: "low,mid",
+    autonomy: "auto,autofocus",
+    scene: "daily,travel",
+    format: "135",
+  },
+  {
+    name: "尼康 F-601",
+    meta: "自动对焦单反 · 高性价比",
+    price: "¥200～600",
+    reason: "操作接近现代相机，自动对焦和多种曝光模式能明显降低第一次使用的压力。",
+    href: "./cameras/nikon-f-601",
+    image:
+      "./static/images/library/nikon-f601-n6006-cropped-jpg-533c0aca.jpg",
+    budget: "low",
+    autonomy: "autofocus,auto-exposure",
+    scene: "daily,travel,portrait",
+    format: "135",
+  },
+  {
+    name: "宾得 K1000",
+    meta: "全机械单反 · 摄影学习",
+    price: "¥800～1500",
+    reason: "结构简单、操作直接，适合真正想理解光圈、快门和测光关系的人。",
+    href: "./cameras/pentax-k1000",
+    image: "./static/images/library/pentax-k1000-d0157f0d.jpg",
+    budget: "mid",
+    autonomy: "manual",
+    scene: "street,learn,collection",
+    format: "135",
+  },
+  {
+    name: "佳能 AE-1",
+    meta: "电子单反 · 快门优先",
+    price: "¥800～1500",
+    reason: "经典外形、FD 镜头体系和自动曝光，适合喜欢传统单反但不想完全手动的人。",
+    href: "./cameras/canon-ae-1",
+    image: "",
+    budget: "mid",
+    autonomy: "auto-exposure,manual",
+    scene: "daily,portrait,learn",
+    format: "135",
+  },
+  {
+    name: "奥林巴斯 OM-1",
+    meta: "全机械单反 · 小型系统",
+    price: "¥1000～1800",
+    reason: "机身紧凑、取景体验优秀，适合在意携带感又希望认真学习手动摄影的人。",
+    href: "./cameras/olympus-om-1",
+    image: "",
+    budget: "mid,high",
+    autonomy: "manual",
+    scene: "travel,street,learn",
+    format: "135",
+  },
+]
+
+const learningPath = [
+  {
+    number: "01",
+    title: "胶片相机是什么",
+    copy: "先理解胶片如何记录光线，以及它和数码相机最根本的区别。",
+    time: "约 5 分钟",
+    href: "./04_knowledge/科普入门/01-胶片相机到底是什么",
+  },
+  {
+    number: "02",
+    title: "胶卷、冲洗和扫描",
+    copy: "了解按下快门之后还会发生什么，以及照片为什么不能马上看到。",
+    time: "约 8 分钟",
+    href: "./film",
+  },
+  {
+    number: "03",
+    title: "相机类型与操作方式",
+    copy: "分清自动便携相机、自动对焦单反和全机械单反分别适合谁。",
+    time: "约 8 分钟",
+    href: "./04_knowledge/知识百科/01-相机类型详解",
+  },
+  {
+    number: "04",
+    title: "预算、场景与机型选择",
+    copy: "结合完整预算、携带需求、对焦方式和拍摄场景缩小范围。",
+    time: "开始选购",
+    href: "#quick-finder",
+  },
+  {
+    number: "05",
+    title: "验机与第一卷拍摄",
+    copy: "检查二手相机状态，再完成装卷、拍摄、回卷和送洗。",
+    time: "购买与使用",
+    href: "./04_knowledge/知识百科/05-从装卷到出片",
+  },
+]
+
+const videoTopics = [
+  ["01", "零基础", "胶片相机到底是什么？"],
+  ["02", "选购入门", "第一台胶片相机应该怎样选？"],
+  ["03", "二手验机", "拿到相机后，应该检查哪些地方？"],
+]
 
 function HomePage({ fileData }: QuartzComponentProps) {
   if (fileData.slug !== "index") return null
 
   return (
-    <div class="home-shell">
-      <nav class="home-nav" aria-label="首页导航">
-        <a class="home-brand" href="./">
-          <span class="brand-mark" aria-hidden="true">
-            ◉
-          </span>
-          <span>胶片相机指南</span>
-        </a>
-        <div class="home-nav-links">
-          <a href="./04_knowledge/科普入门/01-胶片相机到底是什么">新手入门</a>
-          <a href="./04_knowledge/选购决策/README">帮我选相机</a>
-          <a href="./04_knowledge/知识百科/03-推荐机型大全">相机图鉴</a>
-          <a href="./04_knowledge/知识百科/04-胶卷完全指南">胶卷与成像</a>
-        </div>
-      </nav>
-
-      <section class="home-hero">
-        <div class="hero-copy">
-          <p class="eyebrow">ANALOG CAMERA FIELD GUIDE</p>
-          <h1>
-            从第一卷胶片，
-            <br />
-            到第一台真正适合你的相机。
-          </h1>
-          <p class="hero-lead">
-            不堆参数，也不盲目追逐“神机”。从预算、操作习惯和拍摄场景出发，帮你看懂胶片、选对相机，并顺利拍完第一卷。
+    <div class="commercial-home">
+      <section class="commercial-hero">
+        <img
+          class="commercial-hero-image"
+          src="./static/images/library/nikon-fm2-et-nikkor-50mm-f1-8-a9fafbbf.jpg"
+          alt="木桌上的尼康 FM2 胶片相机"
+          loading="eager"
+          decoding="async"
+        />
+        <div class="commercial-hero-overlay"></div>
+        <div class="commercial-hero-content">
+          <p class="commercial-eyebrow">从零开始认识胶片摄影</p>
+          <h1>胶片相机入门与选购指南</h1>
+          <p>
+            从胶片、相机类型和使用成本开始，帮助你一步步理解这种拍摄方式，并选到适合自己的第一台胶片相机。
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="./04_knowledge/选购决策/README">
-              开始选择相机
+          <div class="commercial-hero-actions">
+            <a class="commercial-button is-primary" href="./learn">
+              开始学习
             </a>
-            <a class="button button-secondary" href="./04_knowledge/科普入门/01-胶片相机到底是什么">
-              5 分钟了解胶片
+            <a class="commercial-button is-ghost" href="./buying">
+              查看选购指南
             </a>
           </div>
-          <div class="hero-notes" aria-label="内容规模">
-            <span>
-              <strong>44</strong> 个视频来源
-            </span>
-            <span>
-              <strong>82</strong> 台机型卡片
-            </span>
-            <span>
-              <strong>150+</strong> 条知识笔记
-            </span>
+          <div class="hero-topic-links" aria-label="网站主要内容">
+            <a href="./learn">入门知识</a>
+            <a href="./buying">选购流程</a>
+            <a href="./cameras">相机图鉴</a>
+            <a href="./film">胶卷与冲扫</a>
           </div>
         </div>
-
-        <figure class="hero-visual">
-          <div class="hero-image-frame">
-            <img
-              src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_et_Nikkor_50mm_f1.8.jpg?width=1600"
-              alt="木桌上的尼康 FM2 胶片相机"
-              loading="eager"
-              decoding="async"
-            />
-            <span class="film-index">FRAME 01 · 35MM</span>
-          </div>
-          <figcaption>
-            Nikon FM2 · 摄影：Patrick Dehais ·{" "}
-            <a href="https://commons.wikimedia.org/wiki/File:Nikon_FM2_et_Nikkor_50mm_f1.8.jpg">
-              Wikimedia Commons
-            </a>
-          </figcaption>
-        </figure>
+        <p class="commercial-hero-credit">
+          Nikon FM2 · 摄影：Patrick Dehais · Wikimedia Commons。首屏图片用于基础版本视觉展示。
+        </p>
       </section>
 
-      <section class="home-section path-section">
-        <div class="section-heading">
-          <p class="section-kicker">CHOOSE YOUR PATH</p>
-          <h2>你现在最想解决什么问题？</h2>
-          <p>不用从头读完整个知识库。按照你当前的状态，选择一条最短的阅读路径。</p>
-        </div>
-
-        <div class="path-grid">
-          <a class="path-card path-green" href="./04_knowledge/科普入门/01-胶片相机到底是什么">
-            <span class="path-number">01</span>
-            <span class="path-tag">完全零基础 · 约 5 分钟</span>
-            <h3>先弄懂胶片是什么</h3>
-            <p>相机为什么不用充电也能拍？胶卷、冲洗和扫描分别是什么？先完成最基础的扫盲。</p>
-            <span class="card-link">进入新手入门 →</span>
-          </a>
-
-          <a class="path-card path-blue" href="./04_knowledge/知识百科/01-相机类型详解">
-            <span class="path-number">02</span>
-            <span class="path-tag">知道一点 · 系统学习</span>
-            <h3>建立完整知识框架</h3>
-            <p>看懂相机类型、品牌系统、胶卷、曝光、装卷、冲扫，以及常见的选购陷阱。</p>
-            <span class="card-link">打开知识百科 →</span>
-          </a>
-
-          <a class="path-card path-orange" href="./04_knowledge/选购决策/README">
-            <span class="path-number">03</span>
-            <span class="path-tag">准备购买 · 分步决策</span>
-            <h3>直接帮我选相机</h3>
-            <p>从拍摄场景、预算和操作习惯开始，逐步缩小范围，不再被几十台热门机型绕晕。</p>
-            <span class="card-link">开始选购流程 →</span>
-          </a>
-
-          <a class="path-card path-red" href="./04_knowledge/知识百科/03-推荐机型大全">
-            <span class="path-number">04</span>
-            <span class="path-tag">已有目标 · 快速查询</span>
-            <h3>查找具体机型</h3>
-            <p>浏览 82 台胶片相机，快速查看类型、价格、优缺点、适合人群和同价位替代方案。</p>
-            <span class="card-link">浏览机型大全 →</span>
-          </a>
+      <section class="tutorial-section">
+        <div class="tutorial-section-inner">
+          <div class="tutorial-heading">
+            <p>新手学习路径</p>
+            <h2>第一次接触胶片相机，建议按这个顺序开始。</h2>
+            <span>
+              不需要先记参数。先理解胶片摄影的完整流程，再判断自己需要什么类型的相机，最后进入具体机型选择。
+            </span>
+          </div>
+          <div class="tutorial-step-grid">
+            {learningPath.map(({ number, title, copy, time, href }) => (
+              <a href={href}>
+                <span class="tutorial-step-number">{number}</span>
+                <div>
+                  <h3>{title}</h3>
+                  <p>{copy}</p>
+                </div>
+                <strong>{time} →</strong>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section class="home-section decision-section">
-        <div class="section-heading split-heading">
+      <section class="home-commercial-section quick-finder" id="quick-finder">
+        <div class="commercial-section-heading is-split">
           <div>
-            <p class="section-kicker">BUYING DECISIONS</p>
-            <h2>先回答三个问题，再看机型</h2>
+            <p>快速选机</p>
+            <h2>已经了解基础知识，可以从这里缩小机型范围。</h2>
           </div>
-          <p>“哪台最好”通常没有答案。预算、自动化程度和使用场景，才真正决定哪台相机适合你。</p>
+          <span>根据预算、操作方式、主要场景和画幅筛选，再进入详情页查看优缺点、验机重点和同价位替代。</span>
         </div>
 
-        <div class="decision-grid">
-          <article class="decision-card">
-            <span class="decision-icon" aria-hidden="true">
-              ¥
-            </span>
-            <p class="decision-label">问题一</p>
-            <h3>你的完整预算是多少？</h3>
-            <p>别只计算机身。镜头、胶卷、冲扫、电池和维修成本都应该放进第一年预算。</p>
-            <a href="./04_knowledge/选购决策/Step2-确定你的预算">按预算选择 →</a>
-          </article>
+        <div class="finder-layout">
+          <div class="finder-controls">
+            <fieldset>
+              <legend>01 / 完整预算</legend>
+              <div class="finder-options">
+                <button class="finder-option" data-group="budget" data-value="all" aria-pressed="true">
+                  不限
+                </button>
+                <button class="finder-option" data-group="budget" data-value="low" aria-pressed="false">
+                  500 元以内
+                </button>
+                <button class="finder-option" data-group="budget" data-value="mid" aria-pressed="false">
+                  500～1500 元
+                </button>
+                <button class="finder-option" data-group="budget" data-value="high" aria-pressed="false">
+                  1500 元以上
+                </button>
+              </div>
+            </fieldset>
 
-          <article class="decision-card">
-            <span class="decision-icon" aria-hidden="true">
-              A / M
-            </span>
-            <p class="decision-label">问题二</p>
-            <h3>你想多自动，还是多手动？</h3>
-            <p>全自动适合记录生活，A 档适合温和入门，全机械则适合认真学习曝光与操作。</p>
-            <a href="./04_knowledge/知识百科/01-相机类型详解">比较相机类型 →</a>
-          </article>
+            <fieldset>
+              <legend>02 / 操作方式</legend>
+              <div class="finder-options">
+                <button class="finder-option" data-group="autonomy" data-value="all" aria-pressed="true">
+                  不限
+                </button>
+                <button class="finder-option" data-group="autonomy" data-value="auto" aria-pressed="false">
+                  全自动
+                </button>
+                <button class="finder-option" data-group="autonomy" data-value="autofocus" aria-pressed="false">
+                  自动对焦
+                </button>
+                <button class="finder-option" data-group="autonomy" data-value="auto-exposure" aria-pressed="false">
+                  自动曝光
+                </button>
+                <button class="finder-option" data-group="autonomy" data-value="manual" aria-pressed="false">
+                  全机械 / 手动
+                </button>
+              </div>
+            </fieldset>
 
-          <article class="decision-card">
-            <span class="decision-icon" aria-hidden="true">
-              ◎
-            </span>
-            <p class="decision-label">问题三</p>
-            <h3>你最常在什么场景拍？</h3>
-            <p>旅行、街拍、人像和日常记录，对体积、对焦速度、镜头和可靠性的要求完全不同。</p>
-            <a href="./04_knowledge/选购决策/Step1-确定你的场景">按场景判断 →</a>
-          </article>
+            <fieldset>
+              <legend>03 / 主要场景</legend>
+              <div class="finder-options">
+                <button class="finder-option" data-group="scene" data-value="all" aria-pressed="true">
+                  不限
+                </button>
+                <button class="finder-option" data-group="scene" data-value="daily" aria-pressed="false">
+                  日常
+                </button>
+                <button class="finder-option" data-group="scene" data-value="travel" aria-pressed="false">
+                  旅行
+                </button>
+                <button class="finder-option" data-group="scene" data-value="street" aria-pressed="false">
+                  街拍
+                </button>
+                <button class="finder-option" data-group="scene" data-value="portrait" aria-pressed="false">
+                  人像
+                </button>
+                <button class="finder-option" data-group="scene" data-value="learn" aria-pressed="false">
+                  学习摄影
+                </button>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>04 / 画幅</legend>
+              <div class="finder-options">
+                <button class="finder-option" data-group="format" data-value="all" aria-pressed="true">
+                  不限
+                </button>
+                <button class="finder-option" data-group="format" data-value="135" aria-pressed="false">
+                  135 胶片
+                </button>
+                <button class="finder-option" data-group="format" data-value="120" aria-pressed="false">
+                  中画幅
+                </button>
+              </div>
+            </fieldset>
+
+            <div class="finder-summary">
+              <span class="finder-result-count">6 台推荐</span>
+              <button class="finder-reset" type="button">
+                清除筛选
+              </button>
+            </div>
+          </div>
+
+          <div class="finder-results">
+            {cameras.map((camera) => (
+              <a
+                class="finder-result-card"
+                href={camera.href}
+                data-budget={camera.budget}
+                data-autonomy={camera.autonomy}
+                data-scene={camera.scene}
+                data-format={camera.format}
+              >
+                <div class={`finder-card-image ${camera.image ? "has-image" : "is-placeholder"}`}>
+                  {camera.image ? <img src={camera.image} alt={camera.name} loading="lazy" /> : <span>{camera.name}</span>}
+                </div>
+                <div class="finder-card-copy">
+                  <p>{camera.meta}</p>
+                  <h3>{camera.name}</h3>
+                  <strong>{camera.price}</strong>
+                  <span>{camera.reason}</span>
+                  <small>查看详情 →</small>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section class="home-section featured-section">
-        <div class="section-heading split-heading">
-          <div>
-            <p class="section-kicker">STARTING POINTS</p>
-            <h2>四种典型入门方向</h2>
+      <section class="buying-guide-section">
+        <div class="buying-guide-inner">
+          <div class="buying-guide-heading">
+            <p>选购基础</p>
+            <h2>看具体机型之前，先回答三个问题。</h2>
           </div>
-          <a class="text-link" href="./04_knowledge/知识百科/03-推荐机型大全">
-            查看全部 82 台机型 →
-          </a>
-        </div>
-
-        <div class="camera-grid">
-          <a class="camera-card" href="./02_atoms/models/尼康-FE">
-            <div class="camera-card-visual visual-aperture">
+          <div class="buying-guide-grid">
+            <article>
               <span>01</span>
-            </div>
-            <div class="camera-card-body">
-              <p class="camera-meta">电子快门单反 · 自动曝光</p>
-              <h3>尼康 FE</h3>
-              <p>保留手动对焦和过片体验，同时用 A 档降低曝光学习门槛。</p>
-              <div class="camera-tags">
-                <span>温和入门</span>
-                <span>F 卡口</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="camera-card" href="./02_atoms/models/奥林巴斯-mju-1">
-            <div class="camera-card-visual visual-flash">
+              <h3>完整预算是多少？</h3>
+              <p>除了机身，还要考虑镜头、胶卷、冲洗、扫描、电池和可能发生的维修费用。</p>
+            </article>
+            <article>
               <span>02</span>
-            </div>
-            <div class="camera-card-body">
-              <p class="camera-meta">自动傻瓜机 · 轻便随身</p>
-              <h3>奥林巴斯 mju-1</h3>
-              <p>适合旅行和日常记录，比热门的 mju-2 更理性、更容易控制预算。</p>
-              <div class="camera-tags">
-                <span>全自动</span>
-                <span>便携</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="camera-card" href="./02_atoms/models/尼康-F-601">
-            <div class="camera-card-visual visual-grid">
+              <h3>想要多自动？</h3>
+              <p>全自动适合直接记录生活，自动曝光适合温和入门，全机械更适合认真学习摄影操作。</p>
+            </article>
+            <article>
               <span>03</span>
-            </div>
-            <div class="camera-card-body">
-              <p class="camera-meta">自动对焦单反 · 高性价比</p>
-              <h3>尼康 F-601</h3>
-              <p>操作接近现代数码相机，价格却非常低，是被低估的实用型选择。</p>
-              <div class="camera-tags">
-                <span>自动对焦</span>
-                <span>预算友好</span>
-              </div>
-            </div>
-          </a>
-
-          <a class="camera-card" href="./02_atoms/models/宾得-K1000">
-            <div class="camera-card-visual visual-sprocket">
-              <span>04</span>
-            </div>
-            <div class="camera-card-body">
-              <p class="camera-meta">全机械单反 · 手动学习</p>
-              <h3>宾得 K1000</h3>
-              <p>结构简单、操作直接，适合真正想学会测光、光圈和快门关系的人。</p>
-              <div class="camera-tags">
-                <span>全机械</span>
-                <span>摄影学习</span>
-              </div>
-            </div>
-          </a>
+              <h3>主要拍什么？</h3>
+              <p>旅行、日常、人像和街拍对体积、对焦、镜头和可靠性的要求并不相同。</p>
+            </article>
+          </div>
+          <a class="buying-guide-link" href="./buying">进入完整选购流程 →</a>
         </div>
       </section>
 
-      <section class="home-section knowledge-section">
-        <div class="section-heading">
-          <p class="section-kicker">BEFORE THE FIRST ROLL</p>
-          <h2>拍第一卷之前，先看这四件事</h2>
+      <section class="home-commercial-section video-preview-section">
+        <div class="commercial-section-heading is-split">
+          <div>
+            <p>视频与文章</p>
+            <h2>习惯看视频，也可以从原视频开始。</h2>
+          </div>
+          <a href="./videos">查看视频精选 →</a>
         </div>
-
-        <div class="knowledge-grid">
-          <a href="./04_knowledge/科普入门/03-胶卷是怎么回事">
-            <span>FILM</span>
-            <h3>胶卷怎么选</h3>
-            <p>彩负、黑白、反转片，以及 ISO 100、200、400 的区别。</p>
-          </a>
-          <a href="./04_knowledge/知识百科/05-从装卷到出片">
-            <span>PROCESS</span>
-            <h3>从装卷到出片</h3>
-            <p>装卷、拍摄、回卷、送洗和扫描的完整流程。</p>
-          </a>
-          <a href="./02_atoms/concepts/二手胶片相机验机清单">
-            <span>CHECK</span>
-            <h3>二手验机清单</h3>
-            <p>快门、测光、漏光、霉菌、排线和电池仓应该怎么检查。</p>
-          </a>
-          <a href="./04_knowledge/科普入门/04-拍胶卷要花多少钱">
-            <span>COST</span>
-            <h3>算清真实成本</h3>
-            <p>相机只是一次性支出，胶卷与冲扫才是长期成本。</p>
-          </a>
+        <div class="video-preview-grid">
+          {videoTopics.map(([number, category, title]) => (
+            <a href="./videos">
+              <span>{number}</span>
+              <div>
+                <p>{category}</p>
+                <h3>{title}</h3>
+                <small>视频来源正在逐条整理，页面会保留原作者和原视频链接。</small>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
 
-      <section class="home-section source-section">
-        <div class="source-copy">
-          <p class="section-kicker">HOW THIS GUIDE WAS BUILT</p>
-          <h2>
-            不是一份机型排行榜，
-            <br />
-            而是一套可以持续生长的知识系统。
-          </h2>
-          <p>内容来自 44 个胶片摄影相关视频，经过采集、重写、拆解和结构化，最终形成学习文章、决策页面与机型卡片。</p>
+      <section class="home-commercial-section methodology-section">
+        <div>
+          <p>内容整理方式</p>
+          <h2>视频内容经过整理、核验和重新编排，方便学习与选购。</h2>
         </div>
-        <div class="source-flow" aria-label="内容生产流程">
-          <div>
-            <strong>44</strong>
-            <span>视频与资料</span>
-          </div>
-          <i>→</i>
-          <div>
-            <strong>150+</strong>
-            <span>原子知识笔记</span>
-          </div>
-          <i>→</i>
-          <div>
-            <strong>18</strong>
-            <span>系统学习文章</span>
-          </div>
-          <i>→</i>
-          <div>
-            <strong>1</strong>
-            <span>选购知识网站</span>
-          </div>
+        <div class="methodology-grid">
+          <article>
+            <span>01</span>
+            <h3>保留原始出处</h3>
+            <p>逐条记录 B 站视频、创作者和链接，不重新托管视频，也不隐藏原作者。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>拆分观点与事实</h3>
+            <p>主观使用体验保留为创作者观点；参数、年份和兼容性使用公开资料核验。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>明确不确定性</h3>
+            <p>价格具有时效性，图片需要授权，无法确认的信息不会写成确定结论。</p>
+          </article>
         </div>
       </section>
     </div>
   )
 }
+
+HomePage.afterDOMLoaded = homeScript
 
 export default (() => HomePage) satisfies QuartzComponentConstructor

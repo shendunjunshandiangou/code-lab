@@ -13,10 +13,10 @@ exposure_modes:
   - "A"
 mount: "宾得 K 卡口"
 shutter: "电子快门"
-metering: "待核验"
+metering: "TTL 中央重点测光"
 battery: "需要"
-release_year: 1976
-weight_g: null
+release_year: 1977
+weight_g: 495
 price_min: 400
 price_max: 700
 price_currency: CNY
@@ -28,27 +28,25 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: ""
-image_alt: "宾得 ME胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/pentax-me-m50mm-50ca1f75.jpg"
+image_alt: "宾得 ME 搭配 SMC-M 50mm f/1.7 镜头"
+image_credit: "Hiyotada"
+image_source: "https://commons.wikimedia.org/wiki/File:Pentax_ME_M50mm.jpg"
+image_license: "CC BY-SA 3.0"
 tags:
   - "电子单反"
   - "手动对焦"
   - "推荐"
 aliases:
   - "Pentax ME"
-sources: []
-last_updated: 2026-07-12
+sources:
+  - "https://en.wikipedia.org/wiki/Pentax_ME"
+  - "https://commons.wikimedia.org/wiki/File:Pentax_ME_M50mm.jpg"
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "ME Super 的前代，纯 A 档入门机，颜值能打。"
+permalink: "cameras/pentax-me"
 ---
-
-> ME Super 的前代，纯 A 档入门机，颜值能打。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 ME图片待补充">
-  <strong>宾得 ME</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 
@@ -62,11 +60,13 @@ last_updated: 2026-07-12
 
 | 参数 | 信息 |
 |------|-----|
-| 发布时间 | 1976 |
+| 发布时间 | 1977 |
 | 快门类型 | 电子快门 |
 | 曝光模式 | A（只有光圈优先） |
+| 测光 | TTL 中央重点测光 |
 | 卡口 | 宾得 K 卡口 |
 | 对焦方式 | 手动 |
+| 重量 | 约 495g |
 | 电池 | 需要 |
 
 ## 为什么值得买
@@ -104,6 +104,6 @@ last_updated: 2026-07-12
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Hiyotada，Wikimedia Commons，CC BY-SA 3.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

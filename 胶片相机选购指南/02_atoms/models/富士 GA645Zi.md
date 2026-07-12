@@ -44,15 +44,11 @@ aliases:
   - "富士 GA645"
   - "GA645Zi"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "120 画幅的傻瓜机——拿起来就拍的中画幅。"
+permalink: "cameras/fujifilm-ga645zi"
 ---
-
-> 120 画幅的傻瓜机——拿起来就拍的中画幅。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="富士 GA645Zi图片待补充">
-  <strong>富士 GA645Zi</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 

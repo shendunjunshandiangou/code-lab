@@ -41,15 +41,11 @@ aliases:
   - "奥林巴斯 Pen EE-2"
   - "Pen EE-2"
 sources: []
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "一卷拍 72 张的半格口袋机，每张成本减半。"
+permalink: "cameras/olympus-pen-ee-2"
 ---
-
-> 一卷拍 72 张的半格口袋机，每张成本减半。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 Pen EE-2图片待补充">
-  <strong>奥林巴斯 Pen EE-2</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 
@@ -89,7 +85,7 @@ last_updated: 2026-07-12
 
 ## 不适合谁
 
-- 待补充。
+- 追求大幅放大、极致细节或高感画质的人。
 
 ## 购买检查
 

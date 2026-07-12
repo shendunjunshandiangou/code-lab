@@ -13,10 +13,10 @@ exposure_modes:
   - "M"
 mount: "OM 卡口"
 shutter: "全机械快门"
-metering: "待核验"
-battery: "不需要（或仅供电测光表）"
+metering: "TTL 测光（指针式）"
+battery: "不需要（电池仅供测光表使用）"
 release_year: 1972
-weight_g: null
+weight_g: 490
 price_min: 800
 price_max: 1500
 price_currency: CNY
@@ -28,11 +28,11 @@ recommended_scenes:
   - "摄影基础学习"
   - "日常记录"
   - "街拍"
-hero_image: ""
-image_alt: "奥林巴斯 OM-1胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/olympus-om-1-6c0b68be.jpg"
+image_alt: "奥林巴斯 OM-1 MD 胶片单反与 50mm 镜头"
+image_credit: "Martin Taylor 摄影，ChibaRagi 编辑"
+image_source: "https://commons.wikimedia.org/wiki/File:Olympus_OM-1.jpg"
+image_license: "CC BY-SA 2.5"
 tags:
   - "机械单反"
   - "手动对焦"
@@ -40,16 +40,14 @@ tags:
 aliases:
   - "Olympus OM-1"
   - "奥林巴斯 OM1"
-sources: []
-last_updated: 2026-07-12
+sources:
+  - "https://en.wikipedia.org/wiki/Olympus_OM-1"
+  - "https://commons.wikimedia.org/wiki/File:Olympus_OM-1.jpg"
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "豆瓣四大神机中最优雅的一台——工业艺术品级的全机械单反。"
+permalink: "cameras/olympus-om-1"
 ---
-
-> 豆瓣四大神机中最优雅的一台——工业艺术品级的全机械单反。
-
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 OM-1图片待补充">
-  <strong>奥林巴斯 OM-1</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
 
 ## 快速判断
 
@@ -68,8 +66,9 @@ last_updated: 2026-07-12
 | 曝光模式 | M（全手动） |
 | 卡口 | OM 卡口 |
 | 对焦方式 | 手动（裂像+微棱镜） |
-| 电池 | 不需要（或仅供电测光表） |
-| 重量 | 约 510g |
+| 测光 | TTL 指针式测光 |
+| 电池 | 仅供测光表使用；没电仍可拍摄 |
+| 重量 | 约 490g（OM-1 机身） |
 
 ## 为什么值得买
 
@@ -113,6 +112,6 @@ last_updated: 2026-07-12
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Martin Taylor 摄影，ChibaRagi 编辑，Wikimedia Commons，CC BY-SA 2.5。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

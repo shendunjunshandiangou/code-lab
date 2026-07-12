@@ -29,7 +29,7 @@ recommended_scenes:
   - 摄影基础学习
   - 街拍
   - 旅行
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pentax_MX_CaptOblivious.jpg?width=1600"
+hero_image: "./static/images/library/pentax-mx-captoblivious-8c77dd9e.jpg"
 image_alt: 银黑色宾得 MX 小型全机械胶片单反相机
 image_credit: 见来源文件页
 image_source: Wikimedia Commons
@@ -46,15 +46,11 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Pentax_MX"
   - "https://commons.wikimedia.org/wiki/File:Pentax_MX_CaptOblivious.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "一台把全机械结构压缩进小机身的 35mm 单反：比 K1000 更紧凑，并保留自拍、景深预览和可换对焦屏等完整手动功能。"
+permalink: "cameras/pentax-mx"
 ---
-
-> 一台把全机械结构压缩进小机身的 35mm 单反：比 K1000 更紧凑，并保留自拍、景深预览和可换对焦屏等完整手动功能。
-
-<figure class="camera-hero">
-  <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pentax_MX_CaptOblivious.jpg?width=1600" alt="银黑色宾得 MX 小型全机械胶片单反相机" loading="eager" decoding="async">
-  <figcaption>宾得 MX · <a href="https://commons.wikimedia.org/wiki/File:Pentax_MX_CaptOblivious.jpg">Wikimedia Commons</a> · 作者与授权信息以文件页为准</figcaption>
-</figure>
 
 ## 快速判断
 

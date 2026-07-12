@@ -30,7 +30,7 @@ recommended_scenes:
   - 日常记录
   - 街拍
   - 人像
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NikonFE2blkfrt50f14.jpg?width=1600"
+hero_image: "./static/images/library/nikonfe2blkfrt50f14-171b5b9f.jpg"
 image_alt: 配备 Nikkor 50mm f/1.4 镜头的黑色尼康 FE2 胶片单反相机
 image_credit: Paul Chin
 image_source: Wikimedia Commons
@@ -47,15 +47,11 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Nikon_FE2"
   - "https://commons.wikimedia.org/wiki/File:NikonFE2blkfrt50f14.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "FE 的高速升级版：保留光圈优先和手动对焦，同时把最高快门提高到 1/4000s，并提供 1/250s 闪光同步。"
+permalink: "cameras/nikon-fe2"
 ---
-
-> FE 的高速升级版：保留光圈优先和手动对焦，同时把最高快门提高到 1/4000s，并提供 1/250s 闪光同步。
-
-<figure class="camera-hero">
-  <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/NikonFE2blkfrt50f14.jpg?width=1600" alt="配备 Nikkor 50mm f/1.4 镜头的黑色尼康 FE2 胶片单反相机" loading="eager" decoding="async">
-  <figcaption>尼康 FE2 与 Nikkor 50mm f/1.4 · 摄影：Paul Chin · <a href="https://commons.wikimedia.org/wiki/File:NikonFE2blkfrt50f14.jpg">Wikimedia Commons</a> · CC BY-SA 3.0</figcaption>
-</figure>
 
 ## 快速判断
 
