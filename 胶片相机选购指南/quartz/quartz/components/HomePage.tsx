@@ -20,7 +20,7 @@ const cameras = [
     name: "奥林巴斯 mju-1",
     meta: "自动便携相机 · 随身记录",
     price: "¥400～900",
-    reason: "体积小、操作直接，适合旅行和生活记录，不必承担热门神机的高溢价。",
+    reason: "体积小、操作直接，适合旅行和生活记录，不必承担热门机型的高溢价。",
     href: "./02_atoms/models/奥林巴斯-mju-1",
     image: "",
     budget: "low,mid",
@@ -80,6 +80,50 @@ const cameras = [
   },
 ]
 
+const learningPath = [
+  {
+    number: "01",
+    title: "先了解胶片相机是什么",
+    copy: "弄清它与数码相机的区别，以及这种拍摄方式是否适合你。",
+    time: "约 5 分钟",
+    href: "./04_knowledge/科普入门/01-胶片相机到底是什么",
+  },
+  {
+    number: "02",
+    title: "了解胶卷、冲洗和长期成本",
+    copy: "知道按下快门之后还要经历什么，以及每拍一卷大概要花多少钱。",
+    time: "约 8 分钟",
+    href: "./film",
+  },
+  {
+    number: "03",
+    title: "分清相机类型和操作方式",
+    copy: "比较自动便携相机、自动对焦单反和全机械单反分别适合谁。",
+    time: "约 8 分钟",
+    href: "./04_knowledge/知识百科/01-相机类型详解",
+  },
+  {
+    number: "04",
+    title: "根据预算和场景选择机型",
+    copy: "把预算、携带需求、对焦方式和拍摄场景放在一起判断。",
+    time: "开始选购",
+    href: "#quick-finder",
+  },
+  {
+    number: "05",
+    title: "买前检查，并顺利拍完第一卷",
+    copy: "检查二手相机状态，再完成装卷、拍摄、回卷和送洗。",
+    time: "购买与使用",
+    href: "./04_knowledge/知识百科/05-从装卷到出片",
+  },
+]
+
+const videoTopics = [
+  ["01", "零基础", "胶片相机到底是什么？"],
+  ["02", "购买决策", "第一台胶片相机应该怎样选？"],
+  ["03", "二手检查", "拿到相机后，应该检查哪些地方？"],
+]
+
 function HomePage({ fileData }: QuartzComponentProps) {
   if (fileData.slug !== "index") return null
 
@@ -99,47 +143,69 @@ function HomePage({ fileData }: QuartzComponentProps) {
         </video>
         <div class="commercial-hero-overlay"></div>
         <div class="commercial-hero-content">
-          <p class="commercial-eyebrow">ANALOG CAMERA FIELD GUIDE · 2026</p>
+          <p class="commercial-eyebrow">胶片相机入门与选购指南</p>
           <h1>
-            不要先问哪台是神机。
+            从了解胶片相机开始，
             <br />
-            先找到适合你拍摄方式的相机。
+            找到适合你的第一台相机。
           </h1>
           <p>
-            从第一卷胶片到第一台真正适合你的相机，按照预算、操作方式和拍摄场景，建立一条清晰、可靠的入门路径。
+            先弄清胶片、相机类型和使用成本，再根据预算、操作习惯和拍摄场景缩小选择，顺利开始你的第一卷胶片。
           </p>
           <div class="commercial-hero-actions">
-            <a class="commercial-button is-primary" href="./buying">
-              开始选择相机
+            <a class="commercial-button is-primary" href="./learn">
+              从零开始了解
             </a>
-            <a class="commercial-button is-ghost" href="./learn">
-              5 分钟了解胶片
+            <a class="commercial-button is-ghost" href="./buying">
+              直接开始选购
             </a>
           </div>
         </div>
-        <div class="commercial-hero-stats" aria-label="网站内容规模">
+        <div class="commercial-hero-stats" aria-label="网站核心内容">
           <span>
-            <strong>83</strong> 台机型
+            <strong>5</strong> 步入门路径
           </span>
           <span>
-            <strong>44</strong> 个视频来源
+            <strong>83</strong> 台机型资料
           </span>
           <span>
-            <strong>150+</strong> 条知识笔记
+            <strong>1</strong> 套完整选购流程
           </span>
         </div>
         <p class="commercial-hero-credit">
-          首屏视频为基础版本临时视觉素材；相机静态图来自 Wikimedia Commons，正式版本将替换为经过授权核验的胶片摄影片段。
+          首屏视频为基础版本临时视觉素材；静态相机图片来自 Wikimedia Commons，后续将替换为完成授权核验的胶片摄影素材。
         </p>
+      </section>
+
+      <section class="home-commercial-section reading-path">
+        <div class="commercial-section-heading is-split">
+          <div>
+            <p>新手建议阅读顺序</p>
+            <h2>先把基本问题弄清楚，再开始选相机。</h2>
+          </div>
+          <span>第一次接触胶片相机，建议从第 1 步开始；已经了解胶片流程和使用成本，可以直接跳到第 4 步。</span>
+        </div>
+        <div class="reading-path-list">
+          {learningPath.map(({ number, title, copy, time, href }) => (
+            <a href={href}>
+              <span>{number}</span>
+              <div>
+                <h3>{title}</h3>
+                <p>{copy}</p>
+              </div>
+              <small>{time} · 进入内容 ↗</small>
+            </a>
+          ))}
+        </div>
       </section>
 
       <section class="home-commercial-section quick-finder" id="quick-finder">
         <div class="commercial-section-heading is-split">
           <div>
-            <p>QUICK CAMERA FINDER</p>
-            <h2>先回答四个问题，快速缩小范围。</h2>
+            <p>快速选机</p>
+            <h2>根据预算和使用方式，查看适合的入门机型。</h2>
           </div>
-          <span>基础版本先覆盖六种典型入门方向，后续接入全部机型数据库。</span>
+          <span>先筛选一个大致方向，再进入详情页查看优缺点、购买检查和同价位替代方案。</span>
         </div>
 
         <div class="finder-layout">
@@ -154,7 +220,7 @@ function HomePage({ fileData }: QuartzComponentProps) {
                   500 元以内
                 </button>
                 <button class="finder-option" data-group="budget" data-value="mid" aria-pressed="false">
-                  500～1500
+                  500～1500 元
                 </button>
                 <button class="finder-option" data-group="budget" data-value="high" aria-pressed="false">
                   1500 元以上
@@ -265,80 +331,41 @@ function HomePage({ fileData }: QuartzComponentProps) {
           />
         </div>
         <div class="editorial-feature-copy">
-          <p>EDITOR'S NOTE · FIRST CAMERA</p>
-          <h2>第一次买胶片机，为什么不必追最热门的“神机”。</h2>
+          <p>选购前需要确认</p>
+          <h2>第一台胶片相机，不需要追求最贵或最热门。</h2>
           <span>
-            机身热度不会替你完成对焦、测光和携带。真正有效的选择，是先确认你愿意学习多少、会在什么场景使用，以及长期胶卷和冲扫预算。
+            是否愿意手动对焦、能否接受胶卷与冲扫的持续成本、相机会不会真正随身携带，通常比品牌和参数更重要。
           </span>
-          <a href="./buying">打开完整选购路径 →</a>
-        </div>
-      </section>
-
-      <section class="home-commercial-section reading-path">
-        <div class="commercial-section-heading">
-          <p>BEFORE THE FIRST ROLL</p>
-          <h2>从零开始，只需要走完五步。</h2>
-        </div>
-        <div class="reading-path-list">
-          {[
-            ["01", "胶片相机是什么", "理解胶片和数码记录光线的根本区别。", "约 5 分钟", "./04_knowledge/科普入门/01-胶片相机到底是什么"],
-            ["02", "胶卷、冲洗和扫描", "看懂按下快门之后，照片为什么还没有出现。", "约 7 分钟", "./film"],
-            ["03", "选择相机类型", "傻瓜机、自动单反和全机械单反分别适合谁。", "约 8 分钟", "./04_knowledge/知识百科/01-相机类型详解"],
-            ["04", "确定预算和场景", "把机身、镜头、胶卷、冲扫与维修放进同一份预算。", "约 10 分钟", "./buying"],
-            ["05", "顺利拍完第一卷", "装卷、测光、拍摄、回卷和送洗的完整流程。", "约 12 分钟", "./04_knowledge/知识百科/05-从装卷到出片"],
-          ].map(([number, title, copy, time, href]) => (
-            <a href={href}>
-              <span>{number}</span>
-              <div>
-                <h3>{title}</h3>
-                <p>{copy}</p>
-              </div>
-              <small>{time} · 开始阅读 ↗</small>
-            </a>
-          ))}
+          <a href="./buying">查看完整选购方法 →</a>
         </div>
       </section>
 
       <section class="home-commercial-section video-preview-section">
         <div class="commercial-section-heading is-split">
           <div>
-            <p>WATCH & READ</p>
-            <h2>从原视频开始，再回到结构化阅读。</h2>
+            <p>视频与文章</p>
+            <h2>习惯看视频，也可以从原视频开始。</h2>
           </div>
           <a href="./videos">查看视频精选 →</a>
         </div>
         <div class="video-preview-grid">
-          <a href="./videos">
-            <span>01</span>
-            <div>
-              <p>零基础</p>
-              <h3>胶片相机到底是什么？</h3>
-              <small>视频来源映射中 · 查看整理规则</small>
-            </div>
-          </a>
-          <a href="./videos">
-            <span>02</span>
-            <div>
-              <p>购买决策</p>
-              <h3>第一台胶片相机应该怎样选？</h3>
-              <small>视频来源映射中 · 查看整理规则</small>
-            </div>
-          </a>
-          <a href="./videos">
-            <span>03</span>
-            <div>
-              <p>二手检查</p>
-              <h3>拿到相机后，先不要急着装卷。</h3>
-              <small>视频来源映射中 · 查看整理规则</small>
-            </div>
-          </a>
+          {videoTopics.map(([number, category, title]) => (
+            <a href="./videos">
+              <span>{number}</span>
+              <div>
+                <p>{category}</p>
+                <h3>{title}</h3>
+                <small>视频来源映射中 · 查看整理规则</small>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
 
       <section class="home-commercial-section methodology-section">
         <div>
-          <p>HOW THIS GUIDE IS BUILT</p>
-          <h2>不是把字幕贴到网页，而是把观点重新组织成可以查证、比较和行动的内容。</h2>
+          <p>内容整理方式</p>
+          <h2>视频内容经过整理、核验和重新编排，方便学习与选购。</h2>
         </div>
         <div class="methodology-grid">
           <article>
@@ -354,7 +381,7 @@ function HomePage({ fileData }: QuartzComponentProps) {
           <article>
             <span>03</span>
             <h3>明确不确定性</h3>
-            <p>价格具有时效性，图片需要授权，无法确认的信息不会伪装成确定结论。</p>
+            <p>价格具有时效性，图片需要授权，无法确认的信息不会写成确定结论。</p>
           </article>
         </div>
       </section>
