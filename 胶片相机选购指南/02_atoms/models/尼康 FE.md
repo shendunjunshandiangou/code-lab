@@ -30,11 +30,11 @@ recommended_scenes:
   - 日常记录
   - 街拍
   - 摄影入门
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_%26_Nikkor_50_mm_f1.4.jpg?width=1600"
+hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1600"
 image_alt: 配备 Nikkor 50mm f/1.4 镜头的银黑色尼康 FE 胶片单反相机
-image_credit: Scott Symonds
+image_credit: Tobias Wolter
 image_source: Wikimedia Commons
-image_license: CC BY 2.0
+image_license: CC BY-SA 3.0
 tags:
   - 胶片单反
   - 手动对焦
@@ -45,15 +45,15 @@ aliases:
   - Nikon FE
 sources:
   - "[[../01_articles/胶片时代的尼康宝藏！平价相机推荐.md]]"
-  - "https://commons.wikimedia.org/wiki/File:Nikon_FE_%26_Nikkor_50_mm_f1.4.jpg"
+  - "https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg"
 last_updated: 2026-07-12
 ---
 
 > FM2 的电子快门平替：保留手动对焦和机械过片体验，又用光圈优先降低曝光门槛，价格通常更容易接受。
 
 <figure class="camera-hero">
-  <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_%26_Nikkor_50_mm_f1.4.jpg?width=1600" alt="配备 Nikkor 50mm f/1.4 镜头的银黑色尼康 FE 胶片单反相机" loading="eager" decoding="async">
-  <figcaption>尼康 FE 与 Nikkor 50mm f/1.4 · 摄影：Scott Symonds · <a href="https://commons.wikimedia.org/wiki/File:Nikon_FE_%26_Nikkor_50_mm_f1.4.jpg">Wikimedia Commons</a> · CC BY 2.0</figcaption>
+  <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1600" alt="配备 Nikkor 50mm f/1.4 镜头的银黑色尼康 FE 胶片单反相机" loading="eager" decoding="async">
+  <figcaption>尼康 FE 与 Nikkor 50mm f/1.4 · 摄影：Tobias Wolter · <a href="https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg">Wikimedia Commons</a> · CC BY-SA 3.0</figcaption>
 </figure>
 
 ## 快速判断
@@ -124,5 +124,5 @@ last_updated: 2026-07-12
 ## 图片与资料来源
 
 - 机型资料整理自：[[../01_articles/胶片时代的尼康宝藏！平价相机推荐.md]]
-- 图片：Scott Symonds，[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nikon_FE_%26_Nikkor_50_mm_f1.4.jpg)，CC BY 2.0。
+- 图片：Tobias Wolter，[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg)，CC BY-SA 3.0。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
