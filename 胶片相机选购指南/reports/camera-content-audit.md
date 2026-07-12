@@ -7,11 +7,11 @@
 - 机型总数：83
 - 已有主图：24
 - 图片署名、来源和许可完整：24
-- 已有资料来源：33
+- 已有资料来源：34
 - 含待核验关键字段：75
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：1
-- 正文仍含“待补充”：1
+- 正文仍含“待补充”：0
 
 ## 当前价格选机页推荐
 
@@ -47,9 +47,9 @@
 
 - 哈苏 500 系列：正文重量“约 1,500g（机身 + 80mm 镜头 + 后背）”可回填 weight_g
 
-### 正文仍含待补充（1）
+### 正文仍含待补充（0）
 
-- 尼康马特：2 处
+- 无
 
 ## 全量缺口
 
@@ -119,7 +119,7 @@
 
 - 无
 
-### 缺少资料来源（50）
+### 缺少资料来源（49）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
@@ -163,7 +163,6 @@
 - 美能达 X-1（XK/XM）
 - 美能达 α-7
 - 尼康 28Ti
-- 尼康马特
 - 雅西卡 35 GX
 - 雅西卡 FR 系列
 - 雅西卡 FX-3 Super 2000
@@ -240,7 +239,7 @@
 - 美能达 α-7：metering、weight_g、reliability
 - 尼康 28Ti：metering、reliability
 - 尼康 F3：weight_g
-- 尼康马特：metering、weight_g、reliability
+- 尼康马特：reliability
 - 雅西卡 35 GX：metering、weight_g、reliability
 - 雅西卡 FR 系列：metering、weight_g、reliability
 - 雅西卡 FX-3 Super 2000：metering、weight_g、reliability
