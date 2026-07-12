@@ -74,6 +74,7 @@ function upgradeFile(file) {
   return { changed: true, camera: true }
 }
 
+// 机型目录中的所有 camera 实体都使用同一套详情页 v2 结构。
 const files = fs.readdirSync(modelsDir).filter((file) => file.endsWith(".md")).sort()
 let cameras = 0
 let changed = 0
