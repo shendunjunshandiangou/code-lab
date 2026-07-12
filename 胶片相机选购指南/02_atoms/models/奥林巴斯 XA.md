@@ -43,7 +43,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_XA"
   - "https://commons.wikimedia.org/wiki/File:Olympus_XA_7889.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "把黄斑对焦、35mm f/2.8 和光圈优先塞进真正能放进口袋的机身。"
 permalink: "cameras/olympus-xa"
