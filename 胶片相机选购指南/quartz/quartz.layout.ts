@@ -8,6 +8,7 @@ export const sharedPageComponents: SharedLayout = {
     Component.Readability(),
     Component.ContentLayout(),
     Component.IconTuning(),
+    Component.BuyingGuideInlineStyles(),
     Component.SiteHeader(),
     Component.Search({ enablePreview: true }),
   ],
