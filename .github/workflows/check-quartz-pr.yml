@@ -7,6 +7,7 @@ on:
     paths:
       - '胶片相机选购指南/**'
       - '.github/workflows/check-quartz-pr.yml'
+      - '.github/workflows/deploy-quartz.yml'
   workflow_dispatch:
 
 concurrency:
@@ -15,6 +16,7 @@ concurrency:
 
 permissions:
   contents: read
+  actions: write
 
 jobs:
   build:
@@ -56,3 +58,12 @@ jobs:
       - name: 构建网站
         working-directory: ./胶片相机选购指南/quartz
         run: node quartz/bootstrap-cli.mjs build --directory ..
+
+      - name: 请求更新在线预览
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run deploy-quartz.yml \
+            --ref master \
+            --field preview_ref='${{ github.head_ref }}'
