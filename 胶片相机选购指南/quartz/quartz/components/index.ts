@@ -27,6 +27,7 @@ import HomePage from "./HomePage"
 import LearnPage from "./LearnPage"
 import PortalPages from "./PortalPages"
 import CameraAtlasPage from "./CameraAtlasPage"
+import CameraDetailGuide from "./CameraDetailGuide"
 import SiteHeader from "./SiteHeader"
 import PageHero from "./PageHero"
 import SourceVideos from "./SourceVideos"
@@ -65,6 +66,7 @@ export {
   LearnPage,
   PortalPages,
   CameraAtlasPage,
+  CameraDetailGuide,
   SiteHeader,
   PageHero,
   SourceVideos,
