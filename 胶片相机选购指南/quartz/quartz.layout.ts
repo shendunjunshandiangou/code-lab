@@ -64,7 +64,10 @@ export const defaultContentPageLayout: PageLayout = {
     }),
   ],
   left: [
-    Component.ConditionalRender({ component: Component.PageTitle(), condition: notHome }),
+    Component.ConditionalRender({
+      component: Component.PageTitle(),
+      condition: notHome,
+    }),
     Component.MobileOnly(Component.Spacer()),
     Component.ConditionalRender({
       condition: notHome,
@@ -79,14 +82,20 @@ export const defaultContentPageLayout: PageLayout = {
         ],
       }),
     }),
-    Component.ConditionalRender({ component: readerExplorer, condition: notHome }),
+    Component.ConditionalRender({
+      component: readerExplorer,
+      condition: notHome,
+    }),
   ],
   right: [
     Component.ConditionalRender({
       condition: notHome,
       component: Component.DesktopOnly(Component.TableOfContents()),
     }),
-    Component.ConditionalRender({ component: Component.Backlinks(), condition: notHome }),
+    Component.ConditionalRender({
+      component: Component.Backlinks(),
+      condition: notHome,
+    }),
   ],
 }
 
