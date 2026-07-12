@@ -45,7 +45,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_OM-2"
   - "https://commons.wikimedia.org/wiki/File:Olympus_OM-2N_SLR_35mm_film_camera.jpg"
-last_updated: "2026-07-12"
+last_updated: 2026-07-12
 detail_version: 2
 tagline: "OM-2 的后期改进版，闪光提示与操作细节更完善。"
 permalink: "cameras/olympus-om-2n"
@@ -54,8 +54,8 @@ permalink: "cameras/olympus-om-2n"
 ## 快速判断
 
 <div class="camera-verdict-grid">
-  <div><strong>适合</strong><span>想要 OM-2 体验，但更偏好后期改进版本的人。；使用 T 系列闪光灯，重视 TTL 闪光提示的人。；希望手动对焦与光圈优先并存的人。</span></div>
-  <div><strong>不适合</strong><span>要求完全不依赖电池的人。；已经拥有状态良好的 OM-2，且不需要闪光系统改进的人。</span></div>
+  <div><strong>适合</strong><span>已经决定进入 OM 系统，并希望优先选择后期成熟版本的人</span></div>
+  <div><strong>不适合</strong><span>必须没电也能拍摄，或只想买一台最便宜 OM 机身的人</span></div>
   <div><strong>参考价格</strong><span>约 ¥800～1500，价格核对于 2026 年 7 月</span></div>
 </div>
 
@@ -98,12 +98,12 @@ permalink: "cameras/olympus-om-2n"
 
 ## 购买检查
 
-1. 装入新电池，确认测光、液晶或指针显示、快门和各曝光模式均能启动。
-2. 逐档测试电子快门，重点检查慢门、高速快门及机械备份速度。
-3. 测试光圈联动、景深预览、曝光补偿、自拍和闪光同步等现有功能。
-4. 检查过片、上弦、计数器和回卷机构，确认没有卡顿或异常声响。
-5. 检查电池仓是否漏液，取景器、反光镜、对焦屏和镜头是否有霉雾。
-6. 优先选择能够提供实拍样片、维修记录或退换保障的卖家。
+1. 先确认机身正面与顶板的 `n` 标识，避免把 OM-2、OM-2N 和 OM-2SP 混为一谈。
+2. 装入新电池测试 A 档、M 档、Reset 和电池检查功能。
+3. 在不同亮度下检查测光指针与自动快门是否连续变化，并测试长曝光是否会异常锁镜。
+4. 检查热靴触点、闪光充电提示和曝光确认功能；没有对应闪光灯时至少检查触点腐蚀。
+5. 检查过片、计数器、回卷、快门帘、取景器、反光镜和密封海绵。
+6. 优先选择能够提供实拍样片、测光对比或维修记录的机身。
 
 ## 同价位替代
 
@@ -115,5 +115,5 @@ permalink: "cameras/olympus-om-2n"
 ## 图片与资料来源
 
 - 图片：Racomi，Wikimedia Commons，CC BY-SA 4.0。
-- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
-- 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
+- 规格与 OM-2N 版本差异参考 Olympus OM-2 公开资料，并于 2026-07-12 复核。
+- 二手可靠性仍取决于具体机身的电子元件、维修历史和保存环境。
