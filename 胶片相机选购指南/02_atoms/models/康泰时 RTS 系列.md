@@ -44,6 +44,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "CY 卡口专业电子旗舰，保时捷设计 + 蔡司镜头。"
+permalink: "cameras/contax-rts"
 ---
 
 ## 快速判断

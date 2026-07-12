@@ -47,6 +47,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "120 画幅的傻瓜机——拿起来就拍的中画幅。"
+permalink: "cameras/fujifilm-ga645zi"
 ---
 
 ## 快速判断

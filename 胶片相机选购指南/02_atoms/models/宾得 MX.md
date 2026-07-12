@@ -49,6 +49,7 @@ sources:
 last_updated: "2026-07-12"
 detail_version: 2
 tagline: "一台把全机械结构压缩进小机身的 35mm 单反：比 K1000 更紧凑，并保留自拍、景深预览和可换对焦屏等完整手动功能。"
+permalink: "cameras/pentax-mx"
 ---
 
 ## 快速判断

@@ -51,6 +51,7 @@ last_verified: 2026-07-12
 last_updated: "2026-07-12"
 detail_version: 2
 tagline: "FM2 的电子快门平替：保留手动对焦和机械过片体验，又用光圈优先降低曝光门槛，价格通常更容易接受。"
+permalink: "cameras/nikon-fe"
 ---
 
 ## 快速判断

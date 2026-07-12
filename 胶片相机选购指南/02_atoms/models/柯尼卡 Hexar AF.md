@@ -47,6 +47,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "\"穷人徕卡\"——35mm f/2 大光圈自动旁轴，暗光街头利器，预算友好的高素质随身机。"
+permalink: "cameras/konica-hexar-af"
 ---
 
 ## 快速判断

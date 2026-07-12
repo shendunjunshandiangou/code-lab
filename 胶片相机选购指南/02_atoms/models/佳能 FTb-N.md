@@ -44,6 +44,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "佳能 FD 卡口最便宜的纯机械入门机。"
+permalink: "cameras/canon-ftb-n"
 ---
 
 ## 快速判断

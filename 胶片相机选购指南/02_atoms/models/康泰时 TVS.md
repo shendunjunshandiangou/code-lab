@@ -44,6 +44,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "比 T2/T3 便宜得多的康泰时变焦 PS 机。"
+permalink: "cameras/contax-tvs"
 ---
 
 ## 快速判断

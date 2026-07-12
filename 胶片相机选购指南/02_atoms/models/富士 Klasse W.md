@@ -44,6 +44,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "最无聊但最省心——没有优点也没有缺点的均衡选手。"
+permalink: "cameras/fujifilm-klasse-w"
 ---
 
 ## 快速判断

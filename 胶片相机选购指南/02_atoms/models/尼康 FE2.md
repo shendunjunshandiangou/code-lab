@@ -50,6 +50,7 @@ sources:
 last_updated: "2026-07-12"
 detail_version: 2
 tagline: "FE 的高速升级版：保留光圈优先和手动对焦，同时把最高快门提高到 1/4000s，并提供 1/250s 闪光同步。"
+permalink: "cameras/nikon-fe2"
 ---
 
 ## 快速判断

@@ -44,6 +44,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "一卷拍 72 张的半格口袋机，每张成本减半。"
+permalink: "cameras/olympus-pen-ee-2"
 ---
 
 ## 快速判断

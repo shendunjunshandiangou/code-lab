@@ -46,6 +46,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "平价哈苏——最小巧的 645 中画幅单反。"
+permalink: "cameras/bronica-etr"
 ---
 
 ## 快速判断

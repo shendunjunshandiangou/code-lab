@@ -45,6 +45,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "OM-1 的电子化升级版，A 档自动 + 精致做工。"
+permalink: "cameras/olympus-om-2"
 ---
 
 ## 快速判断

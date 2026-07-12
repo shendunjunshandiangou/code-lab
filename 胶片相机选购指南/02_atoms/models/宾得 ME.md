@@ -43,6 +43,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "ME Super 的前代，纯 A 档入门机，颜值能打。"
+permalink: "cameras/pentax-me"
 ---
 
 ## 快速判断

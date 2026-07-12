@@ -50,6 +50,7 @@ sources:
 last_updated: "2026-07-12"
 detail_version: 2
 tagline: "一台以机械可靠性闻名的手动单反：全部快门速度都不依赖电池，同时提供 1/4000s 高速快门。"
+permalink: "cameras/nikon-fm2"
 ---
 
 ## 快速判断

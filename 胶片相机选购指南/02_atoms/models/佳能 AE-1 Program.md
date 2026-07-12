@@ -46,6 +46,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "AE-1 的升级版，多了 P 档更方便。"
+permalink: "cameras/canon-ae-1-program"
 ---
 
 ## 快速判断

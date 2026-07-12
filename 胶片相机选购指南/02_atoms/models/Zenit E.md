@@ -45,6 +45,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "10 欧元地板价——笨重但皮实的苏联坦克。"
+permalink: "cameras/zenit-e"
 ---
 
 ## 快速判断

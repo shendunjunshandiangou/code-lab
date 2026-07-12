@@ -45,6 +45,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "OM 系列旗舰，多点测光 + A 档，OM 卡口的终点。"
+permalink: "cameras/olympus-om-4"
 ---
 
 ## 快速判断

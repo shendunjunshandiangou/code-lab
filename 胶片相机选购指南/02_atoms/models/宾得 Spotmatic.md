@@ -45,6 +45,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "M42 螺口经典，400 元买到海量 M42 镜头生态。"
+permalink: "cameras/pentax-spotmatic-sp"
 ---
 
 ## 快速判断

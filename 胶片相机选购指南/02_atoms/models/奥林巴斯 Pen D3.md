@@ -43,6 +43,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "操作极简的半格机，除了 ISO 什么都不用调。"
+permalink: "cameras/olympus-pen-d3"
 ---
 
 ## 快速判断

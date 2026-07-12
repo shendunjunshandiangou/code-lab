@@ -50,6 +50,7 @@ sources:
 last_updated: "2026-07-12"
 detail_version: 2
 tagline: "尼康轻量化手动单反中的易用型选择：P、A、M 三种曝光模式齐全，适合希望保留手动对焦、又不想每张都手动曝光的新手。"
+permalink: "cameras/nikon-fg"
 ---
 
 ## 快速判断

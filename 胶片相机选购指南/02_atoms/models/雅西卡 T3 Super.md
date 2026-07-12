@@ -44,6 +44,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "千元级光学天花板——搭载蔡司 T* 镀膜镜头，花千元享受顶级镀膜。外形方正被称为\"最丑的一台\"，但镜片素质\"单单是买它的镜头就非常优秀\"。"
+permalink: "cameras/yashica-t3-super"
 ---
 
 ## 快速判断

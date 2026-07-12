@@ -44,6 +44,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "豆瓣四大神机中最优雅的一台——工业艺术品级的全机械单反。"
+permalink: "cameras/olympus-om-1"
 ---
 
 ## 快速判断

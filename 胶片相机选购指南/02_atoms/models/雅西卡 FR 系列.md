@@ -45,6 +45,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "雅西卡 CY 卡口的电子进阶，比 FX-3 多了自动功能。"
+permalink: "cameras/yashica-fr"
 ---
 
 ## 快速判断

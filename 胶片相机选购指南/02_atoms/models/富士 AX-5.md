@@ -47,6 +47,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "富士 X 卡口功能最完整的手动单反，小众实用。"
+permalink: "cameras/fujifilm-ax-5"
 ---
 
 ## 快速判断

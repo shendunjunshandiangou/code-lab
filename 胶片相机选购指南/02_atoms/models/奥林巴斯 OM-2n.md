@@ -45,6 +45,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "Jie's Lens 自用——小巧精致的日系电子单反"
+permalink: "cameras/olympus-om-2n"
 ---
 
 ## 快速判断

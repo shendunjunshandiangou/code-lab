@@ -44,6 +44,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "便宜实用的宾得 K 卡口入门机，胜在配件通用性。"
+permalink: "cameras/ricoh-kr-5"
 ---
 
 ## 快速判断

@@ -46,6 +46,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "销量最高的 PS 机之一，滑盖设计经典，但已被严重炒高。"
+permalink: "cameras/olympus-mju-2"
 ---
 
 ## 快速判断

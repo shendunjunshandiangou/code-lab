@@ -44,6 +44,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "乐趣满分、画质拉胯——手动内对焦的口袋机异类。"
+permalink: "cameras/olympus-xa"
 ---
 
 ## 快速判断

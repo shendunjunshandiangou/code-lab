@@ -45,6 +45,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "K1000 的姐妹型号，K 卡口经典入门机械单反。"
+permalink: "cameras/pentax-km-kx"
 ---
 
 ## 快速判断

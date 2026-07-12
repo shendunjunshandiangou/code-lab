@@ -45,6 +45,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "现代感强、颜值高的入门单反，操作更像现代相机。"
+permalink: "cameras/pentax-me-super"
 ---
 
 ## 快速判断

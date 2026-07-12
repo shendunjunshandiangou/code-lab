@@ -45,6 +45,7 @@ sources: []
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "还未被市场爆炒的高素质傻瓜机，32mm 定焦在 PS 机中很罕见，被多位 UP 主评价为\"对焦速度天花板级\"。"
+permalink: "cameras/pentax-espio-mini"
 ---
 
 ## 快速判断
