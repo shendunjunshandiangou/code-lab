@@ -7,6 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [
     Component.Readability(),
     Component.ContentLayout(),
+    Component.IconTuning(),
     Component.SiteHeader(),
     Component.Search({ enablePreview: true }),
   ],
