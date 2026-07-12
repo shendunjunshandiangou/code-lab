@@ -11,12 +11,12 @@ format: "135"
 focus: "自动对焦"
 exposure_modes:
   - "全自动"
-mount: "固定镜头"
+mount: "固定 35mm f/2.8 镜头"
 shutter: "电子"
-metering: "待核验"
-battery: "需要"
+metering: "自动测光（含点测光模式）"
+battery: "1 节 CR123A"
 release_year: 1997
-weight_g: null
+weight_g: 145
 price_min: 3000
 price_max: null
 price_currency: CNY
@@ -28,11 +28,11 @@ recommended_scenes:
   - "旅行随拍"
   - "日常记录"
   - "聚会"
-hero_image: ""
-image_alt: "奥林巴斯 mju-2胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Olympus_Stylus_Epic_1118.jpg?width=1600"
+image_alt: "奥林巴斯 mju-2（Stylus Epic）便携胶片相机"
+image_credit: "Ashley Pomeroy"
+image_source: "https://commons.wikimedia.org/wiki/File:Olympus_Stylus_Epic_1118.jpg"
+image_license: "CC BY-SA 4.0"
 tags:
   - "便携自动相机"
   - "自动对焦"
@@ -40,9 +40,12 @@ tags:
 aliases:
   - "奥林巴斯 mju-2"
   - "Olympus μ2"
+  - "Olympus Stylus Epic"
   - "mju-2"
   - "μ2"
-sources: []
+sources:
+  - "https://en.wikipedia.org/wiki/Olympus_Stylus_Epic"
+  - "https://commons.wikimedia.org/wiki/File:Olympus_Stylus_Epic_1118.jpg"
 last_updated: 2026-07-12
 detail_version: 2
 tagline: "销量最高的 PS 机之一，滑盖设计经典，但已被严重炒高。"
@@ -63,10 +66,12 @@ permalink: "cameras/olympus-mju-2"
 |------|-----|
 | 发布时间 | 1997 |
 | 镜头 | 35mm f/2.8 定焦 |
-| 快门类型 | 电子 |
-| 对焦方式 | 自动（比 mju-1 更快更准） |
+| 快门类型 | 电子，约 4s～1/1000s |
+| 对焦方式 | 多束自动对焦 |
 | 曝光模式 | 全自动 |
-| 电池 | 需要 |
+| 测光 | 自动测光，支持点测光模式 |
+| 电池 | 1 节 CR123A |
+| 重量 | 约 145g |
 | 开机方式 | 滑盖式 |
 
 ## 为什么值得买
@@ -106,6 +111,7 @@ permalink: "cameras/olympus-mju-2"
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
-- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
+- 图片：Ashley Pomeroy，Wikimedia Commons，CC BY-SA 4.0。
+- 镜头、快门、对焦、电池和重量参考 Olympus Stylus Epic / mju-2 的公开规格；不同地区版本的重量记录可能有小幅差异。
+- 本页其余购买建议沿用原有整理内容；未完成核验的可靠性判断继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
