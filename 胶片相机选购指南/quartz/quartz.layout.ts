@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import HomeLayoutFix from "./quartz/components/HomeLayoutFix"
 import { QuartzComponentProps } from "./quartz/components/types"
 
 const notHome = (page: QuartzComponentProps) => page.fileData.slug !== "index"
@@ -46,6 +47,7 @@ const readerExplorer = Component.Explorer({
 // 单页布局（文章/笔记页面）
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    HomeLayoutFix(),
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
       condition: notHome,
