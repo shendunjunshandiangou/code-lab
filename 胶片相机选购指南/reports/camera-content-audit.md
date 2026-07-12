@@ -7,11 +7,11 @@
 - 机型总数：83
 - 已有主图：24
 - 图片署名、来源和许可完整：24
-- 已有资料来源：26
+- 已有资料来源：27
 - 含待核验关键字段：76
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：9
-- 正文仍含“待补充”：15
+- 正文仍含“待补充”：14
 
 ## 当前价格选机页推荐
 
@@ -55,7 +55,7 @@
 - 尼康 28Ti：正文重量“约 310g”可回填 weight_g
 - 尼康 F2：正文重量“约 730g（DE-1 眼平顶）；Photomic 组合可达到约 840g”可回填 weight_g
 
-### 正文仍含待补充（15）
+### 正文仍含待补充（14）
 
 - 奥林巴斯 Pen D3：1 处
 - 奥林巴斯 Pen EE-2：1 处
@@ -71,7 +71,6 @@
 - 美能达 807Si：1 处
 - 尼康 28Ti：1 处
 - 尼康马特：4 处
-- 雅西卡 T3 Super：1 处
 
 ## 全量缺口
 
@@ -141,7 +140,7 @@
 
 - 无
 
-### 缺少资料来源（57）
+### 缺少资料来源（56）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
@@ -195,7 +194,6 @@
 - 雅西卡 35 GX
 - 雅西卡 FR 系列
 - 雅西卡 FX-3 Super 2000
-- 雅西卡 T3 Super
 - 一次性相机
 - 珠江 S-201
 - Praktica Super TL1000
@@ -274,7 +272,7 @@
 - 雅西卡 35 GX：metering、weight_g、reliability
 - 雅西卡 FR 系列：metering、weight_g、reliability
 - 雅西卡 FX-3 Super 2000：metering、weight_g、reliability
-- 雅西卡 T3 Super：metering、weight_g、reliability、battery
+- 雅西卡 T3 Super：reliability
 - 一次性相机：metering、weight_g、reliability、focus
 - 珠江 S-201：metering、weight_g、reliability、mount
 - Praktica Super TL1000：metering、weight_g、reliability、mount

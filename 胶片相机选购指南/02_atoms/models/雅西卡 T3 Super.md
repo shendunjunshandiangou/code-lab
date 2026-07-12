@@ -43,7 +43,7 @@ aliases:
 sources:
   - "https://de.wikipedia.org/wiki/Yashica_T"
   - "https://en.wikipedia.org/wiki/Yashica"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "35mm f/2.8 Tessar T*、顶部辅助取景窗和全自动操作的高性价比便携机。"
 permalink: "cameras/yashica-t3-super"
