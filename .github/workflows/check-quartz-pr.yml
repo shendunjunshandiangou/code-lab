@@ -66,6 +66,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           PREVIEW_URL: https://shendunjunshandiangou.github.io/code-lab/preview/
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          BUILD_SHA: ${{ github.event.pull_request.head.sha }}
         shell: bash
         run: |
           gh workflow run deploy-quartz.yml \
@@ -103,8 +104,12 @@ jobs:
           fi
 
           for attempt in $(seq 1 18); do
-            if curl -fsSL "$PREVIEW_URL" | grep -q 'home-shell'; then
-              echo "在线预览已更新：$PREVIEW_URL"
+            request_url="${PREVIEW_URL}?build=${BUILD_SHA}&attempt=${attempt}"
+            if curl -fsSL \
+              -H 'Cache-Control: no-cache, no-store, must-revalidate' \
+              -H 'Pragma: no-cache' \
+              "$request_url" | grep -q 'home-shell'; then
+              echo "在线预览已更新：$request_url"
               exit 0
             fi
 
@@ -115,9 +120,9 @@ jobs:
           {
             echo '## 在线预览内容验证失败'
             echo
-            echo "部署任务 \`$run_id\` 已成功，但在线地址在等待 90 秒后仍未包含 \`home-shell\`："
+            echo "部署任务 \`$run_id\` 已成功，但带缓存刷新参数的在线地址在等待 90 秒后仍未包含 \`home-shell\`："
             echo
-            echo "$PREVIEW_URL"
+            echo "${PREVIEW_URL}?build=${BUILD_SHA}"
           } > deploy-comment.md
           gh pr comment "$PR_NUMBER" --body-file deploy-comment.md
           exit 1
