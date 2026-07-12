@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：19
-- 图片署名、来源和许可完整：19
-- 已有资料来源：20
+- 已有主图：20
+- 图片署名、来源和许可完整：20
+- 已有资料来源：21
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -16,6 +16,7 @@
 |---|---|---|---|---|---|
 | 500 元以内 | 尼康 F-601 | 推荐 | 有 | 有 | 无 |
 | 500 元以内 | 奥林巴斯 OM-10 | 推荐 | 有 | 有 | reliability |
+| 500 元以内 | 美能达 SRT-101 | 有一定门槛 | 有 | 有 | reliability |
 | 500～1000 元 | 宾得 ME | 推荐 | 有 | 有 | reliability |
 | 500～1000 元 | 尼康 FG | 推荐 | 有 | 有 | 无 |
 | 500～1000 元 | 尼康 FE | 推荐 | 有 | 有 | 无 |
@@ -34,7 +35,7 @@
 
 ## 全量缺口
 
-### 缺少主图（64）
+### 缺少主图（63）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 OM-2
@@ -86,7 +87,6 @@
 - 玛米亚 7
 - 玛米亚 RB67
 - 美能达 807Si
-- 美能达 SRT-101
 - 美能达 TC-1
 - 美能达 X-1（XK/XM）
 - 美能达 α-7
@@ -105,7 +105,7 @@
 
 - 无
 
-### 缺少资料来源（63）
+### 缺少资料来源（62）
 
 - 奥林巴斯 OM-2
 - 奥林巴斯 OM-2n
@@ -156,7 +156,6 @@
 - 玛米亚 7
 - 玛米亚 RB67
 - 美能达 807Si
-- 美能达 SRT-101
 - 美能达 TC-1
 - 美能达 X-1（XK/XM）
 - 美能达 α-7
@@ -232,7 +231,7 @@
 - 玛米亚 7：metering、weight_g、reliability、mount
 - 玛米亚 RB67：metering、weight_g、reliability
 - 美能达 807Si：metering、weight_g、reliability、battery
-- 美能达 SRT-101：metering、weight_g、reliability
+- 美能达 SRT-101：reliability
 - 美能达 TC-1：metering、weight_g、reliability
 - 美能达 X-1（XK/XM）：metering、weight_g、reliability
 - 美能达 X-700：reliability
