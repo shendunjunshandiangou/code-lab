@@ -18,7 +18,7 @@ const SiteHeader: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const hrefFor = (slug: string) => resolveRelative(current, slug as FullSlug)
 
   return (
-    <div class="site-header-shell">
+    <div class="site-header-shell home-shell-compat">
       <a class="site-wordmark" href={hrefFor("index")} aria-label="胶片相机指南首页">
         <span class="site-wordmark-mark" aria-hidden="true">
           35
