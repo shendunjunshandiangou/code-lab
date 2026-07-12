@@ -46,7 +46,7 @@ last_updated: 2026-07-12
 
 > 10 欧元地板价——笨重但皮实的苏联坦克。
 
-<div class="camera-image-placeholder" role="img" aria-label="Zenit E图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="Zenit E图片待补充">
   <strong>Zenit E</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

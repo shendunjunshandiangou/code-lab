@@ -48,7 +48,7 @@ last_updated: 2026-07-12
 
 > 120 画幅的傻瓜机——拿起来就拍的中画幅。
 
-<div class="camera-image-placeholder" role="img" aria-label="富士 GA645Zi图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="富士 GA645Zi图片待补充">
   <strong>富士 GA645Zi</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

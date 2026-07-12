@@ -45,7 +45,7 @@ last_updated: 2026-07-12
 
 > T 系列巅峰，全金属机身，小众但镜头素质被高度认可。
 
-<div class="camera-image-placeholder" role="img" aria-label="柯尼卡 T3N图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="柯尼卡 T3N图片待补充">
   <strong>柯尼卡 T3N</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

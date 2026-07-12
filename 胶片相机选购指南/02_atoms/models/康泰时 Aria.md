@@ -46,7 +46,7 @@ last_updated: 2026-07-12
 
 > CY 卡口最轻便漂亮的机身，蔡司镜头的日常搭档。
 
-<div class="camera-image-placeholder" role="img" aria-label="康泰时 Aria图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="康泰时 Aria图片待补充">
   <strong>康泰时 Aria</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

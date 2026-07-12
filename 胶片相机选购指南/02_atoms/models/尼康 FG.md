@@ -47,7 +47,7 @@ last_updated: 2026-07-12
 
 > 尼康最小巧的手动单反，有 P 档的入门良机。
 
-<div class="camera-image-placeholder" role="img" aria-label="尼康 FG图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="尼康 FG图片待补充">
   <strong>尼康 FG</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

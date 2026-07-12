@@ -46,7 +46,7 @@ last_updated: 2026-07-12
 
 > 雅西卡 CY 卡口的电子进阶，比 FX-3 多了自动功能。
 
-<div class="camera-image-placeholder" role="img" aria-label="雅西卡 FR 系列图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="雅西卡 FR 系列图片待补充">
   <strong>雅西卡 FR 系列</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

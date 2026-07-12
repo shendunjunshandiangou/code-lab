@@ -45,7 +45,7 @@ last_updated: 2026-07-12
 
 > 佳能 FD 卡口最便宜的纯机械入门机。
 
-<div class="camera-image-placeholder" role="img" aria-label="佳能 FTb-N图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="佳能 FTb-N图片待补充">
   <strong>佳能 FTb-N</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

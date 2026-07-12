@@ -46,7 +46,7 @@ last_updated: 2026-07-12
 
 > FE 的升级版——1/4000s 高速电子快门
 
-<div class="camera-image-placeholder" role="img" aria-label="尼康 FE2图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="尼康 FE2图片待补充">
   <strong>尼康 FE2</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

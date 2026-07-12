@@ -45,7 +45,7 @@ last_updated: 2026-07-12
 
 > 买镜头送机身——镜头媲美徕卡 M 口六枚玉，机身设计一塌糊涂。
 
-<div class="camera-image-placeholder" role="img" aria-label="徕卡 CM图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="徕卡 CM图片待补充">
   <strong>徕卡 CM</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

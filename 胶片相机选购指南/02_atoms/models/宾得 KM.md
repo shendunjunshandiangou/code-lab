@@ -46,7 +46,7 @@ last_updated: 2026-07-12
 
 > K1000 的姐妹型号，K 卡口经典入门机械单反。
 
-<div class="camera-image-placeholder" role="img" aria-label="宾得 KM / KX图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 KM / KX图片待补充">
   <strong>宾得 KM / KX</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

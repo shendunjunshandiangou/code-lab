@@ -46,7 +46,7 @@ last_updated: 2026-07-12
 
 > 为极致小巧放弃太多——画质一般、噪音大、修不了。
 
-<div class="camera-image-placeholder" role="img" aria-label="美能达 TC-1图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="美能达 TC-1图片待补充">
   <strong>美能达 TC-1</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

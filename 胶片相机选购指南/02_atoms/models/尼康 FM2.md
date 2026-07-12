@@ -45,7 +45,7 @@ last_updated: 2026-07-12
 
 > 豆瓣四大神机之一，全机械快门标杆，纯机械可靠性的巅峰。
 
-<div class="camera-image-placeholder" role="img" aria-label="尼康 FM2图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="尼康 FM2图片待补充">
   <strong>尼康 FM2</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

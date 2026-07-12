@@ -44,7 +44,7 @@ last_updated: 2026-07-12
 
 > 操作极简的半格机，除了 ISO 什么都不用调。
 
-<div class="camera-image-placeholder" role="img" aria-label="奥林巴斯 Pen D3图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 Pen D3图片待补充">
   <strong>奥林巴斯 Pen D3</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

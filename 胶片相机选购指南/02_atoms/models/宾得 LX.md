@@ -46,7 +46,7 @@ last_updated: 2026-07-12
 
 > 宾得 K 卡口手动时代的终点——专业级旗舰。
 
-<div class="camera-image-placeholder" role="img" aria-label="宾得 LX图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 LX图片待补充">
   <strong>宾得 LX</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

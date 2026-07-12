@@ -46,7 +46,7 @@ last_updated: 2026-07-12
 
 > 钛合金颜值担当——萌大统领说"实际拍得少"。
 
-<div class="camera-image-placeholder" role="img" aria-label="徕卡 Minilux图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="徕卡 Minilux图片待补充">
   <strong>徕卡 Minilux</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

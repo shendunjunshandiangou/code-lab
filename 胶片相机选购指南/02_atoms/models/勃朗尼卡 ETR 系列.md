@@ -47,7 +47,7 @@ last_updated: 2026-07-12
 
 > 平价哈苏——最小巧的 645 中画幅单反。
 
-<div class="camera-image-placeholder" role="img" aria-label="勃朗尼卡 ETR 系列图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="勃朗尼卡 ETR 系列图片待补充">
   <strong>勃朗尼卡 ETR 系列</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

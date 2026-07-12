@@ -45,7 +45,7 @@ last_updated: 2026-07-12
 
 > CY 卡口专业电子旗舰，保时捷设计 + 蔡司镜头。
 
-<div class="camera-image-placeholder" role="img" aria-label="康泰时 RTS 系列图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="康泰时 RTS 系列图片待补充">
   <strong>康泰时 RTS 系列</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

@@ -47,7 +47,7 @@ last_updated: 2026-07-12
 
 > AE-1 的升级版，多了 P 档更方便。
 
-<div class="camera-image-placeholder" role="img" aria-label="佳能 AE-1 Program图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="佳能 AE-1 Program图片待补充">
   <strong>佳能 AE-1 Program</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

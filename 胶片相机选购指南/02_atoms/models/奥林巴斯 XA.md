@@ -45,7 +45,7 @@ last_updated: 2026-07-12
 
 > 乐趣满分、画质拉胯——手动内对焦的口袋机异类。
 
-<div class="camera-image-placeholder" role="img" aria-label="奥林巴斯 XA图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 XA图片待补充">
   <strong>奥林巴斯 XA</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>

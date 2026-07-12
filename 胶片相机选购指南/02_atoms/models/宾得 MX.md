@@ -45,7 +45,7 @@ last_updated: 2026-07-12
 
 > 极其小巧的全机械单反，手小者友好。
 
-<div class="camera-image-placeholder" role="img" aria-label="宾得 MX图片待补充">
+<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 MX图片待补充">
   <strong>宾得 MX</strong>
   <span>真实机型图片待完成授权核验后补充</span>
 </div>
