@@ -158,7 +158,7 @@ function camerasForGroup(cameras: BuyingCamera[], group: PriceGroup) {
     .filter((camera) => camera.priceReference >= group.min && camera.priceReference < group.max)
     .sort((a, b) => {
       const imagePriority = Number(Boolean(b.image)) - Number(Boolean(a.image))
-      return a.rank - b.rank || imagePriority || a.priceReference - b.priceReference || a.title.localeCompare(b.title, "zh-CN")
+      return imagePriority || a.rank - b.rank || a.priceReference - b.priceReference || a.title.localeCompare(b.title, "zh-CN")
     })
     .slice(0, 4)
 }
