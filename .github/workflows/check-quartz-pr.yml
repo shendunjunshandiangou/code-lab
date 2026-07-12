@@ -28,7 +28,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 全量收口剩余机型页面
+      - name: 统一机型页面并本地化图片
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
           HEAD_REF: ${{ github.head_ref }}
@@ -36,14 +36,15 @@ jobs:
         run: |
           git checkout -B "$HEAD_REF" "origin/$HEAD_REF"
           node 胶片相机选购指南/scripts/normalize-camera-pages.mjs
+          node 胶片相机选购指南/scripts/localize-images.mjs
 
-          if git diff --quiet -- 胶片相机选购指南/02_atoms/models; then
-            echo '全部机型页面已经符合当前规范。'
+          if [ -z "$(git status --porcelain -- 胶片相机选购指南)" ]; then
+            echo '机型页面和本地图片已经符合当前规范。'
           else
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add 胶片相机选购指南/02_atoms/models
-            git commit -m '统一剩余机型详情页'
+            git add -- 胶片相机选购指南
+            git commit -m '本地化已核验图片并统一机型页面'
             git push origin "HEAD:$HEAD_REF"
           fi
 
