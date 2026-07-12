@@ -82,6 +82,10 @@ jobs:
         working-directory: ./胶片相机选购指南/quartz
         run: node quartz/bootstrap-cli.mjs build --directory ..
 
+      - name: 验收构建产物
+        shell: bash
+        run: node 胶片相机选购指南/scripts/validate-built-site.mjs 胶片相机选购指南/quartz/public
+
       - name: 发布并验证在线预览
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
