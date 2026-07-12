@@ -14,7 +14,7 @@ exposure_modes:
   - "A"
   - "S"
   - "M"
-mount: "固定镜头"
+mount: "Canon EF 卡口（与数码单反共用）"
 shutter: "电子"
 metering: "待核验"
 battery: "需要"
@@ -27,7 +27,10 @@ price_region: 中国大陆二手市场
 price_checked_at: 2026-07
 beginner_level: "推荐"
 reliability: 待核验
-recommended_scenes: []
+recommended_scenes:
+  - "日常记录"
+  - "旅行"
+  - "动态抓拍"
 hero_image: ""
 image_alt: "佳能 EOS 3胶片相机，图片待完成授权核验后补充"
 image_credit: ""
@@ -43,8 +46,6 @@ sources: []
 last_updated: 2026-07-12
 ---
 
-# 佳能 EOS 3
-
 > 胶片机里的现代单反——和数码 EOS 一模一样
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="佳能 EOS 3图片待补充">
@@ -55,9 +56,9 @@ last_updated: 2026-07-12
 ## 快速判断
 
 <div class="camera-verdict-grid">
-  <div><strong>适合</strong><span>待补充。</span></div>
-  <div><strong>不适合</strong><span>待补充。</span></div>
-  <div><strong>参考价格</strong><span>~1000-2000 元；价格口径为 2026 年现有资料</span></div>
+  <div><strong>适合</strong><span>从数码相机过渡到胶片，希望保留自动对焦和自动过片的人</span></div>
+  <div><strong>不适合</strong><span>追求全机械结构、手动过片和传统金属机身体验的人</span></div>
+  <div><strong>参考价格</strong><span>约 ¥1000～2000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数
@@ -89,11 +90,12 @@ last_updated: 2026-07-12
 
 ## 购买检查
 
-1. 检查快门、测光、过片、回卷和计数器是否正常。
-2. 检查取景器、镜头和机身内部是否存在霉、雾、划痕或腐蚀。
-3. 检查电池仓是否漏液，电子功能是否稳定。
-4. 检查后盖密封海绵和反光镜缓冲材料是否老化。
-5. 优先选择能够提供实拍测试、维修记录或退换保障的卖家。
+1. 装入新电池，确认液晶、测光、快门、闪光灯和全部按键正常。
+2. 搭配兼容镜头反复测试自动对焦，确认马达没有异常尖叫、打滑或明显失焦。
+3. 测试各曝光模式、曝光补偿、连拍和不同测光方式。
+4. 装入废卷测试自动装片、过片、计数器和回卷，确认马达运行稳定。
+5. 检查电池仓、机背锁扣、液晶和拨盘是否老化或接触不良。
+6. 优先选择能够提供装卷测试视频、实拍样片或退换保障的卖家。
 
 ## 同价位替代
 
@@ -104,5 +106,5 @@ last_updated: 2026-07-12
 ## 图片与资料来源
 
 - 图片：待完成授权核验后补充。
-- 本页保留原有机型资料并统一为标准结构；缺失参数已标记为“待核验”。
+- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

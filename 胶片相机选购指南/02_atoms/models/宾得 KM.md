@@ -10,7 +10,7 @@ camera_type: "机械单反"
 format: "135"
 focus: "手动对焦"
 exposure_modes:
-  - "M（全手动）"
+  - "M"
 mount: "宾得 K 卡口"
 shutter: "全机械快门"
 metering: "待核验"
@@ -24,7 +24,10 @@ price_region: 中国大陆二手市场
 price_checked_at: 2026-07
 beginner_level: "有一定门槛"
 reliability: 待核验
-recommended_scenes: []
+recommended_scenes:
+  - "摄影基础学习"
+  - "日常记录"
+  - "街拍"
 hero_image: ""
 image_alt: "宾得 KM / KX胶片相机，图片待完成授权核验后补充"
 image_credit: ""
@@ -42,8 +45,6 @@ sources: []
 last_updated: 2026-07-12
 ---
 
-# 宾得 KM / KX
-
 > K1000 的姐妹型号，K 卡口经典入门机械单反。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 KM / KX图片待补充">
@@ -56,7 +57,7 @@ last_updated: 2026-07-12
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想入门 K 卡口系统、预算有限的人</span></div>
   <div><strong>不适合</strong><span>想要更知名型号的人（K1000 存量更大）</span></div>
-  <div><strong>参考价格</strong><span>二手市场：约 400-800 元；价格口径为 2026 年现有资料</span></div>
+  <div><strong>参考价格</strong><span>约 ¥400～800，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数
@@ -92,11 +93,12 @@ last_updated: 2026-07-12
 
 ## 购买检查
 
-1. 检查快门、测光、过片、回卷和计数器是否正常。
-2. 检查取景器、镜头和机身内部是否存在霉、雾、划痕或腐蚀。
-3. 检查电池仓是否漏液，电子功能是否稳定。
-4. 检查后盖密封海绵和反光镜缓冲材料是否老化。
-5. 优先选择能够提供实拍测试、维修记录或退换保障的卖家。
+1. 不装电池逐档测试机械快门和 B 门，确认快门帘运行完整，没有明显粘滞或停顿。
+2. 装入新电池测试测光系统，改变光线、ISO、快门和光圈时，显示应连续响应。
+3. 检查过片、上弦、计数器和回卷机构是否顺畅，反光镜升降是否正常。
+4. 检查快门帘、取景器、反光镜、对焦屏和镜头是否有霉、雾、划痕或腐蚀。
+5. 检查电池仓、后盖锁扣、密封海绵和反光镜缓冲棉是否老化。
+6. 优先选择完成快门精度、测光和实拍测试的机身。
 
 ## 同价位替代
 
@@ -106,5 +108,5 @@ last_updated: 2026-07-12
 ## 图片与资料来源
 
 - 图片：待完成授权核验后补充。
-- 本页保留原有机型资料并统一为标准结构；缺失参数已标记为“待核验”。
+- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
