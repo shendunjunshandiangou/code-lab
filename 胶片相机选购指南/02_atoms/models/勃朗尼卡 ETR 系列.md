@@ -44,9 +44,9 @@ aliases:
   - "勃朗尼卡 ETR 系列"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "平价哈苏——最小巧的 645 中画幅单反。"
 ---
-
-> 平价哈苏——最小巧的 645 中画幅单反。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="勃朗尼卡 ETR 系列图片待补充">
   <strong>勃朗尼卡 ETR 系列</strong>

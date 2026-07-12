@@ -42,9 +42,9 @@ aliases:
   - "Fujifilm Klasse"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "最无聊但最省心——没有优点也没有缺点的均衡选手。"
 ---
-
-> 最无聊但最省心——没有优点也没有缺点的均衡选手。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="富士 Klasse W图片待补充">
   <strong>富士 Klasse W</strong>

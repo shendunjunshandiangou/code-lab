@@ -41,9 +41,9 @@ aliases:
   - "Fuji Wide 300"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "宽幅拍立得，旅行时拍一张送人最合适。"
 ---
-
-> 宽幅拍立得，旅行时拍一张送人最合适。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="富士 Wide 300图片待补充">
   <strong>富士 Wide 300</strong>

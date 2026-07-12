@@ -42,9 +42,9 @@ aliases:
   - "XA"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "乐趣满分、画质拉胯——手动内对焦的口袋机异类。"
 ---
-
-> 乐趣满分、画质拉胯——手动内对焦的口袋机异类。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 XA图片待补充">
   <strong>奥林巴斯 XA</strong>

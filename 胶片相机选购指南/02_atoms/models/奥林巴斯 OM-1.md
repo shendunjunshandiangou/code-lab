@@ -42,9 +42,9 @@ aliases:
   - "奥林巴斯 OM1"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "豆瓣四大神机中最优雅的一台——工业艺术品级的全机械单反。"
 ---
-
-> 豆瓣四大神机中最优雅的一台——工业艺术品级的全机械单反。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 OM-1图片待补充">
   <strong>奥林巴斯 OM-1</strong>

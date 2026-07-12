@@ -44,9 +44,9 @@ aliases:
   - "Canon EOS 3"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "胶片机里的现代单反——和数码 EOS 一模一样"
 ---
-
-> 胶片机里的现代单反——和数码 EOS 一模一样
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="佳能 EOS 3图片待补充">
   <strong>佳能 EOS 3</strong>

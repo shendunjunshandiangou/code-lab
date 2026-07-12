@@ -43,9 +43,9 @@ aliases:
   - "OM-2n"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "Jie's Lens 自用——小巧精致的日系电子单反"
 ---
-
-> Jie's Lens 自用——小巧精致的日系电子单反
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 OM-2n图片待补充">
   <strong>奥林巴斯 OM-2n</strong>

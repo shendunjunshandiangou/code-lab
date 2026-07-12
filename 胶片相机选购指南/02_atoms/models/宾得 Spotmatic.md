@@ -43,9 +43,9 @@ aliases:
   - "宾得 SP"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "M42 螺口经典，400 元买到海量 M42 镜头生态。"
 ---
-
-> M42 螺口经典，400 元买到海量 M42 镜头生态。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 Spotmatic（SP）图片待补充">
   <strong>宾得 Spotmatic（SP）</strong>

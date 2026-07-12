@@ -43,9 +43,9 @@ aliases:
   - "宾得 LX"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "宾得 K 卡口手动时代的终点——专业级旗舰。"
 ---
-
-> 宾得 K 卡口手动时代的终点——专业级旗舰。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 LX图片待补充">
   <strong>宾得 LX</strong>

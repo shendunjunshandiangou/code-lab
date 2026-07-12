@@ -43,9 +43,9 @@ aliases:
   - "Pen FV"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "有史以来最小的可换镜头单反系统，半格 + 全机械。"
 ---
-
-> 有史以来最小的可换镜头单反系统，半格 + 全机械。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 Pen F 系列图片待补充">
   <strong>奥林巴斯 Pen F 系列</strong>

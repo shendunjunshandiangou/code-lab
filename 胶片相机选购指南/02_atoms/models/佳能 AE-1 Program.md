@@ -44,9 +44,9 @@ aliases:
   - "佳能 AE1P"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "AE-1 的升级版，多了 P 档更方便。"
 ---
-
-> AE-1 的升级版，多了 P 档更方便。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="佳能 AE-1 Program图片待补充">
   <strong>佳能 AE-1 Program</strong>

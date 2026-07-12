@@ -42,9 +42,9 @@ aliases:
   - "Pen EE-2"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "一卷拍 72 张的半格口袋机，每张成本减半。"
 ---
-
-> 一卷拍 72 张的半格口袋机，每张成本减半。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 Pen EE-2图片待补充">
   <strong>奥林巴斯 Pen EE-2</strong>

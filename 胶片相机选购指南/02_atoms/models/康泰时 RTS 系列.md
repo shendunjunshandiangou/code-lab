@@ -42,9 +42,9 @@ aliases:
   - "Contax RTS"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "CY 卡口专业电子旗舰，保时捷设计 + 蔡司镜头。"
 ---
-
-> CY 卡口专业电子旗舰，保时捷设计 + 蔡司镜头。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="康泰时 RTS 系列图片待补充">
   <strong>康泰时 RTS 系列</strong>

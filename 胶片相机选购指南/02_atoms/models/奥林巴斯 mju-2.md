@@ -44,9 +44,9 @@ aliases:
   - "μ2"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "销量最高的 PS 机之一，滑盖设计经典，但已被严重炒高。"
 ---
-
-> 销量最高的 PS 机之一，滑盖设计经典，但已被严重炒高。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 mju-2图片待补充">
   <strong>奥林巴斯 mju-2</strong>

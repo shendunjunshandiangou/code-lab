@@ -42,9 +42,9 @@ aliases:
   - "雅西卡 FX-3"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "老王每天用的最便宜相机——几百块上车胶片。"
 ---
-
-> 老王每天用的最便宜相机——几百块上车胶片。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="雅西卡 FX-3 Super 2000图片待补充">
   <strong>雅西卡 FX-3 Super 2000</strong>

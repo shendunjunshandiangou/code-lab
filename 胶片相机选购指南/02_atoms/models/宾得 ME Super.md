@@ -43,9 +43,9 @@ aliases:
   - "宾得 ME Super"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "现代感强、颜值高的入门单反，操作更像现代相机。"
 ---
-
-> 现代感强、颜值高的入门单反，操作更像现代相机。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 ME Super图片待补充">
   <strong>宾得 ME Super</strong>

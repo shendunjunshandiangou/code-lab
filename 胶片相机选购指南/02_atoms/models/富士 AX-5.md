@@ -45,9 +45,9 @@ aliases:
   - "富士 AX5"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "富士 X 卡口功能最完整的手动单反，小众实用。"
 ---
-
-> 富士 X 卡口功能最完整的手动单反，小众实用。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="富士 AX-5图片待补充">
   <strong>富士 AX-5</strong>

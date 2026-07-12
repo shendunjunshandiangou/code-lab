@@ -43,9 +43,9 @@ aliases:
   - "奥林巴斯 OM4"
 sources: []
 last_updated: 2026-07-12
+detail_version: 2
+tagline: "OM 系列旗舰，多点测光 + A 档，OM 卡口的终点。"
 ---
-
-> OM 系列旗舰，多点测光 + A 档，OM 卡口的终点。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 OM-4图片待补充">
   <strong>奥林巴斯 OM-4</strong>

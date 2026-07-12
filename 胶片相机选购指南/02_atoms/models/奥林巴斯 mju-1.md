@@ -46,10 +46,10 @@ aliases:
   - μ1
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_mju"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "mju-2 的平价替代方向：保留滑盖、定焦镜头和全自动操作，价格通常更容易接受，适合只想随身记录的人。"
 ---
-
-> mju-2 的平价替代方向：保留滑盖、定焦镜头和全自动操作，价格通常更容易接受，适合只想随身记录的人。
 
 <div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 mju-1 图片待补充">
   <strong>奥林巴斯 mju-1</strong>
