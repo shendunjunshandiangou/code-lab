@@ -7,11 +7,11 @@
 - 机型总数：83
 - 已有主图：24
 - 图片署名、来源和许可完整：24
-- 已有资料来源：30
+- 已有资料来源：31
 - 含待核验关键字段：75
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：1
-- 正文仍含“待补充”：4
+- 正文仍含“待补充”：3
 
 ## 当前价格选机页推荐
 
@@ -47,9 +47,8 @@
 
 - 哈苏 500 系列：正文重量“约 1,500g（机身 + 80mm 镜头 + 后背）”可回填 weight_g
 
-### 正文仍含待补充（4）
+### 正文仍含待补充（3）
 
-- 康泰时 S2：2 处
 - 禄来 3.5F：2 处
 - 禄来 35：2 处
 - 尼康马特：2 处
@@ -122,7 +121,7 @@
 
 - 无
 
-### 缺少资料来源（53）
+### 缺少资料来源（52）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
@@ -146,7 +145,6 @@
 - 康泰时 G1
 - 康泰时 G2
 - 康泰时 RTS 系列
-- 康泰时 S2
 - 康泰时 T3
 - 康泰时 TVS
 - 柯尼卡 Hexar AF
@@ -218,7 +216,7 @@
 - 康泰时 G1：metering、weight_g、reliability、mount
 - 康泰时 G2：metering、weight_g、reliability
 - 康泰时 RTS 系列：metering、weight_g、reliability
-- 康泰时 S2：metering、weight_g、reliability
+- 康泰时 S2：weight_g、reliability
 - 康泰时 T2：reliability
 - 康泰时 T3：metering、reliability
 - 康泰时 TVS：metering、weight_g、reliability
