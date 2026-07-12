@@ -47,15 +47,12 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Nikon_FG"
   - "https://commons.wikimedia.org/wiki/File:Nikon_FG_1982_8872836.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
+detail_version: 2
+tagline: "尼康轻量化手动单反中的易用型选择：P、A、M 三种曝光模式齐全，适合希望保留手动对焦、又不想每张都手动曝光的新手。"
 ---
 
 > 尼康轻量化手动单反中的易用型选择：P、A、M 三种曝光模式齐全，适合希望保留手动对焦、又不想每张都手动曝光的新手。
-
-<figure class="camera-hero">
-  <img src="../../static/images/library/nikon-fg-1982-8872836-44712683.jpg" alt="配备 Nikkor 50mm f/1.8 镜头的银黑色尼康 FG 胶片单反相机" loading="eager" decoding="async">
-  <figcaption>尼康 FG 与 Nikkor 50mm f/1.8 · 摄影：Rsms · <a href="https://commons.wikimedia.org/wiki/File:Nikon_FG_1982_8872836.jpg">Wikimedia Commons</a> · CC BY-SA 3.0</figcaption>
-</figure>
 
 ## 快速判断
 
