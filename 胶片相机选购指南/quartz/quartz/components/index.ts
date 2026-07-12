@@ -28,6 +28,7 @@ import SiteHeader from "./SiteHeader"
 import PageHero from "./PageHero"
 import SourceVideos from "./SourceVideos"
 import SiteFooter from "./SiteFooter"
+import Readability from "./Readability"
 
 export {
   ArticleTitle,
@@ -60,4 +61,5 @@ export {
   PageHero,
   SourceVideos,
   SiteFooter,
+  Readability,
 }
