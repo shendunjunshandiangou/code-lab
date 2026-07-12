@@ -28,7 +28,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 统一机型页面、本地化图片并生成审计
+      - name: 检查详情版本、本地化图片并生成审计
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
           HEAD_REF: ${{ github.head_ref }}
@@ -36,12 +36,12 @@ jobs:
         run: |
           git checkout -B "$HEAD_REF" "origin/$HEAD_REF"
           node 胶片相机选购指南/scripts/upgrade-camera-detail-v2.mjs
-          node 胶片相机选购指南/scripts/normalize-camera-pages.mjs
+          # normalize-camera-pages.mjs 仅用于首次批量收口，不在 CI 中反复执行，避免覆盖人工精修内容。
           node 胶片相机选购指南/scripts/localize-images.mjs
           node 胶片相机选购指南/scripts/audit-camera-content.mjs
 
           if [ -z "$(git status --porcelain -- 胶片相机选购指南)" ]; then
-            echo '机型页面、本地图片和内容审计已经符合当前规范。'
+            echo '详情版本、本地图片和内容审计已经符合当前规范。'
           else
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
