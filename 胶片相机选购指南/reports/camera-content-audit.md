@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：27
-- 图片署名、来源和许可完整：27
-- 已有资料来源：38
+- 已有主图：28
+- 图片署名、来源和许可完整：28
+- 已有资料来源：39
 - 含待核验关键字段：75
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：1
@@ -54,7 +54,7 @@
 
 ## 全量缺口
 
-### 缺少主图（56）
+### 缺少主图（55）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 OM-4
@@ -76,7 +76,6 @@
 - 佳能 EOS 3
 - 佳能 FTb-N
 - 康泰时 Aria
-- 康泰时 G1
 - 康泰时 G2
 - 康泰时 RTS 系列
 - 康泰时 S2
@@ -117,7 +116,7 @@
 
 - 无
 
-### 缺少资料来源（45）
+### 缺少资料来源（44）
 
 - 奥林巴斯 Pen D3
 - 奥林巴斯 Pen EE-2
@@ -134,7 +133,6 @@
 - 哈苏 500 系列
 - 佳能 FTb-N
 - 康泰时 Aria
-- 康泰时 G1
 - 康泰时 G2
 - 康泰时 RTS 系列
 - 康泰时 T3
@@ -202,7 +200,7 @@
 - 佳能 F-1：reliability
 - 佳能 FTb-N：metering、weight_g、reliability
 - 康泰时 Aria：metering、weight_g、reliability
-- 康泰时 G1：metering、weight_g、reliability、mount
+- 康泰时 G1：reliability
 - 康泰时 G2：metering、weight_g、reliability
 - 康泰时 RTS 系列：metering、weight_g、reliability
 - 康泰时 S2：weight_g、reliability
