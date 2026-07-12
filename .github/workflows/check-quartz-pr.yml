@@ -59,11 +59,43 @@ jobs:
         working-directory: ./胶片相机选购指南/quartz
         run: node quartz/bootstrap-cli.mjs build --directory ..
 
-      - name: 请求更新在线预览
+      - name: 发布并验证在线预览
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
           GH_TOKEN: ${{ github.token }}
+          PREVIEW_URL: https://shendunjunshandiangou.github.io/code-lab/preview/
+        shell: bash
         run: |
           gh workflow run deploy-quartz.yml \
             --ref master \
             --field preview_ref='${{ github.head_ref }}'
+
+          sleep 5
+          run_id="$(gh run list \
+            --workflow deploy-quartz.yml \
+            --branch master \
+            --event workflow_dispatch \
+            --limit 1 \
+            --json databaseId \
+            --jq '.[0].databaseId')"
+
+          if [ -z "$run_id" ]; then
+            echo '::error::没有找到在线预览部署任务。'
+            exit 1
+          fi
+
+          echo "等待部署任务 $run_id 完成"
+          gh run watch "$run_id" --exit-status
+
+          for attempt in $(seq 1 12); do
+            if curl -fsSL "$PREVIEW_URL" | grep -q 'home-shell'; then
+              echo "在线预览已更新：$PREVIEW_URL"
+              exit 0
+            fi
+
+            echo "等待 GitHub Pages 生效（$attempt/12）"
+            sleep 5
+          done
+
+          echo '::error::部署任务已完成，但在线预览页面尚未出现预期首页内容。'
+          exit 1
