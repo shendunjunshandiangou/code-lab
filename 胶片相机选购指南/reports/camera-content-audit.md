@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：23
-- 图片署名、来源和许可完整：23
-- 已有资料来源：24
+- 已有主图：24
+- 图片署名、来源和许可完整：24
+- 已有资料来源：25
 - 含待核验关键字段：76
 - 高风险字段冲突：1
 - 可从正文回填结构化字段：10
@@ -20,6 +20,7 @@
 | 500 元以内 | 尼康 F-601 | 推荐 | 有 | 有 | 无 |
 | 500 元以内 | 奥林巴斯 OM-10 | 推荐 | 有 | 有 | reliability |
 | 500 元以内 | 美能达 SRT-101 | 有一定门槛 | 有 | 有 | reliability |
+| 500 元以内 | 宾得 Spotmatic（SP） | 有一定门槛 | 有 | 有 | weight_g、reliability |
 | 500～1000 元 | 宾得 ME | 推荐 | 有 | 有 | reliability |
 | 500～1000 元 | 尼康 FG | 推荐 | 有 | 有 | 无 |
 | 500～1000 元 | 尼康 FE | 推荐 | 有 | 有 | 无 |
@@ -76,7 +77,7 @@
 
 ## 全量缺口
 
-### 缺少主图（60）
+### 缺少主图（59）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 OM-4
@@ -89,7 +90,6 @@
 - 宾得 KM / KX
 - 宾得 LX
 - 宾得 ME Super
-- 宾得 Spotmatic（SP）
 - 勃朗尼卡 ETR 系列
 - 富士 AX-5
 - 富士 GA645Zi
@@ -143,7 +143,7 @@
 
 - 无
 
-### 缺少资料来源（59）
+### 缺少资料来源（58）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
@@ -155,7 +155,6 @@
 - 宾得 KM / KX
 - 宾得 LX
 - 宾得 ME Super
-- 宾得 Spotmatic（SP）
 - 勃朗尼卡 ETR 系列
 - 富士 AX-5
 - 富士 GA645Zi
@@ -225,7 +224,7 @@
 - 宾得 LX：metering、weight_g、reliability
 - 宾得 ME Super：metering、weight_g、reliability
 - 宾得 ME：reliability
-- 宾得 Spotmatic（SP）：metering、weight_g、reliability
+- 宾得 Spotmatic（SP）：weight_g、reliability
 - 勃朗尼卡 ETR 系列：metering、weight_g、reliability
 - 富士 AX-5：metering、weight_g、reliability
 - 富士 GA645Zi：metering、weight_g、reliability
