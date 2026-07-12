@@ -28,7 +28,7 @@ recommended_scenes:
   - "摄影基础学习"
   - "日常记录"
   - "街拍"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Olympus_OM-1.jpg?width=1600"
+hero_image: "./static/images/library/olympus-om-1-6c0b68be.jpg"
 image_alt: "奥林巴斯 OM-1 MD 胶片单反与 50mm 镜头"
 image_credit: "Martin Taylor 摄影，ChibaRagi 编辑"
 image_source: "https://commons.wikimedia.org/wiki/File:Olympus_OM-1.jpg"
@@ -113,6 +113,5 @@ permalink: "cameras/olympus-om-1"
 ## 图片与资料来源
 
 - 图片：Martin Taylor 摄影，ChibaRagi 编辑，Wikimedia Commons，CC BY-SA 2.5。
-- 机型基本参数参考 Olympus OM-1 的公开资料；重量按 OM-1 机身约 490g 记录，OM-1n 等版本会略有不同。
-- 本页其余购买建议沿用原有整理内容；未完成核验的可靠性判断继续明确标记。
+- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
