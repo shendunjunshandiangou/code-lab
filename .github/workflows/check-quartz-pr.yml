@@ -35,6 +35,7 @@ jobs:
         shell: bash
         run: |
           git checkout -B "$HEAD_REF" "origin/$HEAD_REF"
+          node 胶片相机选购指南/scripts/upgrade-camera-detail-v2.mjs
           node 胶片相机选购指南/scripts/normalize-camera-pages.mjs
           node 胶片相机选购指南/scripts/localize-images.mjs
 
