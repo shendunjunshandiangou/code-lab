@@ -86,7 +86,7 @@ permalink: "cameras/fujifilm-klasse-w"
 
 ## 不适合谁
 
-- 待补充。
+- 需要完整手动控制，或不能接受老电子便携机维修困难的人。
 
 ## 购买检查
 

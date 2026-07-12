@@ -85,7 +85,7 @@ permalink: "cameras/olympus-pen-ee-2"
 
 ## 不适合谁
 
-- 待补充。
+- 追求大幅放大、极致细节或高感画质的人。
 
 ## 购买检查
 
