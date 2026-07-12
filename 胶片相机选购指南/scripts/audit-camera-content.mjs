@@ -98,10 +98,11 @@ for (const file of files) {
 const recommendedRows = []
 const recommendedMissingImages = []
 for (const group of priceGroups) {
-  const selected = cameras
+  const candidates = cameras
     .filter((camera) => camera.priceReference >= group.min && camera.priceReference < group.max)
     .sort((a, b) => Number(Boolean(b.heroImage)) - Number(Boolean(a.heroImage)) || beginnerRank(a.beginner) - beginnerRank(b.beginner) || a.priceReference - b.priceReference || a.title.localeCompare(b.title, "zh-CN"))
-    .slice(0, 4)
+  const withImages = candidates.filter((camera) => Boolean(camera.heroImage))
+  const selected = (withImages.length >= 2 ? withImages : candidates).slice(0, 4)
 
   for (const camera of selected) {
     recommendedRows.push(`| ${group.label} | ${camera.title} | ${camera.beginner || "待判断"} | ${camera.heroImage ? "有" : "缺"} | ${camera.hasSources ? "有" : "缺"} | ${camera.pendingFields.join("、") || "无"} |`)
