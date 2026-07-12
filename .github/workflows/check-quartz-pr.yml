@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: read
+  contents: write
   actions: write
   pull-requests: write
 
@@ -27,6 +27,25 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: 全量收口剩余机型页面
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+        shell: bash
+        run: |
+          git checkout -B "$HEAD_REF" "origin/$HEAD_REF"
+          node 胶片相机选购指南/scripts/normalize-camera-pages.mjs
+
+          if git diff --quiet -- 胶片相机选购指南/02_atoms/models; then
+            echo '全部机型页面已经符合当前规范。'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add 胶片相机选购指南/02_atoms/models
+            git commit -m '统一剩余机型详情页'
+            git push origin "HEAD:$HEAD_REF"
+          fi
 
       - name: 检查内容源路径
         if: github.event_name == 'pull_request'
