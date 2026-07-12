@@ -1,5 +1,6 @@
 import { ComponentChildren } from "preact"
 import { htmlToJsx } from "../../util/jsx"
+import { concatenateResources } from "../../util/resources"
 import HomePageConstructor from "../HomePage"
 import LearnPageConstructor from "../LearnPage"
 import BuyingGuidePageConstructor from "../BuyingGuidePage"
@@ -12,6 +13,7 @@ const LearnPage = LearnPageConstructor()
 const BuyingGuidePage = BuyingGuidePageConstructor()
 const PortalPages = PortalPagesConstructor()
 const CameraAtlasPage = CameraAtlasPageConstructor()
+const customPages = [HomePage, LearnPage, BuyingGuidePage, PortalPages, CameraAtlasPage]
 const customPortalSlugs = new Set(["film", "videos", "about"])
 
 const Content: QuartzComponent = (props: QuartzComponentProps) => {
@@ -47,5 +49,11 @@ const Content: QuartzComponent = (props: QuartzComponentProps) => {
   const classString = ["popover-hint", ...classes].join(" ")
   return <article class={classString}>{content}</article>
 }
+
+// Quartz 只自动收集布局中顶层组件的资源。上述专题页嵌套在 Content 内，
+// 因此需要在这里显式汇总 CSS 和交互脚本，否则页面只能渲染静态 HTML。
+Content.css = concatenateResources(...customPages.map((component) => component.css))
+Content.beforeDOMLoaded = concatenateResources(...customPages.map((component) => component.beforeDOMLoaded))
+Content.afterDOMLoaded = concatenateResources(...customPages.map((component) => component.afterDOMLoaded))
 
 export default (() => Content) satisfies QuartzComponentConstructor
