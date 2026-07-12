@@ -9,6 +9,10 @@ on:
       - '.github/workflows/check-quartz-pr.yml'
   workflow_dispatch:
 
+concurrency:
+  group: quartz-pr-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
@@ -30,4 +34,12 @@ jobs:
 
       - name: 安装依赖
         working-directory: ./胶片相机选购指南/quartz
-       
+        run: npm ci
+
+      - name: TypeScript 类型检查
+        working-directory: ./胶片相机选购指南/quartz
+        run: npx tsc --noEmit
+
+      - name: 构建网站
+        working-directory: ./胶片相机选购指南/quartz
+        run: node quartz/bootstrap-cli.mjs build --directory ..
