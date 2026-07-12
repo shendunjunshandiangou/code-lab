@@ -44,7 +44,6 @@ aliases:
   - 尼康 FE
   - Nikon FE
 sources:
-  - "[[../01_articles/胶片时代的尼康宝藏！平价相机推荐.md]]"
   - "https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg"
 last_updated: 2026-07-12
 ---
@@ -123,6 +122,6 @@ last_updated: 2026-07-12
 
 ## 图片与资料来源
 
-- 机型资料整理自：[[../01_articles/胶片时代的尼康宝藏！平价相机推荐.md]]
 - 图片：Tobias Wolter，[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg)，CC BY-SA 3.0。
+- 本页机型资料沿用原有整理内容；尚未逐项补充外部资料来源。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

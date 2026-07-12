@@ -1,27 +1,66 @@
 ---
-type: slr-mechanical
-brand: konica
-format: 135
-price: budget
-skill: moderate
+title: "柯尼卡 T3N"
+description: "柯尼卡 T3N的参数、优缺点、二手价格和购买建议。"
+entity: camera
+cssclasses:
+  - camera-detail
+brand: "Konica"
+model: "柯尼卡 T3N"
+camera_type: "机械单反"
+format: "135"
+focus: "手动对焦"
+exposure_modes:
+  - "M（全手动）"
+mount: "柯尼卡 AR 卡口"
+shutter: "全机械快门"
+metering: "待核验"
+battery: "不需要（或仅供电测光）"
+release_year: 1970
+weight_g: null
+price_min: 400
+price_max: 800
+price_currency: CNY
+price_region: 中国大陆二手市场
+price_checked_at: 2026-07
+beginner_level: "有一定门槛"
+reliability: 待核验
+recommended_scenes: []
+hero_image: ""
+image_alt: "柯尼卡 T3N胶片相机，图片待完成授权核验后补充"
+image_credit: ""
+image_source: ""
+image_license: ""
+tags:
+  - "机械单反"
+  - "手动对焦"
+  - "有一定门槛"
 aliases:
   - "Konica T3N"
   - "柯尼卡 T3N"
-source:
-  - "[[../01_articles/16个品牌83台相机！手动胶片单反相机终极推荐.md]]"
+sources: []
+last_updated: 2026-07-12
 ---
 
 # 柯尼卡 T3N
 
-> [!image] 柯尼卡 T3N 外观参考
-> 点击查看 [Konica Autoreflex T3 camera](https://www.google.com/search?tbm=isch&q=Konica%20Autoreflex%20T3%20camera)
+> T 系列巅峰，全金属机身，小众但镜头素质被高度认可。
 
-## 一句话定位
-T 系列巅峰，全金属机身，小众但镜头素质被高度认可。
+<div class="camera-image-placeholder" role="img" aria-label="柯尼卡 T3N图片待补充">
+  <strong>柯尼卡 T3N</strong>
+  <span>真实机型图片待完成授权核验后补充</span>
+</div>
 
-## 基本参数
+## 快速判断
 
-| 参数 | 值 |
+<div class="camera-verdict-grid">
+  <div><strong>适合</strong><span>喜欢小众品牌、追求独特的人 不在乎自动功能、愿意玩转纯手动的玩家</span></div>
+  <div><strong>不适合</strong><span>需要丰富镜头选择和便利维修的普通用户</span></div>
+  <div><strong>参考价格</strong><span>二手市场：约 400-800 元；价格口径为 2026 年现有资料</span></div>
+</div>
+
+## 关键参数
+
+| 参数 | 信息 |
 |------|-----|
 | 发布时间 | 1970 年代 |
 | 快门类型 | 全机械快门 |
@@ -30,27 +69,43 @@ T 系列巅峰，全金属机身，小众但镜头素质被高度认可。
 | 对焦方式 | 手动 |
 | 电池 | 不需要（或仅供电测光） |
 
-## 优点
+## 为什么值得买
+
 - **T 系列巅峰之作**：全金属机身，操作丝滑，极度耐用
 - **镜头素质好**：柯尼卡镜头被资深玩家高度认可
 - 做工扎实——比后续的 T4 更可靠
 - 小众有话题性
 
-## 缺点
+## 需要注意什么
+
 - 柯尼卡 AR 卡口生态小，镜头不好找
 - 品牌知名度低，维修师傅少
 - 纯手动，没有 A 档
 
-## 价格参考（2026）
-- 二手市场：约 400-800 元
-
 ## 适合谁
+
 - 喜欢小众品牌、追求独特的人
 - 不在乎自动功能、愿意玩转纯手动的玩家
 
 ## 不适合谁
+
 - 需要丰富镜头选择和便利维修的普通用户
 
-## 相关机型
+## 购买检查
+
+1. 检查快门、测光、过片、回卷和计数器是否正常。
+2. 检查取景器、镜头和机身内部是否存在霉、雾、划痕或腐蚀。
+3. 检查电池仓是否漏液，电子功能是否稳定。
+4. 检查后盖密封海绵和反光镜缓冲材料是否老化。
+5. 优先选择能够提供实拍测试、维修记录或退换保障的卖家。
+
+## 同价位替代
+
 - [[柯尼卡 T4]] — 后续型号，加入 TTL 测光和快门优先，但做工不如 T3N
 - [[理光 KR-5]] — 同价位段另一小众选择
+
+## 图片与资料来源
+
+- 图片：待完成授权核验后补充。
+- 本页保留原有机型资料并统一为标准结构；缺失参数已标记为“待核验”。
+- 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

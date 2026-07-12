@@ -1,29 +1,68 @@
 ---
-type: medium-format
-brand: bronica
-format: 120
-price: mid
-skill: advanced
+title: "勃朗尼卡 ETR 系列"
+description: "勃朗尼卡 ETR 系列的参数、优缺点、二手价格和购买建议。"
+entity: camera
+cssclasses:
+  - camera-detail
+brand: "Bronica"
+model: "勃朗尼卡 ETR 系列"
+camera_type: "中画幅相机"
+format: "120"
+focus: "手动对焦"
+exposure_modes:
+  - "M（全手动）"
+mount: "勃朗尼卡 ETR 卡口（可换镜头）"
+shutter: "电子镜间快门"
+metering: "待核验"
+battery: "需要（电子快门）"
+release_year: 1976
+weight_g: null
+price_min: 3000
+price_max: 5000
+price_currency: CNY
+price_region: 中国大陆二手市场
+price_checked_at: 2026-07
+beginner_level: "进阶"
+reliability: 待核验
+recommended_scenes: []
+hero_image: ""
+image_alt: "勃朗尼卡 ETR 系列胶片相机，图片待完成授权核验后补充"
+image_credit: ""
+image_source: ""
+image_license: ""
+tags:
+  - "中画幅相机"
+  - "手动对焦"
+  - "进阶"
 aliases:
   - "Bronica ETR"
   - "Bronica ETRS"
   - "Bronica ETRSi"
   - "勃朗尼卡 ETR 系列"
-source:
-  - "[[../01_articles/16个品牌83台相机！手动胶片单反相机终极推荐.md]]"
+sources: []
+last_updated: 2026-07-12
 ---
 
 # 勃朗尼卡 ETR 系列
 
-> [!image] 勃朗尼卡 ETR 系列 外观参考
-> 点击查看 [Bronica ETR camera](https://www.google.com/search?tbm=isch&q=Bronica%20ETR%20camera)
+> 平价哈苏——最小巧的 645 中画幅单反。
 
-## 一句话定位
-平价哈苏——最小巧的 645 中画幅单反。
+<div class="camera-image-placeholder" role="img" aria-label="勃朗尼卡 ETR 系列图片待补充">
+  <strong>勃朗尼卡 ETR 系列</strong>
+  <span>真实机型图片待完成授权核验后补充</span>
+</div>
 
-## 基本参数
+## 快速判断
 
-| 参数 | 值 |
+<div class="camera-verdict-grid">
+  <div><strong>适合</strong><span>想体验 120 中画幅但预算在 5,000 以内的人 追求模块化系统但买不起哈苏的人 想要便携 120 单反的人</span></div>
+  <div><strong>不适合</strong><span>追求纯机械不依赖电池的人（选哈苏 500） 追求最大底片面积的人（选玛米亚 RB67 或宾得 6×7）</span></div>
+  <div><strong>参考价格</strong><span>二手市场：约 3,000-5,000 元；价格口径为 2026 年现有资料</span></div>
+</div>
+
+## 关键参数
+
+| 参数 | 信息 |
 |------|-----|
 | 发布时间 | ETR 1976 / ETRS 1978 / ETRSi 1988 |
 | 画幅 | 6×4.5（120 胶卷，15 张/卷） |
@@ -34,32 +73,48 @@ source:
 | 电池 | 需要（电子快门） |
 | 特点 | 模块化：可换后背、取景器、镜头；腰平取景 |
 
-## 优点
+## 为什么值得买
+
 - **"平价哈苏"**：和哈苏一样的模块化设计（后背/取景器/镜头全可换），价格只有哈苏的三分之一
 - **张有伯 1000-5000 元区间强力推荐**：645 是 120 画幅的甜点画幅
 - **最小巧的 120 单反**：比哈苏 500 和玛米亚 RB67 轻便很多，是能带出门的 120
 - **性价比极高**：3,000-5,000 元就能买到不错的配置
 - **645 画幅实用**：15 张/卷（比 6×6 的 12 张更经济），竖构图不用旋转机身
 
-## 缺点
+## 需要注意什么
+
 - **电子快门依赖电池**：没电无法拍摄
 - **品牌不如哈苏**：没有"上过月球"的传奇故事
 - **645 画幅较小**：比 6×6 和 6×7 的底片面积小，放大潜力稍逊
 - **镜头群不如哈苏**：蔡司镜头只有哈苏能用
 
-## 价格参考（2026）
-- 二手市场：约 3,000-5,000 元
-
 ## 适合谁
+
 - 想体验 120 中画幅但预算在 5,000 以内的人
 - 追求模块化系统但买不起哈苏的人
 - 想要便携 120 单反的人
 
 ## 不适合谁
+
 - 追求纯机械不依赖电池的人（选哈苏 500）
 - 追求最大底片面积的人（选玛米亚 RB67 或宾得 6×7）
 
-## 相关机型
+## 购买检查
+
+1. 检查快门、测光、过片、回卷和计数器是否正常。
+2. 检查取景器、镜头和机身内部是否存在霉、雾、划痕或腐蚀。
+3. 检查电池仓是否漏液，电子功能是否稳定。
+4. 检查后盖密封海绵和反光镜缓冲材料是否老化。
+5. 优先选择能够提供实拍测试、维修记录或退换保障的卖家。
+
+## 同价位替代
+
 - [[哈苏500]] — 贵价原版，6×6 方形，全机械
 - [[勃朗尼卡 SQ 系列]] — 6×6 画幅版本
 - [[玛米亚 RB67]] — 67 画幅巨无霸，在 1000-5000 区间
+
+## 图片与资料来源
+
+- 图片：待完成授权核验后补充。
+- 本页保留原有机型资料并统一为标准结构；缺失参数已标记为“待核验”。
+- 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
