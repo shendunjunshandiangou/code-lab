@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：13
-- 图片署名、来源和许可完整：13
-- 已有资料来源：14
+- 已有主图：14
+- 图片署名、来源和许可完整：14
+- 已有资料来源：15
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -33,7 +33,7 @@
 
 ## 全量缺口
 
-### 缺少主图（70）
+### 缺少主图（69）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 mju-2
@@ -60,7 +60,6 @@
 - 富士 Wide 300
 - 哈苏 500 系列
 - 海鸥 4A
-- 佳能 A-1
 - 佳能 AE-1 Program
 - 佳能 EOS 3
 - 佳能 F-1
@@ -110,7 +109,7 @@
 
 - 无
 
-### 缺少资料来源（69）
+### 缺少资料来源（68）
 
 - 奥林巴斯 mju-2
 - 奥林巴斯 OM-2
@@ -136,7 +135,6 @@
 - 富士 Wide 300
 - 哈苏 500 系列
 - 海鸥 4A
-- 佳能 A-1
 - 佳能 AE-1 Program
 - 佳能 EOS 3
 - 佳能 F-1
@@ -212,7 +210,7 @@
 - 富士 Wide 300：metering、weight_g、reliability、mount、focus
 - 哈苏 500 系列：metering、weight_g、reliability
 - 海鸥 4A：metering、weight_g、reliability
-- 佳能 A-1：metering、weight_g、reliability
+- 佳能 A-1：reliability
 - 佳能 AE-1 Program：metering、weight_g、reliability
 - 佳能 AE-1：reliability
 - 佳能 EOS 3：metering、weight_g、reliability
