@@ -28,7 +28,7 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pentax_ME_M50mm.jpg"
+hero_image: "./static/images/library/pentax-me-m50mm-50ca1f75.jpg"
 image_alt: "宾得 ME 搭配 SMC-M 50mm f/1.7 镜头"
 image_credit: "Hiyotada"
 image_source: "https://commons.wikimedia.org/wiki/File:Pentax_ME_M50mm.jpg"
@@ -105,5 +105,5 @@ permalink: "cameras/pentax-me"
 ## 图片与资料来源
 
 - 图片：Hiyotada，Wikimedia Commons，CC BY-SA 3.0。
-- 参数来源：Pentax ME 公开资料页与 Wikimedia Commons 文件页。
-- 可靠性与二手价格仍受机况、维修历史、地区和镜头搭配影响，当前区间不是成交保证。
+- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
+- 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

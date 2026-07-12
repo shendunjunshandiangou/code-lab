@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：11
-- 图片署名、来源和许可完整：11
-- 已有资料来源：12
+- 已有主图：12
+- 图片署名、来源和许可完整：12
+- 已有资料来源：13
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -18,10 +18,10 @@
 | 500 元以内 | 奥林巴斯 OM-10 | 推荐 | 有 | 有 | reliability |
 | 500 元以内 | 一次性相机 | 推荐 | 缺 | 缺 | metering、weight_g、reliability、focus |
 | 500 元以内 | 美能达 807Si | 推荐 | 缺 | 缺 | metering、weight_g、reliability、battery |
+| 500～1000 元 | 宾得 ME | 推荐 | 有 | 有 | reliability |
 | 500～1000 元 | 尼康 FG | 推荐 | 有 | 有 | 无 |
 | 500～1000 元 | 尼康 FE | 推荐 | 有 | 有 | 无 |
 | 500～1000 元 | 富士 Wide 300 | 推荐 | 缺 | 缺 | metering、weight_g、reliability、mount、focus |
-| 500～1000 元 | 宾得 ME | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
 | 1000～2000 元 | 佳能 AE-1 | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 尼康 FE2 | 推荐 | 有 | 有 | 无 |
 | 1000～2000 元 | 雅西卡 T3 Super | 推荐 | 缺 | 缺 | metering、weight_g、reliability、battery |
@@ -36,7 +36,6 @@
 - 一次性相机
 - 美能达 807Si
 - 富士 Wide 300
-- 宾得 ME
 - 雅西卡 T3 Super
 - 宾得 Espio Mini
 - 康泰时 TVS
@@ -46,7 +45,7 @@
 
 ## 全量缺口
 
-### 缺少主图（72）
+### 缺少主图（71）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 mju-2
@@ -64,7 +63,6 @@
 - 宾得 KM / KX
 - 宾得 LX
 - 宾得 ME Super
-- 宾得 ME
 - 宾得 Spotmatic（SP）
 - 勃朗尼卡 ETR 系列
 - 富士 AX-5
@@ -125,7 +123,7 @@
 
 - 无
 
-### 缺少资料来源（71）
+### 缺少资料来源（70）
 
 - 奥林巴斯 mju-2
 - 奥林巴斯 OM-1
@@ -142,7 +140,6 @@
 - 宾得 KM / KX
 - 宾得 LX
 - 宾得 ME Super
-- 宾得 ME
 - 宾得 Spotmatic（SP）
 - 勃朗尼卡 ETR 系列
 - 富士 AX-5
@@ -218,7 +215,7 @@
 - 宾得 KM / KX：metering、weight_g、reliability
 - 宾得 LX：metering、weight_g、reliability
 - 宾得 ME Super：metering、weight_g、reliability
-- 宾得 ME：metering、weight_g、reliability
+- 宾得 ME：reliability
 - 宾得 Spotmatic（SP）：metering、weight_g、reliability
 - 勃朗尼卡 ETR 系列：metering、weight_g、reliability
 - 富士 AX-5：metering、weight_g、reliability
