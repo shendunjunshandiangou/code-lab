@@ -10,7 +10,7 @@
 - 已有资料来源：27
 - 含待核验关键字段：76
 - 高风险字段冲突：0
-- 可从正文回填结构化字段：9
+- 可从正文回填结构化字段：2
 - 正文仍含“待补充”：14
 
 ## 当前价格选机页推荐
@@ -43,16 +43,9 @@
 
 - 无
 
-### 可从正文回填 Frontmatter（9）
+### 可从正文回填 Frontmatter（2）
 
-- 富士 Klasse W：正文重量“约 270g”可回填 weight_g
 - 哈苏 500 系列：正文重量“约 1,500g（机身 + 80mm 镜头 + 后背）”可回填 weight_g
-- 康泰时 T3：正文重量“约 230g”可回填 weight_g
-- 柯尼卡 Hexar AF：正文重量“约 510g”可回填 weight_g
-- 徕卡 CM：正文重量“约 260g”可回填 weight_g
-- 理光 GR1s：正文重量“约 178g”可回填 weight_g
-- 美能达 TC-1：正文重量“约 185g”可回填 weight_g
-- 尼康 28Ti：正文重量“约 310g”可回填 weight_g
 - 尼康 F2：正文重量“约 730g（DE-1 眼平顶）；Photomic 组合可达到约 840g”可回填 weight_g
 
 ### 正文仍含待补充（14）
@@ -223,7 +216,7 @@
 - 勃朗尼卡 ETR 系列：metering、weight_g、reliability
 - 富士 AX-5：metering、weight_g、reliability
 - 富士 GA645Zi：metering、weight_g、reliability
-- 富士 Klasse W：metering、weight_g、reliability
+- 富士 Klasse W：metering、reliability
 - 富士 ST-701：metering、weight_g、reliability
 - 富士 ST-801 / ST-901：metering、weight_g、reliability
 - 富士 Wide 300：metering、weight_g、reliability、mount、focus
@@ -241,16 +234,16 @@
 - 康泰时 RTS 系列：metering、weight_g、reliability
 - 康泰时 S2：metering、weight_g、reliability
 - 康泰时 T2：reliability
-- 康泰时 T3：metering、weight_g、reliability
+- 康泰时 T3：metering、reliability
 - 康泰时 TVS：metering、weight_g、reliability
-- 柯尼卡 Hexar AF：metering、weight_g、reliability
+- 柯尼卡 Hexar AF：metering、reliability
 - 柯尼卡 T3N：metering、weight_g、reliability
 - 柯尼卡 T4：metering、weight_g、reliability
-- 徕卡 CM：metering、weight_g、reliability
+- 徕卡 CM：metering、reliability
 - 徕卡 M6：reliability
 - 徕卡 Minilux：metering、weight_g、reliability
 - 徕卡 R6 / R6.2：metering、weight_g、reliability
-- 理光 GR1s：metering、weight_g、reliability
+- 理光 GR1s：metering、reliability
 - 理光 GR21：metering、weight_g、reliability
 - 理光 KR-5：metering、weight_g、reliability
 - 理光 XR-2：metering、weight_g、reliability
@@ -261,11 +254,11 @@
 - 玛米亚 RB67：metering、weight_g、reliability
 - 美能达 807Si：metering、weight_g、reliability、battery
 - 美能达 SRT-101：reliability
-- 美能达 TC-1：metering、weight_g、reliability
+- 美能达 TC-1：metering、reliability
 - 美能达 X-1（XK/XM）：metering、weight_g、reliability
 - 美能达 X-700：reliability
 - 美能达 α-7：metering、weight_g、reliability
-- 尼康 28Ti：metering、weight_g、reliability
+- 尼康 28Ti：metering、reliability
 - 尼康 F2：weight_g
 - 尼康 F3：weight_g
 - 尼康马特：metering、weight_g、reliability

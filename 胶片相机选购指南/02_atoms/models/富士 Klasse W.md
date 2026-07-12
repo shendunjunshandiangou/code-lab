@@ -16,7 +16,7 @@ shutter: "电子"
 metering: "待核验"
 battery: "需要"
 release_year: 2007
-weight_g: null
+weight_g: 270
 price_min: 3000
 price_max: 5000
 price_currency: CNY
