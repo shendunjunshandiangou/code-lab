@@ -48,6 +48,7 @@ const readerExplorer = Component.Explorer({
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     HomeLayoutFix(),
+    Component.HomePage(),
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
       condition: notHome,
