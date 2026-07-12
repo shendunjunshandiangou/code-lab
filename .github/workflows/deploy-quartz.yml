@@ -1,14 +1,18 @@
-name: 部署 Quartz 正式站与预览站
+name: 部署 Quartz to GitHub Pages
 
 on:
   push:
     branches:
       - master
-      - agent/camera-editorial-redesign
     paths:
       - '胶片相机选购指南/**'
       - '.github/workflows/deploy-quartz.yml'
   workflow_dispatch:
+    inputs:
+      preview_ref:
+        description: '需要发布到 /preview/ 的分支或提交'
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -23,34 +27,44 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 检出当前分支
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          path: current
-
       - name: 检出正式站 master
-        if: github.ref_name != 'master'
         uses: actions/checkout@v4
         with:
           ref: master
           fetch-depth: 0
           path: production
 
+      - name: 检出预览版本
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.preview_ref != ''
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.preview_ref }}
+          fetch-depth: 0
+          path: preview
+
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: current/胶片相机选购指南/quartz/package-lock.json
+          cache-dependency-path: production/胶片相机选购指南/quartz/package-lock.json
 
-      - name: 安装当前分支依赖
-        working-directory: ./current/胶片相机选购指南/quartz
+      - name: 安装正式站依赖
+        working-directory: ./production/胶片相机选购指南/quartz
+        run: npm ci
+
+      - name: 构建正式站
+        working-directory: ./production/胶片相机选购指南/quartz
+        run: node quartz/bootstrap-cli.mjs build --directory ..
+
+      - name: 安装预览站依赖
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.preview_ref != ''
+        working-directory: ./preview/胶片相机选购指南/quartz
         run: npm ci
 
       - name: 配置预览站路径
-        if: github.ref_name != 'master'
-        working-directory: ./current/胶片相机选购指南/quartz
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.preview_ref != ''
+        working-directory: ./preview/胶片相机选购指南/quartz
         shell: bash
         run: |
           python - <<'PY'
@@ -67,18 +81,9 @@ jobs:
           path.write_text(content.replace(old, new, 1), encoding='utf-8')
           PY
 
-      - name: 构建当前分支
-        working-directory: ./current/胶片相机选购指南/quartz
-        run: node quartz/bootstrap-cli.mjs build --directory ..
-
-      - name: 安装正式站依赖
-        if: github.ref_name != 'master'
-        working-directory: ./production/胶片相机选购指南/quartz
-        run: npm ci
-
-      - name: 构建正式站
-        if: github.ref_name != 'master'
-        working-directory: ./production/胶片相机选购指南/quartz
+      - name: 构建预览站
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.preview_ref != ''
+        working-directory: ./preview/胶片相机选购指南/quartz
         run: node quartz/bootstrap-cli.mjs build --directory ..
 
       - name: 组合正式站与预览站
@@ -86,23 +91,18 @@ jobs:
         run: |
           rm -rf site
           mkdir -p site
+          cp -a production/胶片相机选购指南/quartz/public/. site/
 
-          if [ "${GITHUB_REF_NAME}" = "master" ]; then
-            cp -a current/胶片相机选购指南/quartz/public/. site/
-          else
-            cp -a production/胶片相机选购指南/quartz/public/. site/
+          if [ -n "${{ github.event.inputs.preview_ref }}" ]; then
             mkdir -p site/preview
-            cp -a current/胶片相机选购指南/quartz/public/. site/preview/
-          fi
-
-          test -f site/index.html
-
-          if [ "${GITHUB_REF_NAME}" != "master" ]; then
+            cp -a preview/胶片相机选购指南/quartz/public/. site/preview/
             test -f site/preview/index.html
             grep -q 'home-shell' site/preview/index.html
           fi
 
-      - name: 上传 GitHub Pages 构建产物
+          test -f site/index.html
+
+      - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
