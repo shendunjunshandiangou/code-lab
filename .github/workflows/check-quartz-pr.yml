@@ -42,9 +42,17 @@ jobs:
         working-directory: ./胶片相机选购指南/quartz
         run: npx tsc --noEmit
 
-      - name: 本次改动格式检查
+      - name: 检查 quartz.config.ts 格式
         working-directory: ./胶片相机选购指南/quartz
-        run: npx prettier quartz.config.ts quartz.layout.ts quartz/styles/custom.scss --check
+        run: npx prettier quartz.config.ts --check
+
+      - name: 检查 quartz.layout.ts 格式
+        working-directory: ./胶片相机选购指南/quartz
+        run: npx prettier quartz.layout.ts --check
+
+      - name: 检查 custom.scss 格式
+        working-directory: ./胶片相机选购指南/quartz
+        run: npx prettier quartz/styles/custom.scss --check
 
       - name: 构建网站
         working-directory: ./胶片相机选购指南/quartz
