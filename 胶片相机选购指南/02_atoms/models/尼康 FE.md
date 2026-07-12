@@ -30,7 +30,7 @@ recommended_scenes:
   - 日常记录
   - 街拍
   - 摄影入门
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1600"
+hero_image: "./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg"
 image_alt: 配备 Nikkor 50mm f/1.4 镜头的银黑色尼康 FE 胶片单反相机
 image_credit: Tobias Wolter
 image_source: "https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg"
@@ -54,7 +54,7 @@ last_updated: 2026-07-12
 > FM2 的电子快门平替：保留手动对焦和机械过片体验，又用光圈优先降低曝光门槛，价格通常更容易接受。
 
 <figure class="camera-hero">
-  <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1600" alt="配备 Nikkor 50mm f/1.4 镜头的银黑色尼康 FE 胶片单反相机" loading="eager" decoding="async">
+  <img src="../../static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg" alt="配备 Nikkor 50mm f/1.4 镜头的银黑色尼康 FE 胶片单反相机" loading="eager" decoding="async">
   <figcaption>尼康 FE 与 Nikkor 50mm f/1.4 · 摄影：Tobias Wolter · <a href="https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg">Wikimedia Commons</a> · CC BY-SA 3.0</figcaption>
 </figure>
 

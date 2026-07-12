@@ -210,7 +210,7 @@ const CameraAtlasPage: QuartzComponent = ({ allFiles, fileData }: QuartzComponen
         </div>
         <figure>
           <img
-            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1600"
+            src="./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg"
             alt="尼康 FE 胶片相机"
             loading="eager"
           />

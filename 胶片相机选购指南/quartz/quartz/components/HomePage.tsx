@@ -10,7 +10,7 @@ const cameras = [
     reason: "保留手动操作，又用 A 档降低曝光门槛，是温和而完整的入门方式。",
     href: "./02_atoms/models/尼康-FE",
     image:
-      "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1200",
+      "./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg",
     budget: "low,mid",
     autonomy: "auto-exposure,manual",
     scene: "daily,street,learn",
@@ -35,7 +35,7 @@ const cameras = [
     reason: "操作接近现代相机，自动对焦和多种曝光模式能明显降低第一次使用的压力。",
     href: "./02_atoms/models/尼康-F-601",
     image:
-      "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_F601%28n6006%29_%28cropped%29.JPG?width=1200",
+      "./static/images/library/nikon-f601-n6006-cropped-jpg-533c0aca.jpg",
     budget: "low",
     autonomy: "autofocus,auto-exposure",
     scene: "daily,travel,portrait",
@@ -47,7 +47,7 @@ const cameras = [
     price: "¥800～1500",
     reason: "结构简单、操作直接，适合真正想理解光圈、快门和测光关系的人。",
     href: "./02_atoms/models/宾得-K1000",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pentax_K1000.jpg?width=1200",
+    image: "./static/images/library/pentax-k1000-d0157f0d.jpg",
     budget: "mid",
     autonomy: "manual",
     scene: "street,learn,collection",
@@ -131,7 +131,7 @@ function HomePage({ fileData }: QuartzComponentProps) {
       <section class="commercial-hero">
         <img
           class="commercial-hero-image"
-          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_et_Nikkor_50mm_f1.8.jpg?width=2200"
+          src="./static/images/library/nikon-fm2-et-nikkor-50mm-f1-8-a9fafbbf.jpg"
           alt="木桌上的尼康 FM2 胶片相机"
           loading="eager"
           decoding="async"

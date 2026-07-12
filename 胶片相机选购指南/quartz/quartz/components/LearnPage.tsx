@@ -118,7 +118,7 @@ const LearnPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
         </div>
         <figure class="learn-guide-cover">
           <img
-            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_et_Nikkor_50mm_f1.8.jpg?width=1600"
+            src="./static/images/library/nikon-fm2-et-nikkor-50mm-f1-8-a9fafbbf.jpg"
             alt="木桌上的尼康 FM2 胶片相机"
             loading="eager"
             decoding="async"
@@ -190,7 +190,7 @@ const LearnPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
         <div class="learn-photo-feature">
           <figure>
             <img
-              src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1400"
+              src="./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg"
               alt="银黑色尼康 FE 胶片单反相机"
               loading="lazy"
             />

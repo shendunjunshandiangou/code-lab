@@ -29,7 +29,7 @@ recommended_scenes:
   - 摄影基础学习
   - 街拍
   - 旅行
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_in_black.jpg?width=1600"
+hero_image: "./static/images/library/nikon-fm2-in-black-67d6783c.jpg"
 image_alt: 配备 Nikkor 50mm f/1.4 镜头的黑色尼康 FM2 全机械胶片单反相机
 image_credit: Mariom990
 image_source: Wikimedia Commons
@@ -53,7 +53,7 @@ last_updated: 2026-07-12
 > 一台以机械可靠性闻名的手动单反：全部快门速度都不依赖电池，同时提供 1/4000s 高速快门。
 
 <figure class="camera-hero">
-  <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_in_black.jpg?width=1600" alt="配备 Nikkor 50mm f/1.4 镜头的黑色尼康 FM2 全机械胶片单反相机" loading="eager" decoding="async">
+  <img src="../../static/images/library/nikon-fm2-in-black-67d6783c.jpg" alt="配备 Nikkor 50mm f/1.4 镜头的黑色尼康 FM2 全机械胶片单反相机" loading="eager" decoding="async">
   <figcaption>黑色尼康 FM2 与 Nikkor 50mm f/1.4 · 摄影：Mariom990 · <a href="https://commons.wikimedia.org/wiki/File:Nikon_FM2_in_black.jpg">Wikimedia Commons</a> · CC BY-SA 4.0</figcaption>
 </figure>
 

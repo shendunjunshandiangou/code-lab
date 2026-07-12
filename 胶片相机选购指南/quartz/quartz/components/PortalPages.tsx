@@ -68,7 +68,7 @@ const cameraCards = [
     label: "推荐入门",
     copy: "保留手动对焦和过片，同时用 A 档降低曝光门槛，适合想认真学习但不想从全机械开始的人。",
     href: "./02_atoms/models/尼康-FE",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1200",
+    image: "./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg",
   },
   {
     name: "尼康 F-601",
@@ -77,7 +77,7 @@ const cameraCards = [
     label: "性价比",
     copy: "操作方式接近现代相机，自动对焦和多种曝光模式能显著降低第一次使用胶片单反的压力。",
     href: "./02_atoms/models/尼康-F-601",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_F601%28n6006%29_%28cropped%29.JPG?width=1200",
+    image: "./static/images/library/nikon-f601-n6006-cropped-jpg-533c0aca.jpg",
   },
   {
     name: "宾得 K1000",
@@ -86,7 +86,7 @@ const cameraCards = [
     label: "学习摄影",
     copy: "结构简单、操作直接。适合愿意主动学习测光、光圈和快门关系的读者。",
     href: "./02_atoms/models/宾得-K1000",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pentax_K1000.jpg?width=1200",
+    image: "./static/images/library/pentax-k1000-d0157f0d.jpg",
   },
   {
     name: "尼康 FM2",
@@ -95,7 +95,7 @@ const cameraCards = [
     label: "经典机型",
     copy: "可靠、耐用、机械感强，但市场热度和价格都较高，不必把它当作新手的唯一答案。",
     href: "./02_atoms/models/尼康-FM2",
-    image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_et_Nikkor_50mm_f1.8.jpg?width=1200",
+    image: "./static/images/library/nikon-fm2-et-nikkor-50mm-f1-8-a9fafbbf.jpg",
   },
   {
     name: "奥林巴斯 mju-1",
@@ -131,7 +131,7 @@ function BuyingPage() {
         section="帮我选相机"
         title="先决定怎样拍，再决定买哪台。"
         description="选第一台胶片相机，不需要先背型号。按照使用场景、完整预算、操作方式和二手状态四步判断，通常就能把几十台候选缩小到两三台。"
-        image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1600"
+        image="./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg"
         alt="尼康 FE 胶片相机"
         credit="尼康 FE · Tobias Wolter · Wikimedia Commons · CC BY-SA 3.0"
       />
@@ -216,7 +216,7 @@ function CamerasPage() {
         section="相机图鉴"
         title="先按使用方式认识机型，再比较具体型号。"
         description="图鉴不只陈列参数。每台相机会优先说明适合谁、主要优点、需要承担的缺点、参考价格和二手检查重点。"
-        image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pentax_K1000.jpg?width=1600"
+        image="./static/images/library/pentax-k1000-d0157f0d.jpg"
         alt="宾得 K1000 胶片单反相机"
         credit="宾得 K1000 · Wikimedia Commons"
       />
@@ -261,7 +261,7 @@ function FilmPage() {
         section="胶卷与成像"
         title="相机控制光线，胶卷和冲扫决定最终画面。"
         description="同一台机身装入不同胶卷，再经过不同的曝光、冲洗和扫描，会得到明显不同的结果。这里把第一次购买和拍摄真正需要理解的内容放在一页。"
-        image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_et_Nikkor_50mm_f1.8.jpg?width=1600"
+        image="./static/images/library/nikon-fm2-et-nikkor-50mm-f1-8-a9fafbbf.jpg"
         alt="尼康 FM2 胶片相机与镜头"
         credit="尼康 FM2 · Patrick Dehais · Wikimedia Commons"
       />
@@ -323,7 +323,7 @@ function VideosPage() {
         section="视频精选"
         title="保留原视频，也提供更容易查询的文字版本。"
         description="本站内容主要整理自 B 站公开视频。视频适合建立直观认识，文章负责把观点、参数、选购步骤和注意事项重新组织成可以检索和比较的结构。"
-        image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FM2_et_Nikkor_50mm_f1.8.jpg?width=1600"
+        image="./static/images/library/nikon-fm2-et-nikkor-50mm-f1-8-a9fafbbf.jpg"
         alt="尼康 FM2 胶片相机"
         credit="尼康 FM2 · Patrick Dehais · Wikimedia Commons"
       />
@@ -360,7 +360,7 @@ function AboutPage() {
         section="关于本站"
         title="把分散的视频和机型资料，整理成一条清晰的入门路径。"
         description="胶片相机指南面向第一次接触胶片摄影、正在准备购买第一台相机的读者。它不是排行榜，也不是将个人文件夹直接公开的知识库。"
-        image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1600"
+        image="./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg"
         alt="尼康 FE 胶片相机"
         credit="尼康 FE · Tobias Wolter · Wikimedia Commons · CC BY-SA 3.0"
       />
