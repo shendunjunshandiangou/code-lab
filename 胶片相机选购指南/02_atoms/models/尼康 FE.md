@@ -33,7 +33,7 @@ recommended_scenes:
 hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikon_FE_(Workshop_Cologne_%2706)_(cropped).jpeg?width=1600"
 image_alt: 配备 Nikkor 50mm f/1.4 镜头的银黑色尼康 FE 胶片单反相机
 image_credit: Tobias Wolter
-image_source: Wikimedia Commons
+image_source: "https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg"
 image_license: CC BY-SA 3.0
 tags:
   - 胶片单反
@@ -45,6 +45,9 @@ aliases:
   - Nikon FE
 sources:
   - "https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg"
+source_note: 本页结合原有视频资料整理机型定位，并使用公开机型资料核对基础参数。原视频信息将在确认创作者和 BV 号后补充。
+editorial_status: reviewed
+last_verified: 2026-07-12
 last_updated: 2026-07-12
 ---
 
