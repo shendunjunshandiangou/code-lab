@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：16
-- 图片署名、来源和许可完整：16
-- 已有资料来源：17
+- 已有主图：17
+- 图片署名、来源和许可完整：17
+- 已有资料来源：18
 - 含待核验关键字段：76
 
 ## 当前价格选机页推荐
@@ -21,8 +21,8 @@
 | 500～1000 元 | 尼康 FE | 推荐 | 有 | 有 | 无 |
 | 1000～2000 元 | 佳能 AE-1 | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 尼康 FE2 | 推荐 | 有 | 有 | 无 |
+| 1000～2000 元 | 佳能 AE-1 Program | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 奥林巴斯 OM-1 | 有一定门槛 | 有 | 有 | reliability |
-| 1000～2000 元 | 宾得 K1000 | 有一定门槛 | 有 | 有 | 无 |
 | 2000 元以上 | 奥林巴斯 mju-2 | 推荐 | 有 | 有 | reliability |
 | 2000 元以上 | 尼康 FM2 | 有一定门槛 | 有 | 有 | 无 |
 | 2000 元以上 | 尼康 F2 | 有一定门槛 | 有 | 有 | weight_g |
@@ -34,7 +34,7 @@
 
 ## 全量缺口
 
-### 缺少主图（67）
+### 缺少主图（66）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 OM-2
@@ -60,7 +60,6 @@
 - 富士 Wide 300
 - 哈苏 500 系列
 - 海鸥 4A
-- 佳能 AE-1 Program
 - 佳能 EOS 3
 - 佳能 F-1
 - 佳能 FTb-N
@@ -108,7 +107,7 @@
 
 - 无
 
-### 缺少资料来源（66）
+### 缺少资料来源（65）
 
 - 奥林巴斯 OM-2
 - 奥林巴斯 OM-2n
@@ -133,7 +132,6 @@
 - 富士 Wide 300
 - 哈苏 500 系列
 - 海鸥 4A
-- 佳能 AE-1 Program
 - 佳能 EOS 3
 - 佳能 F-1
 - 佳能 FTb-N
@@ -208,7 +206,7 @@
 - 哈苏 500 系列：metering、weight_g、reliability
 - 海鸥 4A：metering、weight_g、reliability
 - 佳能 A-1：reliability
-- 佳能 AE-1 Program：metering、weight_g、reliability
+- 佳能 AE-1 Program：reliability
 - 佳能 AE-1：reliability
 - 佳能 EOS 3：metering、weight_g、reliability
 - 佳能 F-1：metering、weight_g、reliability

@@ -30,7 +30,7 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Canon_AE-1_Program.jpg?width=1600"
+hero_image: "./static/images/library/canon-ae-1-program-8158d387.jpg"
 image_alt: "佳能 AE-1 Program 胶片单反搭配 FD 标准镜头"
 image_credit: "KurtClark"
 image_source: "https://commons.wikimedia.org/wiki/File:Canon_AE-1_Program.jpg"
@@ -109,6 +109,5 @@ permalink: "cameras/canon-ae-1-program"
 ## 图片与资料来源
 
 - 图片：KurtClark，Wikimedia Commons，CC BY 2.0。
-- 发布时间、曝光模式、快门范围、电池和重量参考 Canon Camera Museum 与公开规格。
-- 本页其余购买建议沿用原有整理内容；未完成核验的可靠性判断继续明确标记。
+- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
