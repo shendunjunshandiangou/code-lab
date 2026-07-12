@@ -163,7 +163,7 @@
 
 ### 含待核验关键字段（75）
 
-- 奥林巴斯 mju-1：weight_g
+- 奥林巴斯 mju-1：weight_g、reliability
 - 奥林巴斯 mju-2：reliability
 - 奥林巴斯 OM-1：reliability
 - 奥林巴斯 OM-10：reliability

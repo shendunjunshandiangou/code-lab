@@ -46,7 +46,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_mju"
   - "https://en.wikipedia.org/wiki/List_of_Olympus_products"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "mju 系列初代定焦机：35mm f/3.5、滑盖开机和全自动操作，价格通常低于 mju-2。"
 permalink: "cameras/olympus-mju-1"
