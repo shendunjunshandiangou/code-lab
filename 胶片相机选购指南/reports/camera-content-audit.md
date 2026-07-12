@@ -24,24 +24,19 @@
 | 500～1000 元 | 富士 Wide 300 | 推荐 | 缺 | 缺 | metering、weight_g、reliability、mount、focus |
 | 1000～2000 元 | 佳能 AE-1 | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 尼康 FE2 | 推荐 | 有 | 有 | 无 |
-| 1000～2000 元 | 雅西卡 T3 Super | 推荐 | 缺 | 缺 | metering、weight_g、reliability、battery |
-| 1000～2000 元 | 宾得 Espio Mini | 推荐 | 缺 | 缺 | metering、weight_g、reliability、battery |
+| 1000～2000 元 | 宾得 K1000 | 有一定门槛 | 有 | 有 | 无 |
+| 1000～2000 元 | 宾得 MX | 有一定门槛 | 有 | 有 | 无 |
+| 2000 元以上 | 尼康 FM2 | 有一定门槛 | 有 | 有 | 无 |
+| 2000 元以上 | 尼康 F2 | 有一定门槛 | 有 | 有 | weight_g |
+| 2000 元以上 | 尼康 F3 | 有一定门槛 | 有 | 有 | weight_g |
 | 2000 元以上 | 康泰时 TVS | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
-| 2000 元以上 | 奥林巴斯 mju-2 | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
-| 2000 元以上 | 柯尼卡 Hexar AF | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
-| 2000 元以上 | 富士 Klasse W | 推荐 | 缺 | 缺 | metering、weight_g、reliability |
 
 ## 最高优先级：推荐卡片缺图
 
 - 一次性相机
 - 美能达 807Si
 - 富士 Wide 300
-- 雅西卡 T3 Super
-- 宾得 Espio Mini
 - 康泰时 TVS
-- 奥林巴斯 mju-2
-- 柯尼卡 Hexar AF
-- 富士 Klasse W
 
 ## 全量缺口
 
