@@ -26,7 +26,6 @@ function coalesceAliases(data: { [key: string]: any }, aliases: string[]) {
 function coerceToArray(input: string | string[]): string[] | undefined {
   if (input === undefined || input === null) return undefined
 
-  // coerce to array
   if (!Array.isArray(input)) {
     input = input
       .toString()
@@ -34,7 +33,6 @@ function coerceToArray(input: string | string[]): string[] | undefined {
       .map((tag: string) => tag.trim())
   }
 
-  // remove all non-strings
   return input
     .filter((tag: unknown) => typeof tag === "string" || typeof tag === "number")
     .map((tag: string | number) => tag.toString())
@@ -50,6 +48,13 @@ function getAliasSlugs(aliases: string[]): FullSlug[] {
   }
 
   return res
+}
+
+function normalizePermalink(value: unknown): FullSlug | undefined {
+  const normalized = String(value ?? "")
+    .trim()
+    .replace(/^\/+|\/+$/g, "")
+  return normalized ? (normalized as FullSlug) : undefined
 }
 
 export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
@@ -82,17 +87,22 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
 
             const aliases = coerceToArray(coalesceAliases(data, ["aliases", "alias"]))
             if (aliases) {
-              data.aliases = aliases // frontmatter
+              data.aliases = aliases
               file.data.aliases = getAliasSlugs(aliases)
               allSlugs.push(...file.data.aliases)
             }
 
-            if (data.permalink != null && data.permalink.toString() !== "") {
-              data.permalink = data.permalink.toString() as FullSlug
-              const aliases = file.data.aliases ?? []
-              aliases.push(data.permalink)
-              file.data.aliases = aliases
-              allSlugs.push(data.permalink)
+            const permalink = normalizePermalink(data.permalink)
+            if (permalink) {
+              const originalSlug = file.data.slug
+              data.permalink = permalink
+
+              // permalink 是正式输出路由，原始 Markdown 路径自动降级为兼容重定向。
+              const redirectAliases = file.data.aliases ?? []
+              if (originalSlug && originalSlug !== permalink) redirectAliases.push(originalSlug)
+              file.data.aliases = [...new Set(redirectAliases.filter((alias) => alias !== permalink))]
+              file.data.slug = permalink
+              allSlugs.push(permalink, ...file.data.aliases)
             }
 
             const cssclasses = coerceToArray(coalesceAliases(data, ["cssclasses", "cssclass"]))
@@ -112,18 +122,16 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
               "last-modified",
             ])
             if (modified) data.modified = modified
-            data.modified ||= created // if modified is not set, use created
+            data.modified ||= created
 
             const published = coalesceAliases(data, ["published", "publishDate", "date"])
             if (published) data.published = published
 
             if (socialImage) data.socialImage = socialImage
 
-            // Remove duplicate slugs
             const uniqueSlugs = [...new Set(allSlugs)]
             allSlugs.splice(0, allSlugs.length, ...uniqueSlugs)
 
-            // fill in frontmatter
             file.data.frontmatter = data as QuartzPluginData["frontmatter"]
           }
         },
