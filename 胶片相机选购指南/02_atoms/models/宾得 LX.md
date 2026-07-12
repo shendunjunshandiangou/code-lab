@@ -29,7 +29,7 @@ recommended_scenes:
   - "专业手动系统"
   - "长曝光"
   - "人像与风光"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pentax%20LX%2C%20front.jpg?width=1400"
+hero_image: "./static/images/library/pentax-lx-front-7281a347.jpg"
 image_alt: "正面展示的宾得 LX 专业 35mm 单反相机"
 image_credit: "Alfred"
 image_source: "https://commons.wikimedia.org/wiki/File:Pentax_LX,_front.jpg"
@@ -44,7 +44,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Pentax_LX"
   - "https://commons.wikimedia.org/wiki/File:Pentax_LX,_front.jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "宾得手动对焦时代的专业旗舰：可换取景器、胶片面实时测光，以及无电仍可工作的高速机械快门。"
 permalink: "cameras/pentax-lx"
