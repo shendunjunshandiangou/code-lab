@@ -47,11 +47,6 @@ detail_version: 2
 tagline: "Jie's Lens 自用——小巧精致的日系电子单反"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 OM-2n图片待补充">
-  <strong>奥林巴斯 OM-2n</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

@@ -45,11 +45,6 @@ detail_version: 2
 tagline: "宽幅拍立得，旅行时拍一张送人最合适。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="富士 Wide 300图片待补充">
-  <strong>富士 Wide 300</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

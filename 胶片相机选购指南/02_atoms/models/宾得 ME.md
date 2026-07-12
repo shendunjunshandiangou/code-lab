@@ -45,11 +45,6 @@ detail_version: 2
 tagline: "ME Super 的前代，纯 A 档入门机，颜值能打。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 ME图片待补充">
-  <strong>宾得 ME</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

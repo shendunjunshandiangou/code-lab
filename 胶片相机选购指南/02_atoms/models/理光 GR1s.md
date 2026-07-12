@@ -46,11 +46,6 @@ detail_version: 2
 tagline: "口袋胶片机设计的天花板，握持手感无敌，但随时可能坏。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="理光 GR1s图片待补充">
-  <strong>理光 GR1s</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

@@ -47,11 +47,6 @@ detail_version: 2
 tagline: "OM-1 的电子化升级版，A 档自动 + 精致做工。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 OM-2图片待补充">
-  <strong>奥林巴斯 OM-2</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

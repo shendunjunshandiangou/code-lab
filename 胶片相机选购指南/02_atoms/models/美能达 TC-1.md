@@ -47,11 +47,6 @@ detail_version: 2
 tagline: "为极致小巧放弃太多——画质一般、噪音大、修不了。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="美能达 TC-1图片待补充">
-  <strong>美能达 TC-1</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

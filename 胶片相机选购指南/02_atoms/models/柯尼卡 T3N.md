@@ -46,11 +46,6 @@ detail_version: 2
 tagline: "T 系列巅峰，全金属机身，小众但镜头素质被高度认可。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="柯尼卡 T3N图片待补充">
-  <strong>柯尼卡 T3N</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

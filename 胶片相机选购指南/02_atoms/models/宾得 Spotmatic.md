@@ -47,11 +47,6 @@ detail_version: 2
 tagline: "M42 螺口经典，400 元买到海量 M42 镜头生态。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="宾得 Spotmatic（SP）图片待补充">
-  <strong>宾得 Spotmatic（SP）</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

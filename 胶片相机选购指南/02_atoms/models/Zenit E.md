@@ -47,11 +47,6 @@ detail_version: 2
 tagline: "10 欧元地板价——笨重但皮实的苏联坦克。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="Zenit E图片待补充">
-  <strong>Zenit E</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

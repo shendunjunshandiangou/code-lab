@@ -51,11 +51,6 @@ detail_version: 2
 tagline: "mju-2 的平价替代方向：保留滑盖、定焦镜头和全自动操作，价格通常更容易接受，适合只想随身记录的人。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 mju-1 图片待补充">
-  <strong>奥林巴斯 mju-1</strong>
-  <span>暂不使用授权和机型身份未核验清楚的网络图片</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

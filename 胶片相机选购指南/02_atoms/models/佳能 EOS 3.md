@@ -48,11 +48,6 @@ detail_version: 2
 tagline: "胶片机里的现代单反——和数码 EOS 一模一样"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="佳能 EOS 3图片待补充">
-  <strong>佳能 EOS 3</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

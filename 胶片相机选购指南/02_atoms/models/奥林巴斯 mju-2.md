@@ -48,11 +48,6 @@ detail_version: 2
 tagline: "销量最高的 PS 机之一，滑盖设计经典，但已被严重炒高。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 mju-2图片待补充">
-  <strong>奥林巴斯 mju-2</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

@@ -46,11 +46,6 @@ detail_version: 2
 tagline: "便宜实用的宾得 K 卡口入门机，胜在配件通用性。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="理光 KR-5图片待补充">
-  <strong>理光 KR-5</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

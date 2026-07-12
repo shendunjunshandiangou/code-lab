@@ -47,11 +47,6 @@ detail_version: 2
 tagline: "宾得 K 卡口的理光进阶版，KR-5 的升级选择。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="理光 XR-2图片待补充">
-  <strong>理光 XR-2</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

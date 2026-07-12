@@ -47,11 +47,6 @@ detail_version: 2
 tagline: "OM 系列旗舰，多点测光 + A 档，OM 卡口的终点。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="奥林巴斯 OM-4图片待补充">
-  <strong>奥林巴斯 OM-4</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

@@ -46,11 +46,6 @@ detail_version: 2
 tagline: "佳能 FD 卡口最便宜的纯机械入门机。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="佳能 FTb-N图片待补充">
-  <strong>佳能 FTb-N</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">

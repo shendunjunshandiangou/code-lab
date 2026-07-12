@@ -46,11 +46,6 @@ detail_version: 2
 tagline: "比 T2/T3 便宜得多的康泰时变焦 PS 机。"
 ---
 
-<div class="camera-image-placeholder camera-card-visual" role="img" aria-label="康泰时 TVS图片待补充">
-  <strong>康泰时 TVS</strong>
-  <span>真实机型图片待完成授权核验后补充</span>
-</div>
-
 ## 快速判断
 
 <div class="camera-verdict-grid">
