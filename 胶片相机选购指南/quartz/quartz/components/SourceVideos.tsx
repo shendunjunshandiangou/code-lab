@@ -20,16 +20,20 @@ const SourceVideos: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const videos = Array.isArray(frontmatter.source_videos)
     ? (frontmatter.source_videos as SourceVideo[]).filter((video) => video?.url || video?.bvid)
     : []
-  const sourceNote =
-    frontmatter.source_note ??
-    "本站将公开视频中的观点重新组织为适合阅读和查询的结构，并结合公开机型资料进行必要核验。原视频观点与本站补充信息应分别理解。"
+  const sourceNote = frontmatter.source_note as string | undefined
+
+  // 栏目入口和尚未补充来源字段的页面不显示大块空状态，避免打断阅读。
+  if (videos.length === 0 && !sourceNote) return null
 
   return (
     <section class="source-video-section" aria-labelledby="source-video-title">
       <div class="source-video-heading">
-        <p>EDITORIAL SOURCES</p>
-        <h2 id="source-video-title">内容来源与延伸观看</h2>
-        <span>{sourceNote}</span>
+        <p>内容来源</p>
+        <h2 id="source-video-title">参考视频与编辑说明</h2>
+        <span>
+          {sourceNote ??
+            "本站将公开视频中的观点重新组织为适合阅读和查询的结构，并结合公开机型资料进行必要核验。原视频观点与本站补充信息应分别理解。"}
+        </span>
       </div>
 
       {videos.length > 0 ? (
@@ -63,12 +67,7 @@ const SourceVideos: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
             )
           })}
         </div>
-      ) : (
-        <div class="source-video-empty">
-          <strong>原视频映射正在整理</strong>
-          <p>播放器与视频卡片能力已经接入。具体视频将在确认 BV 号、创作者、标题和封面后逐条上线，避免错误署名。</p>
-        </div>
-      )}
+      ) : null}
 
       <div class="editorial-disclosure">
         <span>整理原则</span>
