@@ -35,6 +35,7 @@ import SiteFooter from "./SiteFooter"
 import Readability from "./Readability"
 import ContentLayout from "./ContentLayout"
 import IconTuning from "./IconTuning"
+import BuyingGuideInlineStyles from "./BuyingGuideInlineStyles"
 
 export {
   ArticleTitle,
@@ -74,4 +75,5 @@ export {
   Readability,
   ContentLayout,
   IconTuning,
+  BuyingGuideInlineStyles,
 }
