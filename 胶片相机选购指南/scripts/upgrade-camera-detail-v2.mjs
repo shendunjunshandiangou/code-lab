@@ -52,12 +52,15 @@ function upgradeFile(file) {
   if (!match) throw new Error(`${file}: 缺少 frontmatter`)
 
   let [, frontmatter, body] = match
-  const tagline = extractTagline(body)
+  const existingTagline = frontmatter.match(/^tagline:\s*["']?(.*?)["']?\s*$/m)?.[1]?.trim() ?? ""
+  const tagline = extractTagline(body) || existingTagline
 
   frontmatter = upsertYamlScalar(frontmatter, "detail_version", 2)
   if (tagline) frontmatter = upsertYamlScalar(frontmatter, "tagline", tagline)
   frontmatter = upsertYamlScalar(frontmatter, "last_updated", "2026-07-12")
 
+  // 一句话定位只在 PageHero 展示；正文直接进入购买判断。
+  body = body.replace(/^\s*(?:>\s?.*(?:\n|$))+\s*/m, "")
   // PageHero 已经展示主图和版权说明，正文中不再重复同一张图片。
   body = body.replace(/\n?<figure class="camera-hero">[\s\S]*?<\/figure>\s*/m, "\n")
 
