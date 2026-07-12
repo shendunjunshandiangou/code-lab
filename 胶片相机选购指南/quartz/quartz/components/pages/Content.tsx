@@ -2,15 +2,19 @@ import { ComponentChildren } from "preact"
 import { htmlToJsx } from "../../util/jsx"
 import HomePageConstructor from "../HomePage"
 import LearnPageConstructor from "../LearnPage"
+import PortalPagesConstructor from "../PortalPages"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
 const HomePage = HomePageConstructor()
 const LearnPage = LearnPageConstructor()
+const PortalPages = PortalPagesConstructor()
+const customPortalSlugs = new Set(["buying", "cameras", "film", "videos", "about"])
 
 const Content: QuartzComponent = (props: QuartzComponentProps) => {
   const { fileData, tree } = props
+  const slug = String(fileData.slug ?? "")
 
-  if (fileData.slug === "index") {
+  if (slug === "index") {
     return (
       <article class="popover-hint home-page">
         <HomePage {...props} />
@@ -18,8 +22,12 @@ const Content: QuartzComponent = (props: QuartzComponentProps) => {
     )
   }
 
-  if (fileData.slug === "learn") {
+  if (slug === "learn") {
     return <LearnPage {...props} />
+  }
+
+  if (customPortalSlugs.has(slug)) {
+    return <PortalPages {...props} />
   }
 
   const content = htmlToJsx(fileData.filePath!, tree) as ComponentChildren
