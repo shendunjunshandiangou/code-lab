@@ -29,7 +29,7 @@ recommended_scenes:
   - "日常记录"
   - "旅行街拍"
   - "摄影入门"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Vintage%20Pentax%20ME%20Super%2035mm%20SLR%20Film%20Camera%2C%20Made%20In%20Japan%2C%20Produced%20Between%201979%20And%201984%2C%20Lens%20-%20SMC%20Pentax-M%2050mm%20%2824185119650%29.jpg?width=1400"
+hero_image: "./static/images/library/vintage-pentax-me-super-35mm-slr-film-camera-made-in-japan-produced-betw-24e9f653.jpg"
 image_alt: "搭配 SMC Pentax-M 50mm 镜头的宾得 ME Super 胶片单反"
 image_credit: "Joe Haupt"
 image_source: "https://commons.wikimedia.org/wiki/File:Vintage_Pentax_ME_Super_35mm_SLR_Film_Camera,_Made_In_Japan,_Produced_Between_1979_And_1984,_Lens_-_SMC_Pentax-M_50mm_(24185119650).jpg"
@@ -44,7 +44,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Pentax_ME_Super"
   - "https://commons.wikimedia.org/wiki/File:Vintage_Pentax_ME_Super_35mm_SLR_Film_Camera,_Made_In_Japan,_Produced_Between_1979_And_1984,_Lens_-_SMC_Pentax-M_50mm_(24185119650).jpg"
-last_updated: 2026-07-12
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "小巧 K 卡口电子单反：A 档适合日常，按钮式手动曝光提供更多控制，并保留 1/125s 机械备份。"
 permalink: "cameras/pentax-me-super"

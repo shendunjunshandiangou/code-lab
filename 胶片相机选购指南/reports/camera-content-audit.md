@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：26
-- 图片署名、来源和许可完整：26
-- 已有资料来源：36
+- 已有主图：27
+- 图片署名、来源和许可完整：27
+- 已有资料来源：37
 - 含待核验关键字段：75
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：1
@@ -24,6 +24,7 @@
 | 500～1000 元 | 宾得 ME | 推荐 | 有 | 有 | reliability |
 | 500～1000 元 | 尼康 FG | 推荐 | 有 | 有 | 无 |
 | 500～1000 元 | 尼康 FE | 推荐 | 有 | 有 | 无 |
+| 500～1000 元 | 宾得 ME Super | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 佳能 AE-1 | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 尼康 FE2 | 推荐 | 有 | 有 | 无 |
 | 1000～2000 元 | 佳能 AE-1 Program | 推荐 | 有 | 有 | reliability |
@@ -53,7 +54,7 @@
 
 ## 全量缺口
 
-### 缺少主图（57）
+### 缺少主图（56）
 
 - 奥林巴斯 mju-1
 - 奥林巴斯 OM-4
@@ -63,7 +64,6 @@
 - 宾得 Espio Mini
 - 宾得 K2
 - 宾得 KM / KX
-- 宾得 ME Super
 - 勃朗尼卡 ETR 系列
 - 富士 AX-5
 - 富士 GA645Zi
@@ -117,7 +117,7 @@
 
 - 无
 
-### 缺少资料来源（47）
+### 缺少资料来源（46）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
@@ -125,7 +125,6 @@
 - 宾得 Espio Mini
 - 宾得 K2
 - 宾得 KM / KX
-- 宾得 ME Super
 - 勃朗尼卡 ETR 系列
 - 富士 AX-5
 - 富士 GA645Zi
@@ -185,7 +184,7 @@
 - 宾得 K2：metering、weight_g、reliability
 - 宾得 KM / KX：metering、weight_g、reliability
 - 宾得 LX：reliability
-- 宾得 ME Super：metering、weight_g、reliability
+- 宾得 ME Super：reliability
 - 宾得 ME：reliability
 - 宾得 Spotmatic（SP）：weight_g、reliability
 - 勃朗尼卡 ETR 系列：metering、weight_g、reliability
