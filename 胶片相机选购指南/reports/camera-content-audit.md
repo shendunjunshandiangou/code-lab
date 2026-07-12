@@ -7,11 +7,11 @@
 - 机型总数：83
 - 已有主图：24
 - 图片署名、来源和许可完整：24
-- 已有资料来源：31
+- 已有资料来源：32
 - 含待核验关键字段：75
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：1
-- 正文仍含“待补充”：3
+- 正文仍含“待补充”：2
 
 ## 当前价格选机页推荐
 
@@ -47,9 +47,8 @@
 
 - 哈苏 500 系列：正文重量“约 1,500g（机身 + 80mm 镜头 + 后背）”可回填 weight_g
 
-### 正文仍含待补充（3）
+### 正文仍含待补充（2）
 
-- 禄来 3.5F：2 处
 - 禄来 35：2 处
 - 尼康马特：2 处
 
@@ -121,7 +120,7 @@
 
 - 无
 
-### 缺少资料来源（52）
+### 缺少资料来源（51）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
@@ -157,7 +156,6 @@
 - 理光 GR21
 - 理光 KR-5
 - 理光 XR-2
-- 禄来 3.5F
 - 禄来 35
 - 禄来 SL35 / SL35E
 - 玛米亚 7
@@ -231,7 +229,7 @@
 - 理光 GR21：metering、weight_g、reliability
 - 理光 KR-5：metering、weight_g、reliability
 - 理光 XR-2：metering、weight_g、reliability
-- 禄来 3.5F：metering、weight_g、reliability
+- 禄来 3.5F：weight_g、reliability
 - 禄来 35：metering、weight_g、reliability、mount
 - 禄来 SL35 / SL35E：metering、weight_g、reliability
 - 玛米亚 7：metering、weight_g、reliability、mount
