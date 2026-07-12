@@ -64,8 +64,9 @@ function upgradeFile(file) {
 
   // 一句话定位只在 PageHero 展示；正文直接进入购买判断。
   body = body.replace(/^\s*(?:>\s?.*(?:\n|$))+\s*/m, "")
-  // PageHero 已经展示主图和版权说明，正文中不再重复同一张图片。
+  // PageHero 已经展示真实主图或统一占位，正文中不再重复。
   body = body.replace(/\n?<figure class="camera-hero">[\s\S]*?<\/figure>\s*/m, "\n")
+  body = body.replace(/\n?<div class="camera-image-placeholder[^\"]*"[\s\S]*?<\/div>\s*/m, "\n")
 
   const next = `---\n${frontmatter}\n---\n\n${body.trim()}\n`
   if (next === original) return { changed: false, camera: true }
