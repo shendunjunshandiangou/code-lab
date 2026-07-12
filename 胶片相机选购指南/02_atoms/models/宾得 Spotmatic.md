@@ -45,7 +45,7 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Pentax_Spotmatic"
   - "https://commons.wikimedia.org/wiki/File:Pentax_Spotmatic.jpg"
-last_updated: "2026-07-12"
+last_updated: 2026-07-12
 detail_version: 2
 tagline: "全机械快门、M42 镜头生态和收缩光圈 TTL 测光的经典入门机。"
 permalink: "cameras/pentax-spotmatic-sp"
@@ -54,8 +54,8 @@ permalink: "cameras/pentax-spotmatic-sp"
 ## 快速判断
 
 <div class="camera-verdict-grid">
-  <div><strong>适合</strong><span>想系统学习快门、光圈、感光度关系的人。；喜欢 Takumar 或其他 M42 老镜头的人。；接受使用手机或外置测光作为备用方案的人。</span></div>
-  <div><strong>不适合</strong><span>主要拍快速移动主体，或频繁更换镜头的人。；希望光圈优先、程序自动或自动对焦的人。；不愿处理电池替代和测光偏差的人。</span></div>
+  <div><strong>适合</strong><span>预算较低、愿意学习全手动曝光，并想探索大量 M42 老镜头的人</span></div>
+  <div><strong>不适合</strong><span>希望自动曝光、快速换镜头，或不愿处理老测光系统的人</span></div>
   <div><strong>参考价格</strong><span>约 ¥300～600，价格核对于 2026 年 7 月</span></div>
 </div>
 
@@ -100,12 +100,12 @@ permalink: "cameras/pentax-spotmatic-sp"
 
 ## 购买检查
 
-1. 不装电池逐档测试机械快门和 B 门，确认快门帘运行完整，没有明显粘滞或停顿。
-2. 装入新电池测试测光系统，改变光线、ISO、快门和光圈时，显示应连续响应。
-3. 检查过片、上弦、计数器和回卷机构是否顺畅，反光镜升降是否正常。
-4. 检查快门帘、取景器、反光镜、对焦屏和镜头是否有霉、雾、划痕或腐蚀。
-5. 检查电池仓、后盖锁扣、密封海绵和反光镜缓冲棉是否老化。
-6. 优先选择完成快门精度、测光和实拍测试的机身。
+1. 不装电池逐档测试 1s～1/1000s 和 B 门，检查快门帘是否完整运行。
+2. 检查测光杆能否顺畅收缩光圈并启动测光，松开后镜头光圈是否恢复。
+3. 使用合适电池与可靠测光表对比，确认指针是否连续响应且偏差可接受。
+4. 检查 M42 螺纹是否滑牙、变形，镜头能否顺畅旋入且不会过紧。
+5. 检查过片、计数器、回卷、自拍、反光镜、取景器和密封材料。
+6. 明确具体版本：SP、SP500、SP1000、Spotmatic II、Spotmatic F 的功能并不相同。
 
 ## 同价位替代
 
@@ -117,5 +117,6 @@ permalink: "cameras/pentax-spotmatic-sp"
 ## 图片与资料来源
 
 - 图片：Alfred，Wikimedia Commons，CC BY-SA 2.0。
-- 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
-- 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
+- 原版 Spotmatic 的 M42 卡口、机械快门、收缩光圈 TTL 测光和版本范围已于 2026-07-12 复核。
+- Spotmatic 是一个系列；本页以 1964 年原版 SP 为主，后续电子与开放光圈测光型号需单独核对。
+- 二手价格和可靠性取决于具体版本、快门、测光、电池仓与维修历史。
