@@ -26,6 +26,7 @@ import ConditionalRender from "./ConditionalRender"
 import HomePage from "./HomePage"
 import LearnPage from "./LearnPage"
 import PortalPages from "./PortalPages"
+import CameraAtlasPage from "./CameraAtlasPage"
 import SiteHeader from "./SiteHeader"
 import PageHero from "./PageHero"
 import SourceVideos from "./SourceVideos"
@@ -63,6 +64,7 @@ export {
   HomePage,
   LearnPage,
   PortalPages,
+  CameraAtlasPage,
   SiteHeader,
   PageHero,
   SourceVideos,
