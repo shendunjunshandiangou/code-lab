@@ -1,8 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor } from "./types"
 
-const IconTuning: QuartzComponent = () => null
-
-IconTuning.css = `
+const iconTuningStyles = `
 /* 图标只承担辅助识别，不与标题和图片争夺注意力 */
 .portal-icon {
   width: 30px !important;
@@ -72,8 +70,9 @@ IconTuning.css = `
   margin-top: 1rem !important;
 }
 
-/* 使用场景卡片以文字为主，不再让装饰图标单独占据一行 */
-.scene-grid .portal-icon {
+/* 使用场景卡片以文字为主，彻底隐藏装饰图标 */
+.scene-grid .portal-icon,
+.scene-grid .portal-icon svg {
   display: none !important;
   width: 0 !important;
   height: 0 !important;
@@ -84,6 +83,7 @@ IconTuning.css = `
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden !important;
+  visibility: hidden !important;
 }
 
 .scene-grid h3 {
@@ -232,5 +232,9 @@ IconTuning.css = `
   }
 }
 `
+
+const IconTuning: QuartzComponent = () => (
+  <style id="icon-tuning-inline">{iconTuningStyles}</style>
+)
 
 export default (() => IconTuning) satisfies QuartzComponentConstructor
