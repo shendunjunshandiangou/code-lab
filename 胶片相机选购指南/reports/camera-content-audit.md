@@ -7,11 +7,11 @@
 - 机型总数：83
 - 已有主图：24
 - 图片署名、来源和许可完整：24
-- 已有资料来源：28
+- 已有资料来源：29
 - 含待核验关键字段：75
 - 高风险字段冲突：1
 - 可从正文回填结构化字段：1
-- 正文仍含“待补充”：6
+- 正文仍含“待补充”：5
 
 ## 当前价格选机页推荐
 
@@ -47,9 +47,8 @@
 
 - 哈苏 500 系列：正文重量“约 1,500g（机身 + 80mm 镜头 + 后背）”可回填 weight_g
 
-### 正文仍含待补充（6）
+### 正文仍含待补充（5）
 
-- 宾得 6×7：2 处
 - 海鸥 4A：2 处
 - 康泰时 S2：2 处
 - 禄来 3.5F：2 处
@@ -124,13 +123,12 @@
 
 - 无
 
-### 缺少资料来源（55）
+### 缺少资料来源（54）
 
 - 奥林巴斯 OM-4
 - 奥林巴斯 Pen D3
 - 奥林巴斯 Pen EE-2
 - 奥林巴斯 Pen F 系列
-- 宾得 6×7
 - 宾得 Espio Mini
 - 宾得 K2
 - 宾得 KM / KX
@@ -195,7 +193,7 @@
 - 奥林巴斯 Pen EE-2：metering、weight_g、reliability
 - 奥林巴斯 Pen F 系列：metering、weight_g、reliability
 - 奥林巴斯 XA：reliability
-- 宾得 6×7：metering、weight_g、reliability
+- 宾得 6×7：weight_g、reliability
 - 宾得 Espio Mini：metering、weight_g、reliability、battery
 - 宾得 K2：metering、weight_g、reliability
 - 宾得 KM / KX：metering、weight_g、reliability
