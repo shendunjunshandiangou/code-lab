@@ -28,6 +28,7 @@ import LearnPage from "./LearnPage"
 import PortalPages from "./PortalPages"
 import CameraAtlasPage from "./CameraAtlasPage"
 import CameraDetailGuide from "./CameraDetailGuide"
+import CameraStructuredData from "./CameraStructuredData"
 import SiteHeader from "./SiteHeader"
 import PageHero from "./PageHero"
 import SourceVideos from "./SourceVideos"
@@ -68,6 +69,7 @@ export {
   PortalPages,
   CameraAtlasPage,
   CameraDetailGuide,
+  CameraStructuredData,
   SiteHeader,
   PageHero,
   SourceVideos,
