@@ -15,6 +15,7 @@ function categoryFor(slug: string, frontmatter: FrontmatterRecord) {
 }
 
 function descriptionFor(category: string, frontmatter: FrontmatterRecord) {
+  if (frontmatter.tagline) return frontmatter.tagline
   if (frontmatter.description) return frontmatter.description
   if (category === "相机图鉴") return "先看这台相机适合谁、需要承担什么，再决定它是否值得购买。"
   if (category === "帮我选相机") return "从拍摄场景、完整预算和操作习惯出发，逐步缩小选择范围。"
@@ -30,6 +31,13 @@ function resolveHeroImage(current: FullSlug, value: unknown) {
   return image
 }
 
+function imageSourceFor(frontmatter: FrontmatterRecord) {
+  const direct = String(frontmatter.image_source ?? "").trim()
+  if (/^https?:\/\//.test(direct)) return direct
+  const sources = Array.isArray(frontmatter.sources) ? frontmatter.sources : []
+  return String(sources.find((source: unknown) => /^https?:\/\/commons\.wikimedia\.org\//.test(String(source))) ?? "")
+}
+
 const customPortalSlugs = new Set(["index", "learn", "buying", "cameras", "film", "videos", "about"])
 
 const PageHero: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
@@ -42,6 +50,7 @@ const PageHero: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const isCamera = frontmatter.entity === "camera" || frontmatter.cssclasses?.includes?.("camera-detail")
   const current = fileData.slug ?? ("index" as FullSlug)
   const heroImage = resolveHeroImage(current, frontmatter.hero_image)
+  const imageSource = imageSourceFor(frontmatter)
   const homeHref = resolveRelative(current, "index" as FullSlug)
   const categoryHref = resolveRelative(
     current,
@@ -88,7 +97,7 @@ const PageHero: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
               <img src={heroImage} alt={frontmatter.image_alt ?? title} loading="eager" decoding="async" />
               <figcaption>
                 {frontmatter.image_credit ? `${frontmatter.image_credit} · ` : ""}
-                {frontmatter.image_source ? <a href={frontmatter.image_source}>图片来源</a> : <span>图片来源待核验</span>}
+                {imageSource ? <a href={imageSource}>图片来源</a> : <span>图片来源待核验</span>}
               </figcaption>
             </figure>
           ) : null}
@@ -128,7 +137,7 @@ const PageHero: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
           )}
           <figcaption>
             {frontmatter.image_credit ? `${frontmatter.image_credit} · ` : ""}
-            {frontmatter.image_source ? <a href={frontmatter.image_source}>查看图片来源</a> : <span>图片待完成授权核验</span>}
+            {imageSource ? <a href={imageSource}>查看图片来源</a> : <span>图片待完成授权核验</span>}
           </figcaption>
         </figure>
       </div>
