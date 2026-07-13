@@ -1,4 +1,5 @@
 import fs from "node:fs"
+import path from "node:path"
 
 export function parseCsv(text) {
   const source = String(text ?? "").replace(/^\uFEFF/, "")
@@ -65,7 +66,7 @@ export function escapeCsv(value) {
 export function writeCsv(file, headers, rows) {
   const lines = [headers.map(escapeCsv).join(",")]
   for (const row of rows) lines.push(headers.map((header) => escapeCsv(row[header])).join(","))
-  fs.mkdirSync(new URL(".", `file://${file}`).pathname, { recursive: true })
+  fs.mkdirSync(path.dirname(file), { recursive: true })
   fs.writeFileSync(file, `\uFEFF${lines.join("\n")}\n`, "utf8")
 }
 
