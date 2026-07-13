@@ -17,9 +17,9 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.SiteFooter(),
 }
 
-// 普通文章沿用紧凑页头；detail_version: 2 的机型会在正文前增加购买摘要和章节导航。
+// 普通文章沿用紧凑页头；detail_version: 2 的机型由统一组件展示价格、摘要和章节导航。
 export const defaultContentPageLayout: PageLayout = {
-  beforeBody: [Component.PageHero(), Component.CameraDetailGuide()],
+  beforeBody: [Component.PageHero(), Component.CameraDetailGuide(), Component.CameraPricePanel()],
   left: [],
   right: [],
 }
