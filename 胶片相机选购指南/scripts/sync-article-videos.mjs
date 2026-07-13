@@ -47,7 +47,9 @@ for (const [articlePath, rows] of grouped) {
     ? fm.replace(/^source_videos:.*$/m, sourceLine)
     : `${fm.trimEnd()}\n${sourceLine}`
 
-  const note = rows.find((row) => row.notes)?.notes || "视频映射由 data/article-videos.csv 维护；仅展示已核验的具体视频。"
+  const note = active.length > 0
+    ? rows.find((row) => row.notes)?.notes || "视频映射由 data/article-videos.csv 维护；仅展示已核验的具体视频。"
+    : null
   fm = upsertScalar(fm, "source_note", note)
 
   const next = `---\n${fm}\n---\n${body}`
