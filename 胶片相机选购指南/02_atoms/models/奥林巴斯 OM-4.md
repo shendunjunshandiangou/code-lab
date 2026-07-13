@@ -29,11 +29,11 @@ recommended_scenes:
   - "复杂光线"
   - "风光与长曝光"
   - "OM 系统进阶"
-hero_image: ""
-image_alt: "奥林巴斯 OM-4 胶片单反，图片待完成准确型号与授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Olympus%20OM-4.jpg?width=1400"
+image_alt: "搭配 Zuiko 35mm f/2.8 镜头的奥林巴斯 OM-4 胶片单反"
+image_credit: "Hiyotada"
+image_source: "https://commons.wikimedia.org/wiki/File:Olympus_OM-4.jpg"
+image_license: "CC0 1.0"
 tags:
   - "电子单反"
   - "多点测光"
@@ -43,7 +43,8 @@ aliases:
   - "奥林巴斯 OM4"
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_OM-4"
-last_updated: "2026-07-12"
+  - "https://commons.wikimedia.org/wiki/File:Olympus_OM-4.jpg"
+last_updated: "2026-07-13"
 detail_version: 2
 tagline: "把最多 8 点测光、亮部／暗部控制和长时间自动曝光装进小巧 OM 机身。"
 permalink: "cameras/olympus-om-4"
@@ -118,6 +119,6 @@ permalink: "cameras/olympus-om-4"
 
 ## 图片与资料来源
 
-- 图片：暂未找到同时满足准确型号、清晰构图和许可信息完整的图片，因此继续保留占位。
-- OM-4 的快门范围、多点测光、8 点平均、亮部／暗部控制、电池依赖和重量已于 2026-07-12 复核。
+- 图片：Hiyotada，Wikimedia Commons，CC0 1.0。
+- OM-4 的快门范围、多点测光、8 点平均、亮部／暗部控制、电池依赖和重量已于 2026-07-13 复核。
 - 二手价格与可靠性取决于具体版本、电路、LCD、测光按键、耗电和维修历史。
