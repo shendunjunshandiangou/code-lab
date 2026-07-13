@@ -1,0 +1,11 @@
+﻿article_path,article_title,bvid,video_title,creator,url,cover,duration,role,search_keyword,status,notes
+02_atoms/models/尼康 FM2.md,尼康 FM2,,,,,,,,尼康 FM2 胶片相机 评测,待核验,核对型号版本与视频观点后填写 BV 号
+02_atoms/models/尼康 FE.md,尼康 FE,,,,,,,,尼康 FE 胶片相机 使用,待核验,优先选择包含测光与验机内容的视频
+02_atoms/models/佳能 AE-1.md,佳能 AE-1,,,,,,,,佳能 AE-1 胶片相机 教程,待核验,区分 AE-1 与 AE-1 Program
+02_atoms/models/奥林巴斯 XA.md,奥林巴斯 XA,,,,,,,,奥林巴斯 XA 胶片旁轴 评测,待核验,确认原始 XA 而不是 XA2 XA3
+02_atoms/models/宾得 LX.md,宾得 LX,,,,,,,,宾得 LX 胶片相机 评测,待核验,优先选择说明混合快门与 IDM 测光的视频
+02_atoms/models/康泰时 G1.md,康泰时 G1,,,,,,,,康泰时 G1 胶片相机 绿标,待核验,确认 G1 绿标 ROM 与镜头兼容内容
+02_atoms/models/康泰时 G2.md,康泰时 G2,,,,,,,,康泰时 G2 胶片相机 评测,待核验,区分 G1 与 G2 的对焦和快门差异
+02_atoms/models/宾得 6×7.md,宾得 6×7,,,,,,,,宾得 6x7 中画幅 使用,待核验,区分 6×7 MLU Pentax 67 与 67II
+02_atoms/models/禄来 35.md,禄来 35,,,,,,,,Rollei 35 禄来 35 估焦,待核验,确认具体版本与镜头
+02_atoms/models/海鸥 4A.md,海鸥 4A,,,,,,,,海鸥 4A 双反 使用,待核验,确认 4A 具体版本
