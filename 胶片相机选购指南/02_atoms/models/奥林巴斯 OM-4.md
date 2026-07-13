@@ -20,16 +20,16 @@ release_year: 1983
 weight_g: 540
 price_min: 1500
 price_max: 3000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "进阶"
 reliability: 待核验
 recommended_scenes:
   - "复杂光线"
   - "风光与长曝光"
   - "OM 系统进阶"
-hero_image: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Olympus%20OM-4.jpg?width=1400"
+hero_image: "./static/images/library/olympus-om-4-a36c4d59.jpg"
 image_alt: "搭配 Zuiko 35mm f/2.8 镜头的奥林巴斯 OM-4 胶片单反"
 image_credit: "Hiyotada"
 image_source: "https://commons.wikimedia.org/wiki/File:Olympus_OM-4.jpg"
@@ -44,10 +44,14 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_OM-4"
   - "https://commons.wikimedia.org/wiki/File:Olympus_OM-4.jpg"
-last_updated: "2026-07-13"
+last_updated: "2026-07-12"
 detail_version: 2
 tagline: "把最多 8 点测光、亮部／暗部控制和长时间自动曝光装进小巧 OM 机身。"
 permalink: "cameras/olympus-om-4"
+price_typical: 2250
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -55,7 +59,6 @@ permalink: "cameras/olympus-om-4"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>已经理解曝光，希望在复杂光线中精确控制多点测光的 OM 系统用户</span></div>
   <div><strong>不适合</strong><span>只需要简单 A 档入门机，或必须在没有电池时继续正常拍摄的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥1500～3000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

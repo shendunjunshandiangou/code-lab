@@ -20,9 +20,9 @@ release_year: 1979
 weight_g: 520
 price_min: 800
 price_max: 1500
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -49,6 +49,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "OM-2 的后期改进版，闪光提示与操作细节更完善。"
 permalink: "cameras/olympus-om-2n"
+price_typical: 1150
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -56,7 +60,6 @@ permalink: "cameras/olympus-om-2n"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>已经决定进入 OM 系统，并希望优先选择后期成熟版本的人</span></div>
   <div><strong>不适合</strong><span>必须没电也能拍摄，或只想买一台最便宜 OM 机身的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥800～1500，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

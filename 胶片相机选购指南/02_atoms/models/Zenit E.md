@@ -19,9 +19,9 @@ release_year: 1965
 weight_g: null
 price_min: 100
 price_max: 300
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -46,6 +46,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "10 欧元地板价——笨重但皮实的苏联坦克。"
 permalink: "cameras/zenit-e"
+price_typical: 200
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -53,7 +57,6 @@ permalink: "cameras/zenit-e"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>预算极度有限的入门者，想用最低成本体验胶片 SLR；喜欢苏联/东欧工业设计风格的人；对"把玩"粗犷机械有兴趣的玩家</span></div>
   <div><strong>不适合</strong><span>在意重量和便携性的人——这台机器的重量会让你不想带出门；需要自动曝光或测光辅助的新手；对做工和手感有要求的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥100～300，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

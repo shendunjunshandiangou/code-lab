@@ -20,9 +20,9 @@ release_year: 1993
 weight_g: 510
 price_min: 2000
 price_max: 4000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -48,6 +48,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "\"穷人徕卡\"——35mm f/2 大光圈自动旁轴，暗光街头利器，预算友好的高素质随身机。"
 permalink: "cameras/konica-hexar-af"
+price_typical: 3000
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -55,7 +59,6 @@ permalink: "cameras/konica-hexar-af"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>喜欢 35mm 焦段、想要大光圈暗光街头拍摄的人；预算有限但想要接近徕卡镜头味道的人；觉得 PS 机光圈太小、又不想上沉重单反的人</span></div>
   <div><strong>不适合</strong><span>想要可换镜头系统的人；追求极致便携（塞口袋）的人；必须手动控制一切的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥2000～4000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

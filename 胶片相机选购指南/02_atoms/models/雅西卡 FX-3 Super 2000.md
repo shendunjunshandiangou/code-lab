@@ -19,9 +19,9 @@ release_year: 1980
 weight_g: null
 price_min: 300
 price_max: 500
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -45,6 +45,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "老王每天用的最便宜相机——几百块上车胶片。"
 permalink: "cameras/yashica-fx-3-super-2000"
+price_typical: 400
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -52,7 +56,6 @@ permalink: "cameras/yashica-fx-3-super-2000"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>预算紧张、想用最低成本上车胶片的新手；被老王的话说服——"成像跟相机本身没任何关系，主要是胶卷和镜头"</span></div>
   <div><strong>不适合</strong><span>在意机身做工和手感的人；想要自动曝光便利的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥300～500，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

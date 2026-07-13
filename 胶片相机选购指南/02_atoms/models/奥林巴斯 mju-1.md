@@ -19,9 +19,9 @@ release_year: 1991
 weight_g: null
 price_min: 460
 price_max: 800
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -50,6 +50,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "mju 系列初代定焦机：35mm f/3.5、滑盖开机和全自动操作，价格通常低于 mju-2。"
 permalink: "cameras/olympus-mju-1"
+price_typical: 630
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -57,7 +61,6 @@ permalink: "cameras/olympus-mju-1"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>预算有限、希望装卷后直接拍摄，并需要轻便随身机的人</span></div>
   <div><strong>不适合</strong><span>需要手动曝光、弱光大光圈，或无法接受老电子便携机故障风险的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥460～800，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

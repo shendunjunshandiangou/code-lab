@@ -19,9 +19,9 @@ release_year: 2003
 weight_g: 260
 price_min: 8000
 price_max: 12000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -45,6 +45,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "买镜头送机身——镜头媲美徕卡 M 口六枚玉，机身设计一塌糊涂。"
 permalink: "cameras/leica-cm"
+price_typical: 10000
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -52,7 +56,6 @@ permalink: "cameras/leica-cm"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想要徕卡镜头味道、不在意操作体验的人；徕卡品牌信仰者</span></div>
   <div><strong>不适合</strong><span>追求实际使用体验的人——同样的钱可以买到更好用的机器</span></div>
-  <div><strong>参考价格</strong><span>约 ¥8000～12000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

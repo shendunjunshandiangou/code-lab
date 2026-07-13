@@ -20,9 +20,9 @@ release_year: 1998
 weight_g: null
 price_min: 2000
 price_max: 4000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -46,6 +46,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "CY 卡口最轻便漂亮的机身，蔡司镜头的日常搭档。"
 permalink: "cameras/contax-aria"
+price_typical: 3000
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -53,7 +57,6 @@ permalink: "cameras/contax-aria"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>喜欢康泰时设计、想要一台轻便的蔡司搭档的人</span></div>
   <div><strong>不适合</strong><span>追求纯机械的人（选 S2）</span></div>
-  <div><strong>参考价格</strong><span>约 ¥2000～4000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

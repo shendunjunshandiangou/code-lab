@@ -20,9 +20,9 @@ release_year: 1980
 weight_g: 570
 price_min: 1500
 price_max: 3000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "进阶"
 reliability: 待核验
 recommended_scenes:
@@ -48,6 +48,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "宾得手动对焦时代的专业旗舰：可换取景器、胶片面实时测光，以及无电仍可工作的高速机械快门。"
 permalink: "cameras/pentax-lx"
+price_typical: 2250
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "待核验"
+source_videos: []
+source_note: null
 ---
 
 ## 快速判断
@@ -55,7 +62,6 @@ permalink: "cameras/pentax-lx"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>已经使用 Pentax K 镜头，重视专业模块化系统、长曝光和机械备份的人</span></div>
   <div><strong>不适合</strong><span>只想买轻便入门机，或不愿处理取景器、密封材料和复杂电子测光维护的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥1500～3000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

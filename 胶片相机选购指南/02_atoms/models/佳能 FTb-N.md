@@ -19,9 +19,9 @@ release_year: 1973
 weight_g: null
 price_min: 400
 price_max: 800
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -45,6 +45,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "佳能 FD 卡口最便宜的纯机械入门机。"
 permalink: "cameras/canon-ftb-n"
+price_typical: 600
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -52,7 +56,6 @@ permalink: "cameras/canon-ftb-n"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想用 FD 卡口但预算有限的人</span></div>
   <div><strong>不适合</strong><span>想要自动曝光便利的人（选 AE-1 或 A-1）</span></div>
-  <div><strong>参考价格</strong><span>约 ¥400～800，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

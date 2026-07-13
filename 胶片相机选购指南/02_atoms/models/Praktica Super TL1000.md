@@ -19,9 +19,9 @@ release_year: 1970
 weight_g: null
 price_min: 300
 price_max: 600
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -45,6 +45,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "宾得 K1000 的地板价替代——功能一样，便宜很多。"
 permalink: "cameras/praktica-super-tl1000"
+price_typical: 450
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -52,7 +56,6 @@ permalink: "cameras/praktica-super-tl1000"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想体验全机械单反但不想为 K1000 的溢价买单的人；已经有一定摄影基础、不需要自动曝光辅助的人</span></div>
   <div><strong>不适合</strong><span>追求做工质感和品牌知名度的人——直接上 K1000；完全零基础新手——纯 M 档有一定上手难度</span></div>
-  <div><strong>参考价格</strong><span>约 ¥300～600，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

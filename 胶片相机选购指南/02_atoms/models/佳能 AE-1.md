@@ -20,9 +20,9 @@ release_year: 1976
 weight_g: 590
 price_min: 800
 price_max: 1500
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -48,6 +48,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "有 S 档的经典电子单反——Teo Crawford 的更多功能之选。"
 permalink: "cameras/canon-ae-1"
+price_typical: 1150
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "待核验"
+source_videos: []
+source_note: null
 ---
 
 ## 快速判断
@@ -55,7 +62,6 @@ permalink: "cameras/canon-ae-1"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想要有 S 档便利、功能比 K1000 更多的入门新手；喜欢佳能品牌和 FD 镜头群的人；想要一台有故事、有社区、好出手的经典机的人</span></div>
   <div><strong>不适合</strong><span>追求全机械可靠性的人（选 K1000）；追求便宜实用的人（同价位有更好的选择）</span></div>
-  <div><strong>参考价格</strong><span>约 ¥800～1500，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

@@ -19,9 +19,9 @@ release_year: 2007
 weight_g: 270
 price_min: 3000
 price_max: 5000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -45,6 +45,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "最无聊但最省心——没有优点也没有缺点的均衡选手。"
 permalink: "cameras/fujifilm-klasse-w"
+price_typical: 4000
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -52,7 +56,6 @@ permalink: "cameras/fujifilm-klasse-w"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>不想折腾、只想找一台可靠的 PS 机长期用的人；喜欢 28mm 焦段、不接受 GR1s 可靠性风险的人</span></div>
   <div><strong>不适合</strong><span>希望手动控制曝光，或不能接受老电子便携机维修困难的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥3000～5000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

@@ -19,9 +19,9 @@ release_year: 1979
 weight_g: 225
 price_min: 1000
 price_max: 2500
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -47,6 +47,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "把黄斑对焦、35mm f/2.8 和光圈优先塞进真正能放进口袋的机身。"
 permalink: "cameras/olympus-xa"
+price_typical: 1750
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "待核验"
+source_videos: []
+source_note: null
 ---
 
 ## 快速判断
@@ -54,7 +61,6 @@ permalink: "cameras/olympus-xa"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想要真正口袋尺寸，又愿意使用黄斑手动对焦的人</span></div>
   <div><strong>不适合</strong><span>希望自动对焦、自动过片，或不愿花时间确认黄斑重合的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥1000～2500，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

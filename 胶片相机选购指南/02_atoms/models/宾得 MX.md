@@ -20,9 +20,9 @@ production_years: 1976–1985
 weight_g: 495
 price_min: 800
 price_max: 1500
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: 有一定门槛
 reliability: 较高
 recommended_scenes:
@@ -50,6 +50,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "一台把全机械结构压缩进小机身的 35mm 单反：比 K1000 更紧凑，并保留自拍、景深预览和可换对焦屏等完整手动功能。"
 permalink: "cameras/pentax-mx"
+price_typical: 1150
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -57,7 +61,6 @@ permalink: "cameras/pentax-mx"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想要小型全机械单反、愿意手动曝光，并重视 K 卡口镜头资源的人</span></div>
   <div><strong>不适合</strong><span>需要 A 档、自动对焦，或手较大且不喜欢紧凑机身操控的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥800～1500，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

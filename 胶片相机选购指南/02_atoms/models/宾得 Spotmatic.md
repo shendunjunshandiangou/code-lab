@@ -19,9 +19,9 @@ release_year: 1964
 weight_g: null
 price_min: 300
 price_max: 600
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -49,6 +49,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "全机械快门、M42 镜头生态和收缩光圈 TTL 测光的经典入门机。"
 permalink: "cameras/pentax-spotmatic-sp"
+price_typical: 450
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -56,7 +60,6 @@ permalink: "cameras/pentax-spotmatic-sp"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>预算较低、愿意学习全手动曝光，并想探索大量 M42 老镜头的人</span></div>
   <div><strong>不适合</strong><span>希望自动曝光、快速换镜头，或不愿处理老测光系统的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥300～600，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数
