@@ -45,7 +45,7 @@ aliases:
   - Nikon FE
 sources:
   - "https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg"
-source_note: null
+source_note: "该机型内容由旧知识库引用的字幕文章《胶片时代的尼康宝藏！平价相机推荐》整理而来。"
 editorial_status: reviewed
 last_verified: 2026-07-12
 last_updated: "2026-07-12"
@@ -56,8 +56,8 @@ price_typical: 650
 price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
 price_note: null
 price_status: "有效"
-video_mapping_status: "待核验"
-source_videos: []
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1qqwLzcE81","title":"胶片时代的尼康宝藏！平价相机推荐","creator":"Anti-lover","url":"https://www.bilibili.com/video/BV1qqwLzcE81/","role":"原始字幕来源"}]
 ---
 
 ## 快速判断

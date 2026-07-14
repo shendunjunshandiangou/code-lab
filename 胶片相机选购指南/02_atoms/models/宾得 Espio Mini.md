@@ -50,6 +50,9 @@ price_typical: 1250
 price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
 price_note: null
 price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1rSiMBmEQF","title":"2025年度爱用相机_从数码到胶片","creator":"德松Desong","url":"https://www.bilibili.com/video/BV1rSiMBmEQF/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《2025年度爱用相机_从数码到胶片》整理而来。"
 ---
 
 ## 快速判断
