@@ -19,6 +19,48 @@ const SiteHeader: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
 
   return (
     <div class="site-header-shell home-shell-compat">
+      <style id="mobile-navigation-scroll-fix">{`
+        @media (max-width: 960px) {
+          .page-header header {
+            -webkit-backdrop-filter: none !important;
+            backdrop-filter: none !important;
+            background: rgba(13, 14, 13, 0.98) !important;
+          }
+
+          .site-primary-nav {
+            top: 68px !important;
+            right: 0 !important;
+            bottom: auto !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: calc(100vh - 68px) !important;
+            height: calc(100svh - 68px) !important;
+            height: calc(100dvh - 68px) !important;
+            max-height: calc(100dvh - 68px) !important;
+            padding: 1rem 1.25rem calc(2rem + env(safe-area-inset-bottom)) !important;
+            overflow-x: hidden !important;
+            overflow-y: auto !important;
+            overscroll-behavior: contain;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-y;
+            scrollbar-gutter: stable;
+          }
+
+          .site-primary-nav a {
+            flex: 0 0 auto;
+            min-height: 58px;
+            display: flex;
+            align-items: center;
+          }
+
+          body.menu-open {
+            width: 100%;
+            overflow: hidden !important;
+            overscroll-behavior: none;
+          }
+        }
+      `}</style>
+
       <a class="site-wordmark" href={hrefFor("index")} aria-label="胶片相机指南首页">
         <span class="site-wordmark-mark" aria-hidden="true">
           35
