@@ -22,9 +22,9 @@ release_year: 1979
 weight_g: null
 price_min: 500
 price_max: 1000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -48,6 +48,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "富士 X 卡口功能最完整的手动单反，小众实用。"
 permalink: "cameras/fujifilm-ax-5"
+price_typical: 750
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1QydMBSEPa","title":"16个品牌83台相机！手动胶片单反相机终极推荐","creator":"大耳蟹","url":"https://www.bilibili.com/video/BV1QydMBSEPa/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌83台相机！手动胶片单反相机终极推荐》整理而来。"
 ---
 
 ## 快速判断
@@ -55,7 +62,6 @@ permalink: "cameras/fujifilm-ax-5"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>喜欢富士品牌、想玩小众系统的人</span></div>
   <div><strong>不适合</strong><span>想和数码富士共用镜头的人（卡口不兼容）</span></div>
-  <div><strong>参考价格</strong><span>约 ¥500～1000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

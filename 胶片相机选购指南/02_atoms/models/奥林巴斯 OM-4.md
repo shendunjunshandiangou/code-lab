@@ -20,20 +20,20 @@ release_year: 1983
 weight_g: 540
 price_min: 1500
 price_max: 3000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "进阶"
 reliability: 待核验
 recommended_scenes:
   - "复杂光线"
   - "风光与长曝光"
   - "OM 系统进阶"
-hero_image: ""
-image_alt: "奥林巴斯 OM-4 胶片单反，图片待完成准确型号与授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/olympus-om-4-a36c4d59.jpg"
+image_alt: "搭配 Zuiko 35mm f/2.8 镜头的奥林巴斯 OM-4 胶片单反"
+image_credit: "Hiyotada"
+image_source: "https://commons.wikimedia.org/wiki/File:Olympus_OM-4.jpg"
+image_license: "CC0 1.0"
 tags:
   - "电子单反"
   - "多点测光"
@@ -43,10 +43,18 @@ aliases:
   - "奥林巴斯 OM4"
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_OM-4"
+  - "https://commons.wikimedia.org/wiki/File:Olympus_OM-4.jpg"
 last_updated: "2026-07-12"
 detail_version: 2
 tagline: "把最多 8 点测光、亮部／暗部控制和长时间自动曝光装进小巧 OM 机身。"
 permalink: "cameras/olympus-om-4"
+price_typical: 2250
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1QydMBSEPa","title":"16个品牌83台相机！手动胶片单反相机终极推荐","creator":"大耳蟹","url":"https://www.bilibili.com/video/BV1QydMBSEPa/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌83台相机！手动胶片单反相机终极推荐》整理而来。"
 ---
 
 ## 快速判断
@@ -54,7 +62,6 @@ permalink: "cameras/olympus-om-4"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>已经理解曝光，希望在复杂光线中精确控制多点测光的 OM 系统用户</span></div>
   <div><strong>不适合</strong><span>只需要简单 A 档入门机，或必须在没有电池时继续正常拍摄的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥1500～3000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数
@@ -118,6 +125,6 @@ permalink: "cameras/olympus-om-4"
 
 ## 图片与资料来源
 
-- 图片：暂未找到同时满足准确型号、清晰构图和许可信息完整的图片，因此继续保留占位。
-- OM-4 的快门范围、多点测光、8 点平均、亮部／暗部控制、电池依赖和重量已于 2026-07-12 复核。
+- 图片：Hiyotada，Wikimedia Commons，CC0 1.0。
+- OM-4 的快门范围、多点测光、8 点平均、亮部／暗部控制、电池依赖和重量已于 2026-07-13 复核。
 - 二手价格与可靠性取决于具体版本、电路、LCD、测光按键、耗电和维修历史。

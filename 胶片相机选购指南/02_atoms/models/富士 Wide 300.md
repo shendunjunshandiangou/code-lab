@@ -19,9 +19,9 @@ release_year: null
 weight_g: null
 price_min: 400
 price_max: 600
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -44,6 +44,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "宽幅拍立得，旅行时拍一张送人最合适。"
 permalink: "cameras/fujifilm-wide-300"
+price_typical: 500
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -51,7 +55,6 @@ permalink: "cameras/fujifilm-wide-300"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想要实体照片纪念品、不在乎学习摄影技术的人</span></div>
   <div><strong>不适合</strong><span>想学习胶片摄影、提升拍摄技术的人（拍立得学不到太多）</span></div>
-  <div><strong>参考价格</strong><span>约 ¥400～600，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

@@ -19,9 +19,9 @@ release_year: 1976
 weight_g: null
 price_min: 3000
 price_max: 5000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "进阶"
 reliability: 待核验
 recommended_scenes:
@@ -47,6 +47,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "平价哈苏——最小巧的 645 中画幅单反。"
 permalink: "cameras/bronica-etr"
+price_typical: 4000
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1QydMBSEPa","title":"16个品牌83台相机！手动胶片单反相机终极推荐","creator":"大耳蟹","url":"https://www.bilibili.com/video/BV1QydMBSEPa/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌83台相机！手动胶片单反相机终极推荐》整理而来。"
 ---
 
 ## 快速判断
@@ -54,7 +61,6 @@ permalink: "cameras/bronica-etr"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想体验 120 中画幅但预算在 5,000 以内的人；追求模块化系统但买不起哈苏的人；想要便携 120 单反的人</span></div>
   <div><strong>不适合</strong><span>追求纯机械不依赖电池的人（选哈苏 500）；追求最大底片面积的人（选玛米亚 RB67 或宾得 6×7）</span></div>
-  <div><strong>参考价格</strong><span>约 ¥3000～5000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

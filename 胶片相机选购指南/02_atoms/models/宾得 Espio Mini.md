@@ -19,9 +19,9 @@ release_year: 1995
 weight_g: null
 price_min: 1000
 price_max: 1500
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -46,6 +46,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "还未被市场爆炒的高素质傻瓜机，32mm 定焦在 PS 机中很罕见，被多位 UP 主评价为\"对焦速度天花板级\"。"
 permalink: "cameras/pentax-espio-mini"
+price_typical: 1250
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1rSiMBmEQF","title":"2025年度爱用相机_从数码到胶片","creator":"德松Desong","url":"https://www.bilibili.com/video/BV1rSiMBmEQF/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《2025年度爱用相机_从数码到胶片》整理而来。"
 ---
 
 ## 快速判断
@@ -53,7 +60,6 @@ permalink: "cameras/pentax-espio-mini"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想要高素质傻瓜机但不想花 Contax 级别钱的人；重视对焦速度和抓拍体验的人；喜欢实用＞品牌的理性玩家</span></div>
   <div><strong>不适合</strong><span>追求金属质感和社交属性的人；一定要最顶级光学素质的人（不是不够好，但打不过 Contax T3/CM）</span></div>
-  <div><strong>参考价格</strong><span>约 ¥1000～1500，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

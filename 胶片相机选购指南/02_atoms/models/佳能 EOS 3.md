@@ -23,9 +23,9 @@ release_year: 1998
 weight_g: 780
 price_min: 1000
 price_max: 2000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -50,6 +50,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "45 点眼控对焦、1/8000s 和 EF 卡口：操作逻辑接近现代佳能单反的高性能胶片机。"
 permalink: "cameras/canon-eos-3"
+price_typical: 1500
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -57,7 +61,6 @@ permalink: "cameras/canon-eos-3"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>已有佳能 EF 镜头，或需要快速自动对焦、连拍和现代曝光控制的胶片用户</span></div>
   <div><strong>不适合</strong><span>追求轻巧机械机、手动过片仪式感，或只想搭配 EF-S／RF 镜头的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥1000～2000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

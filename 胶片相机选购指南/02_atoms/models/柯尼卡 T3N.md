@@ -19,9 +19,9 @@ release_year: 1970
 weight_g: null
 price_min: 400
 price_max: 800
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -45,6 +45,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "T 系列巅峰，全金属机身，小众但镜头素质被高度认可。"
 permalink: "cameras/konica-t3n"
+price_typical: 600
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1QydMBSEPa","title":"16个品牌83台相机！手动胶片单反相机终极推荐","creator":"大耳蟹","url":"https://www.bilibili.com/video/BV1QydMBSEPa/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌83台相机！手动胶片单反相机终极推荐》整理而来。"
 ---
 
 ## 快速判断
@@ -52,7 +59,6 @@ permalink: "cameras/konica-t3n"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>喜欢小众品牌、追求独特的人；不在乎自动功能、愿意玩转纯手动的玩家</span></div>
   <div><strong>不适合</strong><span>需要丰富镜头选择和便利维修的普通用户</span></div>
-  <div><strong>参考价格</strong><span>约 ¥400～800，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

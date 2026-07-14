@@ -28,13 +28,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 检查详情版本、本地化图片并生成审计
+      - name: 同步价格、视频、详情版本与内容审计
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
           HEAD_REF: ${{ github.head_ref }}
         shell: bash
         run: |
           git checkout -B "$HEAD_REF" "origin/$HEAD_REF"
+          node 胶片相机选购指南/scripts/export-camera-prices.mjs
+          node 胶片相机选购指南/scripts/sync-camera-prices.mjs
+          node 胶片相机选购指南/scripts/recover-legacy-video-sources.mjs
+          node 胶片相机选购指南/scripts/sync-article-videos.mjs
           node 胶片相机选购指南/scripts/upgrade-camera-detail-v2.mjs
           # normalize-camera-pages.mjs 仅用于首次批量收口，不在 CI 中反复执行，避免覆盖人工精修内容。
           node 胶片相机选购指南/scripts/backfill-simple-camera-weight.mjs
@@ -43,12 +47,12 @@ jobs:
           node 胶片相机选购指南/scripts/audit-camera-content.mjs
 
           if [ -z "$(git status --porcelain -- 胶片相机选购指南)" ]; then
-            echo '详情版本、本地图片和内容审计已经符合当前规范。'
+            echo '价格、视频、图片和内容审计已经符合当前规范。'
           else
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add -- 胶片相机选购指南
-            git commit -m '更新机型图片、页面与内容审计'
+            git commit -m '同步价格、视频映射与内容审计'
             git push origin "HEAD:$HEAD_REF"
           fi
 
@@ -118,6 +122,7 @@ jobs:
           done
 
           CHROME_BIN="$CHROME_BIN" node scripts/visual-site-check.mjs http://127.0.0.1:4173/code-lab
+          CHROME_BIN="$CHROME_BIN" node scripts/mobile-nav-check.mjs http://127.0.0.1:4173/code-lab
 
       - name: 上传视觉验收截图
         if: always()
@@ -199,9 +204,11 @@ jobs:
           old_route_file='preview-site/preview/02_atoms/models/尼康-FM2.html'
           test -f "$new_route_file"
           grep -q '尼康 FM2' "$new_route_file"
+          grep -q '当前市场参考区间' "$new_route_file"
+          grep -q 'BILIBILI' "$new_route_file"
           test -f "$old_route_file"
           grep -q 'cameras/nikon-fm2' "$old_route_file"
-          echo '部署产物已确认：新机型页面和旧地址重定向均存在。'
+          echo '部署产物已确认：价格面板、原始 B 站视频、新机型页面和旧地址重定向均存在。'
 
           for attempt in $(seq 1 24); do
             home_url="${PREVIEW_URL}?build=${BUILD_SHA}&attempt=${attempt}"

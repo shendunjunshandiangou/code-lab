@@ -22,9 +22,9 @@ production_years: 1982–1984
 weight_g: 490
 price_min: 400
 price_max: 800
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: 推荐
 reliability: 中等
 recommended_scenes:
@@ -51,6 +51,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "尼康轻量化手动单反中的易用型选择：P、A、M 三种曝光模式齐全，适合希望保留手动对焦、又不想每张都手动曝光的新手。"
 permalink: "cameras/nikon-fg"
+price_typical: 600
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1QydMBSEPa","title":"16个品牌83台相机！手动胶片单反相机终极推荐","creator":"大耳蟹","url":"https://www.bilibili.com/video/BV1QydMBSEPa/","role":"原始字幕来源"},{"platform":"bilibili","bvid":"BV1qqwLzcE81","title":"胶片时代的尼康宝藏！平价相机推荐","creator":"Anti-lover","url":"https://www.bilibili.com/video/BV1qqwLzcE81/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌83台相机！手动胶片单反相机终极推荐》整理而来。"
 ---
 
 ## 快速判断
@@ -58,7 +65,6 @@ permalink: "cameras/nikon-fg"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>需要轻便机身、P 档和 A 档，同时愿意手动对焦的人</span></div>
   <div><strong>不适合</strong><span>追求专业级做工、全机械可靠性，或希望兼容所有年代 Nikon 镜头的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥400～800，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

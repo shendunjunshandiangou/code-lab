@@ -19,9 +19,9 @@ release_year: 1972
 weight_g: 490
 price_min: 800
 price_max: 1500
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "有一定门槛"
 reliability: 待核验
 recommended_scenes:
@@ -47,6 +47,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "豆瓣四大神机中最优雅的一台——工业艺术品级的全机械单反。"
 permalink: "cameras/olympus-om-1"
+price_typical: 1150
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1QydMBSEPa","title":"16个品牌83台相机！手动胶片单反相机终极推荐","creator":"大耳蟹","url":"https://www.bilibili.com/video/BV1QydMBSEPa/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌83台相机！手动胶片单反相机终极推荐》整理而来。"
 ---
 
 ## 快速判断
@@ -54,7 +61,6 @@ permalink: "cameras/olympus-om-1"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>欣赏 OM 工业设计、追求精致机械感的人；喜欢轻便手动单反、注重机身设计和手感的人</span></div>
   <div><strong>不适合</strong><span>预算极度有限、想要 A 档便利的人（选 OM-10）</span></div>
-  <div><strong>参考价格</strong><span>约 ¥800～1500，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

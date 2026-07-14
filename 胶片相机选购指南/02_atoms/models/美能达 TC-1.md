@@ -19,9 +19,9 @@ release_year: 1996
 weight_g: 185
 price_min: 5000
 price_max: 8000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -46,6 +46,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "为极致小巧放弃太多——画质一般、噪音大、修不了。"
 permalink: "cameras/minolta-tc-1"
+price_typical: 6500
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1Uj411Z7E9","title":"【口袋胶片机成像排行榜】我花了80000元","creator":"德松Desong","url":"https://www.bilibili.com/video/BV1Uj411Z7E9/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《【口袋胶片机成像排行榜】我花了80000元》整理而来。"
 ---
 
 ## 快速判断
@@ -53,7 +60,6 @@ permalink: "cameras/minolta-tc-1"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>极致便携追求者，接受画质和可靠性的妥协；收藏用途 > 实用用途</span></div>
   <div><strong>不适合</strong><span>追求实用性和画质的人——GR1s 或 Klasse W 是更好的选择</span></div>
-  <div><strong>参考价格</strong><span>约 ¥5000～8000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

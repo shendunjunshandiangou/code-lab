@@ -21,9 +21,9 @@ release_year: 1998
 weight_g: null
 price_min: 6000
 price_max: 9000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -48,6 +48,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "120 画幅的傻瓜机——拿起来就拍的中画幅。"
 permalink: "cameras/fujifilm-ga645zi"
+price_typical: 7500
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -55,7 +59,6 @@ permalink: "cameras/fujifilm-ga645zi"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想要中画幅画质但不想学中画幅操作的人；旅行场景——想带 120 但又不想拖一堆配件；从 PS 机升级到中画幅的"懒人"</span></div>
   <div><strong>不适合</strong><span>想要全机械可靠性的谨慎派——这台机器完全靠电池和电路板活着；追求大光圈虚化的人——f/4.5-6.9 对中画幅来说不算大；喜欢手动操控感的人——它是"大号傻瓜机"，不是"大号单反"</span></div>
-  <div><strong>参考价格</strong><span>约 ¥6000～9000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

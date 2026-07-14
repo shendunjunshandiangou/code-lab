@@ -19,9 +19,9 @@ release_year: 1995
 weight_g: null
 price_min: 5000
 price_max: 8000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -46,6 +46,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "钛合金颜值担当——萌大统领说\"实际拍得少\"。"
 permalink: "cameras/leica-minilux"
+price_typical: 6500
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -53,7 +57,6 @@ permalink: "cameras/leica-minilux"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>徕卡收藏爱好者；愿意为颜值和品牌溢价买单的人；对 E02 风险有心理准备、能接受维修成本的人</span></div>
   <div><strong>不适合</strong><span>把相机当工具、追求可靠性的人——选更皮实的机器；预算敏感的实用派——同价位有更可靠的选择；追求"高使用率"的人——萌大统领都说了"拍得少"</span></div>
-  <div><strong>参考价格</strong><span>约 ¥5000～8000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

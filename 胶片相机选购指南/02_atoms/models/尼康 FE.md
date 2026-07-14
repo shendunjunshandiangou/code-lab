@@ -21,9 +21,9 @@ production_years: 1978–1983
 weight_g: 590
 price_min: 500
 price_max: 800
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: 推荐
 reliability: 中等
 recommended_scenes:
@@ -45,13 +45,19 @@ aliases:
   - Nikon FE
 sources:
   - "https://commons.wikimedia.org/wiki/File:Nikon_FE_%28Workshop_Cologne_%2706%29_%28cropped%29.jpeg"
-source_note: 本页结合原有视频资料整理机型定位，并使用公开机型资料核对基础参数。原视频信息将在确认创作者和 BV 号后补充。
+source_note: "该机型内容由旧知识库引用的字幕文章《胶片时代的尼康宝藏！平价相机推荐》整理而来。"
 editorial_status: reviewed
 last_verified: 2026-07-12
 last_updated: "2026-07-12"
 detail_version: 2
 tagline: "FM2 的电子快门平替：保留手动对焦和机械过片体验，又用光圈优先降低曝光门槛，价格通常更容易接受。"
 permalink: "cameras/nikon-fe"
+price_typical: 650
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1qqwLzcE81","title":"胶片时代的尼康宝藏！平价相机推荐","creator":"Anti-lover","url":"https://www.bilibili.com/video/BV1qqwLzcE81/","role":"原始字幕来源"}]
 ---
 
 ## 快速判断
@@ -59,7 +65,6 @@ permalink: "cameras/nikon-fe"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想学习手动对焦，又希望用 A 档降低曝光难度的新手</span></div>
   <div><strong>不适合</strong><span>坚持全机械、希望相机完全不依赖电池的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥500～800，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

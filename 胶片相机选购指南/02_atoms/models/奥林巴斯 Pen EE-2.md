@@ -19,9 +19,9 @@ release_year: 1968
 weight_g: null
 price_min: 500
 price_max: 800
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -45,6 +45,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "一卷拍 72 张的半格口袋机，每张成本减半。"
 permalink: "cameras/olympus-pen-ee-2"
+price_typical: 650
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -52,7 +56,6 @@ permalink: "cameras/olympus-pen-ee-2"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想大量体验胶片、不在意每张最高画质的人；旅行中想"随便拍不心疼"的人</span></div>
   <div><strong>不适合</strong><span>追求大幅放大、极致细节或高感画质的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥500～800，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

@@ -20,9 +20,9 @@ release_year: 1979
 weight_g: 460
 price_min: 500
 price_max: 1000
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -48,6 +48,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "小巧 K 卡口电子单反：A 档适合日常，按钮式手动曝光提供更多控制，并保留 1/125s 机械备份。"
 permalink: "cameras/pentax-me-super"
+price_typical: 750
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1QydMBSEPa","title":"16个品牌83台相机！手动胶片单反相机终极推荐","creator":"大耳蟹","url":"https://www.bilibili.com/video/BV1QydMBSEPa/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌83台相机！手动胶片单反相机终极推荐》整理而来。"
 ---
 
 ## 快速判断
@@ -55,7 +62,6 @@ permalink: "cameras/pentax-me-super"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>想要小巧手动对焦单反、光圈优先便利和 K 卡口镜头选择的新手</span></div>
   <div><strong>不适合</strong><span>必须使用传统快门拨盘，或要求无电时仍能使用完整速度范围的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥500～1000，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

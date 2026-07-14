@@ -19,9 +19,9 @@ release_year: 1977
 weight_g: 495
 price_min: 400
 price_max: 700
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -46,6 +46,13 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "ME Super 的前代，纯 A 档入门机，颜值能打。"
 permalink: "cameras/pentax-me"
+price_typical: 550
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
+video_mapping_status: "已映射"
+source_videos: [{"platform":"bilibili","bvid":"BV1QydMBSEPa","title":"16个品牌83台相机！手动胶片单反相机终极推荐","creator":"大耳蟹","url":"https://www.bilibili.com/video/BV1QydMBSEPa/","role":"原始字幕来源"}]
+source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌83台相机！手动胶片单反相机终极推荐》整理而来。"
 ---
 
 ## 快速判断
@@ -53,7 +60,6 @@ permalink: "cameras/pentax-me"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>只想用 A 档轻松拍、不介意没有手动的人</span></div>
   <div><strong>不适合</strong><span>想学习手动曝光的人（选 ME Super 或 K1000）</span></div>
-  <div><strong>参考价格</strong><span>约 ¥400～700，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

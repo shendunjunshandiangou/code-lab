@@ -19,9 +19,9 @@ release_year: 1997
 weight_g: 145
 price_min: 3000
 price_max: null
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -50,6 +50,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "销量最高的 PS 机之一，滑盖设计经典，但已被严重炒高。"
 permalink: "cameras/olympus-mju-2"
+price_typical: 3000
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -57,7 +61,6 @@ permalink: "cameras/olympus-mju-2"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>愿意为 f/2.8 + 更好对焦多付钱的人</span></div>
   <div><strong>不适合</strong><span>追求性价比的人——mju-1 是更明智的选择</span></div>
-  <div><strong>参考价格</strong><span>约 ¥3000 起，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数

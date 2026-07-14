@@ -19,9 +19,9 @@ release_year: 1991
 weight_g: 275
 price_min: 1000
 price_max: null
-price_currency: CNY
-price_region: 中国大陆二手市场
-price_checked_at: 2026-07
+price_currency: "CNY"
+price_region: "中国大陆二手市场"
+price_checked_at: "2026-07"
 beginner_level: "推荐"
 reliability: 待核验
 recommended_scenes:
@@ -47,6 +47,10 @@ last_updated: "2026-07-12"
 detail_version: 2
 tagline: "35mm f/2.8 Tessar T*、顶部辅助取景窗和全自动操作的高性价比便携机。"
 permalink: "cameras/yashica-t3-super"
+price_typical: 1000
+price_condition: "仅机身，功能正常，普通使用成色；不含镜头、包装、收藏溢价和待修机"
+price_note: null
+price_status: "有效"
 ---
 
 ## 快速判断
@@ -54,7 +58,6 @@ permalink: "cameras/yashica-t3-super"
 <div class="camera-verdict-grid">
   <div><strong>适合</strong><span>重视 35mm f/2.8 蔡司镜头，希望价格低于热门 Contax 便携机的人</span></div>
   <div><strong>不适合</strong><span>需要手动曝光、轻薄口袋尺寸，或不能接受自动闪光与老电子机风险的人</span></div>
-  <div><strong>参考价格</strong><span>约 ¥1000 起，价格核对于 2026 年 7 月</span></div>
 </div>
 
 ## 关键参数
