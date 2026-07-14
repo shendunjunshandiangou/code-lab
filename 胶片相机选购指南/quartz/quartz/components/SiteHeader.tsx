@@ -28,26 +28,36 @@ const SiteHeader: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
           }
 
           .site-primary-nav {
-            top: 68px !important;
+            position: fixed !important;
+            z-index: 999 !important;
+            top: var(--mobile-nav-top, 68px) !important;
             right: 0 !important;
             bottom: auto !important;
             left: 0 !important;
             width: 100% !important;
-            height: calc(100vh - 68px) !important;
-            height: calc(100svh - 68px) !important;
-            height: calc(100dvh - 68px) !important;
-            max-height: calc(100dvh - 68px) !important;
-            padding: 1rem 1.25rem calc(2rem + env(safe-area-inset-bottom)) !important;
+            height: var(--mobile-nav-height, calc(100dvh - 68px)) !important;
+            min-height: 0 !important;
+            max-height: var(--mobile-nav-height, calc(100dvh - 68px)) !important;
+            padding: 1rem 1.25rem calc(5rem + env(safe-area-inset-bottom)) !important;
             overflow-x: hidden !important;
             overflow-y: auto !important;
             overscroll-behavior: contain;
             -webkit-overflow-scrolling: touch;
             touch-action: pan-y;
             scrollbar-gutter: stable;
+            contain: layout paint;
+          }
+
+          .site-primary-nav.is-open {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: stretch !important;
+            justify-content: flex-start !important;
           }
 
           .site-primary-nav a {
             flex: 0 0 auto;
+            width: 100%;
             min-height: 58px;
             display: flex;
             align-items: center;
