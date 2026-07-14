@@ -122,6 +122,7 @@ jobs:
           done
 
           CHROME_BIN="$CHROME_BIN" node scripts/visual-site-check.mjs http://127.0.0.1:4173/code-lab
+          CHROME_BIN="$CHROME_BIN" node scripts/mobile-nav-check.mjs http://127.0.0.1:4173/code-lab
 
       - name: 上传视觉验收截图
         if: always()
