@@ -185,7 +185,7 @@ function BuyingPage() {
         <div class="camera-card-grid compact">
           {cameraCards.slice(0, 4).map((camera) => <CameraCard camera={camera} />)}
         </div>
-        <div class="portal-actions"><a href="./cameras">浏览更多机型</a><a href="./04_knowledge/选购决策/Step4-二手检查清单">查看二手验机清单</a></div>
+        <div class="portal-actions"><a href="./cameras">浏览更多机型</a><a href="./04_knowledge/选购决策/Step4-买了之后">查看二手验机清单</a></div>
       </section>
     </article>
   )
@@ -314,7 +314,7 @@ function VideosPage() {
     ["guide" as IconName, "零基础入门", "胶片相机、胶卷、冲洗和扫描的基本流程", "./learn"],
     ["budget" as IconName, "第一台相机怎么选", "预算、使用场景、自动化程度和典型入门方案", "./buying"],
     ["camera" as IconName, "机型与系统", "具体型号的优缺点、替代方案和二手价格判断", "./cameras"],
-    ["check" as IconName, "二手验机", "快门、测光、漏光、霉雾、排线和电池仓检查", "./04_knowledge/选购决策/Step4-二手检查清单"],
+    ["check" as IconName, "二手验机", "快门、测光、漏光、霉雾、排线和电池仓检查", "./04_knowledge/选购决策/Step4-买了之后"],
   ]
 
   return (

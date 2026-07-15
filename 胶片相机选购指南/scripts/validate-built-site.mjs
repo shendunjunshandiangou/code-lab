@@ -26,6 +26,72 @@ function requireText(html, pattern, label) {
   if (!pattern.test(html)) fail(label)
 }
 
+function walkFiles(directory, suffix) {
+  if (!fs.existsSync(directory)) return []
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const fullPath = path.join(directory, entry.name)
+    if (entry.isDirectory()) return walkFiles(fullPath, suffix)
+    return entry.isFile() && entry.name.endsWith(suffix) ? [fullPath] : []
+  })
+}
+
+function decodeHtml(value) {
+  return value
+    .replaceAll("&amp;", "&")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#39;", "'")
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(Number.parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, number) => String.fromCodePoint(Number(number)))
+}
+
+function publicUrlForHtml(relativePath) {
+  const withoutExtension = relativePath === "index.html" ? "" : relativePath.replace(/\.html$/, "")
+  return `https://shendunjunshandiangou.github.io/code-lab/${withoutExtension}`
+}
+
+function targetFileForUrl(url) {
+  const basePath = "/code-lab"
+  if (url.origin !== "https://shendunjunshandiangou.github.io") return null
+  if (url.pathname !== basePath && !url.pathname.startsWith(`${basePath}/`)) return false
+
+  let relativePath
+  try {
+    relativePath = decodeURIComponent(url.pathname.slice(basePath.length)).replace(/^\/+/, "")
+  } catch {
+    return false
+  }
+
+  const candidates = relativePath === ""
+    ? ["index.html"]
+    : relativePath.endsWith("/")
+      ? [`${relativePath}index.html`]
+      : [relativePath, `${relativePath}.html`, `${relativePath}/index.html`]
+
+  return candidates.find((candidate) => fs.existsSync(path.join(publicDir, candidate))) ?? false
+}
+
+function pageAnchorIds(html) {
+  return new Set(
+    [...html.matchAll(/\s(?:id|name)=(?:"([^"]+)"|'([^']+)')/gi)]
+      .map((match) => decodeHtml(match[1] ?? match[2])),
+  )
+}
+
+function isRedirectPage(html) {
+  return /http-equiv=["']refresh["']/i.test(html) || /window\.location\.(?:replace|href)/.test(html)
+}
+
+function visibleMainText(html) {
+  const main = html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i)?.[1]
+    ?? html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1]
+    ?? ""
+  return decodeHtml(
+    main
+      .replace(/<(?:script|style|svg|template)\b[\s\S]*?<\/(?:script|style|svg|template)>/gi, " ")
+      .replace(/<[^>]+>/g, " "),
+  ).replace(/\s+/g, " ").trim()
+}
+
 const corePages = [
   "index.html",
   "learn.html",
@@ -109,6 +175,84 @@ for (const page of pagesToCheckImages) {
   }
 }
 pass("核心页面本地图片文件存在性检查")
+
+const htmlFiles = walkFiles(publicDir, ".html")
+const linkedHtmlFiles = new Set()
+const linkIssues = new Map()
+const visitedHtmlFiles = new Set()
+const pendingHtmlFiles = [...corePages]
+let internalLinkCount = 0
+
+function recordLinkIssue(message, sourcePage, href) {
+  const key = `${message}\n${sourcePage}\n${href}`
+  linkIssues.set(key, `- ${sourcePage} → ${href}：${message}`)
+}
+
+while (pendingHtmlFiles.length > 0) {
+  const sourcePage = pendingHtmlFiles.shift()
+  if (visitedHtmlFiles.has(sourcePage)) continue
+  visitedHtmlFiles.add(sourcePage)
+  const sourceFile = path.join(publicDir, sourcePage)
+  if (!fs.existsSync(sourceFile)) continue
+  const sourceHtml = fs.readFileSync(sourceFile, "utf8")
+  const sourceUrl = publicUrlForHtml(sourcePage)
+
+  for (const match of sourceHtml.matchAll(/<a\b[^>]*\shref=(?:"([^"]*)"|'([^']*)')[^>]*>/gi)) {
+    const href = decodeHtml(match[1] ?? match[2]).trim()
+    if (!href) {
+      recordLinkIssue("链接地址为空", sourcePage, "(空地址)")
+      continue
+    }
+    if (/^(?:mailto:|tel:|javascript:|data:)/i.test(href)) continue
+
+    let url
+    try {
+      url = new URL(href, sourceUrl)
+    } catch {
+      recordLinkIssue("链接地址无法解析", sourcePage, href)
+      continue
+    }
+
+    const target = targetFileForUrl(url)
+    if (target === null) continue
+    internalLinkCount += 1
+    if (target === false) {
+      recordLinkIssue("目标文件不存在", sourcePage, href)
+      continue
+    }
+
+    if (!target.endsWith(".html")) continue
+    linkedHtmlFiles.add(target)
+    if (!visitedHtmlFiles.has(target)) pendingHtmlFiles.push(target)
+    const targetHtml = fs.readFileSync(path.join(publicDir, target), "utf8")
+    if (url.hash && url.hash !== "#") {
+      let anchor
+      try {
+        anchor = decodeURIComponent(url.hash.slice(1))
+      } catch {
+        anchor = url.hash.slice(1)
+      }
+      if (!pageAnchorIds(targetHtml).has(anchor)) {
+        recordLinkIssue(`页面内不存在 #${anchor} 锚点`, sourcePage, href)
+      }
+    } else if (url.hash === "#") {
+      recordLinkIssue("链接只有空锚点", sourcePage, href)
+    }
+  }
+}
+
+for (const target of linkedHtmlFiles) {
+  const html = fs.readFileSync(path.join(publicDir, target), "utf8")
+  if (!isRedirectPage(html) && visibleMainText(html).length < 12) {
+    recordLinkIssue("目标页面没有可读正文", target, "(页面内容检查)")
+  }
+}
+
+if (linkIssues.size > 0) {
+  fail(`全站站内链接检查发现 ${linkIssues.size} 个问题：\n${[...linkIssues.values()].join("\n")}`)
+} else {
+  pass(`全站站内链接检查：${visitedHtmlFiles.size}/${htmlFiles.length} 个可达 HTML、${internalLinkCount} 次链接、${linkedHtmlFiles.size} 个被链接页面`)
+}
 
 if (errors.length > 0) {
   console.error("\n最终站点验收失败：")

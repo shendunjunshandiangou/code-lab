@@ -246,7 +246,7 @@ const BuyingGuidePage: QuartzComponent = ({ allFiles, fileData }: QuartzComponen
         </div>
         <span>同一型号的两台老相机，可能因为快门、测光、霉雾、漏光、排线和维修历史产生很大差异。确认候选机型后，再使用验机清单逐项检查。</span>
         <div>
-          <a href="./04_knowledge/选购决策/Step4-二手检查清单">查看二手验机清单</a>
+          <a href="./04_knowledge/选购决策/Step4-买了之后">查看二手验机清单</a>
           <a href="./cameras">浏览完整相机图鉴</a>
         </div>
       </section>
