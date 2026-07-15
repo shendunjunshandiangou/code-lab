@@ -196,6 +196,7 @@ const viewports = {
 
 const pages = [
   { name: "home", path: "/index.html", viewports: ["desktop", "tablet", "mobile"], required: [".commercial-home"] },
+  { name: "encyclopedia", path: "/encyclopedia.html", viewports: ["desktop", "tablet", "mobile"], required: [".knowledge-hub", ".knowledge-card-grid"] },
   { name: "buying", path: "/buying.html", viewports: ["desktop", "tablet", "mobile"], required: [".buying-guide-page", ".buying-product-grid"] },
   { name: "cameras", path: "/cameras.html", viewports: ["desktop", "tablet", "mobile"], required: [".camera-atlas-page", "[data-camera-grid]"] },
   { name: "fm2", path: "/cameras/nikon-fm2.html", viewports: ["desktop", "mobile"], required: [".camera-detail-guide"] },

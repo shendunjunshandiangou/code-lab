@@ -19,6 +19,7 @@ const SiteFooter: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
           <div>
             <strong>开始阅读</strong>
             <a href={hrefFor("learn")}>新手入门</a>
+            <a href={hrefFor("encyclopedia")}>相机百科</a>
             <a href={hrefFor("buying")}>帮我选相机</a>
             <a href={hrefFor("cameras")}>相机图鉴</a>
           </div>

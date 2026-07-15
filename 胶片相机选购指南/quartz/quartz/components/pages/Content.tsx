@@ -6,6 +6,7 @@ import { FullSlug, resolveRelative } from "../../util/path"
 import { concatenateResources } from "../../util/resources"
 import HomePageConstructor from "../HomePage"
 import LearnPageConstructor from "../LearnPage"
+import KnowledgePageConstructor from "../KnowledgePage"
 import BuyingGuidePageConstructor from "../BuyingGuidePage"
 import PortalPagesConstructor from "../PortalPages"
 import CameraAtlasPageConstructor from "../CameraAtlasPage"
@@ -13,10 +14,11 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 
 const HomePage = HomePageConstructor()
 const LearnPage = LearnPageConstructor()
+const KnowledgePage = KnowledgePageConstructor()
 const BuyingGuidePage = BuyingGuidePageConstructor()
 const PortalPages = PortalPagesConstructor()
 const CameraAtlasPage = CameraAtlasPageConstructor()
-const customPages: QuartzComponent[] = [HomePage, LearnPage, BuyingGuidePage, PortalPages, CameraAtlasPage]
+const customPages: QuartzComponent[] = [HomePage, LearnPage, KnowledgePage, BuyingGuidePage, PortalPages, CameraAtlasPage]
 const customPortalSlugs = new Set(["film", "videos", "about"])
 
 function canonicalizeInternalLinks(props: QuartzComponentProps) {
@@ -59,6 +61,10 @@ const Content: QuartzComponent = (props: QuartzComponentProps) => {
 
   if (slug === "learn") {
     return <LearnPage {...props} />
+  }
+
+  if (slug === "encyclopedia") {
+    return <KnowledgePage {...props} />
   }
 
   if (slug === "buying") {

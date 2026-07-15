@@ -25,6 +25,7 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import HomePage from "./HomePage"
 import LearnPage from "./LearnPage"
+import KnowledgePage from "./KnowledgePage"
 import PortalPages from "./PortalPages"
 import CameraAtlasPage from "./CameraAtlasPage"
 import CameraDetailGuide from "./CameraDetailGuide"
@@ -67,6 +68,7 @@ export {
   ConditionalRender,
   HomePage,
   LearnPage,
+  KnowledgePage,
   PortalPages,
   CameraAtlasPage,
   CameraDetailGuide,

@@ -6,6 +6,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 const navItems = [
   { label: "首页", slug: "index" },
   { label: "新手入门", slug: "learn" },
+  { label: "相机百科", slug: "encyclopedia" },
   { label: "帮我选相机", slug: "buying" },
   { label: "相机图鉴", slug: "cameras" },
   { label: "胶卷与成像", slug: "film" },
