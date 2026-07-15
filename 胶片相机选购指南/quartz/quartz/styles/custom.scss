@@ -1174,6 +1174,22 @@ article:not(.camera-detail):not(.home-page) > h1:first-child,
   background: var(--site-line-dark);
 }
 
+.source-video-grid.is-single {
+  width: min(100%, 860px);
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-columns: minmax(0, 1fr);
+  background: transparent;
+}
+
+.source-video-grid.is-single .bilibili-card {
+  border: 1px solid var(--site-line-dark);
+}
+
+.source-video-grid.is-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .bilibili-card {
   min-width: 0;
   background: var(--site-black);
@@ -1556,6 +1572,10 @@ article:not(.camera-detail):not(.home-page) > h1:first-child,
   .video-preview-grid,
   .source-video-grid {
     grid-template-columns: 1fr;
+  }
+
+  .source-video-grid.is-single {
+    width: 100%;
   }
 
   .video-preview-grid > a {

@@ -188,6 +188,13 @@ const oldFm2 = read("02_atoms/models/尼康-FM2.html")
 if (oldFm2 && !oldFm2.includes("cameras/nikon-fm2")) fail("尼康 FM2 旧地址没有跳转到新路由")
 else pass("旧机型地址重定向检查")
 
+const pearlRiver = read("cameras/pearl-river-s-201.html")
+if (pearlRiver) {
+  requireText(pearlRiver, /class="source-video-grid is-single" data-video-count="1"/, "单条来源视频没有使用单卡布局")
+  requireText(pearlRiver, /class="bilibili-card"/, "珠江 S-201 详情页缺少来源视频卡片")
+}
+pass("单条来源视频桌面布局契约检查")
+
 const pagesToCheckImages = [...corePages, ...keyCameraPages]
 const localImagePattern = /src="([^"]*static\/images\/library\/[^"?#]+)[^\"]*"/g
 for (const page of pagesToCheckImages) {

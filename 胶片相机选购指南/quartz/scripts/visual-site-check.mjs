@@ -203,6 +203,7 @@ const pages = [
   { name: "penf", path: "/cameras/olympus-pen-f.html", viewports: ["desktop", "mobile"], required: [".camera-detail-guide"] },
   { name: "lx", path: "/cameras/pentax-lx.html", viewports: ["desktop", "mobile"], required: [".camera-detail-guide"] },
   { name: "g1", path: "/cameras/contax-g1.html", viewports: ["desktop", "mobile"], required: [".camera-detail-guide"] },
+  { name: "pearl-river", path: "/cameras/pearl-river-s-201.html", viewports: ["desktop", "mobile"], required: [".camera-detail-guide", ".source-video-grid.is-single"] },
 ]
 
 const failures = []

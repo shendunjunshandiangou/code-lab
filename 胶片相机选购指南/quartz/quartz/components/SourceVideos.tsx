@@ -23,6 +23,7 @@ const SourceVideos: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     ? (frontmatter.source_videos as SourceVideo[]).filter((video) => video?.url || video?.bvid)
     : []
   const sourceNote = frontmatter.source_note as string | undefined
+  const gridSizeClass = videos.length === 1 ? "is-single" : videos.length === 2 ? "is-pair" : "is-multi"
 
   // 尚未补充来源字段的文章不显示大块空状态，避免打断阅读。
   if (videos.length === 0 && !sourceNote) return null
@@ -39,7 +40,7 @@ const SourceVideos: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
       </div>
 
       {videos.length > 0 ? (
-        <div class="source-video-grid">
+        <div class={`source-video-grid ${gridSizeClass}`} data-video-count={videos.length}>
           {videos.map((video) => {
             const link = video.url ?? `https://www.bilibili.com/video/${video.bvid}`
             return (
