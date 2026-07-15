@@ -47,6 +47,7 @@ export function FeaturedVideoGrid({
   return (
     <>
       <style id="featured-video-layout-inline">{`
+        .center>article.portal-rich-page.videos-page{width:100%;max-width:none;margin:0;padding:0}
         .featured-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--site-line-dark)}
         .featured-video-grid .bilibili-card{min-width:0}
         @media(max-width:960px){.featured-video-grid{grid-template-columns:1fr}}

@@ -138,6 +138,7 @@ const videos = read("videos.html")
 if (videos) {
   requireText(videos, /class="featured-video-grid videos-library-grid" data-video-count="6"/, "视频精选页没有展示 6 条已核验视频")
   requireText(videos, /class="portal-rich-page videos-page"/, "视频精选页没有使用全宽专题页外壳")
+  requireText(videos, /portal-rich-page\.videos-page\{width:100%;max-width:none;margin:0;padding:0\}/, "视频精选页缺少防缓存全宽布局规则")
   if ((videos.match(/class="bilibili-play"/g) ?? []).length !== 6) fail("视频精选页可播放视频不是 6 条")
   if ((videos.match(/B 站打开原视频/g) ?? []).length !== 6) fail("视频精选页原视频链接不是 6 条")
   requireText(videos, /data-bvid="BV1o4411c7A5"/, "视频精选页缺少二手验机视频")
