@@ -7,6 +7,15 @@
   background: var(--site-paper);
 }
 
+// custom.scss 的普通文章阅读宽度规则在后面加载。
+// 视频库是三列专题页，需要更高优先级保持全宽。
+.center > article.portal-rich-page.videos-page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 .portal-rich-page h1,
 .portal-rich-page h2,
 .portal-rich-page h3,
