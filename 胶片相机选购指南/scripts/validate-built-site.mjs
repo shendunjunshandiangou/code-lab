@@ -125,6 +125,24 @@ for (const page of corePages) {
 }
 pass(`核心入口页面检查：${corePages.length} 个`)
 
+const home = read("index.html")
+if (home) {
+  requireText(home, /class="featured-video-grid home-featured-video-grid" data-video-count="3"/, "首页没有展示 3 条精选视频")
+  requireText(home, /id="featured-video-layout-inline"/, "首页视频网格缺少防缓存关键布局样式")
+  if ((home.match(/class="bilibili-play"/g) ?? []).length < 3) fail("首页可播放视频少于 3 条")
+  requireText(home, /data-bvid="BV1HL411h7JW"/, "首页缺少已核验零基础视频")
+}
+pass("首页精选视频数量、播放按钮与数据检查")
+
+const videos = read("videos.html")
+if (videos) {
+  requireText(videos, /class="featured-video-grid videos-library-grid" data-video-count="6"/, "视频精选页没有展示 6 条已核验视频")
+  if ((videos.match(/class="bilibili-play"/g) ?? []).length !== 6) fail("视频精选页可播放视频不是 6 条")
+  if ((videos.match(/B 站打开原视频/g) ?? []).length !== 6) fail("视频精选页原视频链接不是 6 条")
+  requireText(videos, /data-bvid="BV1o4411c7A5"/, "视频精选页缺少二手验机视频")
+}
+pass("视频精选页数量、播放按钮与原链接检查")
+
 const encyclopedia = read("encyclopedia.html")
 if (encyclopedia) {
   requireText(encyclopedia, /class="knowledge-hub"/, "相机百科没有使用正式聚合页组件")

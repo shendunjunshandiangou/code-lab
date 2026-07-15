@@ -195,10 +195,11 @@ const viewports = {
 }
 
 const pages = [
-  { name: "home", path: "/index.html", viewports: ["desktop", "tablet", "mobile"], required: [".commercial-home"] },
+  { name: "home", path: "/index.html", viewports: ["desktop", "tablet", "mobile"], required: [".commercial-home", ".home-featured-video-grid"] },
   { name: "encyclopedia", path: "/encyclopedia.html", viewports: ["desktop", "tablet", "mobile"], required: [".knowledge-hub", ".knowledge-card-grid"] },
   { name: "buying", path: "/buying.html", viewports: ["desktop", "tablet", "mobile"], required: [".buying-guide-page", ".buying-product-grid"] },
   { name: "cameras", path: "/cameras.html", viewports: ["desktop", "tablet", "mobile"], required: [".camera-atlas-page", "[data-camera-grid]"] },
+  { name: "videos", path: "/videos.html", viewports: ["desktop", "mobile"], required: [".videos-page", ".videos-library-grid"] },
   { name: "fm2", path: "/cameras/nikon-fm2.html", viewports: ["desktop", "mobile"], required: [".camera-detail-guide"] },
   { name: "penf", path: "/cameras/olympus-pen-f.html", viewports: ["desktop", "mobile"], required: [".camera-detail-guide"] },
   { name: "lx", path: "/cameras/pentax-lx.html", viewports: ["desktop", "mobile"], required: [".camera-detail-guide"] },
@@ -331,6 +332,27 @@ try {
           })()`)
           if (!search.active) fail(page.name, viewportName, "全站搜索无法打开", search)
           if (search.results < 1) fail(page.name, viewportName, "全站搜索没有返回机型结果", search)
+        }
+
+        if (["home", "videos"].includes(page.name)) {
+          const video = await evaluate(client, `(() => {
+            const grid = document.querySelector(".featured-video-grid")
+            const cards = [...document.querySelectorAll(".featured-video-grid .bilibili-card")]
+            const first = cards[0]
+            first?.querySelector(".bilibili-play")?.click()
+            return new Promise((resolve) => setTimeout(() => resolve({
+              count: cards.length,
+              declaredCount: Number(grid?.getAttribute("data-video-count") ?? 0),
+              bvid: first?.getAttribute("data-bvid") ?? "",
+              iframe: first?.querySelector("iframe")?.getAttribute("src") ?? "",
+              columns: grid ? getComputedStyle(grid).gridTemplateColumns.split(" ").length : 0,
+            }), 250))
+          })()`)
+          const expectedCount = page.name === "home" ? 3 : 6
+          if (video.count !== expectedCount || video.declaredCount !== expectedCount) fail(page.name, viewportName, `视频卡片应为 ${expectedCount} 条`, video)
+          if (!video.bvid || !video.iframe.includes(video.bvid)) fail(page.name, viewportName, "点击播放没有加载对应 B 站播放器", video)
+          const expectedColumns = viewportName === "desktop" ? 3 : 1
+          if (video.columns !== expectedColumns) fail(page.name, viewportName, `视频网格应为 ${expectedColumns} 列`, video)
         }
 
         results.push({ page: page.name, viewport: viewportName, url, common })

@@ -1,4 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { FeaturedVideo, FeaturedVideoGrid, getFeaturedVideos } from "./FeaturedVideos"
+// @ts-ignore
+import bilibiliScript from "./scripts/bilibili.inline"
 import style from "./styles/portalPages.scss"
 
 type IconName =
@@ -309,14 +312,7 @@ function FilmPage() {
   )
 }
 
-function VideosPage() {
-  const topics = [
-    ["guide" as IconName, "零基础入门", "胶片相机、胶卷、冲洗和扫描的基本流程", "./learn"],
-    ["budget" as IconName, "第一台相机怎么选", "预算、使用场景、自动化程度和典型入门方案", "./buying"],
-    ["camera" as IconName, "机型与系统", "具体型号的优缺点、替代方案和二手价格判断", "./cameras"],
-    ["check" as IconName, "二手验机", "快门、测光、漏光、霉雾、排线和电池仓检查", "./04_knowledge/选购决策/Step4-买了之后"],
-  ]
-
+function VideosPage({ videos }: { videos: FeaturedVideo[] }) {
   return (
     <article class="portal-rich-page videos-page">
       <PortalHeader
@@ -328,26 +324,19 @@ function VideosPage() {
         credit="尼康 FM2 · Patrick Dehais · Wikimedia Commons"
       />
 
-      <section class="portal-section">
-        <div class="portal-section-title"><span>视频主题</span><h2>先按问题选择内容，不需要从头浏览所有视频。</h2></div>
-        <div class="video-topic-grid">
-          {topics.map(([icon, title, copy, href], index) => (
-            <a href={href}>
-              <div class="video-topic-visual"><PortalIcon name={icon as IconName} /><span>0{index + 1}</span><i>▶</i></div>
-              <div><h3>{title}</h3><p>{copy}</p><small>先阅读对应内容 →</small></div>
-            </a>
-          ))}
-        </div>
+      <section class="portal-section is-dark videos-library-section">
+        <div class="portal-section-title"><span>已核验原视频</span><h2>点击播放，或直接前往 B 站查看原视频。</h2></div>
+        <FeaturedVideoGrid videos={videos} className="videos-library-grid" />
       </section>
 
       <section class="portal-section is-soft source-workflow-section">
-        <div class="portal-section-title"><span>来源整理</span><h2>每条视频上线前，需要完成这些信息。</h2></div>
+        <div class="portal-section-title"><span>来源整理</span><h2>每条视频都保留原作者和原始链接。</h2></div>
         <div class="source-field-grid">
           <article><PortalIcon name="video" /><h3>原视频信息</h3><p>平台、BV 号、标题、创作者、原链接和封面。</p></article>
           <article><PortalIcon name="source" /><h3>内容用途</h3><p>区分主要来源、补充观点、机型展示和实际操作示范。</p></article>
           <article><PortalIcon name="check" /><h3>事实核验</h3><p>参数、年份、卡口和兼容性不直接依赖单一视频观点。</p></article>
         </div>
-        <p class="source-status-note">当前播放器和视频卡片能力已经完成。具体视频仍在核对 BV 号、创作者和对应文章，无法确认的信息不会使用猜测值填充。</p>
+        <p class="source-status-note">本页只展示已核验 BV 号、标题、创作者和原链接的视频；未完成核对的条目不会上线。</p>
       </section>
     </article>
   )
@@ -390,16 +379,18 @@ function AboutPage() {
   )
 }
 
-const PortalPages: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
+const PortalPages: QuartzComponent = (props: QuartzComponentProps) => {
+  const { fileData } = props
   const slug = String(fileData.slug ?? "")
   if (slug === "buying") return <BuyingPage />
   if (slug === "cameras") return <CamerasPage />
   if (slug === "film") return <FilmPage />
-  if (slug === "videos") return <VideosPage />
+  if (slug === "videos") return <VideosPage videos={getFeaturedVideos(props)} />
   if (slug === "about") return <AboutPage />
   return null
 }
 
 PortalPages.css = style
+PortalPages.afterDOMLoaded = bilibiliScript
 
 export default (() => PortalPages) satisfies QuartzComponentConstructor

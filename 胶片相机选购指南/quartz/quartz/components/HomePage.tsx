@@ -1,5 +1,9 @@
 // @ts-ignore
 import homeScript from "./scripts/commercialHome.inline"
+// @ts-ignore
+import bilibiliScript from "./scripts/bilibili.inline"
+import { concatenateResources } from "../util/resources"
+import { FeaturedVideoGrid, getFeaturedVideos } from "./FeaturedVideos"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 const cameras = [
@@ -117,14 +121,10 @@ const learningPath = [
   },
 ]
 
-const videoTopics = [
-  ["01", "零基础", "胶片相机到底是什么？"],
-  ["02", "选购入门", "第一台胶片相机应该怎样选？"],
-  ["03", "二手验机", "拿到相机后，应该检查哪些地方？"],
-]
-
-function HomePage({ fileData }: QuartzComponentProps) {
+function HomePage(props: QuartzComponentProps) {
+  const { fileData } = props
   if (fileData.slug !== "index") return null
+  const featuredVideos = getFeaturedVideos(props).slice(0, 3)
 
   return (
     <div class="commercial-home">
@@ -345,18 +345,7 @@ function HomePage({ fileData }: QuartzComponentProps) {
           </div>
           <a href="./videos">查看视频精选 →</a>
         </div>
-        <div class="video-preview-grid">
-          {videoTopics.map(([number, category, title]) => (
-            <a href="./videos">
-              <span>{number}</span>
-              <div>
-                <p>{category}</p>
-                <h3>{title}</h3>
-                <small>视频来源正在逐条整理，页面会保留原作者和原视频链接。</small>
-              </div>
-            </a>
-          ))}
-        </div>
+        <FeaturedVideoGrid videos={featuredVideos} className="home-featured-video-grid" />
       </section>
 
       <section class="home-commercial-section methodology-section">
@@ -386,6 +375,6 @@ function HomePage({ fileData }: QuartzComponentProps) {
   )
 }
 
-HomePage.afterDOMLoaded = homeScript
+HomePage.afterDOMLoaded = concatenateResources(homeScript, bilibiliScript)
 
 export default (() => HomePage) satisfies QuartzComponentConstructor

@@ -809,6 +809,23 @@ article.home-page > h1 {
   color: var(--site-silver);
 }
 
+.home-featured-video-grid {
+  margin-top: 2.5rem;
+}
+
+.bilibili-summary {
+  min-height: 3.4em;
+  margin: -0.45rem 0 1.25rem;
+  display: block;
+  color: var(--site-silver);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.videos-library-grid {
+  margin-top: 0;
+}
+
 /* 内容整理方法 */
 .methodology-section {
   display: grid;
