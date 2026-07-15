@@ -28,11 +28,11 @@ recommended_scenes:
   - "日常记录"
   - "旅行随拍"
   - "朋友聚会"
-hero_image: ""
-image_alt: "奥林巴斯 mju-1 胶片便携相机，图片待完成准确型号与授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/olympus-mju-i.jpg"
+image_alt: "滑盖打开、露出 35mm 镜头与闪光灯的黑色奥林巴斯 mju-1 胶片便携相机"
+image_credit: "Botaurus"
+image_source: "https://commons.wikimedia.org/wiki/File:Olympus_mju_i.jpg"
+image_license: "Public domain"
 tags:
   - "便携自动相机"
   - "自动对焦"
@@ -46,7 +46,8 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Olympus_mju"
   - "https://en.wikipedia.org/wiki/List_of_Olympus_products"
-last_updated: "2026-07-12"
+  - "https://commons.wikimedia.org/wiki/File:Olympus_mju_i.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "mju 系列初代定焦机：35mm f/3.5、滑盖开机和全自动操作，价格通常低于 mju-2。"
 permalink: "cameras/olympus-mju-1"
@@ -124,6 +125,6 @@ price_status: "有效"
 
 ## 图片与资料来源
 
-- 图片：暂未找到同时满足准确型号、授权信息完整和长期引用要求的图片，因此继续保留占位。
+- 图片：Botaurus，Wikimedia Commons，Public domain。
 - mju-1 / Stylus 的 1991 年发布时间、35mm f/3.5 定焦、滑盖和全自动定位已于 2026-07-12 复核。
 - 二手价格与可靠性取决于具体版本、自动对焦、镜头机构、闪光、过片马达和维修历史。

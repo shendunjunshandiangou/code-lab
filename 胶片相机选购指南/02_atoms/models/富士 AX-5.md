@@ -31,11 +31,11 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: ""
-image_alt: "富士 AX-5胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/fujica-ax-5.jpg"
+image_alt: "卸下镜头后正面展示的富士 Fujica AX-5 手动对焦单反机身"
+image_credit: "Peter Grew"
+image_source: "https://www.flickr.com/photos/165060904@N05/47076022621/"
+image_license: "CC BY-NC-SA 2.0"
 tags:
   - "电子单反"
   - "手动对焦"
@@ -43,8 +43,9 @@ tags:
 aliases:
   - "Fujica AX-5"
   - "富士 AX5"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://www.flickr.com/photos/165060904@N05/47076022621/"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "富士 X 卡口功能最完整的手动单反，小众实用。"
 permalink: "cameras/fujifilm-ax-5"
@@ -110,6 +111,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌8
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Peter Grew，Flickr，CC BY-NC-SA 2.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

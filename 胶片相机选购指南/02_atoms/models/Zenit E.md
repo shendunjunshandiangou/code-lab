@@ -28,11 +28,11 @@ recommended_scenes:
   - "摄影基础学习"
   - "日常记录"
   - "街拍"
-hero_image: ""
-image_alt: "Zenit E胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/zenit-e.jpg"
+image_alt: "搭配 Helios 44-2 镜头正面展示的 Zenit E 机械单反相机"
+image_credit: "Elekes Andor"
+image_source: "https://commons.wikimedia.org/wiki/File:Zenit_-_E_camera_with_Helios_44-2_lens.JPG"
+image_license: "CC BY-SA 4.0"
 tags:
   - "机械单反"
   - "手动对焦"
@@ -41,8 +41,9 @@ aliases:
   - "Zenit E"
   - "Zenit-E"
   - "泽尼特 E"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Zenit_-_E_camera_with_Helios_44-2_lens.JPG"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "10 欧元地板价——笨重但皮实的苏联坦克。"
 permalink: "cameras/zenit-e"
@@ -120,6 +121,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《【中字】
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Elekes Andor，Wikimedia Commons，CC BY-SA 4.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

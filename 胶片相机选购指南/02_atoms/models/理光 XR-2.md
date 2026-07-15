@@ -29,11 +29,11 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: ""
-image_alt: "理光 XR-2胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/ricoh-xr2.jpg"
+image_alt: "搭配 Rikenon 50mm 镜头正面展示的理光 Ricoh XR-2 单反相机"
+image_credit: "Gilles Péris y Saborit"
+image_source: "https://www.flickr.com/photos/gperis/36109584014/"
+image_license: "CC BY-NC 2.0"
 tags:
   - "电子单反"
   - "手动对焦"
@@ -41,8 +41,9 @@ tags:
 aliases:
   - "Ricoh XR-2"
   - "理光 XR2"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://www.flickr.com/photos/gperis/36109584014/"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "宾得 K 卡口的理光进阶版，KR-5 的升级选择。"
 permalink: "cameras/ricoh-xr-2"
@@ -108,6 +109,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌8
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Gilles Péris y Saborit，Flickr，CC BY-NC 2.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

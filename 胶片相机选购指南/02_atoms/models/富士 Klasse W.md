@@ -28,11 +28,11 @@ recommended_scenes:
   - "旅行随拍"
   - "日常记录"
   - "聚会"
-hero_image: ""
-image_alt: "富士 Klasse W胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/fujifilm-klasse-w.jpg"
+image_alt: "拍立得相纸画面中正面展示的富士 Klasse W 胶片便携相机"
+image_credit: "Matthew Bellemare"
+image_source: "https://www.flickr.com/photos/bellemarematt/49810936171/"
+image_license: "CC BY-SA 2.0"
 tags:
   - "便携自动相机"
   - "自动对焦"
@@ -40,8 +40,9 @@ tags:
 aliases:
   - "Fuji Klasse W"
   - "Fujifilm Klasse"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://www.flickr.com/photos/bellemarematt/49810936171/"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "最无聊但最省心——没有优点也没有缺点的均衡选手。"
 permalink: "cameras/fujifilm-klasse-w"
@@ -111,6 +112,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《【口袋胶
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Matthew Bellemare，Flickr，CC BY-SA 2.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

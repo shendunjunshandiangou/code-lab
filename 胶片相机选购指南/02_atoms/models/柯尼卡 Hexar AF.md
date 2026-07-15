@@ -29,11 +29,11 @@ recommended_scenes:
   - "街拍"
   - "旅行"
   - "人文记录"
-hero_image: ""
-image_alt: "柯尼卡 Hexar AF胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/konica-hexar-af.jpg"
+image_alt: "正面展示的黑色柯尼卡 Konica Hexar AF 自动对焦便携相机"
+image_credit: "Mike Funnell"
+image_source: "https://commons.wikimedia.org/wiki/File:Hexar-1-weba.jpg"
+image_license: "CC BY-SA 3.0"
 tags:
   - "旁轴相机"
   - "自动对焦"
@@ -43,8 +43,9 @@ aliases:
   - "柯尼卡 Hexar AF"
   - "Hexar AF"
   - "穷人徕卡"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Hexar-1-weba.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "\"穷人徕卡\"——35mm f/2 大光圈自动旁轴，暗光街头利器，预算友好的高素质随身机。"
 permalink: "cameras/konica-hexar-af"
@@ -121,6 +122,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《【口袋胶
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Mike Funnell，Wikimedia Commons，CC BY-SA 3.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

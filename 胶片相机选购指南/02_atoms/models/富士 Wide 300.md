@@ -28,19 +28,20 @@ recommended_scenes:
   - "聚会"
   - "旅行纪念"
   - "现场分享"
-hero_image: ""
-image_alt: "富士 Wide 300胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/fuji-instax-wide-300.jpg"
+image_alt: "搭配镜头筒与相纸样张展示的富士 Instax Wide 300 即时成像相机"
+image_credit: "Petar Milošević"
+image_source: "https://commons.wikimedia.org/wiki/File:Fuji_instax_Wide_300.jpg"
+image_license: "CC BY-SA 4.0"
 tags:
   - "即时成像相机"
   - "待核验"
   - "推荐"
 aliases:
   - "Fuji Wide 300"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Fuji_instax_Wide_300.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "宽幅拍立得，旅行时拍一张送人最合适。"
 permalink: "cameras/fujifilm-wide-300"
@@ -100,6 +101,6 @@ price_status: "有效"
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Petar Milošević，Wikimedia Commons，CC BY-SA 4.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

@@ -28,11 +28,11 @@ recommended_scenes:
   - "人像"
   - "风光"
   - "创作拍摄"
-hero_image: ""
-image_alt: "勃朗尼卡 ETR 系列胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/bronica-etrsi-system.jpg"
+image_alt: "搭配眼平取景器、手柄和标准镜头的勃朗尼卡 ETRSi 645 中画幅相机"
+image_credit: "Vincent Quach (Invincible)"
+image_source: "https://commons.wikimedia.org/wiki/File:Bronica_ETR-Si_system.jpg"
+image_license: "CC BY-SA 3.0"
 tags:
   - "中画幅相机"
   - "手动对焦"
@@ -42,8 +42,9 @@ aliases:
   - "Bronica ETRS"
   - "Bronica ETRSi"
   - "勃朗尼卡 ETR 系列"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Bronica_ETR-Si_system.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "平价哈苏——最小巧的 645 中画幅单反。"
 permalink: "cameras/bronica-etr"
@@ -119,6 +120,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌8
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Vincent Quach（Invincible），Wikimedia Commons，CC BY-SA 3.0；主图展示 ETR 系列后期 ETRSi 组合。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

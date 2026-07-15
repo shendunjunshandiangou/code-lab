@@ -29,11 +29,11 @@ recommended_scenes:
   - "日常记录"
   - "街拍"
   - "摄影入门"
-hero_image: ""
-image_alt: "康泰时 Aria胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/contax-aria.jpg"
+image_alt: "搭配蔡司镜头俯视展示的康泰时 Contax Aria 手动对焦单反相机"
+image_credit: "Takeshi Tanabe"
+image_source: "https://www.flickr.com/photos/paddyedge/2674423920/"
+image_license: "CC BY-NC-SA 2.0"
 tags:
   - "电子单反"
   - "手动对焦"
@@ -41,8 +41,9 @@ tags:
 aliases:
   - "Contax Aria"
   - "康泰时 Aria"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://www.flickr.com/photos/paddyedge/2674423920/"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "CY 卡口最轻便漂亮的机身，蔡司镜头的日常搭档。"
 permalink: "cameras/contax-aria"
@@ -109,6 +110,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌8
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Takeshi Tanabe，Flickr，CC BY-NC-SA 2.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

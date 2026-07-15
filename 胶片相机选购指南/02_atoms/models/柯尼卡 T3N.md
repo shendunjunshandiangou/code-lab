@@ -28,11 +28,11 @@ recommended_scenes:
   - "摄影基础学习"
   - "日常记录"
   - "街拍"
-hero_image: ""
-image_alt: "柯尼卡 T3N胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/konica-autoreflex-t3n.jpg"
+image_alt: "卸下镜头后从左前上方展示的黑色柯尼卡 Autoreflex T3N 单反机身"
+image_credit: "Cjantsch"
+image_source: "https://commons.wikimedia.org/wiki/File:Konica_Autoreflex_T3N_black_enamel_%C2%BE_top_left_view.jpg"
+image_license: "CC BY-SA 3.0"
 tags:
   - "机械单反"
   - "手动对焦"
@@ -40,8 +40,9 @@ tags:
 aliases:
   - "Konica T3N"
   - "柯尼卡 T3N"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Konica_Autoreflex_T3N_black_enamel_%C2%BE_top_left_view.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "T 系列巅峰，全金属机身，小众但镜头素质被高度认可。"
 permalink: "cameras/konica-t3n"
@@ -110,6 +111,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌8
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Cjantsch，Wikimedia Commons，CC BY-SA 3.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

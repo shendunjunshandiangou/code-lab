@@ -28,11 +28,11 @@ recommended_scenes:
   - "旅行随拍"
   - "日常记录"
   - "聚会"
-hero_image: ""
-image_alt: "徕卡 CM胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/leica-cm.gif"
+image_alt: "搭配手柄底座正面展示的徕卡 Leica CM 胶片便携相机"
+image_credit: "Andreas Kippenberg"
+image_source: "https://commons.wikimedia.org/wiki/File:Leica_CM.gif"
+image_license: "CC BY-SA 3.0"
 tags:
   - "便携自动相机"
   - "自动对焦"
@@ -40,8 +40,9 @@ tags:
 aliases:
   - "Leica CM"
   - "徕卡 CM"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Leica_CM.gif"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "买镜头送机身——镜头媲美徕卡 M 口六枚玉，机身设计一塌糊涂。"
 permalink: "cameras/leica-cm"
@@ -108,6 +109,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《【口袋胶
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Andreas Kippenberg，Wikimedia Commons，CC BY-SA 3.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

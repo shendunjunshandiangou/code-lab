@@ -28,11 +28,11 @@ recommended_scenes:
   - "旅行随拍"
   - "日常记录"
   - "聚会"
-hero_image: ""
-image_alt: "康泰时 TVS胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/contax-tvs.jpg"
+image_alt: "正面展示的银色康泰时 Contax TVS 变焦胶片便携相机"
+image_credit: "Eastwind41"
+image_source: "https://commons.wikimedia.org/wiki/File:CONTAX-TVS.JPG"
+image_license: "Copyrighted free use"
 tags:
   - "便携自动相机"
   - "自动对焦"
@@ -40,8 +40,9 @@ tags:
 aliases:
   - "Contax TVS"
   - "康泰时 TVS"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:CONTAX-TVS.JPG"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "比 T2/T3 便宜得多的康泰时变焦 PS 机。"
 permalink: "cameras/contax-tvs"
@@ -105,6 +106,6 @@ price_status: "有效"
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Eastwind41，Wikimedia Commons，Copyrighted free use。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

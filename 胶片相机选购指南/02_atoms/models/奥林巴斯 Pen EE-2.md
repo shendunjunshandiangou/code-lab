@@ -28,11 +28,11 @@ recommended_scenes:
   - "旅行"
   - "日常记录"
   - "街拍"
-hero_image: ""
-image_alt: "奥林巴斯 Pen EE-2胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/olympus-pen-ee-2.jpg"
+image_alt: "银黑配色、正面可见硒光电池测光环的奥林巴斯 Pen EE-2 半格胶片相机"
+image_credit: "Jastrow"
+image_source: "https://commons.wikimedia.org/wiki/File:Olympus_Pen_EE-2_241-2599.jpg"
+image_license: "Public domain"
 tags:
   - "半格相机"
   - "固定焦点"
@@ -40,8 +40,9 @@ tags:
 aliases:
   - "奥林巴斯 Pen EE-2"
   - "Pen EE-2"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Olympus_Pen_EE-2_241-2599.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "一卷拍 72 张的半格口袋机，每张成本减半。"
 permalink: "cameras/olympus-pen-ee-2"
@@ -105,6 +106,6 @@ price_status: "有效"
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Jastrow，Wikimedia Commons，Public domain。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

@@ -30,11 +30,11 @@ recommended_scenes:
   - "人像"
   - "风光"
   - "创作拍摄"
-hero_image: ""
-image_alt: "富士 GA645Zi胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/fujifilm-ga645zi.jpg"
+image_alt: "与 Instax 210 和 X10 同框的富士 GA645Zi 中画幅相机，GA645Zi 位于画面右侧"
+image_credit: "Tom Hart"
+image_source: "https://www.flickr.com/photos/thart2009/8620074756/"
+image_license: "CC BY 2.0"
 tags:
   - "中画幅相机"
   - "自动对焦"
@@ -43,8 +43,9 @@ aliases:
   - "Fuji GA645Zi"
   - "富士 GA645"
   - "GA645Zi"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://www.flickr.com/photos/thart2009/8620074756/"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "120 画幅的傻瓜机——拿起来就拍的中画幅。"
 permalink: "cameras/fujifilm-ga645zi"
@@ -119,6 +120,6 @@ price_status: "有效"
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Tom Hart，Flickr，CC BY 2.0；图中右侧银色机身为 GA645Zi。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

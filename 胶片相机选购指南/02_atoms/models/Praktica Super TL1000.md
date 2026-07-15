@@ -28,11 +28,11 @@ recommended_scenes:
   - "摄影基础学习"
   - "日常记录"
   - "街拍"
-hero_image: ""
-image_alt: "Praktica Super TL1000胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/praktica-super-tl1000.jpg"
+image_alt: "搭配标准镜头正面展示的 Praktica Super TL1000 机械单反相机"
+image_credit: "Wolfgang Pehlemann"
+image_source: "https://commons.wikimedia.org/wiki/File:Praktica_super_TL_1000_-_Foto_Wolfgang_Pehlemann_DSC04882.jpg"
+image_license: "CC BY-SA 3.0 de"
 tags:
   - "机械单反"
   - "手动对焦"
@@ -40,8 +40,9 @@ tags:
 aliases:
   - "Praktica Super TL1000"
   - "百佳 Super TL1000"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Praktica_super_TL_1000_-_Foto_Wolfgang_Pehlemann_DSC04882.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "宾得 K1000 的地板价替代——功能一样，便宜很多。"
 permalink: "cameras/praktica-super-tl1000"
@@ -114,6 +115,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《【中字】
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Wolfgang Pehlemann，Wikimedia Commons，CC BY-SA 3.0 de。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

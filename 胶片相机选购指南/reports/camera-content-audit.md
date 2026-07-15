@@ -5,9 +5,9 @@
 ## 总览
 
 - 机型总数：83
-- 已有主图：30
-- 图片署名、来源和许可完整：30
-- 已有资料来源：40
+- 已有主图：83
+- 图片署名、来源和许可完整：83
+- 已有资料来源：83
 - 含待核验关键字段：75
 - 高风险字段冲突：0
 - 可从正文回填结构化字段：1
@@ -17,22 +17,22 @@
 
 | 价位 | 机型 | 新手定位 | 图片 | 来源 | 待核验字段 |
 |---|---|---|---|---|---|
+| 500 元以内 | 一次性相机 | 推荐 | 有 | 有 | metering、weight_g、reliability、focus |
+| 500 元以内 | 美能达 807Si | 推荐 | 有 | 有 | metering、weight_g、reliability、battery |
 | 500 元以内 | 尼康 F-601 | 推荐 | 有 | 有 | 无 |
 | 500 元以内 | 奥林巴斯 OM-10 | 推荐 | 有 | 有 | reliability |
-| 500 元以内 | 美能达 SRT-101 | 有一定门槛 | 有 | 有 | reliability |
-| 500 元以内 | 宾得 Spotmatic（SP） | 有一定门槛 | 有 | 有 | weight_g、reliability |
+| 500～1000 元 | 富士 Wide 300 | 推荐 | 有 | 有 | metering、weight_g、reliability、mount、focus |
 | 500～1000 元 | 宾得 ME | 推荐 | 有 | 有 | reliability |
 | 500～1000 元 | 尼康 FG | 推荐 | 有 | 有 | 无 |
-| 500～1000 元 | 尼康 FE | 推荐 | 有 | 有 | 无 |
-| 500～1000 元 | 宾得 ME Super | 推荐 | 有 | 有 | reliability |
+| 500～1000 元 | 雅西卡 35 GX | 推荐 | 有 | 有 | metering、weight_g、reliability |
+| 1000～2000 元 | 雅西卡 T3 Super | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 佳能 AE-1 | 推荐 | 有 | 有 | reliability |
 | 1000～2000 元 | 尼康 FE2 | 推荐 | 有 | 有 | 无 |
-| 1000～2000 元 | 佳能 AE-1 Program | 推荐 | 有 | 有 | reliability |
-| 1000～2000 元 | 奥林巴斯 OM-1 | 有一定门槛 | 有 | 有 | reliability |
+| 1000～2000 元 | 宾得 Espio Mini | 推荐 | 有 | 有 | metering、weight_g、reliability、battery |
+| 2000 元以上 | 康泰时 TVS | 推荐 | 有 | 有 | metering、weight_g、reliability |
 | 2000 元以上 | 奥林巴斯 mju-2 | 推荐 | 有 | 有 | reliability |
-| 2000 元以上 | 奥林巴斯 OM-4 | 进阶 | 有 | 有 | reliability |
-| 2000 元以上 | 宾得 LX | 进阶 | 有 | 有 | reliability |
-| 2000 元以上 | 佳能 F-1 | 进阶 | 有 | 有 | reliability |
+| 2000 元以上 | 柯尼卡 Hexar AF | 推荐 | 有 | 有 | metering、reliability |
+| 2000 元以上 | 富士 Klasse W | 推荐 | 有 | 有 | metering、reliability |
 
 ## 最高优先级：推荐卡片缺图
 
@@ -54,111 +54,17 @@
 
 ## 全量缺口
 
-### 缺少主图（53）
+### 缺少主图（0）
 
-- 奥林巴斯 mju-1
-- 奥林巴斯 Pen D3
-- 奥林巴斯 Pen EE-2
-- 宾得 6×7
-- 宾得 Espio Mini
-- 宾得 K2
-- 宾得 KM / KX
-- 勃朗尼卡 ETR 系列
-- 富士 AX-5
-- 富士 GA645Zi
-- 富士 Klasse W
-- 富士 ST-701
-- 富士 ST-801 / ST-901
-- 富士 Wide 300
-- 哈苏 500 系列
-- 海鸥 4A
-- 佳能 EOS 3
-- 佳能 FTb-N
-- 康泰时 Aria
-- 康泰时 RTS 系列
-- 康泰时 S2
-- 康泰时 T2
-- 康泰时 T3
-- 康泰时 TVS
-- 柯尼卡 Hexar AF
-- 柯尼卡 T3N
-- 柯尼卡 T4
-- 徕卡 CM
-- 徕卡 Minilux
-- 徕卡 R6 / R6.2
-- 理光 GR1s
-- 理光 GR21
-- 理光 KR-5
-- 理光 XR-2
-- 禄来 3.5F
-- 禄来 35
-- 禄来 SL35 / SL35E
-- 玛米亚 7
-- 玛米亚 RB67
-- 美能达 807Si
-- 美能达 TC-1
-- 美能达 X-1（XK/XM）
-- 美能达 α-7
-- 尼康 28Ti
-- 尼康马特
-- 雅西卡 35 GX
-- 雅西卡 FR 系列
-- 雅西卡 FX-3 Super 2000
-- 雅西卡 T3 Super
-- 一次性相机
-- 珠江 S-201
-- Praktica Super TL1000
-- Zenit E
+- 无
 
 ### 已有图片但版权字段不完整（0）
 
 - 无
 
-### 缺少资料来源（43）
+### 缺少资料来源（0）
 
-- 奥林巴斯 Pen D3
-- 奥林巴斯 Pen EE-2
-- 宾得 Espio Mini
-- 宾得 K2
-- 宾得 KM / KX
-- 勃朗尼卡 ETR 系列
-- 富士 AX-5
-- 富士 GA645Zi
-- 富士 Klasse W
-- 富士 ST-701
-- 富士 ST-801 / ST-901
-- 富士 Wide 300
-- 哈苏 500 系列
-- 佳能 FTb-N
-- 康泰时 Aria
-- 康泰时 RTS 系列
-- 康泰时 T3
-- 康泰时 TVS
-- 柯尼卡 Hexar AF
-- 柯尼卡 T3N
-- 柯尼卡 T4
-- 徕卡 CM
-- 徕卡 Minilux
-- 徕卡 R6 / R6.2
-- 理光 GR1s
-- 理光 GR21
-- 理光 KR-5
-- 理光 XR-2
-- 禄来 SL35 / SL35E
-- 玛米亚 7
-- 玛米亚 RB67
-- 美能达 807Si
-- 美能达 TC-1
-- 美能达 X-1（XK/XM）
-- 美能达 α-7
-- 尼康 28Ti
-- 雅西卡 35 GX
-- 雅西卡 FR 系列
-- 雅西卡 FX-3 Super 2000
-- 一次性相机
-- 珠江 S-201
-- Praktica Super TL1000
-- Zenit E
+- 无
 
 ### 含待核验关键字段（75）
 

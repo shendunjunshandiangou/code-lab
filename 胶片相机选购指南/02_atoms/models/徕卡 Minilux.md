@@ -28,11 +28,11 @@ recommended_scenes:
   - "旅行随拍"
   - "日常记录"
   - "聚会"
-hero_image: ""
-image_alt: "徕卡 Minilux胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/leica-minilux.jpg"
+image_alt: "俯视展示的银色徕卡 Leica Minilux 胶片便携相机"
+image_credit: "Wutthichai Charoenburi"
+image_source: "https://commons.wikimedia.org/wiki/File:Leica_minilux_camera_08.jpg"
+image_license: "CC BY 2.0"
 tags:
   - "便携自动相机"
   - "自动对焦"
@@ -41,8 +41,9 @@ aliases:
   - "Leica Minilux"
   - "徕卡 mini lux"
   - "Minilux"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Leica_minilux_camera_08.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "钛合金颜值担当——萌大统领说\"实际拍得少\"。"
 permalink: "cameras/leica-minilux"
@@ -114,6 +115,6 @@ price_status: "有效"
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Wutthichai Charoenburi，Wikimedia Commons，CC BY 2.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

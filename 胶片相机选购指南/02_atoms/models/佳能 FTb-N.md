@@ -28,11 +28,11 @@ recommended_scenes:
   - "摄影基础学习"
   - "日常记录"
   - "街拍"
-hero_image: ""
-image_alt: "佳能 FTb-N胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/canon-ftb-n.jpg"
+image_alt: "搭配 FD 50mm 镜头的佳能 FTb-N 机械单反相机"
+image_credit: "Quercus acuta"
+image_source: "https://commons.wikimedia.org/wiki/File:CANON_FTb-N_-_01.jpg"
+image_license: "CC BY-SA 4.0"
 tags:
   - "机械单反"
   - "手动对焦"
@@ -40,8 +40,9 @@ tags:
 aliases:
   - "Canon FTb-N"
   - "Canon FTb"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:CANON_FTb-N_-_01.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "佳能 FD 卡口最便宜的纯机械入门机。"
 permalink: "cameras/canon-ftb-n"
@@ -108,6 +109,6 @@ source_note: "该机型内容由旧知识库引用的字幕文章《16个品牌8
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：Quercus acuta，Wikimedia Commons，CC BY-SA 4.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。

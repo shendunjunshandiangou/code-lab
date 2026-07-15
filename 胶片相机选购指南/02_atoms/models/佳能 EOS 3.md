@@ -32,11 +32,11 @@ recommended_scenes:
   - "动态抓拍"
   - "人像"
   - "EF 镜头系统用户"
-hero_image: ""
-image_alt: "佳能 EOS 3 胶片自动对焦单反，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/canon-eos-3.jpg"
+image_alt: "取下镜头、正面可见 EF 卡口机身盖的黑色佳能 EOS 3 胶片自动对焦单反"
+image_credit: "Valclav"
+image_source: "https://commons.wikimedia.org/wiki/File:Canon_EOS_3.jpg"
+image_license: "CC BY-SA 3.0"
 tags:
   - "自动对焦单反"
   - "眼控对焦"
@@ -46,7 +46,8 @@ aliases:
 sources:
   - "https://en.wikipedia.org/wiki/Canon_EOS-3"
   - "https://zh.wikipedia.org/wiki/佳能_EOS-3"
-last_updated: "2026-07-12"
+  - "https://commons.wikimedia.org/wiki/File:Canon_EOS_3.jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "45 点眼控对焦、1/8000s 和 EF 卡口：操作逻辑接近现代佳能单反的高性能胶片机。"
 permalink: "cameras/canon-eos-3"
@@ -123,6 +124,6 @@ price_status: "有效"
 
 ## 图片与资料来源
 
-- 图片：待完成准确型号与许可核验后补充。
+- 图片：Valclav，Wikimedia Commons，CC BY-SA 3.0。
 - 45 点眼控 AF、21 区测光、1/8000s、2CR5、连拍能力与 780g 等规格已于 2026-07-12 复核。
 - 眼控效果与个体、眼镜和校准方式有关；二手可靠性取决于快门、马达、LCD、拨轮和维修历史。

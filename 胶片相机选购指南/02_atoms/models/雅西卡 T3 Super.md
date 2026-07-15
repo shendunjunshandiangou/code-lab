@@ -28,11 +28,11 @@ recommended_scenes:
   - "旅行随拍"
   - "日常记录"
   - "街拍"
-hero_image: ""
-image_alt: "雅西卡 T3 Super 胶片便携相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/yashica-t3-super.jpg"
+image_alt: "手持展示的黑色雅西卡 Yashica T3 Super 自动对焦便携相机"
+image_credit: "[ I ♥ film]"
+image_source: "https://commons.wikimedia.org/wiki/File:Yashica_t3_super_(7425139768).jpg"
+image_license: "CC BY 2.0"
 tags:
   - "便携自动相机"
   - "自动对焦"
@@ -43,7 +43,8 @@ aliases:
 sources:
   - "https://de.wikipedia.org/wiki/Yashica_T"
   - "https://en.wikipedia.org/wiki/Yashica"
-last_updated: "2026-07-12"
+  - "https://commons.wikimedia.org/wiki/File:Yashica_t3_super_(7425139768).jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "35mm f/2.8 Tessar T*、顶部辅助取景窗和全自动操作的高性价比便携机。"
 permalink: "cameras/yashica-t3-super"
@@ -119,6 +120,6 @@ price_status: "有效"
 
 ## 图片与资料来源
 
-- 图片：待完成准确型号与许可核验后补充。
+- 图片：[ I ♥ film]，Wikimedia Commons，CC BY 2.0。
 - T3 Super 的 35mm f/2.8、主动式自动对焦、程序曝光、CR123A、约 275g、顶部辅助取景窗和连拍差异已于 2026-07-12 复核。
 - 二手可靠性取决于自动对焦、电子快门、闪光灯、过片马达、镜头状态和维修历史。

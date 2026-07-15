@@ -28,19 +28,20 @@ recommended_scenes:
   - "旅行"
   - "日常记录"
   - "街拍"
-hero_image: ""
-image_alt: "奥林巴斯 Pen D3胶片相机，图片待完成授权核验后补充"
-image_credit: ""
-image_source: ""
-image_license: ""
+hero_image: "./static/images/library/olympus-pen-d3.jpg"
+image_alt: "正面展示的奥林巴斯 Pen D3 半格胶片相机"
+image_credit: "John Nuttall"
+image_source: "https://commons.wikimedia.org/wiki/File:Pen_D3_(2356963031).jpg"
+image_license: "CC BY 2.0"
 tags:
   - "半格相机"
   - "固定焦点"
   - "推荐"
 aliases:
   - "Pen D3"
-sources: []
-last_updated: "2026-07-12"
+sources:
+  - "https://commons.wikimedia.org/wiki/File:Pen_D3_(2356963031).jpg"
+last_updated: "2026-07-14"
 detail_version: 2
 tagline: "操作极简的半格机，除了 ISO 什么都不用调。"
 permalink: "cameras/olympus-pen-d3"
@@ -105,6 +106,6 @@ price_status: "有效"
 
 ## 图片与资料来源
 
-- 图片：待完成授权核验后补充。
+- 图片：John Nuttall，Wikimedia Commons，CC BY 2.0。
 - 本页机型资料沿用原有整理内容，并统一为标准详情页结构；未完成核验的参数继续明确标记。
 - 二手价格会随地区、成色、镜头搭配和维修状态变化，当前区间不是成交保证。
