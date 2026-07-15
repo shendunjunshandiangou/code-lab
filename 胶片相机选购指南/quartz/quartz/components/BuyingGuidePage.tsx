@@ -1,6 +1,7 @@
 import { resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { cameraPrice } from "./cameraPrice"
 import style from "./styles/buyingGuidePage.scss"
 
 type CameraFrontmatter = Record<string, any>
@@ -97,8 +98,7 @@ function beginnerRank(value: string) {
 }
 
 function numeric(value: unknown) {
-  const number = Number(value)
-  return Number.isFinite(number) ? number : Number.NaN
+  return cameraPrice(value) ?? Number.NaN
 }
 
 function priceText(min: number, max: number) {

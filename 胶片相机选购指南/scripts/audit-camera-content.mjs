@@ -37,8 +37,9 @@ function list(frontmatter, key) {
 }
 
 function numeric(value) {
+  if (!value || value === "null") return Number.NaN
   const number = Number(value)
-  return Number.isFinite(number) ? number : Number.NaN
+  return Number.isFinite(number) && number > 0 ? number : Number.NaN
 }
 
 function average(min, max) {
@@ -88,8 +89,10 @@ for (const file of files) {
   if (scalar(fm, "entity") !== "camera") continue
 
   const title = scalar(fm, "title") || file.replace(/\.md$/, "")
-  const priceMin = numeric(scalar(fm, "price_min"))
-  const priceMax = numeric(scalar(fm, "price_max"))
+  const rawPriceMin = scalar(fm, "price_min")
+  const rawPriceMax = scalar(fm, "price_max")
+  const priceMin = numeric(rawPriceMin)
+  const priceMax = numeric(rawPriceMax)
   const heroImage = scalar(fm, "hero_image")
   const imageCredit = scalar(fm, "image_credit")
   const imageSource = scalar(fm, "image_source")
@@ -112,6 +115,9 @@ for (const file of files) {
   const bodyExposure = tableValue(body, "曝光模式")
   const bodyWeight = tableValue(body, "重量")
 
+  if (rawPriceMin && rawPriceMin !== "null" && !Number.isFinite(priceMin)) conflicts.push("price_min 必须是正数或 null")
+  if (rawPriceMax && rawPriceMax !== "null" && !Number.isFinite(priceMax)) conflicts.push("price_max 必须是正数或 null")
+  if (Number.isFinite(priceMin) && Number.isFinite(priceMax) && priceMin > priceMax) conflicts.push("price_min 不能高于 price_max")
   if (/单反/.test(cameraType) && /固定镜头/.test(mount)) conflicts.push("单反机型却标记为固定镜头")
   if (focusKind(focus) && focusKind(bodyFocus) && focusKind(focus) !== focusKind(bodyFocus)) {
     conflicts.push(`对焦字段为“${focus}”，参数表为“${bodyFocus}”`)

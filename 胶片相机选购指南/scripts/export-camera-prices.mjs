@@ -7,6 +7,12 @@ const modelsDir = path.join(root, "02_atoms", "models")
 const output = path.join(root, "data", "camera-prices.csv")
 const force = process.argv.includes("--force")
 
+function positiveNumber(value) {
+  if (!value || value === "null") return Number.NaN
+  const parsed = Number(value)
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : Number.NaN
+}
+
 if (fs.existsSync(output) && !force) {
   console.log("价格表已存在，跳过初始化。需要从 Markdown 重新导出时使用 --force。")
   process.exit(0)
@@ -39,8 +45,8 @@ for (const file of fs.readdirSync(modelsDir).filter((name) => name.endsWith(".md
 
   const min = scalar(fm, "price_min")
   const max = scalar(fm, "price_max")
-  const minNumber = Number(min)
-  const maxNumber = Number(max)
+  const minNumber = positiveNumber(min)
+  const maxNumber = positiveNumber(max)
   const typical = Number.isFinite(minNumber) && Number.isFinite(maxNumber)
     ? Math.round((minNumber + maxNumber) / 2)
     : Number.isFinite(minNumber)

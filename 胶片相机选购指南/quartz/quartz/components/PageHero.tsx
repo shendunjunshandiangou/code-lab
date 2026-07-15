@@ -1,5 +1,6 @@
 import { FullSlug, resolveRelative } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { cameraPrice } from "./cameraPrice"
 
 type FrontmatterRecord = Record<string, any>
 
@@ -67,11 +68,14 @@ const PageHero: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
               : "index") as FullSlug,
   )
 
-  const price =
-    frontmatter.price_min && frontmatter.price_max
-      ? `¥${frontmatter.price_min}～${frontmatter.price_max}`
-      : frontmatter.price_min
-        ? `约 ¥${frontmatter.price_min} 起`
+  const priceMin = cameraPrice(frontmatter.price_min)
+  const priceMax = cameraPrice(frontmatter.price_max)
+  const price = priceMin !== null && priceMax !== null
+    ? `¥${priceMin}～${priceMax}`
+    : priceMin !== null
+      ? `约 ¥${priceMin} 起`
+      : priceMax !== null
+        ? `约 ¥${priceMax} 以内`
         : "价格随成色变化"
 
   if (!isCamera) {

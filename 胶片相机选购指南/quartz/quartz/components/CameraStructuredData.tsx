@@ -1,5 +1,6 @@
 import { joinSegments } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { cameraPrice } from "./cameraPrice"
 
 function absoluteUrl(baseUrl: string, value: string) {
   if (/^https?:\/\//i.test(value)) return value
@@ -19,10 +20,10 @@ const CameraStructuredData: QuartzComponent = ({ cfg, fileData }: QuartzComponen
   const title = String(frontmatter.title ?? frontmatter.model ?? "胶片相机")
   const brand = String(frontmatter.brand ?? "").trim()
   const image = String(frontmatter.hero_image ?? "").trim()
-  const lowPrice = Number(frontmatter.price_min)
-  const highPrice = Number(frontmatter.price_max)
-  const hasLowPrice = Number.isFinite(lowPrice)
-  const hasHighPrice = Number.isFinite(highPrice)
+  const lowPrice = cameraPrice(frontmatter.price_min)
+  const highPrice = cameraPrice(frontmatter.price_max)
+  const hasLowPrice = lowPrice !== null
+  const hasHighPrice = highPrice !== null
 
   const product: Record<string, any> = {
     "@context": "https://schema.org",

@@ -1,9 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-
-function number(value: unknown) {
-  const parsed = Number(value)
-  return Number.isFinite(parsed) ? parsed : null
-}
+import { cameraPrice } from "./cameraPrice"
 
 function money(value: number | null) {
   return value === null ? "待核价" : `¥${value.toLocaleString("zh-CN")}`
@@ -13,9 +9,9 @@ const CameraPricePanel: QuartzComponent = ({ fileData }: QuartzComponentProps) =
   const fm = (fileData.frontmatter ?? {}) as Record<string, any>
   if (fm.entity !== "camera" || Number(fm.detail_version ?? 0) !== 2) return null
 
-  const min = number(fm.price_min)
-  const typical = number(fm.price_typical)
-  const max = number(fm.price_max)
+  const min = cameraPrice(fm.price_min)
+  const typical = cameraPrice(fm.price_typical)
+  const max = cameraPrice(fm.price_max)
   const status = String(fm.price_status ?? "待核价")
   const note = String(fm.price_note ?? "").trim()
   const condition = String(fm.price_condition ?? "仅机身，功能正常，普通使用成色").trim()

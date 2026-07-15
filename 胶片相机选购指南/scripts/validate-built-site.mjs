@@ -202,6 +202,16 @@ for (const page of pagesToCheckImages) {
 pass("核心页面本地图片文件存在性检查")
 
 const htmlFiles = walkFiles(publicDir, ".html")
+const invalidPriceDisplays = []
+for (const file of htmlFiles) {
+  const html = fs.readFileSync(file, "utf8")
+  const relativePath = path.relative(publicDir, file)
+  if (/¥[\d,]+(?:～|~|—|–)0\b/.test(html)) invalidPriceDisplays.push(`${relativePath} 显示价格上限为 0`)
+  if (/"(?:lowPrice|highPrice|price)":0\b/.test(html)) invalidPriceDisplays.push(`${relativePath} 的结构化价格包含 0`)
+}
+if (invalidPriceDisplays.length > 0) fail(`价格显示检查发现 ${invalidPriceDisplays.length} 个问题：\n${invalidPriceDisplays.map((item) => `- ${item}`).join("\n")}`)
+else pass("全站价格显示与结构化数据不含 0 元价格")
+
 const linkedHtmlFiles = new Set()
 const linkIssues = new Map()
 const visitedHtmlFiles = new Set()

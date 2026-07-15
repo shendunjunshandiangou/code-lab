@@ -3,6 +3,7 @@ import cameraAtlasScript from "./scripts/cameraAtlas.inline"
 import { resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { cameraPrice } from "./cameraPrice"
 import style from "./styles/cameraAtlas.scss"
 
 type Frontmatter = Record<string, any>
@@ -143,8 +144,8 @@ function cameraFromPage(page: QuartzPluginData): CameraRecord | null {
 
   const title = String(frontmatter.title ?? slug.split("/").pop()?.replaceAll("-", " ") ?? "未命名机型")
   const brand = normalizedBrand(frontmatter, title)
-  const min = Number(frontmatter.price_min)
-  const max = Number(frontmatter.price_max)
+  const min = cameraPrice(frontmatter.price_min) ?? Number.NaN
+  const max = cameraPrice(frontmatter.price_max) ?? Number.NaN
   const price = Number.isFinite(min) ? min : Number.isFinite(max) ? max : 999999
   const scenes = normalizedScenes(frontmatter)
   const beginner = String(frontmatter.beginner_level ?? "待判断")

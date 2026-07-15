@@ -10,7 +10,7 @@ if (!fs.existsSync(csvFile)) throw new Error("缺少 data/camera-prices.csv，�
 
 function parsePrice(value, label, row) {
   if (value === "") return null
-  if (!/^\d+$/.test(value)) throw new Error(`第 ${row} 行 ${label} 必须是非负整数或留空`)
+  if (!/^[1-9]\d*$/.test(value)) throw new Error(`第 ${row} 行 ${label} 必须是正整数或留空`)
   return Number(value)
 }
 
