@@ -13,8 +13,6 @@ const cameras = [
     price: "¥500～800",
     reason: "保留手动操作，又用 A 档降低曝光门槛，是温和而完整的入门方式。",
     href: "./cameras/nikon-fe",
-    image:
-      "./static/images/library/nikon-fe-workshop-cologne-06-cropped-fee376ba.jpg",
     budget: "low,mid",
     autonomy: "auto-exposure,manual",
     scene: "daily,street,learn",
@@ -26,7 +24,6 @@ const cameras = [
     price: "¥400～900",
     reason: "体积小、操作直接，适合旅行和生活记录，不必承担热门机型的高溢价。",
     href: "./cameras/olympus-mju-1",
-    image: "",
     budget: "low,mid",
     autonomy: "auto,autofocus",
     scene: "daily,travel",
@@ -38,8 +35,6 @@ const cameras = [
     price: "¥200～600",
     reason: "操作接近现代相机，自动对焦和多种曝光模式能明显降低第一次使用的压力。",
     href: "./cameras/nikon-f-601",
-    image:
-      "./static/images/library/nikon-f601-n6006-cropped-jpg-533c0aca.jpg",
     budget: "low",
     autonomy: "autofocus,auto-exposure",
     scene: "daily,travel,portrait",
@@ -51,7 +46,6 @@ const cameras = [
     price: "¥800～1500",
     reason: "结构简单、操作直接，适合真正想理解光圈、快门和测光关系的人。",
     href: "./cameras/pentax-k1000",
-    image: "./static/images/library/pentax-k1000-d0157f0d.jpg",
     budget: "mid",
     autonomy: "manual",
     scene: "street,learn,collection",
@@ -63,7 +57,6 @@ const cameras = [
     price: "¥800～1500",
     reason: "经典外形、FD 镜头体系和自动曝光，适合喜欢传统单反但不想完全手动的人。",
     href: "./cameras/canon-ae-1",
-    image: "",
     budget: "mid",
     autonomy: "auto-exposure,manual",
     scene: "daily,portrait,learn",
@@ -75,13 +68,25 @@ const cameras = [
     price: "¥1000～1800",
     reason: "机身紧凑、取景体验优秀，适合在意携带感又希望认真学习手动摄影的人。",
     href: "./cameras/olympus-om-1",
-    image: "",
     budget: "mid,high",
     autonomy: "manual",
     scene: "travel,street,learn",
     format: "135",
   },
 ]
+
+function cameraImages(allFiles: QuartzComponentProps["allFiles"]) {
+  return new Map(
+    allFiles.flatMap((page) => {
+      const frontmatter = (page.frontmatter ?? {}) as Record<string, unknown>
+      if (frontmatter.entity !== "camera") return []
+
+      const title = String(frontmatter.title ?? "").trim()
+      const image = String(frontmatter.hero_image ?? "").trim()
+      return title && image ? [[title, image] as const] : []
+    }),
+  )
+}
 
 const learningPath = [
   {
@@ -122,9 +127,14 @@ const learningPath = [
 ]
 
 function HomePage(props: QuartzComponentProps) {
-  const { fileData } = props
+  const { allFiles, fileData } = props
   if (fileData.slug !== "index") return null
   const featuredVideos = getFeaturedVideos(props).slice(0, 3)
+  const imagesByCamera = cameraImages(allFiles)
+  const finderCameras = cameras.map((camera) => ({
+    ...camera,
+    image: imagesByCamera.get(camera.name) ?? "",
+  }))
 
   return (
     <div class="commercial-home">
@@ -285,7 +295,7 @@ function HomePage(props: QuartzComponentProps) {
           </div>
 
           <div class="finder-results">
-            {cameras.map((camera) => (
+            {finderCameras.map((camera) => (
               <a
                 class="finder-result-card"
                 href={camera.href}

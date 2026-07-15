@@ -131,8 +131,13 @@ if (home) {
   requireText(home, /id="featured-video-layout-inline"/, "首页视频网格缺少防缓存关键布局样式")
   if ((home.match(/class="bilibili-play"/g) ?? []).length < 3) fail("首页可播放视频少于 3 条")
   requireText(home, /data-bvid="BV1LF4m1M7ca"/, "首页缺少已核验新手选购视频")
+  if ((home.match(/class="finder-card-image has-image"/g) ?? []).length !== 6) fail("首页快速选机卡片没有全部显示图片")
+  if (home.includes('class="finder-card-image is-placeholder"')) fail("首页快速选机仍包含缺图占位卡")
+  requireText(home, /static\/images\/library\/olympus-mju-i\.jpg/, "首页缺少奥林巴斯 mju-1 图片")
+  requireText(home, /static\/images\/library\/canon-ae-1-with-50mm-f1-8-s-c-ii-cb3614c9\.jpg/, "首页缺少佳能 AE-1 图片")
+  requireText(home, /static\/images\/library\/olympus-om-1-6c0b68be\.jpg/, "首页缺少奥林巴斯 OM-1 图片")
 }
-pass("首页精选视频数量、播放按钮与数据检查")
+pass("首页精选视频、快速选机图片与数据检查")
 
 const videos = read("videos.html")
 if (videos) {
