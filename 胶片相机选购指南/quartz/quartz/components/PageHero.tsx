@@ -38,7 +38,7 @@ function imageSourceFor(frontmatter: FrontmatterRecord) {
   return String(sources.find((source: unknown) => /^https?:\/\/commons\.wikimedia\.org\//.test(String(source))) ?? "")
 }
 
-const customPortalSlugs = new Set(["index", "learn", "buying", "cameras", "film", "videos", "about"])
+const customPortalSlugs = new Set(["index", "learn", "encyclopedia", "buying", "cameras", "film", "videos", "about"])
 
 const PageHero: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const slug = String(fileData.slug ?? "")

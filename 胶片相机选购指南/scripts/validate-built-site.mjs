@@ -128,6 +128,7 @@ pass(`核心入口页面检查：${corePages.length} 个`)
 const encyclopedia = read("encyclopedia.html")
 if (encyclopedia) {
   requireText(encyclopedia, /class="knowledge-hub"/, "相机百科没有使用正式聚合页组件")
+  if ((encyclopedia.match(/<h1\b/g) ?? []).length !== 1) fail("相机百科页面存在重复一级标题")
   requireText(encyclopedia, /覆盖 68 个基础知识点/, "相机百科缺少知识库范围说明")
   if ((encyclopedia.match(/class="knowledge-card"/g) ?? []).length !== 9) fail("相机百科专题卡片不是 9 张")
   requireText(encyclopedia, /04_knowledge\/知识百科\/01-相机类型详解/, "相机百科缺少相机类型入口")
