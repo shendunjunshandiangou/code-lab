@@ -130,7 +130,7 @@ if (home) {
   requireText(home, /class="featured-video-grid home-featured-video-grid" data-video-count="3"/, "首页没有展示 3 条精选视频")
   requireText(home, /id="featured-video-layout-inline"/, "首页视频网格缺少防缓存关键布局样式")
   if ((home.match(/class="bilibili-play"/g) ?? []).length < 3) fail("首页可播放视频少于 3 条")
-  requireText(home, /data-bvid="BV1HL411h7JW"/, "首页缺少已核验零基础视频")
+  requireText(home, /data-bvid="BV1LF4m1M7ca"/, "首页缺少已核验新手选购视频")
 }
 pass("首页精选视频数量、播放按钮与数据检查")
 
@@ -141,7 +141,10 @@ if (videos) {
   requireText(videos, /portal-rich-page\.videos-page\{width:100%;max-width:none;margin:0;padding:0\}/, "视频精选页缺少防缓存全宽布局规则")
   if ((videos.match(/class="bilibili-play"/g) ?? []).length !== 6) fail("视频精选页可播放视频不是 6 条")
   if ((videos.match(/B 站打开原视频/g) ?? []).length !== 6) fail("视频精选页原视频链接不是 6 条")
-  requireText(videos, /data-bvid="BV1o4411c7A5"/, "视频精选页缺少二手验机视频")
+  requireText(videos, /data-bvid="BV1qqwLzcE81"/, "视频精选页缺少已核验平价机型视频")
+  for (const invalidBvid of ["BV1HL411h7JW", "BV1Uj411Z7E9", "BV1k7411q7YL", "BV1o4411c7A5"]) {
+    if (videos.includes(invalidBvid)) fail(`视频精选页仍包含已失效或错配 BV 号：${invalidBvid}`)
+  }
 }
 pass("视频精选页数量、播放按钮与原链接检查")
 
@@ -230,6 +233,21 @@ for (const page of pagesToCheckImages) {
 pass("核心页面本地图片文件存在性检查")
 
 const htmlFiles = walkFiles(publicDir, ".html")
+const blockedBvids = ["BV1HL411h7JW", "BV1Uj411Z7E9", "BV1k7411q7YL", "BV1o4411c7A5"]
+const blockedBvidHits = []
+for (const file of htmlFiles) {
+  const html = fs.readFileSync(file, "utf8")
+  const relativePath = path.relative(publicDir, file)
+  for (const bvid of blockedBvids) {
+    if (html.includes(bvid)) blockedBvidHits.push(`${relativePath} 仍包含 ${bvid}`)
+  }
+}
+if (blockedBvidHits.length > 0) {
+  fail(`全站仍包含已失效或错配的 B 站视频：\n${blockedBvidHits.map((item) => `- ${item}`).join("\n")}`)
+} else {
+  pass("全站不含已失效或错配的 B 站视频")
+}
+
 const invalidPriceDisplays = []
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8")

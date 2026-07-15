@@ -10,42 +10,42 @@ image_credit: Patrick Dehais
 image_source: "https://commons.wikimedia.org/wiki/File:Nikon_FM2_et_Nikkor_50mm_f1.8.jpg"
 source_note: 本页只展示已核验 BV 号、标题、创作者和原链接的视频，点击卡片中的播放按钮可加载 B 站播放器。
 featured_videos:
-  - bvid: BV1HL411h7JW
-    title: 【纯干货】零基础胶片机入门教程
-    creator: 制作人丁丁
-    url: https://www.bilibili.com/video/BV1HL411h7JW/
-    category: 零基础
-    summary: 从胶片相机的基础概念和实际使用开始。
   - bvid: BV1LF4m1M7ca
-    title: 【中字】胶片摄影 · 2024 年新手如何选购胶片相机
+    title: 【中字】胶片摄影 | 2024年新手如何选购胶片相机 | 一次性相机 傻瓜机 胶片单反 | Teo Crawford
     creator: ContactSheets
     url: https://www.bilibili.com/video/BV1LF4m1M7ca/
     category: 选购入门
     summary: 围绕新手第一台胶片相机的类型和选择方法展开。
-  - bvid: BV1o4411c7A5
-    title: 二手胶片相机验机全流程
+  - bvid: BV1QmdaYxEGi
+    title: 【短视频】¥139 的胶片相机？是智商税吗？
     creator: 橙红Iris
-    url: https://www.bilibili.com/video/BV1o4411c7A5/
-    category: 二手验机
-    summary: 购买二手机身时需要检查的快门、测光、镜头与机身状态。
+    url: https://www.bilibili.com/video/BV1QmdaYxEGi/
+    category: 低价机型
+    summary: 从超低价胶片相机的实际能力判断是否值得购买。
   - bvid: BV1QydMBSEPa
     title: 16 个品牌 83 台相机！手动胶片单反相机终极推荐
     creator: 大耳蟹
     url: https://www.bilibili.com/video/BV1QydMBSEPa/
     category: 机型图鉴
     summary: 快速建立手动胶片单反的品牌、机型和系统概览。
-  - bvid: BV1Uj411Z7E9
-    title: 【口袋胶片机成像排行榜】我花了 80000 元
+  - bvid: BV1qqwLzcE81
+    title: 胶片时代的尼康宝藏！入坑新手胶片的尼康平价相机推荐！
+    creator: Anti-lover
+    url: https://www.bilibili.com/video/BV1qqwLzcE81/
+    category: 平价机型
+    summary: 了解尼康胶片系统中更适合新手预算的机型。
+  - bvid: BV1rSiMBmEQF
+    title: 【德松】2025年度爱用相机 | 从数码到胶片
     creator: 德松Desong
-    url: https://www.bilibili.com/video/BV1Uj411Z7E9/
-    category: 便携机
-    summary: 多台高级便携胶片机的实拍体验和成像对比。
-  - bvid: BV1k7411q7YL
-    title: 买第一台胶片相机必须要知道的事
-    creator: 橙红Iris
-    url: https://www.bilibili.com/video/BV1k7411q7YL/
-    category: 新手避坑
-    summary: 从预算、相机类型和持续成本检查第一台相机的选择。
+    url: https://www.bilibili.com/video/BV1rSiMBmEQF/
+    category: 使用体验
+    summary: 从年度使用体验观察数码和胶片相机的取舍。
+  - bvid: BV1kz411B7pM
+    title: Q&A胶片相机|百元入门到万元哈苏 📷男友都用什么给我拍照？
+    creator: 晁然然然然
+    url: https://www.bilibili.com/video/BV1kz411B7pM/
+    category: 预算问答
+    summary: 从百元入门到中画幅系统，比较不同预算的相机选择。
 last_updated: 2026-07-15
 ---
 
