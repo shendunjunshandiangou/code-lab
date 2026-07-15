@@ -40,36 +40,44 @@ const SourceVideos: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
       </div>
 
       {videos.length > 0 ? (
-        <div class={`source-video-grid ${gridSizeClass}`} data-video-count={videos.length}>
-          {videos.map((video) => {
-            const link = video.url ?? `https://www.bilibili.com/video/${video.bvid}`
-            return (
-              <article class="bilibili-card" data-bvid={video.bvid ?? ""}>
-                <div class="bilibili-cover">
-                  {video.cover ? (
-                    <img src={video.cover} alt={`${video.title ?? "参考视频"}封面`} loading="lazy" />
-                  ) : (
-                    <div class="bilibili-cover-placeholder">
-                      <span>BILIBILI</span>
-                      <strong>原视频</strong>
-                    </div>
-                  )}
-                  {video.bvid ? (
-                    <button class="bilibili-play" type="button" aria-label={`播放${video.title ?? "参考视频"}`}>
-                      <span aria-hidden="true">▶</span>
-                    </button>
-                  ) : null}
-                  {video.duration ? <small>{video.duration}</small> : null}
-                </div>
-                <div class="bilibili-card-body">
-                  <p>{video.creator ?? "视频创作者"}</p>
-                  <h3>{video.title ?? "参考视频"}</h3>
-                  <a href={link}>前往 B 站观看 →</a>
-                </div>
-              </article>
-            )
-          })}
-        </div>
+        <>
+          <style id="source-video-layout-inline">{`
+            .source-video-grid.is-single{width:min(100%,860px);margin-right:auto;margin-left:auto;grid-template-columns:minmax(0,1fr);background:transparent}
+            .source-video-grid.is-single .bilibili-card{border:1px solid var(--site-line-dark)}
+            .source-video-grid.is-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+            @media(max-width:960px){.source-video-grid.is-single{width:100%}.source-video-grid.is-pair{grid-template-columns:1fr}}
+          `}</style>
+          <div class={`source-video-grid ${gridSizeClass}`} data-video-count={videos.length}>
+            {videos.map((video) => {
+              const link = video.url ?? `https://www.bilibili.com/video/${video.bvid}`
+              return (
+                <article class="bilibili-card" data-bvid={video.bvid ?? ""}>
+                  <div class="bilibili-cover">
+                    {video.cover ? (
+                      <img src={video.cover} alt={`${video.title ?? "参考视频"}封面`} loading="lazy" />
+                    ) : (
+                      <div class="bilibili-cover-placeholder">
+                        <span>BILIBILI</span>
+                        <strong>原视频</strong>
+                      </div>
+                    )}
+                    {video.bvid ? (
+                      <button class="bilibili-play" type="button" aria-label={`播放${video.title ?? "参考视频"}`}>
+                        <span aria-hidden="true">▶</span>
+                      </button>
+                    ) : null}
+                    {video.duration ? <small>{video.duration}</small> : null}
+                  </div>
+                  <div class="bilibili-card-body">
+                    <p>{video.creator ?? "视频创作者"}</p>
+                    <h3>{video.title ?? "参考视频"}</h3>
+                    <a href={link}>前往 B 站观看 →</a>
+                  </div>
+                </article>
+              )
+            })}
+          </div>
+        </>
       ) : null}
 
       <div class="editorial-disclosure">

@@ -191,6 +191,7 @@ else pass("旧机型地址重定向检查")
 const pearlRiver = read("cameras/pearl-river-s-201.html")
 if (pearlRiver) {
   requireText(pearlRiver, /class="source-video-grid is-single" data-video-count="1"/, "单条来源视频没有使用单卡布局")
+  requireText(pearlRiver, /id="source-video-layout-inline"/, "来源视频缺少防缓存关键布局样式")
   requireText(pearlRiver, /class="bilibili-card"/, "珠江 S-201 详情页缺少来源视频卡片")
 }
 pass("单条来源视频桌面布局契约检查")
