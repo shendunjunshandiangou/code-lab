@@ -1,5 +1,8 @@
 import { ComponentChildren } from "preact"
+import { Element, Root } from "hast"
+import { visit } from "unist-util-visit"
 import { htmlToJsx } from "../../util/jsx"
+import { FullSlug, resolveRelative } from "../../util/path"
 import { concatenateResources } from "../../util/resources"
 import HomePageConstructor from "../HomePage"
 import LearnPageConstructor from "../LearnPage"
@@ -15,6 +18,32 @@ const PortalPages = PortalPagesConstructor()
 const CameraAtlasPage = CameraAtlasPageConstructor()
 const customPages: QuartzComponent[] = [HomePage, LearnPage, BuyingGuidePage, PortalPages, CameraAtlasPage]
 const customPortalSlugs = new Set(["film", "videos", "about"])
+
+function canonicalizeInternalLinks(props: QuartzComponentProps) {
+  const { allFiles, fileData, tree } = props
+  if (!fileData.slug) return
+
+  const canonicalByAlias = new Map<string, FullSlug>()
+  for (const page of allFiles) {
+    if (!page.slug) continue
+    for (const alias of page.aliases ?? []) {
+      canonicalByAlias.set(String(alias), page.slug)
+    }
+  }
+
+  visit(tree as Root, "element", (node: Element) => {
+    if (node.tagName !== "a" || !node.properties) return
+    const targetSlug = node.properties["data-slug"]
+    if (typeof targetSlug !== "string") return
+    const canonicalSlug = canonicalByAlias.get(targetSlug)
+    if (!canonicalSlug || canonicalSlug === targetSlug) return
+
+    const href = typeof node.properties.href === "string" ? node.properties.href : ""
+    const anchor = href.includes("#") ? `#${href.split("#").slice(1).join("#")}` : ""
+    node.properties.href = `${resolveRelative(fileData.slug!, canonicalSlug)}${anchor}`
+    node.properties["data-slug"] = canonicalSlug
+  })
+}
 
 const Content: QuartzComponent = (props: QuartzComponentProps) => {
   const { fileData, tree } = props
@@ -44,6 +73,7 @@ const Content: QuartzComponent = (props: QuartzComponentProps) => {
     return <PortalPages {...props} />
   }
 
+  canonicalizeInternalLinks(props)
   const content = htmlToJsx(fileData.filePath!, tree) as ComponentChildren
   const classes: string[] = fileData.frontmatter?.cssclasses ?? []
   const classString = ["popover-hint", ...classes].join(" ")

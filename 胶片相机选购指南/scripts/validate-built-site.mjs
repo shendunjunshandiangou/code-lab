@@ -81,6 +81,19 @@ function isRedirectPage(html) {
   return /http-equiv=["']refresh["']/i.test(html) || /window\.location\.(?:replace|href)/.test(html)
 }
 
+function normalizeRoutePath(pathname) {
+  let decoded = pathname
+  try {
+    decoded = decodeURIComponent(pathname)
+  } catch {
+    // 保留原始路径，后续仍可比较。
+  }
+  return decoded
+    .replace(/\.html$/, "")
+    .replace(/\/index$/, "/")
+    .replace(/\/$/, "")
+}
+
 function visibleMainText(html) {
   const main = html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/i)?.[1]
     ?? html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1]
@@ -225,6 +238,16 @@ while (pendingHtmlFiles.length > 0) {
     linkedHtmlFiles.add(target)
     if (!visitedHtmlFiles.has(target)) pendingHtmlFiles.push(target)
     const targetHtml = fs.readFileSync(path.join(publicDir, target), "utf8")
+    const canonicalHref = targetHtml.match(/<link rel="canonical" href="([^"]+)"/)?.[1]
+    if (canonicalHref) {
+      const canonicalUrl = new URL(decodeHtml(canonicalHref), url)
+      if (
+        canonicalUrl.origin === url.origin
+        && normalizeRoutePath(canonicalUrl.pathname) !== normalizeRoutePath(url.pathname)
+      ) {
+        recordLinkIssue(`链接未使用页面 canonical 地址 ${canonicalUrl.pathname}`, sourcePage, href)
+      }
+    }
     if (url.hash && url.hash !== "#") {
       let anchor
       try {

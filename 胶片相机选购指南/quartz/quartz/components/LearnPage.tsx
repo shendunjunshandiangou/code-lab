@@ -202,7 +202,7 @@ const LearnPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
             <p>
               以尼康 FE 为例，你仍然需要自己构图和对焦，但可以使用光圈优先模式，让相机自动决定快门速度。它比全自动相机更有学习空间，也比全机械相机更容易开始。
             </p>
-            <a href="./02_atoms/models/尼康-FE">查看尼康 FE 详情 →</a>
+            <a href="./cameras/nikon-fe">查看尼康 FE 详情 →</a>
           </div>
         </div>
       </section>
