@@ -1,0 +1,16 @@
+{
+  "sites": {
+    "bili-knowledge": {
+      "source": "B站知识库工厂/site",
+      "repo": "https://github.com/shendunjunshandiangou/bili-knowledge.git",
+      "branch": "main",
+      "url": "https://shendunjunshandiangou.github.io/bili-knowledge/",
+      "exclude": [
+        "node_modules",
+        "docs/.vitepress/dist",
+        "docs/.vitepress/cache",
+        "tmp"
+      ]
+    }
+  }
+}

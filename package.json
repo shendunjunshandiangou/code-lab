@@ -1,0 +1,10 @@
+{
+  "name": "code-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "node scripts/deploy-site.mjs",
+    "deploy:list": "node scripts/deploy-site.mjs --list"
+  }
+}

@@ -3,6 +3,13 @@
 .claude/sessions/
 .claude/worktrees/
 
+# Quartz build artifacts
+**/quartz/public/
+**/quartz/node_modules/
+
+# Deploy clones (npm run deploy)
+.deploy/
+
 # OS
 .DS_Store
 Thumbs.db
