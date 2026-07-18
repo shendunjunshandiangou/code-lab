@@ -1034,6 +1034,18 @@ article.home-page > h1 {
   background: var(--site-paper);
 }
 
+/* 专题页全宽：组件 SCSS 先于本文件打包，需在此重申以免被正文宽度规则覆盖 */
+.center > article.camera-atlas-page,
+.center > article.learn-guide-page,
+.center > article.buying-guide-page,
+.center > article.knowledge-hub,
+.center > article.portal-rich-page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 .center:has(> article:not(.home-page)) {
   background: var(--site-paper);
 }
