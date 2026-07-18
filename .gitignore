@@ -10,6 +10,16 @@
 # Deploy clones (npm run deploy)
 .deploy/
 
+# Site temp assets / caches
+**/site/tmp/
+**/_audio_cache/
+**/_scripts/__pycache__/
+**/_scripts/_asr_tmp/
+
+# Design skill clone
+.huashu-design-temp/
+.huashu-readme.json
+
 # OS
 .DS_Store
 Thumbs.db
