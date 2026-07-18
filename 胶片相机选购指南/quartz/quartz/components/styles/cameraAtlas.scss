@@ -5,6 +5,7 @@
   padding: 0;
   color: #242520;
   background: var(--site-paper);
+  --atlas-content-width: min(calc(100vw - 3rem), 1920px);
 }
 
 .camera-atlas-page a {
@@ -12,7 +13,7 @@
 }
 
 .camera-atlas-header {
-  width: min(var(--site-width), calc(100% - clamp(2rem, 7vw, 9rem)));
+  width: var(--atlas-content-width, min(var(--site-width), calc(100% - clamp(2rem, 7vw, 9rem))));
   margin: 0 auto;
   padding: clamp(3rem, 6vw, 6rem) 0 clamp(3rem, 5vw, 5rem);
   display: grid;
@@ -68,7 +69,7 @@
 }
 
 .camera-atlas-stats {
-  width: min(var(--site-width), calc(100% - clamp(2rem, 7vw, 9rem)));
+  width: var(--atlas-content-width, min(var(--site-width), calc(100% - clamp(2rem, 7vw, 9rem))));
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -102,7 +103,7 @@
 
 .camera-atlas-browser {
   margin-top: clamp(4rem, 7vw, 7rem);
-  padding: clamp(4.5rem, 7vw, 7rem) max(clamp(1rem, 3.5vw, 4.5rem), calc((100% - var(--site-width)) / 2));
+  padding: clamp(4.5rem, 7vw, 7rem) max(1.25rem, calc((100% - var(--atlas-content-width, var(--site-width))) / 2));
   color: var(--site-paper);
   background: var(--site-black);
 }
@@ -394,9 +395,15 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .camera-atlas-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1680px) {
+  .camera-atlas-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 

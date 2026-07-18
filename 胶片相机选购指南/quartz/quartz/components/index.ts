@@ -39,6 +39,7 @@ import Readability from "./Readability"
 import ContentLayout from "./ContentLayout"
 import IconTuning from "./IconTuning"
 import BuyingGuideInlineStyles from "./BuyingGuideInlineStyles"
+import CameraAtlasInlineStyles from "./CameraAtlasInlineStyles"
 
 export {
   ArticleTitle,
@@ -82,4 +83,5 @@ export {
   ContentLayout,
   IconTuning,
   BuyingGuideInlineStyles,
+  CameraAtlasInlineStyles,
 }

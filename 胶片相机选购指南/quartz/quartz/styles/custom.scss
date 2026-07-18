@@ -1026,7 +1026,7 @@ article.home-page > h1 {
 }
 
 /* 正文区域 */
-.center > article:not(.home-page) {
+.center > article:not(.home-page):not(.camera-atlas-page):not(.learn-guide-page):not(.buying-guide-page):not(.knowledge-hub):not(.portal-rich-page) {
   width: min(var(--site-content), calc(100% - 2rem));
   margin: 0 auto;
   padding: clamp(4.5rem, 8vw, 8rem) 0;

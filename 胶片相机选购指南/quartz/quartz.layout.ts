@@ -10,6 +10,7 @@ export const sharedPageComponents: SharedLayout = {
     Component.ContentLayout(),
     Component.IconTuning(),
     Component.BuyingGuideInlineStyles(),
+    Component.CameraAtlasInlineStyles(),
     Component.SiteHeader(),
     Component.Search({ enablePreview: true }),
   ],
